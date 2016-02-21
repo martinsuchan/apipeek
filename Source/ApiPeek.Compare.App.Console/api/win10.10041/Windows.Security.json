@@ -1,0 +1,6844 @@
+{
+  "Name": "Windows.Security, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime",
+  "Classes": [
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "AccountId"
+        },
+        {
+          "Type": "Guid",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ApplicationId"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ApplicationSid"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "AuthenticatedSafeCustomerId"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "CanSignOut"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "UserAuthenticationOperation",
+          "Parameters": [
+            {
+              "Name": "request",
+              "Type": "OnlineIdServiceTicketRequest"
+            }
+          ],
+          "Name": "AuthenticateUserAsync"
+        },
+        {
+          "ReturnType": "UserAuthenticationOperation",
+          "Parameters": [
+            {
+              "Name": "requests",
+              "Type": "IEnumerable<OnlineIdServiceTicketRequest>"
+            },
+            {
+              "Name": "credentialPromptType",
+              "Type": "CredentialPromptType"
+            }
+          ],
+          "Name": "AuthenticateUserAsync"
+        },
+        {
+          "ReturnType": "SignOutUserOperation",
+          "Name": "SignOutUserAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Int32",
+          "IsGet": true,
+          "Name": "ErrorCode"
+        },
+        {
+          "Type": "OnlineIdServiceTicketRequest",
+          "IsGet": true,
+          "Name": "Request"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Value"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.OnlineId.OnlineIdServiceTicket"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "service",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "service",
+              "Type": "String"
+            },
+            {
+              "Name": "policy",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Policy"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Service"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.OnlineId.OnlineIdServiceTicketRequest"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IAsyncAction",
+        "IAsyncInfo"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "AsyncActionCompletedHandler",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Completed"
+        },
+        {
+          "Type": "Exception",
+          "IsGet": true,
+          "Name": "ErrorCode"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "Id"
+        },
+        {
+          "Type": "AsyncStatus",
+          "IsGet": true,
+          "Name": "Status"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "Cancel"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Close"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "GetResults"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.OnlineId.SignOutUserOperation"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IAsyncInfo",
+        "IAsyncOperation<UserIdentity>"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "AsyncOperationCompletedHandler<UserIdentity>",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Completed"
+        },
+        {
+          "Type": "Exception",
+          "IsGet": true,
+          "Name": "ErrorCode"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "Id"
+        },
+        {
+          "Type": "AsyncStatus",
+          "IsGet": true,
+          "Name": "Status"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "Cancel"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Close"
+        },
+        {
+          "ReturnType": "UserIdentity",
+          "Name": "GetResults"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.OnlineId.UserAuthenticationOperation"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "FirstName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Id"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "IsBetaAccount"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "IsConfirmedPC"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "LastName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "SafeCustomerId"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "SignInName"
+        },
+        {
+          "Type": "IReadOnlyList<OnlineIdServiceTicket>",
+          "IsGet": true,
+          "Name": "Tickets"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.OnlineId.UserIdentity"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<WebAccount>",
+          "Parameters": [
+            {
+              "Name": "provider",
+              "Type": "WebAccountProvider"
+            },
+            {
+              "Name": "webAccountId",
+              "Type": "String"
+            }
+          ],
+          "Name": "FindAccountAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<WebAccountProvider>",
+          "Parameters": [
+            {
+              "Name": "webAccountProviderId",
+              "Type": "String"
+            }
+          ],
+          "Name": "FindAccountProviderAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<WebAccountProvider>",
+          "Parameters": [
+            {
+              "Name": "webAccountProviderId",
+              "Type": "String"
+            },
+            {
+              "Name": "authority",
+              "Type": "String"
+            }
+          ],
+          "Name": "FindAccountProviderAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<WebTokenRequestResult>",
+          "Parameters": [
+            {
+              "Name": "request",
+              "Type": "WebTokenRequest"
+            }
+          ],
+          "Name": "GetTokenSilentlyAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<WebTokenRequestResult>",
+          "Parameters": [
+            {
+              "Name": "request",
+              "Type": "WebTokenRequest"
+            },
+            {
+              "Name": "webAccount",
+              "Type": "WebAccount"
+            }
+          ],
+          "Name": "GetTokenSilentlyAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<WebTokenRequestResult>",
+          "Parameters": [
+            {
+              "Name": "request",
+              "Type": "WebTokenRequest"
+            }
+          ],
+          "Name": "RequestTokenAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<WebTokenRequestResult>",
+          "Parameters": [
+            {
+              "Name": "request",
+              "Type": "WebTokenRequest"
+            },
+            {
+              "Name": "webAccount",
+              "Type": "WebAccount"
+            }
+          ],
+          "Name": "RequestTokenAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Core.WebAuthenticationCoreManager"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "errorCode",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "errorMessage",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "ErrorCode"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "ErrorMessage"
+        },
+        {
+          "Type": "IDictionary<String,String>",
+          "IsGet": true,
+          "Name": "Properties"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Core.WebProviderError"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "provider",
+              "Type": "WebAccountProvider"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "provider",
+              "Type": "WebAccountProvider"
+            },
+            {
+              "Name": "scope",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "provider",
+              "Type": "WebAccountProvider"
+            },
+            {
+              "Name": "scope",
+              "Type": "String"
+            },
+            {
+              "Name": "clientId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "provider",
+              "Type": "WebAccountProvider"
+            },
+            {
+              "Name": "scope",
+              "Type": "String"
+            },
+            {
+              "Name": "clientId",
+              "Type": "String"
+            },
+            {
+              "Name": "promptType",
+              "Type": "WebTokenRequestPromptType"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "ClientId"
+        },
+        {
+          "Type": "WebTokenRequestPromptType",
+          "IsGet": true,
+          "Name": "PromptType"
+        },
+        {
+          "Type": "IDictionary<String,String>",
+          "IsGet": true,
+          "Name": "Properties"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Scope"
+        },
+        {
+          "Type": "WebAccountProvider",
+          "IsGet": true,
+          "Name": "WebAccountProvider"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Core.WebTokenRequest"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "IReadOnlyList<WebTokenResponse>",
+          "IsGet": true,
+          "Name": "ResponseData"
+        },
+        {
+          "Type": "WebProviderError",
+          "IsGet": true,
+          "Name": "ResponseError"
+        },
+        {
+          "Type": "WebTokenRequestStatus",
+          "IsGet": true,
+          "Name": "ResponseStatus"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncAction",
+          "Name": "InvalidateCacheAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Core.WebTokenRequestResult"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {},
+        {
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "String"
+            },
+            {
+              "Name": "webAccount",
+              "Type": "WebAccount"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "String"
+            },
+            {
+              "Name": "webAccount",
+              "Type": "WebAccount"
+            },
+            {
+              "Name": "error",
+              "Type": "WebProviderError"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "IDictionary<String,String>",
+          "IsGet": true,
+          "Name": "Properties"
+        },
+        {
+          "Type": "WebProviderError",
+          "IsGet": true,
+          "Name": "ProviderError"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Token"
+        },
+        {
+          "Type": "WebAccount",
+          "IsGet": true,
+          "Name": "WebAccount"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Core.WebTokenResponse"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "viewType",
+              "Type": "WebAccountClientViewType"
+            },
+            {
+              "Name": "applicationCallbackUri",
+              "Type": "Uri"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "viewType",
+              "Type": "WebAccountClientViewType"
+            },
+            {
+              "Name": "applicationCallbackUri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "accountPairwiseId",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "AccountPairwiseId"
+        },
+        {
+          "Type": "Uri",
+          "IsGet": true,
+          "Name": "ApplicationCallbackUri"
+        },
+        {
+          "Type": "WebAccountClientViewType",
+          "IsGet": true,
+          "Name": "Type"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.WebAccountClientView"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<WebAccount>",
+          "Parameters": [
+            {
+              "Name": "webAccountId",
+              "Type": "String"
+            },
+            {
+              "Name": "webAccountUserName",
+              "Type": "String"
+            },
+            {
+              "Name": "props",
+              "Type": "IReadOnlyDictionary<String,String>"
+            },
+            {
+              "Name": "scope",
+              "Type": "WebAccountScope"
+            }
+          ],
+          "Name": "AddWebAccountAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<WebAccount>",
+          "Parameters": [
+            {
+              "Name": "webAccountId",
+              "Type": "String"
+            },
+            {
+              "Name": "webAccountUserName",
+              "Type": "String"
+            },
+            {
+              "Name": "props",
+              "Type": "IReadOnlyDictionary<String,String>"
+            }
+          ],
+          "Name": "AddWebAccountAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "webAccount",
+              "Type": "WebAccount"
+            },
+            {
+              "Name": "applicationCallbackUri",
+              "Type": "Uri"
+            }
+          ],
+          "Name": "ClearViewAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "webAccount",
+              "Type": "WebAccount"
+            }
+          ],
+          "Name": "ClearWebAccountPictureAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "webAccount",
+              "Type": "WebAccount"
+            }
+          ],
+          "Name": "DeleteWebAccountAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IReadOnlyList<WebAccount>>",
+          "Name": "FindAllProviderWebAccountsAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "WebAccountScope",
+          "Parameters": [
+            {
+              "Name": "webAccount",
+              "Type": "WebAccount"
+            }
+          ],
+          "Name": "GetScope"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IReadOnlyList<WebAccountClientView>>",
+          "Parameters": [
+            {
+              "Name": "webAccount",
+              "Type": "WebAccount"
+            }
+          ],
+          "Name": "GetViewsAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "cookies",
+              "Type": "IReadOnlyList<HttpCookie>"
+            }
+          ],
+          "Name": "PushCookiesAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "webAccount",
+              "Type": "WebAccount"
+            },
+            {
+              "Name": "scope",
+              "Type": "WebAccountScope"
+            }
+          ],
+          "Name": "SetScopeAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "webAccount",
+              "Type": "WebAccount"
+            },
+            {
+              "Name": "view",
+              "Type": "WebAccountClientView"
+            }
+          ],
+          "Name": "SetViewAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "webAccount",
+              "Type": "WebAccount"
+            },
+            {
+              "Name": "webAccountPicture",
+              "Type": "IRandomAccessStream"
+            }
+          ],
+          "Name": "SetWebAccountPictureAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "webAccount",
+              "Type": "WebAccount"
+            },
+            {
+              "Name": "webAccountUserName",
+              "Type": "String"
+            },
+            {
+              "Name": "additionalProperties",
+              "Type": "IReadOnlyDictionary<String,String>"
+            }
+          ],
+          "Name": "UpdateWebAccountPropertiesAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.WebAccountManager"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IWebAccountProviderOperation"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "WebAccountProviderOperationKind",
+          "IsGet": true,
+          "Name": "Kind"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "ReportCompleted"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.WebAccountProviderAddAccountOperation"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IWebAccountProviderBaseReportOperation",
+        "IWebAccountProviderOperation"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "WebAccountProviderOperationKind",
+          "IsGet": true,
+          "Name": "Kind"
+        },
+        {
+          "Type": "WebAccount",
+          "IsGet": true,
+          "Name": "WebAccount"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "ReportCompleted"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "WebProviderError"
+            }
+          ],
+          "Name": "ReportError"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.WebAccountProviderDeleteAccountOperation"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IWebAccountProviderBaseReportOperation",
+        "IWebAccountProviderOperation",
+        "IWebAccountProviderSilentReportOperation",
+        "IWebAccountProviderTokenOperation"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "DateTimeOffset",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "CacheExpirationTime"
+        },
+        {
+          "Type": "WebAccountProviderOperationKind",
+          "IsGet": true,
+          "Name": "Kind"
+        },
+        {
+          "Type": "WebProviderTokenRequest",
+          "IsGet": true,
+          "Name": "ProviderRequest"
+        },
+        {
+          "Type": "IList<WebProviderTokenResponse>",
+          "IsGet": true,
+          "Name": "ProviderResponses"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "ReportCompleted"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "WebProviderError"
+            }
+          ],
+          "Name": "ReportError"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "ReportUserInteractionRequired"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "WebProviderError"
+            }
+          ],
+          "Name": "ReportUserInteractionRequired"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.WebAccountProviderGetTokenSilentOperation"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IWebAccountProviderOperation"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "WebAccountProviderOperationKind",
+          "IsGet": true,
+          "Name": "Kind"
+        },
+        {
+          "Type": "WebAccount",
+          "IsGet": true,
+          "Name": "WebAccount"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "ReportCompleted"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.WebAccountProviderManageAccountOperation"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IWebAccountProviderBaseReportOperation",
+        "IWebAccountProviderOperation",
+        "IWebAccountProviderTokenOperation",
+        "IWebAccountProviderUIReportOperation"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "DateTimeOffset",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "CacheExpirationTime"
+        },
+        {
+          "Type": "WebAccountProviderOperationKind",
+          "IsGet": true,
+          "Name": "Kind"
+        },
+        {
+          "Type": "WebProviderTokenRequest",
+          "IsGet": true,
+          "Name": "ProviderRequest"
+        },
+        {
+          "Type": "IList<WebProviderTokenResponse>",
+          "IsGet": true,
+          "Name": "ProviderResponses"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "ReportCompleted"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "WebProviderError"
+            }
+          ],
+          "Name": "ReportError"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "ReportUserCanceled"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.WebAccountProviderRequestTokenOperation"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IWebAccountProviderBaseReportOperation",
+        "IWebAccountProviderOperation"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Uri",
+          "IsGet": true,
+          "Name": "ApplicationCallbackUri"
+        },
+        {
+          "Type": "Uri",
+          "IsGet": true,
+          "Name": "Context"
+        },
+        {
+          "Type": "IList<HttpCookie>",
+          "IsGet": true,
+          "Name": "Cookies"
+        },
+        {
+          "Type": "WebAccountProviderOperationKind",
+          "IsGet": true,
+          "Name": "Kind"
+        },
+        {
+          "Type": "Uri",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Uri"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "ReportCompleted"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "WebProviderError"
+            }
+          ],
+          "Name": "ReportError"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.WebAccountProviderRetrieveCookiesOperation"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IWebAccountProviderBaseReportOperation",
+        "IWebAccountProviderOperation"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Uri",
+          "IsGet": true,
+          "Name": "ApplicationCallbackUri"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "ClientId"
+        },
+        {
+          "Type": "WebAccountProviderOperationKind",
+          "IsGet": true,
+          "Name": "Kind"
+        },
+        {
+          "Type": "WebAccount",
+          "IsGet": true,
+          "Name": "WebAccount"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "ReportCompleted"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "WebProviderError"
+            }
+          ],
+          "Name": "ReportError"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.WebAccountProviderSignOutAccountOperation"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IWebAccountProviderTokenObjects"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "IWebAccountProviderOperation",
+          "IsGet": true,
+          "Name": "Operation"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.WebAccountProviderTriggerDetails"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Uri",
+          "IsGet": true,
+          "Name": "ApplicationCallbackUri"
+        },
+        {
+          "Type": "WebTokenRequest",
+          "IsGet": true,
+          "Name": "ClientRequest"
+        },
+        {
+          "Type": "IReadOnlyList<WebAccount>",
+          "IsGet": true,
+          "Name": "WebAccounts"
+        },
+        {
+          "Type": "WebAccountSelectionOptions",
+          "IsGet": true,
+          "Name": "WebAccountSelectionOptions"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncOperation<CryptographicKey>",
+          "Parameters": [
+            {
+              "Name": "keyType",
+              "Type": "TokenBindingKeyType"
+            },
+            {
+              "Name": "target",
+              "Type": "Uri"
+            }
+          ],
+          "Name": "GetApplicationTokenBindingKeyAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.WebProviderTokenRequest"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "webTokenResponse",
+              "Type": "WebTokenResponse"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "WebTokenResponse",
+          "IsGet": true,
+          "Name": "ClientResponse"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.WebProviderTokenResponse"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "requestUri",
+              "Type": "Uri"
+            }
+          ],
+          "Name": "AuthenticateAndContinue"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "requestUri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "callbackUri",
+              "Type": "Uri"
+            }
+          ],
+          "Name": "AuthenticateAndContinue"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "requestUri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "callbackUri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "continuationData",
+              "Type": "ValueSet"
+            },
+            {
+              "Name": "options",
+              "Type": "WebAuthenticationOptions"
+            }
+          ],
+          "Name": "AuthenticateAndContinue"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<WebAuthenticationResult>",
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "WebAuthenticationOptions"
+            },
+            {
+              "Name": "requestUri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "callbackUri",
+              "Type": "Uri"
+            }
+          ],
+          "Name": "AuthenticateAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<WebAuthenticationResult>",
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "WebAuthenticationOptions"
+            },
+            {
+              "Name": "requestUri",
+              "Type": "Uri"
+            }
+          ],
+          "Name": "AuthenticateAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<WebAuthenticationResult>",
+          "Parameters": [
+            {
+              "Name": "requestUri",
+              "Type": "Uri"
+            }
+          ],
+          "Name": "AuthenticateSilentlyAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<WebAuthenticationResult>",
+          "Parameters": [
+            {
+              "Name": "requestUri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "options",
+              "Type": "WebAuthenticationOptions"
+            }
+          ],
+          "Name": "AuthenticateSilentlyAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Uri",
+          "Name": "GetCurrentApplicationCallbackUri"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.WebAuthenticationBroker"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "ResponseData"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "ResponseErrorDetail"
+        },
+        {
+          "Type": "WebAuthenticationStatus",
+          "IsGet": true,
+          "Name": "ResponseStatus"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.WebAuthenticationResult"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Name"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncOperation<KeyCredentialAttestationResult>",
+          "Name": "GetAttestationAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<KeyCredentialOperationResult>",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "RequestSignAsync"
+        },
+        {
+          "ReturnType": "IBuffer",
+          "Name": "RetrievePublicKey"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Credentials.KeyCredential"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "IBuffer",
+          "IsGet": true,
+          "Name": "AttestationBuffer"
+        },
+        {
+          "Type": "IBuffer",
+          "IsGet": true,
+          "Name": "CertificateChainBuffer"
+        },
+        {
+          "Type": "KeyCredentialAttestationStatus",
+          "IsGet": true,
+          "Name": "Status"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Credentials.KeyCredentialAttestationResult"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ],
+          "Name": "DeleteAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Name": "IsSupportedAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<KeyCredentialRetrievalResult>",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ],
+          "Name": "OpenAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Name": "RenewAttestation"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<KeyCredentialRetrievalResult>",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "option",
+              "Type": "KeyCredentialCreationOption"
+            }
+          ],
+          "Name": "RequestCreateAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Credentials.KeyCredentialManager"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "IBuffer",
+          "IsGet": true,
+          "Name": "Result"
+        },
+        {
+          "Type": "KeyCredentialStatus",
+          "IsGet": true,
+          "Name": "Status"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Credentials.KeyCredentialOperationResult"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "KeyCredential",
+          "IsGet": true,
+          "Name": "Credential"
+        },
+        {
+          "Type": "KeyCredentialStatus",
+          "IsGet": true,
+          "Name": "Status"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Credentials.KeyCredentialRetrievalResult"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {},
+        {
+          "Parameters": [
+            {
+              "Name": "resource",
+              "Type": "String"
+            },
+            {
+              "Name": "userName",
+              "Type": "String"
+            },
+            {
+              "Name": "password",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Password"
+        },
+        {
+          "Type": "IPropertySet",
+          "IsGet": true,
+          "Name": "Properties"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Resource"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "UserName"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "RetrievePassword"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Credentials.PasswordCredential"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "ICollection<KeyValuePair<String,Object>>",
+        "IDictionary<String,Object>",
+        "IEnumerable",
+        "IEnumerable<KeyValuePair<String,Object>>",
+        "IObservableMap<String,Object>",
+        "IPropertySet"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "Size"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [
+        {
+          "Type": "MapChangedEventHandler<String,Object>",
+          "Name": "MapChanged"
+        }
+      ],
+      "Name": "Windows.Security.Credentials.PasswordCredentialPropertyStore"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "credential",
+              "Type": "PasswordCredential"
+            }
+          ],
+          "Name": "Add"
+        },
+        {
+          "ReturnType": "IReadOnlyList<PasswordCredential>",
+          "Parameters": [
+            {
+              "Name": "resource",
+              "Type": "String"
+            }
+          ],
+          "Name": "FindAllByResource"
+        },
+        {
+          "ReturnType": "IReadOnlyList<PasswordCredential>",
+          "Parameters": [
+            {
+              "Name": "userName",
+              "Type": "String"
+            }
+          ],
+          "Name": "FindAllByUserName"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "credential",
+              "Type": "PasswordCredential"
+            }
+          ],
+          "Name": "Remove"
+        },
+        {
+          "ReturnType": "PasswordCredential",
+          "Parameters": [
+            {
+              "Name": "resource",
+              "Type": "String"
+            },
+            {
+              "Name": "userName",
+              "Type": "String"
+            }
+          ],
+          "Name": "Retrieve"
+        },
+        {
+          "ReturnType": "IReadOnlyList<PasswordCredential>",
+          "Name": "RetrieveAll"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Credentials.PasswordVault"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<CredentialPickerResults>",
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "CredentialPickerOptions"
+            }
+          ],
+          "Name": "PickAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<CredentialPickerResults>",
+          "Parameters": [
+            {
+              "Name": "targetName",
+              "Type": "String"
+            },
+            {
+              "Name": "message",
+              "Type": "String"
+            }
+          ],
+          "Name": "PickAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<CredentialPickerResults>",
+          "Parameters": [
+            {
+              "Name": "targetName",
+              "Type": "String"
+            },
+            {
+              "Name": "message",
+              "Type": "String"
+            },
+            {
+              "Name": "caption",
+              "Type": "String"
+            }
+          ],
+          "Name": "PickAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Credentials.UI.CredentialPicker"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "AlwaysDisplayDialog"
+        },
+        {
+          "Type": "AuthenticationProtocol",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "AuthenticationProtocol"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "CallerSavesCredential"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Caption"
+        },
+        {
+          "Type": "CredentialSaveOption",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "CredentialSaveOption"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "CustomAuthenticationProtocol"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ErrorCode"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Message"
+        },
+        {
+          "Type": "IBuffer",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "PreviousCredential"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "TargetName"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Credentials.UI.CredentialPickerOptions"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "IBuffer",
+          "IsGet": true,
+          "Name": "Credential"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "CredentialDomainName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "CredentialPassword"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "CredentialSaved"
+        },
+        {
+          "Type": "CredentialSaveOption",
+          "IsGet": true,
+          "Name": "CredentialSaveOption"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "CredentialUserName"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "ErrorCode"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Credentials.UI.CredentialPickerResults"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<UserConsentVerifierAvailability>",
+          "Name": "CheckAvailabilityAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<UserConsentVerificationResult>",
+          "Parameters": [
+            {
+              "Name": "message",
+              "Type": "String"
+            }
+          ],
+          "Name": "RequestVerificationAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Credentials.UI.UserConsentVerifier"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IWebAccount"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "webAccountProvider",
+              "Type": "WebAccountProvider"
+            },
+            {
+              "Name": "userName",
+              "Type": "String"
+            },
+            {
+              "Name": "state",
+              "Type": "WebAccountState"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Id"
+        },
+        {
+          "Type": "IReadOnlyDictionary<String,String>",
+          "IsGet": true,
+          "Name": "Properties"
+        },
+        {
+          "Type": "WebAccountState",
+          "IsGet": true,
+          "Name": "State"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "UserName"
+        },
+        {
+          "Type": "WebAccountProvider",
+          "IsGet": true,
+          "Name": "WebAccountProvider"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncOperation<IRandomAccessStream>",
+          "Parameters": [
+            {
+              "Name": "desizedSize",
+              "Type": "WebAccountPictureSize"
+            }
+          ],
+          "Name": "GetPictureAsync"
+        },
+        {
+          "ReturnType": "IAsyncAction",
+          "Name": "SignOutAsync"
+        },
+        {
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "clientId",
+              "Type": "String"
+            }
+          ],
+          "Name": "SignOutAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Credentials.WebAccount"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "id",
+              "Type": "String"
+            },
+            {
+              "Name": "displayName",
+              "Type": "String"
+            },
+            {
+              "Name": "iconUri",
+              "Type": "Uri"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Authority"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "DisplayName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "DisplayPurpose"
+        },
+        {
+          "Type": "Uri",
+          "IsGet": true,
+          "Name": "IconUri"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Id"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Credentials.WebAccountProvider"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "certBlob",
+              "Type": "IBuffer"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true,
+          "Name": "EnhancedKeyUsages"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "FriendlyName"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "HasPrivateKey"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "IsSecurityDeviceBound"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "IsStronglyProtected"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Issuer"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "KeyAlgorithmName"
+        },
+        {
+          "Type": "CertificateKeyUsages",
+          "IsGet": true,
+          "Name": "KeyUsages"
+        },
+        {
+          "Type": "Byte[]",
+          "IsGet": true,
+          "Name": "SerialNumber"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "SignatureAlgorithmName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "SignatureHashAlgorithmName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Subject"
+        },
+        {
+          "Type": "SubjectAlternativeNameInfo",
+          "IsGet": true,
+          "Name": "SubjectAlternativeName"
+        },
+        {
+          "Type": "DateTimeOffset",
+          "IsGet": true,
+          "Name": "ValidFrom"
+        },
+        {
+          "Type": "DateTimeOffset",
+          "IsGet": true,
+          "Name": "ValidTo"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncOperation<CertificateChain>",
+          "Parameters": [
+            {
+              "Name": "certificates",
+              "Type": "IEnumerable<Certificate>"
+            }
+          ],
+          "Name": "BuildChainAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<CertificateChain>",
+          "Parameters": [
+            {
+              "Name": "certificates",
+              "Type": "IEnumerable<Certificate>"
+            },
+            {
+              "Name": "parameters",
+              "Type": "ChainBuildingParameters"
+            }
+          ],
+          "Name": "BuildChainAsync"
+        },
+        {
+          "ReturnType": "IBuffer",
+          "Name": "GetCertificateBlob"
+        },
+        {
+          "ReturnType": "Byte[]",
+          "Name": "GetHashValue"
+        },
+        {
+          "ReturnType": "Byte[]",
+          "Parameters": [
+            {
+              "Name": "hashAlgorithmName",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetHashValue"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.Certificate"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "UserCertificateEnrollmentManager",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "UserCertificateEnrollmentManager"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<String>",
+          "Parameters": [
+            {
+              "Name": "request",
+              "Type": "CertificateRequestProperties"
+            }
+          ],
+          "Name": "CreateRequestAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "pfxData",
+              "Type": "String"
+            },
+            {
+              "Name": "password",
+              "Type": "String"
+            },
+            {
+              "Name": "pfxImportParameters",
+              "Type": "PfxImportParameters"
+            }
+          ],
+          "Name": "ImportPfxDataAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "pfxData",
+              "Type": "String"
+            },
+            {
+              "Name": "password",
+              "Type": "String"
+            },
+            {
+              "Name": "exportable",
+              "Type": "ExportOption"
+            },
+            {
+              "Name": "keyProtectionLevel",
+              "Type": "KeyProtectionLevel"
+            },
+            {
+              "Name": "installOption",
+              "Type": "InstallOptions"
+            },
+            {
+              "Name": "friendlyName",
+              "Type": "String"
+            },
+            {
+              "Name": "keyStorageProvider",
+              "Type": "String"
+            }
+          ],
+          "Name": "ImportPfxDataAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "pfxData",
+              "Type": "String"
+            },
+            {
+              "Name": "password",
+              "Type": "String"
+            },
+            {
+              "Name": "exportable",
+              "Type": "ExportOption"
+            },
+            {
+              "Name": "keyProtectionLevel",
+              "Type": "KeyProtectionLevel"
+            },
+            {
+              "Name": "installOption",
+              "Type": "InstallOptions"
+            },
+            {
+              "Name": "friendlyName",
+              "Type": "String"
+            }
+          ],
+          "Name": "ImportPfxDataAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "certificate",
+              "Type": "String"
+            },
+            {
+              "Name": "installOption",
+              "Type": "InstallOptions"
+            }
+          ],
+          "Name": "InstallCertificateAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IReadOnlyList<Certificate>",
+          "Parameters": [
+            {
+              "Name": "includeRoot",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "GetCertificates"
+        },
+        {
+          "ReturnType": "ChainValidationResult",
+          "Name": "Validate"
+        },
+        {
+          "ReturnType": "ChainValidationResult",
+          "Parameters": [
+            {
+              "Name": "parameter",
+              "Type": "ChainValidationParameters"
+            }
+          ],
+          "Name": "Validate"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.CertificateChain"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "CrlSign"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "DataEncipherment"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "DigitalSignature"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "EncipherOnly"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "KeyAgreement"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "KeyCertificateSign"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "KeyEncipherment"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NonRepudiation"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.CertificateKeyUsages"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "IList<String>",
+          "IsGet": true,
+          "Name": "EnhancedKeyUsages"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "FriendlyName"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "HardwareOnly"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "IncludeDuplicates"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "IncludeExpiredCertificates"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "IssuerName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "StoreName"
+        },
+        {
+          "Type": "Byte[]",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Thumbprint"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.CertificateQuery"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Certificate",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "AttestationCredentialCertificate"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ContainerName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ContainerNamePrefix"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "CurveName"
+        },
+        {
+          "Type": "Byte[]",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "CurveParameters"
+        },
+        {
+          "Type": "ExportOption",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Exportable"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "FriendlyName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "HashAlgorithmName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "KeyAlgorithmName"
+        },
+        {
+          "Type": "KeyProtectionLevel",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "KeyProtectionLevel"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "KeySize"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "KeyStorageProviderName"
+        },
+        {
+          "Type": "EnrollKeyUsages",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "KeyUsages"
+        },
+        {
+          "Type": "Certificate",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "SigningCertificate"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "SmartcardReaderName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Subject"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "UseExistingKey"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.CertificateRequestProperties"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Name"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "certificate",
+              "Type": "Certificate"
+            }
+          ],
+          "Name": "Add"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "certificate",
+              "Type": "Certificate"
+            }
+          ],
+          "Name": "Delete"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.CertificateStore"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "CertificateStore",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "IntermediateCertificationAuthorities"
+        },
+        {
+          "Type": "CertificateStore",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "TrustedRootCertificationAuthorities"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IReadOnlyList<Certificate>>",
+          "Name": "FindAllAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IReadOnlyList<Certificate>>",
+          "Parameters": [
+            {
+              "Name": "query",
+              "Type": "CertificateQuery"
+            }
+          ],
+          "Name": "FindAllAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "CertificateStore",
+          "Parameters": [
+            {
+              "Name": "storeName",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetStoreByName"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.CertificateStores"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "inputBlob",
+              "Type": "IBuffer"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "IReadOnlyList<Certificate>",
+          "IsGet": true,
+          "Name": "Certificates"
+        },
+        {
+          "Type": "Byte[]",
+          "IsGet": true,
+          "Name": "Content"
+        },
+        {
+          "Type": "IReadOnlyList<CmsSignerInfo>",
+          "IsGet": true,
+          "Name": "Signers"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IBuffer>",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "signers",
+              "Type": "IEnumerable<CmsSignerInfo>"
+            },
+            {
+              "Name": "certificates",
+              "Type": "IEnumerable<Certificate>"
+            }
+          ],
+          "Name": "GenerateSignatureAsync"
+        },
+        {
+          "ReturnType": "SignatureValidationResult",
+          "Name": "VerifySignature"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.CmsAttachedSignature"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "inputBlob",
+              "Type": "IBuffer"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "IReadOnlyList<Certificate>",
+          "IsGet": true,
+          "Name": "Certificates"
+        },
+        {
+          "Type": "IReadOnlyList<CmsSignerInfo>",
+          "IsGet": true,
+          "Name": "Signers"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IBuffer>",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "IInputStream"
+            },
+            {
+              "Name": "signers",
+              "Type": "IEnumerable<CmsSignerInfo>"
+            },
+            {
+              "Name": "certificates",
+              "Type": "IEnumerable<Certificate>"
+            }
+          ],
+          "Name": "GenerateSignatureAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<SignatureValidationResult>",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "IInputStream"
+            }
+          ],
+          "Name": "VerifySignatureAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.CmsDetachedSignature"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Certificate",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Certificate"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "HashAlgorithmName"
+        },
+        {
+          "Type": "CmsTimestampInfo",
+          "IsGet": true,
+          "Name": "TimestampInfo"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.CmsSignerInfo"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "IReadOnlyList<Certificate>",
+          "IsGet": true,
+          "Name": "Certificates"
+        },
+        {
+          "Type": "Certificate",
+          "IsGet": true,
+          "Name": "SigningCertificate"
+        },
+        {
+          "Type": "DateTimeOffset",
+          "IsGet": true,
+          "Name": "Timestamp"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.CmsTimestampInfo"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "AuthorityInformationAccessEnabled"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "CurrentTimeValidationEnabled"
+        },
+        {
+          "Type": "IList<String>",
+          "IsGet": true,
+          "Name": "EnhancedKeyUsages"
+        },
+        {
+          "Type": "IList<Certificate>",
+          "IsGet": true,
+          "Name": "ExclusiveTrustRoots"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NetworkRetrievalEnabled"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "RevocationCheckEnabled"
+        },
+        {
+          "Type": "DateTimeOffset",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ValidationTimestamp"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.ChainBuildingParameters"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "CertificateChainPolicy",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "CertificateChainPolicy"
+        },
+        {
+          "Type": "HostName",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ServerDnsName"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.ChainValidationParameters"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Dsa"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Ecdh"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Ecdh256"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Ecdh384"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Ecdh521"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Ecdsa"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Ecdsa256"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Ecdsa384"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Ecdsa521"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Rsa"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.KeyAlgorithmNames"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<String>",
+          "Parameters": [
+            {
+              "Name": "credential",
+              "Type": "String"
+            }
+          ],
+          "Name": "DecryptTpmAttestationCredentialAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "credential",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetTpmAttestationCredentialId"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.KeyAttestationHelper"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "NextGenerationCrededentialKeyStorageProvider"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "PlatformKeyStorageProvider"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "SmartcardKeyStorageProvider"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "SoftwareKeyStorageProvider"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.KeyStorageProviderNames"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ContainerNamePrefix"
+        },
+        {
+          "Type": "ExportOption",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Exportable"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "FriendlyName"
+        },
+        {
+          "Type": "InstallOptions",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "InstallOptions"
+        },
+        {
+          "Type": "KeyProtectionLevel",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "KeyProtectionLevel"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "KeyStorageProviderName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ReaderName"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.PfxImportParameters"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true,
+          "Name": "DistinguishedName"
+        },
+        {
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true,
+          "Name": "DnsName"
+        },
+        {
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true,
+          "Name": "EmailName"
+        },
+        {
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true,
+          "Name": "IPAddress"
+        },
+        {
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true,
+          "Name": "PrincipalName"
+        },
+        {
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true,
+          "Name": "Url"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.SubjectAlternativeNameInfo"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncOperation<String>",
+          "Parameters": [
+            {
+              "Name": "request",
+              "Type": "CertificateRequestProperties"
+            }
+          ],
+          "Name": "CreateRequestAsync"
+        },
+        {
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "pfxData",
+              "Type": "String"
+            },
+            {
+              "Name": "password",
+              "Type": "String"
+            },
+            {
+              "Name": "exportable",
+              "Type": "ExportOption"
+            },
+            {
+              "Name": "keyProtectionLevel",
+              "Type": "KeyProtectionLevel"
+            },
+            {
+              "Name": "installOption",
+              "Type": "InstallOptions"
+            },
+            {
+              "Name": "friendlyName",
+              "Type": "String"
+            }
+          ],
+          "Name": "ImportPfxDataAsync"
+        },
+        {
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "pfxData",
+              "Type": "String"
+            },
+            {
+              "Name": "password",
+              "Type": "String"
+            },
+            {
+              "Name": "exportable",
+              "Type": "ExportOption"
+            },
+            {
+              "Name": "keyProtectionLevel",
+              "Type": "KeyProtectionLevel"
+            },
+            {
+              "Name": "installOption",
+              "Type": "InstallOptions"
+            },
+            {
+              "Name": "friendlyName",
+              "Type": "String"
+            },
+            {
+              "Name": "keyStorageProvider",
+              "Type": "String"
+            }
+          ],
+          "Name": "ImportPfxDataAsync"
+        },
+        {
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "pfxData",
+              "Type": "String"
+            },
+            {
+              "Name": "password",
+              "Type": "String"
+            },
+            {
+              "Name": "pfxImportParameters",
+              "Type": "PfxImportParameters"
+            }
+          ],
+          "Name": "ImportPfxDataAsync"
+        },
+        {
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "certificate",
+              "Type": "String"
+            },
+            {
+              "Name": "installOption",
+              "Type": "InstallOptions"
+            }
+          ],
+          "Name": "InstallCertificateAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Certificates.UserCertificateEnrollmentManager"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "DsaSha1"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "DsaSha256"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "EcdsaP256Sha256"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "EcdsaP384Sha384"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "EcdsaP521Sha512"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "EcdsaSha256"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "EcdsaSha384"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "EcdsaSha512"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "RsaOaepSha1"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "RsaOaepSha256"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "RsaOaepSha384"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "RsaOaepSha512"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "RsaPkcs1"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "RsaSignPkcs1Sha1"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "RsaSignPkcs1Sha256"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "RsaSignPkcs1Sha384"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "RsaSignPkcs1Sha512"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "RsaSignPssSha1"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "RsaSignPssSha256"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "RsaSignPssSha384"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "RsaSignPssSha512"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "AlgorithmName"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "CryptographicKey",
+          "Parameters": [
+            {
+              "Name": "keySize",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "CreateKeyPair"
+        },
+        {
+          "ReturnType": "CryptographicKey",
+          "Parameters": [
+            {
+              "Name": "curveName",
+              "Type": "String"
+            }
+          ],
+          "Name": "CreateKeyPairWithCurveName"
+        },
+        {
+          "ReturnType": "CryptographicKey",
+          "Parameters": [
+            {
+              "Name": "parameters",
+              "Type": "Byte[]"
+            }
+          ],
+          "Name": "CreateKeyPairWithCurveParameters"
+        },
+        {
+          "ReturnType": "CryptographicKey",
+          "Parameters": [
+            {
+              "Name": "keyBlob",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "ImportKeyPair"
+        },
+        {
+          "ReturnType": "CryptographicKey",
+          "Parameters": [
+            {
+              "Name": "keyBlob",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "BlobType",
+              "Type": "CryptographicPrivateKeyBlobType"
+            }
+          ],
+          "Name": "ImportKeyPair"
+        },
+        {
+          "ReturnType": "CryptographicKey",
+          "Parameters": [
+            {
+              "Name": "keyBlob",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "ImportPublicKey"
+        },
+        {
+          "ReturnType": "CryptographicKey",
+          "Parameters": [
+            {
+              "Name": "keyBlob",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "BlobType",
+              "Type": "CryptographicPublicKeyBlobType"
+            }
+          ],
+          "Name": "ImportPublicKey"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "AsymmetricKeyAlgorithmProvider",
+          "Parameters": [
+            {
+              "Name": "algorithm",
+              "Type": "String"
+            }
+          ],
+          "Name": "OpenAlgorithm"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IBuffer",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "CryptographicKey"
+            },
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "iv",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "Decrypt"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IBuffer",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "CryptographicKey"
+            },
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "nonce",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "authenticationTag",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "authenticatedData",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "DecryptAndAuthenticate"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IBuffer>",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "CryptographicKey"
+            },
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "iv",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "DecryptAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IBuffer",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "CryptographicKey"
+            },
+            {
+              "Name": "parameters",
+              "Type": "KeyDerivationParameters"
+            },
+            {
+              "Name": "desiredKeySize",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "DeriveKeyMaterial"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IBuffer",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "CryptographicKey"
+            },
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "iv",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "Encrypt"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "EncryptedAndAuthenticatedData",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "CryptographicKey"
+            },
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "nonce",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "authenticatedData",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "EncryptAndAuthenticate"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IBuffer",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "CryptographicKey"
+            },
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "Sign"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IBuffer>",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "CryptographicKey"
+            },
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "SignAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IBuffer",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "CryptographicKey"
+            },
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "SignHashedData"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IBuffer>",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "CryptographicKey"
+            },
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "SignHashedDataAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "CryptographicKey"
+            },
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "signature",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "VerifySignature"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "CryptographicKey"
+            },
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "signature",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "VerifySignatureWithHashInput"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Core.CryptographicEngine"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "Append"
+        },
+        {
+          "ReturnType": "IBuffer",
+          "Name": "GetValueAndReset"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Core.CryptographicHash"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "KeySize"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IBuffer",
+          "Name": "Export"
+        },
+        {
+          "ReturnType": "IBuffer",
+          "Parameters": [
+            {
+              "Name": "BlobType",
+              "Type": "CryptographicPrivateKeyBlobType"
+            }
+          ],
+          "Name": "Export"
+        },
+        {
+          "ReturnType": "IBuffer",
+          "Name": "ExportPublicKey"
+        },
+        {
+          "ReturnType": "IBuffer",
+          "Parameters": [
+            {
+              "Name": "BlobType",
+              "Type": "CryptographicPublicKeyBlobType"
+            }
+          ],
+          "Name": "ExportPublicKey"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Core.CryptographicKey"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "IReadOnlyList<String>",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "AllEccCurveNames"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "NistP256"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "NistP384"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "NistP521"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Secp256k1"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Secp256r1"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Secp384r1"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Secp521r1"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "X962P192v1"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "X962P192v2"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "X962P192v3"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "X962P192v4"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "X962P239v1"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "X962P239v2"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "X962P239v3"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "X962P256v1"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Core.EccCurveNames"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "IBuffer",
+          "IsGet": true,
+          "Name": "AuthenticationTag"
+        },
+        {
+          "Type": "IBuffer",
+          "IsGet": true,
+          "Name": "EncryptedData"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Core.EncryptedAndAuthenticatedData"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Md5"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Sha1"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Sha256"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Sha384"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Sha512"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Core.HashAlgorithmNames"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "AlgorithmName"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "HashLength"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "CryptographicHash",
+          "Name": "CreateHash"
+        },
+        {
+          "ReturnType": "IBuffer",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "HashData"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "HashAlgorithmProvider",
+          "Parameters": [
+            {
+              "Name": "algorithm",
+              "Type": "String"
+            }
+          ],
+          "Name": "OpenAlgorithm"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Core.HashAlgorithmProvider"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "CapiKdfMd5"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "CapiKdfSha1"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "CapiKdfSha256"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "CapiKdfSha384"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "CapiKdfSha512"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Pbkdf2Md5"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Pbkdf2Sha1"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Pbkdf2Sha256"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Pbkdf2Sha384"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Pbkdf2Sha512"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Sp800108CtrHmacMd5"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Sp800108CtrHmacSha1"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Sp800108CtrHmacSha256"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Sp800108CtrHmacSha384"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Sp800108CtrHmacSha512"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Sp80056aConcatMd5"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Sp80056aConcatSha1"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Sp80056aConcatSha256"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Sp80056aConcatSha384"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Sp80056aConcatSha512"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "AlgorithmName"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "CryptographicKey",
+          "Parameters": [
+            {
+              "Name": "keyMaterial",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "CreateKey"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "KeyDerivationAlgorithmProvider",
+          "Parameters": [
+            {
+              "Name": "algorithm",
+              "Type": "String"
+            }
+          ],
+          "Name": "OpenAlgorithm"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Capi1KdfTargetAlgorithm",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Capi1KdfTargetAlgorithm"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "IterationCount"
+        },
+        {
+          "Type": "IBuffer",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "KdfGenericBinary"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "KeyDerivationParameters",
+          "Parameters": [
+            {
+              "Name": "capi1KdfTargetAlgorithm",
+              "Type": "Capi1KdfTargetAlgorithm"
+            }
+          ],
+          "Name": "BuildForCapi1Kdf"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "KeyDerivationParameters",
+          "Parameters": [
+            {
+              "Name": "pbkdf2Salt",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "iterationCount",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "BuildForPbkdf2"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "KeyDerivationParameters",
+          "Parameters": [
+            {
+              "Name": "label",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "context",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "BuildForSP800108"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "KeyDerivationParameters",
+          "Parameters": [
+            {
+              "Name": "algorithmId",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "partyUInfo",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "partyVInfo",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "suppPubInfo",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "suppPrivInfo",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "BuildForSP80056a"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Core.KeyDerivationParameters"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "AesCmac"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "HmacMd5"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "HmacSha1"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "HmacSha256"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "HmacSha384"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "HmacSha512"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Core.MacAlgorithmNames"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "AlgorithmName"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "MacLength"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "CryptographicHash",
+          "Parameters": [
+            {
+              "Name": "keyMaterial",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "CreateHash"
+        },
+        {
+          "ReturnType": "CryptographicKey",
+          "Parameters": [
+            {
+              "Name": "keyMaterial",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "CreateKey"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "MacAlgorithmProvider",
+          "Parameters": [
+            {
+              "Name": "algorithm",
+              "Type": "String"
+            }
+          ],
+          "Name": "OpenAlgorithm"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Core.MacAlgorithmProvider"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<CryptographicKey>",
+          "Parameters": [
+            {
+              "Name": "certificate",
+              "Type": "Certificate"
+            },
+            {
+              "Name": "hashAlgorithmName",
+              "Type": "String"
+            },
+            {
+              "Name": "padding",
+              "Type": "CryptographicPadding"
+            }
+          ],
+          "Name": "OpenKeyPairFromCertificateAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "CryptographicKey",
+          "Parameters": [
+            {
+              "Name": "certificate",
+              "Type": "Certificate"
+            },
+            {
+              "Name": "hashAlgorithmName",
+              "Type": "String"
+            },
+            {
+              "Name": "padding",
+              "Type": "CryptographicPadding"
+            }
+          ],
+          "Name": "OpenPublicKeyFromCertificate"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Core.PersistedKeyProvider"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "AesCbc"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "AesCbcPkcs7"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "AesCcm"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "AesEcb"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "AesEcbPkcs7"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "AesGcm"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "DesCbc"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "DesCbcPkcs7"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "DesEcb"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "DesEcbPkcs7"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Rc2Cbc"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Rc2CbcPkcs7"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Rc2Ecb"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Rc2EcbPkcs7"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Rc4"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "TripleDesCbc"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "TripleDesCbcPkcs7"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "TripleDesEcb"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "TripleDesEcbPkcs7"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Core.SymmetricAlgorithmNames"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "AlgorithmName"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "BlockLength"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "CryptographicKey",
+          "Parameters": [
+            {
+              "Name": "keyMaterial",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "CreateSymmetricKey"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "SymmetricKeyAlgorithmProvider",
+          "Parameters": [
+            {
+              "Name": "algorithm",
+              "Type": "String"
+            }
+          ],
+          "Name": "OpenAlgorithm"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "object1",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "object2",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "Compare"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "encoding",
+              "Type": "BinaryStringEncoding"
+            },
+            {
+              "Name": "buffer",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "ConvertBinaryToString"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IBuffer",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "String"
+            },
+            {
+              "Name": "encoding",
+              "Type": "BinaryStringEncoding"
+            }
+          ],
+          "Name": "ConvertStringToBinary"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "value",
+              "Type": "Byte[]&",
+              "Out": true
+            }
+          ],
+          "Name": "CopyToByteArray"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IBuffer",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Byte[]"
+            }
+          ],
+          "Name": "CreateFromByteArray"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IBuffer",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "String"
+            }
+          ],
+          "Name": "DecodeFromBase64String"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IBuffer",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "String"
+            }
+          ],
+          "Name": "DecodeFromHexString"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "EncodeToBase64String"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "EncodeToHexString"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IBuffer",
+          "Parameters": [
+            {
+              "Name": "length",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GenerateRandom"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "UInt32",
+          "Name": "GenerateRandomNumber"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.CryptographicBuffer"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {},
+        {
+          "Parameters": [
+            {
+              "Name": "protectionDescriptor",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncOperation<IBuffer>",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "ProtectAsync"
+        },
+        {
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "src",
+              "Type": "IInputStream"
+            },
+            {
+              "Name": "dest",
+              "Type": "IOutputStream"
+            }
+          ],
+          "Name": "ProtectStreamAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<IBuffer>",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "UnprotectAsync"
+        },
+        {
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "src",
+              "Type": "IInputStream"
+            },
+            {
+              "Name": "dest",
+              "Type": "IOutputStream"
+            }
+          ],
+          "Name": "UnprotectStreamAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Cryptography.DataProtection.DataProtectionProvider"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Identity"
+        },
+        {
+          "Type": "DataProtectionStatus",
+          "IsGet": true,
+          "Name": "Status"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.EnterpriseData.DataProtectionInfo"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<DataProtectionInfo>",
+          "Parameters": [
+            {
+              "Name": "protectedData",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "GetProtectionInfoAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<DataProtectionInfo>",
+          "Parameters": [
+            {
+              "Name": "protectedStream",
+              "Type": "IInputStream"
+            }
+          ],
+          "Name": "GetStreamProtectionInfoAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IBuffer>",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "identity",
+              "Type": "String"
+            }
+          ],
+          "Name": "ProtectAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "unprotectedStream",
+              "Type": "IInputStream"
+            },
+            {
+              "Name": "identity",
+              "Type": "String"
+            },
+            {
+              "Name": "protectedStream",
+              "Type": "IOutputStream"
+            }
+          ],
+          "Name": "ProtectStreamAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IBuffer>",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "UnprotectAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "protectedStream",
+              "Type": "IInputStream"
+            },
+            {
+              "Name": "unprotectedStream",
+              "Type": "IOutputStream"
+            }
+          ],
+          "Name": "UnprotectStreamAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.EnterpriseData.DataProtectionManager"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "IsRoamable"
+        },
+        {
+          "Type": "FileProtectionStatus",
+          "IsGet": true,
+          "Name": "Status"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.EnterpriseData.FileProtectionInfo"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "IStorageItem"
+            },
+            {
+              "Name": "target",
+              "Type": "IStorageItem"
+            }
+          ],
+          "Name": "CopyProtectionAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<FileProtectionInfo>",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "IStorageItem"
+            }
+          ],
+          "Name": "GetProtectionInfoAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<ProtectedContainerImportResult>",
+          "Parameters": [
+            {
+              "Name": "containerFile",
+              "Type": "IStorageFile"
+            }
+          ],
+          "Name": "LoadFileFromContainerAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<ProtectedContainerImportResult>",
+          "Parameters": [
+            {
+              "Name": "containerFile",
+              "Type": "IStorageFile"
+            },
+            {
+              "Name": "target",
+              "Type": "IStorageItem"
+            }
+          ],
+          "Name": "LoadFileFromContainerAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<FileProtectionInfo>",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "IStorageItem"
+            },
+            {
+              "Name": "identity",
+              "Type": "String"
+            }
+          ],
+          "Name": "ProtectAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<ProtectedContainerExportResult>",
+          "Parameters": [
+            {
+              "Name": "protectedFile",
+              "Type": "IStorageFile"
+            }
+          ],
+          "Name": "SaveFileAsContainerAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.EnterpriseData.FileProtectionManager"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "sourceStorageItem",
+              "Type": "IStorageItem"
+            },
+            {
+              "Name": "targetStorageItem",
+              "Type": "IStorageItem"
+            }
+          ],
+          "Name": "CopyProtectionAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<FileProtectionStatus>",
+          "Parameters": [
+            {
+              "Name": "storageItem",
+              "Type": "IStorageItem"
+            }
+          ],
+          "Name": "GetStatusAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<FileProtectionStatus>",
+          "Parameters": [
+            {
+              "Name": "storageItem",
+              "Type": "IStorageItem"
+            },
+            {
+              "Name": "enterpriseIdentity",
+              "Type": "String"
+            }
+          ],
+          "Name": "ProtectAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "enterpriseIdentity",
+              "Type": "String"
+            }
+          ],
+          "Name": "Revoke"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.EnterpriseData.FileRevocationManager"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "StorageFile",
+          "IsGet": true,
+          "Name": "File"
+        },
+        {
+          "Type": "ProtectedImportExportStatus",
+          "IsGet": true,
+          "Name": "Status"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.EnterpriseData.ProtectedContainerExportResult"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "StorageFile",
+          "IsGet": true,
+          "Name": "File"
+        },
+        {
+          "Type": "ProtectedImportExportStatus",
+          "IsGet": true,
+          "Name": "Status"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.EnterpriseData.ProtectedContainerImportResult"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true,
+          "Name": "Identities"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.EnterpriseData.ProtectionPolicyEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Identity"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Name": "ClearProcessUIPolicy"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "ThreadNetworkContext",
+          "Parameters": [
+            {
+              "Name": "identity",
+              "Type": "String"
+            }
+          ],
+          "Name": "CreateCurrentThreadNetworkContext"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "ProtectionPolicyManager",
+          "Name": "GetForCurrentView"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<String>",
+          "Parameters": [
+            {
+              "Name": "endpointHost",
+              "Type": "HostName"
+            }
+          ],
+          "Name": "GetPrimaryManagedIdentityForNetworkEndpointAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "identity",
+              "Type": "String"
+            }
+          ],
+          "Name": "IsIdentityManaged"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "identity",
+              "Type": "String"
+            }
+          ],
+          "Name": "RevokeContent"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "identity",
+              "Type": "String"
+            }
+          ],
+          "Name": "TryApplyProcessUIPolicy"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "EventHandler<ProtectionPolicyEventArgs>",
+          "IsStatic": true,
+          "Name": "ProtectedAccessResumed"
+        },
+        {
+          "Type": "EventHandler<ProtectionPolicyEventArgs>",
+          "IsStatic": true,
+          "Name": "ProtectedAccessSuspending"
+        },
+        {
+          "Type": "EventHandler<ProtectionPolicyEventArgs>",
+          "IsStatic": true,
+          "Name": "ProtectedContentRevoked"
+        }
+      ],
+      "Name": "Windows.Security.EnterpriseData.ProtectionPolicyManager"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IDisposable"
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "Dispose"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.EnterpriseData.ThreadNetworkContext"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "FriendlyName"
+        },
+        {
+          "Type": "Guid",
+          "IsGet": true,
+          "Name": "Id"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "OperatingSystem"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "SystemFirmwareVersion"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "SystemHardwareVersion"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "SystemManufacturer"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "SystemProductName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "SystemSku"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "DisallowConvenienceLogon"
+        },
+        {
+          "Type": "TimeSpan",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "MaxInactivityTimeLock"
+        },
+        {
+          "Type": "Byte",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "MaxPasswordFailedAttempts"
+        },
+        {
+          "Type": "Byte",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "MinPasswordComplexCharacters"
+        },
+        {
+          "Type": "Byte",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "MinPasswordLength"
+        },
+        {
+          "Type": "TimeSpan",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "PasswordExpiration"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "PasswordHistory"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "RequireEncryption"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncOperation<EasComplianceResults>",
+          "Name": "ApplyAsync"
+        },
+        {
+          "ReturnType": "EasComplianceResults",
+          "Name": "CheckCompliance"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.ExchangeActiveSyncProvisioning.EasClientSecurityPolicy"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "Compliant"
+        },
+        {
+          "Type": "EasDisallowConvenienceLogonResult",
+          "IsGet": true,
+          "Name": "DisallowConvenienceLogonResult"
+        },
+        {
+          "Type": "EasEncryptionProviderType",
+          "IsGet": true,
+          "Name": "EncryptionProviderType"
+        },
+        {
+          "Type": "EasMaxInactivityTimeLockResult",
+          "IsGet": true,
+          "Name": "MaxInactivityTimeLockResult"
+        },
+        {
+          "Type": "EasMaxPasswordFailedAttemptsResult",
+          "IsGet": true,
+          "Name": "MaxPasswordFailedAttemptsResult"
+        },
+        {
+          "Type": "EasMinPasswordComplexCharactersResult",
+          "IsGet": true,
+          "Name": "MinPasswordComplexCharactersResult"
+        },
+        {
+          "Type": "EasMinPasswordLengthResult",
+          "IsGet": true,
+          "Name": "MinPasswordLengthResult"
+        },
+        {
+          "Type": "EasPasswordExpirationResult",
+          "IsGet": true,
+          "Name": "PasswordExpirationResult"
+        },
+        {
+          "Type": "EasPasswordHistoryResult",
+          "IsGet": true,
+          "Name": "PasswordHistoryResult"
+        },
+        {
+          "Type": "EasRequireEncryptionResult",
+          "IsGet": true,
+          "Name": "RequireEncryptionResult"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.ExchangeActiveSyncProvisioning.EasComplianceResults"
+    }
+  ],
+  "Structs": [
+    {
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.ExchangeActiveSyncProvisioning.EasContract"
+    }
+  ],
+  "Interfaces": [
+    {
+      "Interfaces": [],
+      "Properties": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "ReportCompleted"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "WebProviderError"
+            }
+          ],
+          "Name": "ReportError"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.IWebAccountProviderBaseReportOperation"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Type": "WebAccountProviderOperationKind",
+          "IsGet": true,
+          "Name": "Kind"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.IWebAccountProviderOperation"
+    },
+    {
+      "Interfaces": [
+        "IWebAccountProviderBaseReportOperation"
+      ],
+      "Properties": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "ReportUserInteractionRequired"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "WebProviderError"
+            }
+          ],
+          "Name": "ReportUserInteractionRequired"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.IWebAccountProviderSilentReportOperation"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Type": "IWebAccountProviderOperation",
+          "IsGet": true,
+          "Name": "Operation"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.IWebAccountProviderTokenObjects"
+    },
+    {
+      "Interfaces": [
+        "IWebAccountProviderOperation"
+      ],
+      "Properties": [
+        {
+          "Type": "DateTimeOffset",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "CacheExpirationTime"
+        },
+        {
+          "Type": "WebProviderTokenRequest",
+          "IsGet": true,
+          "Name": "ProviderRequest"
+        },
+        {
+          "Type": "IList<WebProviderTokenResponse>",
+          "IsGet": true,
+          "Name": "ProviderResponses"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.IWebAccountProviderTokenOperation"
+    },
+    {
+      "Interfaces": [
+        "IWebAccountProviderBaseReportOperation"
+      ],
+      "Properties": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "ReportUserCanceled"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Security.Authentication.Web.Provider.IWebAccountProviderUIReportOperation"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Type": "WebAccountState",
+          "IsGet": true,
+          "Name": "State"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "UserName"
+        },
+        {
+          "Type": "WebAccountProvider",
+          "IsGet": true,
+          "Name": "WebAccountProvider"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Security.Credentials.IWebAccount"
+    }
+  ],
+  "Enums": [
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "PromptIfNeeded"
+        },
+        {
+          "Value": "1",
+          "Name": "RetypeCredentials"
+        },
+        {
+          "Value": "2",
+          "Name": "DoNotPrompt"
+        }
+      ],
+      "Name": "Windows.Security.Authentication.OnlineId.CredentialPromptType"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Default"
+        },
+        {
+          "Value": "1",
+          "Name": "ForceAuthentication"
+        }
+      ],
+      "Name": "Windows.Security.Authentication.Web.Core.WebTokenRequestPromptType"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Success"
+        },
+        {
+          "Value": "1",
+          "Name": "UserCancel"
+        },
+        {
+          "Value": "2",
+          "Name": "AccountSwitch"
+        },
+        {
+          "Value": "3",
+          "Name": "UserInteractionRequired"
+        },
+        {
+          "Value": "4",
+          "Name": "AccountProviderNotAvailable"
+        },
+        {
+          "Value": "5",
+          "Name": "ProviderError"
+        }
+      ],
+      "Name": "Windows.Security.Authentication.Web.Core.WebTokenRequestStatus"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "IdOnly"
+        },
+        {
+          "Value": "1",
+          "Name": "IdAndProperties"
+        }
+      ],
+      "Name": "Windows.Security.Authentication.Web.Provider.WebAccountClientViewType"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "RequestToken"
+        },
+        {
+          "Value": "1",
+          "Name": "GetTokenSilently"
+        },
+        {
+          "Value": "2",
+          "Name": "AddAccount"
+        },
+        {
+          "Value": "3",
+          "Name": "ManageAccount"
+        },
+        {
+          "Value": "4",
+          "Name": "DeleteAccount"
+        },
+        {
+          "Value": "5",
+          "Name": "RetrieveCookies"
+        },
+        {
+          "Value": "6",
+          "Name": "SignOutAccount"
+        }
+      ],
+      "Name": "Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "PerUser"
+        },
+        {
+          "Value": "1",
+          "Name": "PerApplication"
+        }
+      ],
+      "Name": "Windows.Security.Authentication.Web.Provider.WebAccountScope"
+    },
+    {
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Default"
+        },
+        {
+          "Value": "1",
+          "Name": "New"
+        }
+      ],
+      "Name": "Windows.Security.Authentication.Web.Provider.WebAccountSelectionOptions"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Rsa2048"
+        },
+        {
+          "Value": "1",
+          "Name": "EcdsaP256"
+        }
+      ],
+      "Name": "Windows.Security.Authentication.Web.TokenBindingKeyType"
+    },
+    {
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "None"
+        },
+        {
+          "Value": "1",
+          "Name": "SilentMode"
+        },
+        {
+          "Value": "2",
+          "Name": "UseTitle"
+        },
+        {
+          "Value": "4",
+          "Name": "UseHttpPost"
+        },
+        {
+          "Value": "8",
+          "Name": "UseCorporateNetwork"
+        }
+      ],
+      "Name": "Windows.Security.Authentication.Web.WebAuthenticationOptions"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Success"
+        },
+        {
+          "Value": "1",
+          "Name": "UserCancel"
+        },
+        {
+          "Value": "2",
+          "Name": "ErrorHttp"
+        }
+      ],
+      "Name": "Windows.Security.Authentication.Web.WebAuthenticationStatus"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Success"
+        },
+        {
+          "Value": "1",
+          "Name": "UnknownError"
+        },
+        {
+          "Value": "2",
+          "Name": "NotSupported"
+        },
+        {
+          "Value": "3",
+          "Name": "TemporaryFailure"
+        }
+      ],
+      "Name": "Windows.Security.Credentials.KeyCredentialAttestationStatus"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "ReplaceExisting"
+        },
+        {
+          "Value": "1",
+          "Name": "FailIfExists"
+        }
+      ],
+      "Name": "Windows.Security.Credentials.KeyCredentialCreationOption"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Success"
+        },
+        {
+          "Value": "1",
+          "Name": "UnknownError"
+        },
+        {
+          "Value": "2",
+          "Name": "NotFound"
+        },
+        {
+          "Value": "3",
+          "Name": "UserCanceled"
+        },
+        {
+          "Value": "4",
+          "Name": "CredentialExists"
+        },
+        {
+          "Value": "5",
+          "Name": "SecurityDeviceLocked"
+        },
+        {
+          "Value": "6",
+          "Name": "SecurityDeviceFailure"
+        }
+      ],
+      "Name": "Windows.Security.Credentials.KeyCredentialStatus"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Basic"
+        },
+        {
+          "Value": "1",
+          "Name": "Digest"
+        },
+        {
+          "Value": "2",
+          "Name": "Ntlm"
+        },
+        {
+          "Value": "3",
+          "Name": "Kerberos"
+        },
+        {
+          "Value": "4",
+          "Name": "Negotiate"
+        },
+        {
+          "Value": "5",
+          "Name": "CredSsp"
+        },
+        {
+          "Value": "6",
+          "Name": "Custom"
+        }
+      ],
+      "Name": "Windows.Security.Credentials.UI.AuthenticationProtocol"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Unselected"
+        },
+        {
+          "Value": "1",
+          "Name": "Selected"
+        },
+        {
+          "Value": "2",
+          "Name": "Hidden"
+        }
+      ],
+      "Name": "Windows.Security.Credentials.UI.CredentialSaveOption"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Verified"
+        },
+        {
+          "Value": "1",
+          "Name": "DeviceNotPresent"
+        },
+        {
+          "Value": "2",
+          "Name": "NotConfiguredForUser"
+        },
+        {
+          "Value": "3",
+          "Name": "DisabledByPolicy"
+        },
+        {
+          "Value": "4",
+          "Name": "DeviceBusy"
+        },
+        {
+          "Value": "5",
+          "Name": "RetriesExhausted"
+        },
+        {
+          "Value": "6",
+          "Name": "Canceled"
+        }
+      ],
+      "Name": "Windows.Security.Credentials.UI.UserConsentVerificationResult"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Available"
+        },
+        {
+          "Value": "1",
+          "Name": "DeviceNotPresent"
+        },
+        {
+          "Value": "2",
+          "Name": "NotConfiguredForUser"
+        },
+        {
+          "Value": "3",
+          "Name": "DisabledByPolicy"
+        },
+        {
+          "Value": "4",
+          "Name": "DeviceBusy"
+        }
+      ],
+      "Name": "Windows.Security.Credentials.UI.UserConsentVerifierAvailability"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "64",
+          "Name": "Size64x64"
+        },
+        {
+          "Value": "208",
+          "Name": "Size208x208"
+        },
+        {
+          "Value": "424",
+          "Name": "Size424x424"
+        },
+        {
+          "Value": "1080",
+          "Name": "Size1080x1080"
+        }
+      ],
+      "Name": "Windows.Security.Credentials.WebAccountPictureSize"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "None"
+        },
+        {
+          "Value": "1",
+          "Name": "Connected"
+        },
+        {
+          "Value": "2",
+          "Name": "Error"
+        }
+      ],
+      "Name": "Windows.Security.Credentials.WebAccountState"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Utf8"
+        },
+        {
+          "Value": "1",
+          "Name": "Utf16LE"
+        },
+        {
+          "Value": "2",
+          "Name": "Utf16BE"
+        }
+      ],
+      "Name": "Windows.Security.Cryptography.BinaryStringEncoding"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Base"
+        },
+        {
+          "Value": "1",
+          "Name": "Ssl"
+        },
+        {
+          "Value": "2",
+          "Name": "NTAuthentication"
+        },
+        {
+          "Value": "3",
+          "Name": "MicrosoftRoot"
+        }
+      ],
+      "Name": "Windows.Security.Cryptography.Certificates.CertificateChainPolicy"
+    },
+    {
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "None"
+        },
+        {
+          "Value": "1",
+          "Name": "Decryption"
+        },
+        {
+          "Value": "2",
+          "Name": "Signing"
+        },
+        {
+          "Value": "4",
+          "Name": "KeyAgreement"
+        },
+        {
+          "Value": "16777215",
+          "Name": "All"
+        }
+      ],
+      "Name": "Windows.Security.Cryptography.Certificates.EnrollKeyUsages"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "NotExportable"
+        },
+        {
+          "Value": "1",
+          "Name": "Exportable"
+        }
+      ],
+      "Name": "Windows.Security.Cryptography.Certificates.ExportOption"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Success"
+        },
+        {
+          "Value": "1",
+          "Name": "Untrusted"
+        },
+        {
+          "Value": "2",
+          "Name": "Revoked"
+        },
+        {
+          "Value": "3",
+          "Name": "Expired"
+        },
+        {
+          "Value": "4",
+          "Name": "IncompleteChain"
+        },
+        {
+          "Value": "5",
+          "Name": "InvalidSignature"
+        },
+        {
+          "Value": "6",
+          "Name": "WrongUsage"
+        },
+        {
+          "Value": "7",
+          "Name": "InvalidName"
+        },
+        {
+          "Value": "8",
+          "Name": "InvalidCertificateAuthorityPolicy"
+        },
+        {
+          "Value": "9",
+          "Name": "BasicConstraintsError"
+        },
+        {
+          "Value": "10",
+          "Name": "UnknownCriticalExtension"
+        },
+        {
+          "Value": "11",
+          "Name": "RevocationInformationMissing"
+        },
+        {
+          "Value": "12",
+          "Name": "RevocationFailure"
+        },
+        {
+          "Value": "13",
+          "Name": "OtherErrors"
+        }
+      ],
+      "Name": "Windows.Security.Cryptography.Certificates.ChainValidationResult"
+    },
+    {
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "None"
+        },
+        {
+          "Value": "1",
+          "Name": "DeleteExpired"
+        }
+      ],
+      "Name": "Windows.Security.Cryptography.Certificates.InstallOptions"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "NoConsent"
+        },
+        {
+          "Value": "1",
+          "Name": "ConsentOnly"
+        },
+        {
+          "Value": "2",
+          "Name": "ConsentWithPassword"
+        },
+        {
+          "Value": "3",
+          "Name": "ConsentWithFingerprint"
+        }
+      ],
+      "Name": "Windows.Security.Cryptography.Certificates.KeyProtectionLevel"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Invalid"
+        },
+        {
+          "Value": "2048",
+          "Name": "Rsa2048"
+        },
+        {
+          "Value": "4096",
+          "Name": "Rsa4096"
+        }
+      ],
+      "Name": "Windows.Security.Cryptography.Certificates.KeySize"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Success"
+        },
+        {
+          "Value": "1",
+          "Name": "InvalidParameter"
+        },
+        {
+          "Value": "2",
+          "Name": "BadMessage"
+        },
+        {
+          "Value": "3",
+          "Name": "InvalidSignature"
+        },
+        {
+          "Value": "4",
+          "Name": "OtherErrors"
+        }
+      ],
+      "Name": "Windows.Security.Cryptography.Certificates.SignatureValidationResult"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "NotAes"
+        },
+        {
+          "Value": "1",
+          "Name": "Aes"
+        }
+      ],
+      "Name": "Windows.Security.Cryptography.Core.Capi1KdfTargetAlgorithm"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "None"
+        },
+        {
+          "Value": "1",
+          "Name": "RsaOaep"
+        },
+        {
+          "Value": "2",
+          "Name": "RsaPkcs1V15"
+        },
+        {
+          "Value": "3",
+          "Name": "RsaPss"
+        }
+      ],
+      "Name": "Windows.Security.Cryptography.Core.CryptographicPadding"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Pkcs8RawPrivateKeyInfo"
+        },
+        {
+          "Value": "1",
+          "Name": "Pkcs1RsaPrivateKey"
+        },
+        {
+          "Value": "2",
+          "Name": "BCryptPrivateKey"
+        },
+        {
+          "Value": "3",
+          "Name": "Capi1PrivateKey"
+        },
+        {
+          "Value": "4",
+          "Name": "BCryptEccFullPrivateKey"
+        }
+      ],
+      "Name": "Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "X509SubjectPublicKeyInfo"
+        },
+        {
+          "Value": "1",
+          "Name": "Pkcs1RsaPublicKey"
+        },
+        {
+          "Value": "2",
+          "Name": "BCryptPublicKey"
+        },
+        {
+          "Value": "3",
+          "Name": "Capi1PublicKey"
+        },
+        {
+          "Value": "4",
+          "Name": "BCryptEccFullPublicKey"
+        }
+      ],
+      "Name": "Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "ProtectedToOtherIdentity"
+        },
+        {
+          "Value": "1",
+          "Name": "Protected"
+        },
+        {
+          "Value": "2",
+          "Name": "Revoked"
+        }
+      ],
+      "Name": "Windows.Security.EnterpriseData.DataProtectionStatus"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Undetermined"
+        },
+        {
+          "Value": "0",
+          "Name": "Unknown"
+        },
+        {
+          "Value": "1",
+          "Name": "Unprotected"
+        },
+        {
+          "Value": "2",
+          "Name": "Revoked"
+        },
+        {
+          "Value": "3",
+          "Name": "Protected"
+        },
+        {
+          "Value": "4",
+          "Name": "ProtectedByOtherUser"
+        },
+        {
+          "Value": "5",
+          "Name": "ProtectedToOtherEnterprise"
+        },
+        {
+          "Value": "6",
+          "Name": "NotProtectable"
+        },
+        {
+          "Value": "7",
+          "Name": "ProtectedToOtherIdentity"
+        }
+      ],
+      "Name": "Windows.Security.EnterpriseData.FileProtectionStatus"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Ok"
+        },
+        {
+          "Value": "1",
+          "Name": "Undetermined"
+        },
+        {
+          "Value": "2",
+          "Name": "Unprotected"
+        },
+        {
+          "Value": "3",
+          "Name": "Revoked"
+        },
+        {
+          "Value": "4",
+          "Name": "NotRoamable"
+        },
+        {
+          "Value": "5",
+          "Name": "ProtectedToOtherIdentity"
+        }
+      ],
+      "Name": "Windows.Security.EnterpriseData.ProtectedImportExportStatus"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "NotEvaluated"
+        },
+        {
+          "Value": "1",
+          "Name": "Compliant"
+        },
+        {
+          "Value": "2",
+          "Name": "CanBeCompliant"
+        },
+        {
+          "Value": "3",
+          "Name": "RequestedPolicyIsStricter"
+        }
+      ],
+      "Name": "Windows.Security.ExchangeActiveSyncProvisioning.EasDisallowConvenienceLogonResult"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "NotEvaluated"
+        },
+        {
+          "Value": "1",
+          "Name": "WindowsEncryption"
+        },
+        {
+          "Value": "2",
+          "Name": "OtherEncryption"
+        }
+      ],
+      "Name": "Windows.Security.ExchangeActiveSyncProvisioning.EasEncryptionProviderType"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "NotEvaluated"
+        },
+        {
+          "Value": "1",
+          "Name": "Compliant"
+        },
+        {
+          "Value": "2",
+          "Name": "CanBeCompliant"
+        },
+        {
+          "Value": "3",
+          "Name": "RequestedPolicyIsStricter"
+        },
+        {
+          "Value": "4",
+          "Name": "InvalidParameter"
+        }
+      ],
+      "Name": "Windows.Security.ExchangeActiveSyncProvisioning.EasMaxInactivityTimeLockResult"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "NotEvaluated"
+        },
+        {
+          "Value": "1",
+          "Name": "Compliant"
+        },
+        {
+          "Value": "2",
+          "Name": "CanBeCompliant"
+        },
+        {
+          "Value": "3",
+          "Name": "RequestedPolicyIsStricter"
+        },
+        {
+          "Value": "4",
+          "Name": "InvalidParameter"
+        }
+      ],
+      "Name": "Windows.Security.ExchangeActiveSyncProvisioning.EasMaxPasswordFailedAttemptsResult"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "NotEvaluated"
+        },
+        {
+          "Value": "1",
+          "Name": "Compliant"
+        },
+        {
+          "Value": "2",
+          "Name": "CanBeCompliant"
+        },
+        {
+          "Value": "3",
+          "Name": "RequestedPolicyIsStricter"
+        },
+        {
+          "Value": "4",
+          "Name": "RequestedPolicyNotEnforceable"
+        },
+        {
+          "Value": "5",
+          "Name": "InvalidParameter"
+        },
+        {
+          "Value": "6",
+          "Name": "CurrentUserHasBlankPassword"
+        },
+        {
+          "Value": "7",
+          "Name": "AdminsHaveBlankPassword"
+        },
+        {
+          "Value": "8",
+          "Name": "UserCannotChangePassword"
+        },
+        {
+          "Value": "9",
+          "Name": "AdminsCannotChangePassword"
+        },
+        {
+          "Value": "10",
+          "Name": "LocalControlledUsersCannotChangePassword"
+        },
+        {
+          "Value": "11",
+          "Name": "ConnectedAdminsProviderPolicyIsWeak"
+        },
+        {
+          "Value": "12",
+          "Name": "ConnectedUserProviderPolicyIsWeak"
+        },
+        {
+          "Value": "13",
+          "Name": "ChangeConnectedAdminsPassword"
+        },
+        {
+          "Value": "14",
+          "Name": "ChangeConnectedUserPassword"
+        }
+      ],
+      "Name": "Windows.Security.ExchangeActiveSyncProvisioning.EasMinPasswordComplexCharactersResult"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "NotEvaluated"
+        },
+        {
+          "Value": "1",
+          "Name": "Compliant"
+        },
+        {
+          "Value": "2",
+          "Name": "CanBeCompliant"
+        },
+        {
+          "Value": "3",
+          "Name": "RequestedPolicyIsStricter"
+        },
+        {
+          "Value": "4",
+          "Name": "RequestedPolicyNotEnforceable"
+        },
+        {
+          "Value": "5",
+          "Name": "InvalidParameter"
+        },
+        {
+          "Value": "6",
+          "Name": "CurrentUserHasBlankPassword"
+        },
+        {
+          "Value": "7",
+          "Name": "AdminsHaveBlankPassword"
+        },
+        {
+          "Value": "8",
+          "Name": "UserCannotChangePassword"
+        },
+        {
+          "Value": "9",
+          "Name": "AdminsCannotChangePassword"
+        },
+        {
+          "Value": "10",
+          "Name": "LocalControlledUsersCannotChangePassword"
+        },
+        {
+          "Value": "11",
+          "Name": "ConnectedAdminsProviderPolicyIsWeak"
+        },
+        {
+          "Value": "12",
+          "Name": "ConnectedUserProviderPolicyIsWeak"
+        },
+        {
+          "Value": "13",
+          "Name": "ChangeConnectedAdminsPassword"
+        },
+        {
+          "Value": "14",
+          "Name": "ChangeConnectedUserPassword"
+        }
+      ],
+      "Name": "Windows.Security.ExchangeActiveSyncProvisioning.EasMinPasswordLengthResult"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "NotEvaluated"
+        },
+        {
+          "Value": "1",
+          "Name": "Compliant"
+        },
+        {
+          "Value": "2",
+          "Name": "CanBeCompliant"
+        },
+        {
+          "Value": "3",
+          "Name": "RequestedPolicyIsStricter"
+        },
+        {
+          "Value": "4",
+          "Name": "RequestedExpirationIncompatible"
+        },
+        {
+          "Value": "5",
+          "Name": "InvalidParameter"
+        },
+        {
+          "Value": "6",
+          "Name": "UserCannotChangePassword"
+        },
+        {
+          "Value": "7",
+          "Name": "AdminsCannotChangePassword"
+        },
+        {
+          "Value": "8",
+          "Name": "LocalControlledUsersCannotChangePassword"
+        }
+      ],
+      "Name": "Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "NotEvaluated"
+        },
+        {
+          "Value": "1",
+          "Name": "Compliant"
+        },
+        {
+          "Value": "2",
+          "Name": "CanBeCompliant"
+        },
+        {
+          "Value": "3",
+          "Name": "RequestedPolicyIsStricter"
+        },
+        {
+          "Value": "4",
+          "Name": "InvalidParameter"
+        }
+      ],
+      "Name": "Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordHistoryResult"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "NotEvaluated"
+        },
+        {
+          "Value": "1",
+          "Name": "Compliant"
+        },
+        {
+          "Value": "2",
+          "Name": "CanBeCompliant"
+        },
+        {
+          "Value": "3",
+          "Name": "NotProvisionedOnAllVolumes"
+        },
+        {
+          "Value": "4",
+          "Name": "DeFixedDataNotSupported"
+        },
+        {
+          "Value": "4",
+          "Name": "FixedDataNotSupported"
+        },
+        {
+          "Value": "5",
+          "Name": "DeHardwareNotCompliant"
+        },
+        {
+          "Value": "5",
+          "Name": "HardwareNotCompliant"
+        },
+        {
+          "Value": "6",
+          "Name": "DeWinReNotConfigured"
+        },
+        {
+          "Value": "6",
+          "Name": "LockNotConfigured"
+        },
+        {
+          "Value": "7",
+          "Name": "DeProtectionSuspended"
+        },
+        {
+          "Value": "7",
+          "Name": "ProtectionSuspended"
+        },
+        {
+          "Value": "8",
+          "Name": "DeOsVolumeNotProtected"
+        },
+        {
+          "Value": "8",
+          "Name": "OsVolumeNotProtected"
+        },
+        {
+          "Value": "9",
+          "Name": "DeProtectionNotYetEnabled"
+        },
+        {
+          "Value": "9",
+          "Name": "ProtectionNotYetEnabled"
+        },
+        {
+          "Value": "10",
+          "Name": "NoFeatureLicense"
+        },
+        {
+          "Value": "11",
+          "Name": "OsNotProtected"
+        },
+        {
+          "Value": "12",
+          "Name": "UnexpectedFailure"
+        }
+      ],
+      "Name": "Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult"
+    }
+  ],
+  "Delegates": []
+}

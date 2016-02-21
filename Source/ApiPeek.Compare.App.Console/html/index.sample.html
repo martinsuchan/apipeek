@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Martin Suchan">
+	<title>WP Diff</title>
+	<style>
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+}
+
+li 
+{ 
+	position: relative; 
+	margin-left: -15px;
+	list-style: none;
+}
+li img
+{ 
+	vertical-align: middle;
+	margin: 0 2px 0 0;
+}
+li.file
+{
+	margin-left: -10px !important;
+}
+li.file p
+{
+	display: inline;
+	font-family: monospace;
+	font-size: 16px;
+	margin-left: 4px;
+}
+
+li input
+{
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+	li input + ol
+	{
+		background: url(toggle-small-expand.png) 40px 0 no-repeat;
+		margin: -1.1em 0 0 -44px; /* 15px */
+		height: 1em;
+	}
+	li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+li label
+{
+	background: url(folder-horizontal.png) 15px 1px no-repeat;
+	cursor: pointer;
+	display: block;
+	padding-left: 37px;
+	font-family: monospace;
+	font-size: 16px;
+}
+
+li input:checked + ol
+{
+	background: url(toggle-small.png) 40px 5px no-repeat;
+	margin: -1.4em 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+	li input:checked + ol > li { display: block; margin: 0 0 0.125em;  /* 2px */}
+	li input:checked + ol > li:last-child { margin: 0 0 0.063em; /* 1px */ }
+</style>
+</head>
+<body>
+	
+	<ol class="tree">
+		<li>
+			<label for="folder1">Windows</label> <input type="checkbox" checked id="folder1" /> 
+			<ol>
+				<li class="file"><img src="added.png"/><img src="class.gif"/><p>File 1</p></li>
+				<li class="file"><img src="removed.png"/><img src="class.gif"/><p>File 1</p></li>
+				<li class="file"><img src="changed.png"/><img src="class.gif"/><p>File 1</p></li>
+				<li class="file"><img src="changed.png"/><img src="class.gif"/><p>File 1</p></li>
+				<li class="file"><img src="changed.png"/><img src="class.gif"/><p>File 1</p></li>
+				<li>
+					<label for="subfolder1">Subfolder 1</label> <input type="checkbox" id="subfolder1" /> 
+					<ol>
+						<li class="file"><a href="">Filey 1</a></li>
+						<li>
+							<label for="subsubfolder1">Subfolder 1</label> <input type="checkbox" id="subsubfolder1" /> 
+							<ol>
+								<li class="file"><a href="">File 1</a></li>
+								<li>
+									<label for="subsubfolder2">Subfolder 1</label> <input type="checkbox" id="subsubfolder2" /> 
+									<ol>
+										<li class="file"><a href="">Subfile 1</a></li>
+										<li class="file"><a href="">Subfile 2</a></li>
+										<li class="file"><a href="">Subfile 3</a></li>
+										<li class="file"><a href="">Subfile 4</a></li>
+										<li class="file"><a href="">Subfile 5</a></li>
+										<li class="file"><a href="">Subfile 6</a></li>
+									</ol>
+								</li>
+							</ol>
+						</li>
+						<li class="file"><a href="">File 3</a></li>
+						<li class="file"><a href="">File 4</a></li>
+						<li class="file"><a href="">File 5</a></li>
+						<li class="file"><a href="">File 6</a></li>
+					</ol>
+				</li>
+			</ol>
+		</li>
+		<li>
+			<label for="folder2">Folder 2</label> <input type="checkbox" id="folder2" /> 
+			<ol>
+				<li class="file"><a href="">File 1</a></li>
+				<li>
+					<label for="subfolder2">Subfolder 1</label> <input type="checkbox" id="subfolder2" /> 
+					<ol>
+						<li class="file"><a href="">Subfile 1</a></li>
+						<li class="file"><a href="">Subfile 2</a></li>
+						<li class="file"><a href="">Subfile 3</a></li>
+						<li class="file"><a href="">Subfile 4</a></li>
+						<li class="file"><a href="">Subfile 5</a></li>
+						<li class="file"><a href="">Subfile 6</a></li>
+					</ol>
+				</li>
+			</ol>
+		</li>
+		<li>
+			<label for="folder3">Folder 3</label> <input type="checkbox" id="folder3" /> 
+			<ol>
+				<li class="file"><a href="">File 1</a></li>
+				<li>
+					<label for="subfolder3">Subfolder 1</label> <input type="checkbox" id="subfolder3" /> 
+					<ol>
+						<li class="file"><a href="">Subfile 1</a></li>
+						<li class="file"><a href="">Subfile 2</a></li>
+						<li class="file"><a href="">Subfile 3</a></li>
+						<li class="file"><a href="">Subfile 4</a></li>
+						<li class="file"><a href="">Subfile 5</a></li>
+						<li class="file"><a href="">Subfile 6</a></li>
+					</ol>
+				</li>
+			</ol>
+		</li>
+		<li>
+			<label for="folder4">Folder 4</label> <input type="checkbox" id="folder4" /> 
+			<ol>
+				<li class="file"><a href="">File 1</a></li>
+				<li>
+					<label for="subfolder4">Subfolder 1</label> <input type="checkbox" id="subfolder4" /> 
+					<ol>
+						<li class="file"><a href="">Subfile 1</a></li>
+						<li class="file"><a href="">Subfile 2</a></li>
+						<li class="file"><a href="">Subfile 3</a></li>
+						<li class="file"><a href="">Subfile 4</a></li>
+						<li class="file"><a href="">Subfile 5</a></li>
+						<li class="file"><a href="">Subfile 6</a></li>
+					</ol>
+				</li>
+			</ol>
+		</li>
+		<li>
+			<label for="folder5">Folder 5</label> <input type="checkbox" id="folder5" /> 
+			<ol>
+				<li class="file"><a href="">File 1</a></li>
+				<li>
+					<label for="subfolder5">Subfolder 1</label> <input type="checkbox" id="subfolder5" /> 
+					<ol>
+						<li class="file"><a href="">Subfile 1</a></li>
+						<li class="file"><a href="">Subfile 2</a></li>
+						<li class="file"><a href="">Subfile 3</a></li>
+						<li class="file"><a href="">Subfile 4</a></li>
+						<li class="file"><a href="">Subfile 5</a></li>
+						<li class="file"><a href="">Subfile 6</a></li>
+					</ol>
+				</li>
+			</ol>
+		</li>
+	</ol>
+	
+</body>
+</html>

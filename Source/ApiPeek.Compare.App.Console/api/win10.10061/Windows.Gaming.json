@@ -1,0 +1,252 @@
+{
+  "Name": "Windows.Gaming, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime",
+  "Enums": [
+    {
+      "Name": "Windows.Gaming.Input.GamepadButtons",
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Menu",
+          "Value": "1"
+        },
+        {
+          "Name": "View",
+          "Value": "2"
+        },
+        {
+          "Name": "A",
+          "Value": "4"
+        },
+        {
+          "Name": "B",
+          "Value": "8"
+        },
+        {
+          "Name": "X",
+          "Value": "16"
+        },
+        {
+          "Name": "Y",
+          "Value": "32"
+        },
+        {
+          "Name": "DPadUp",
+          "Value": "64"
+        },
+        {
+          "Name": "DPadDown",
+          "Value": "128"
+        },
+        {
+          "Name": "DPadLeft",
+          "Value": "256"
+        },
+        {
+          "Name": "DPadRight",
+          "Value": "512"
+        },
+        {
+          "Name": "LeftShoulder",
+          "Value": "1024"
+        },
+        {
+          "Name": "RightShoulder",
+          "Value": "2048"
+        },
+        {
+          "Name": "LeftThumbstick",
+          "Value": "4096"
+        },
+        {
+          "Name": "RightThumbstick",
+          "Value": "8192"
+        }
+      ]
+    }
+  ],
+  "Interfaces": [
+    {
+      "Name": "Windows.Gaming.Input.IGameController",
+      "Properties": [
+        {
+          "Name": "Headset",
+          "Type": "Headset",
+          "IsGet": true
+        },
+        {
+          "Name": "IsWireless",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "User",
+          "Type": "User",
+          "IsGet": true
+        }
+      ],
+      "Events": [
+        {
+          "Name": "HeadsetConnected",
+          "Type": "TypedEventHandler<IGameController,Headset>"
+        },
+        {
+          "Name": "HeadsetDisconnected",
+          "Type": "TypedEventHandler<IGameController,Headset>"
+        },
+        {
+          "Name": "UserChanged",
+          "Type": "TypedEventHandler<IGameController,UserChangedEventArgs>"
+        }
+      ]
+    }
+  ],
+  "Structs": [
+    {
+      "Name": "Windows.Gaming.Input.GamepadReading",
+      "Fields": [
+        {
+          "Name": "Timestamp",
+          "Type": "UInt64"
+        },
+        {
+          "Name": "Buttons",
+          "Type": "GamepadButtons"
+        },
+        {
+          "Name": "LeftTrigger",
+          "Type": "Double"
+        },
+        {
+          "Name": "RightTrigger",
+          "Type": "Double"
+        },
+        {
+          "Name": "LeftThumbstickX",
+          "Type": "Double"
+        },
+        {
+          "Name": "LeftThumbstickY",
+          "Type": "Double"
+        },
+        {
+          "Name": "RightThumbstickX",
+          "Type": "Double"
+        },
+        {
+          "Name": "RightThumbstickY",
+          "Type": "Double"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.GamepadVibration",
+      "Fields": [
+        {
+          "Name": "LeftMotor",
+          "Type": "Double"
+        },
+        {
+          "Name": "RightMotor",
+          "Type": "Double"
+        },
+        {
+          "Name": "LeftTrigger",
+          "Type": "Double"
+        },
+        {
+          "Name": "RightTrigger",
+          "Type": "Double"
+        }
+      ]
+    }
+  ],
+  "Classes": [
+    {
+      "Name": "Windows.Gaming.Input.Headset",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "CaptureDeviceId",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "RenderDeviceId",
+          "Type": "String",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.Gamepad",
+      "IsSealed": true,
+      "Interfaces": [
+        "IGameController"
+      ],
+      "Properties": [
+        {
+          "Name": "Headset",
+          "Type": "Headset",
+          "IsGet": true
+        },
+        {
+          "Name": "IsWireless",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "User",
+          "Type": "User",
+          "IsGet": true
+        },
+        {
+          "Name": "Vibration",
+          "Type": "GamepadVibration",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Gamepads",
+          "Type": "IReadOnlyList<Gamepad>",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetCurrentReading",
+          "ReturnType": "GamepadReading"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "HeadsetConnected",
+          "Type": "TypedEventHandler<IGameController,Headset>"
+        },
+        {
+          "Name": "HeadsetDisconnected",
+          "Type": "TypedEventHandler<IGameController,Headset>"
+        },
+        {
+          "Name": "UserChanged",
+          "Type": "TypedEventHandler<IGameController,UserChangedEventArgs>"
+        },
+        {
+          "Name": "GamepadAdded",
+          "Type": "EventHandler<Gamepad>",
+          "IsStatic": true
+        },
+        {
+          "Name": "GamepadRemoved",
+          "Type": "EventHandler<Gamepad>",
+          "IsStatic": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+﻿<Page x:Class="ApiPeek.App.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="StartButton" Content="Start API Peek" Click="ButtonBase_OnClick"
+            HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+</Page>

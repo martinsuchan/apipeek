@@ -1,0 +1,6090 @@
+{
+  "Name": "Windows.Graphics, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime",
+  "Classes": [
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "DisplayOrientations",
+          "IsStatic": true,
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "AutoRotationPreferences"
+        },
+        {
+          "Type": "DisplayOrientations",
+          "IsGet": true,
+          "Name": "CurrentOrientation"
+        },
+        {
+          "Type": "Single",
+          "IsGet": true,
+          "Name": "LogicalDpi"
+        },
+        {
+          "Type": "DisplayOrientations",
+          "IsGet": true,
+          "Name": "NativeOrientation"
+        },
+        {
+          "Type": "Single",
+          "IsGet": true,
+          "Name": "RawDpiX"
+        },
+        {
+          "Type": "Single",
+          "IsGet": true,
+          "Name": "RawDpiY"
+        },
+        {
+          "Type": "Double",
+          "IsGet": true,
+          "Name": "RawPixelsPerViewPixel"
+        },
+        {
+          "Type": "ResolutionScale",
+          "IsGet": true,
+          "Name": "ResolutionScale"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "StereoEnabled"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncOperation<IRandomAccessStream>",
+          "Name": "GetColorProfileAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "DisplayInformation",
+          "Name": "GetForCurrentView"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "TypedEventHandler<DisplayInformation,Object>",
+          "Name": "ColorProfileChanged"
+        },
+        {
+          "Type": "TypedEventHandler<DisplayInformation,Object>",
+          "IsStatic": true,
+          "Name": "DisplayContentsInvalidated"
+        },
+        {
+          "Type": "TypedEventHandler<DisplayInformation,Object>",
+          "Name": "DpiChanged"
+        },
+        {
+          "Type": "TypedEventHandler<DisplayInformation,Object>",
+          "Name": "OrientationChanged"
+        },
+        {
+          "Type": "TypedEventHandler<DisplayInformation,Object>",
+          "Name": "StereoEnabledChanged"
+        }
+      ],
+      "Name": "Windows.Graphics.Display.DisplayInformation"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "DisplayOrientations",
+          "IsStatic": true,
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "AutoRotationPreferences"
+        },
+        {
+          "Type": "DisplayOrientations",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "CurrentOrientation"
+        },
+        {
+          "Type": "Single",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "LogicalDpi"
+        },
+        {
+          "Type": "DisplayOrientations",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "NativeOrientation"
+        },
+        {
+          "Type": "ResolutionScale",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "ResolutionScale"
+        },
+        {
+          "Type": "Boolean",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "StereoEnabled"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IRandomAccessStream>",
+          "Name": "GetColorProfileAsync"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "DisplayPropertiesEventHandler",
+          "IsStatic": true,
+          "Name": "ColorProfileChanged"
+        },
+        {
+          "Type": "DisplayPropertiesEventHandler",
+          "IsStatic": true,
+          "Name": "DisplayContentsInvalidated"
+        },
+        {
+          "Type": "DisplayPropertiesEventHandler",
+          "IsStatic": true,
+          "Name": "LogicalDpiChanged"
+        },
+        {
+          "Type": "DisplayPropertiesEventHandler",
+          "IsStatic": true,
+          "Name": "OrientationChanged"
+        },
+        {
+          "Type": "DisplayPropertiesEventHandler",
+          "IsStatic": true,
+          "Name": "StereoEnabledChanged"
+        }
+      ],
+      "Name": "Windows.Graphics.Display.DisplayProperties"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IPositionalLocator"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Double",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "FarPlaneDistance"
+        },
+        {
+          "Type": "Double",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NearPlaneDistance"
+        },
+        {
+          "Type": "PositionalLocatorState",
+          "IsGet": true,
+          "Name": "State"
+        },
+        {
+          "Type": "Person",
+          "IsGet": true,
+          "Name": "User"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3&",
+              "Out": true
+            },
+            {
+              "Name": "normal",
+              "Type": "Vector3&",
+              "Out": true
+            },
+            {
+              "Name": "velocity",
+              "Type": "Vector3&",
+              "Out": true
+            }
+          ],
+          "Name": "GetStabilizationPlane"
+        },
+        {
+          "ReturnType": "StereoViewProjection",
+          "Parameters": [
+            {
+              "Name": "pose",
+              "Type": "Pose"
+            }
+          ],
+          "Name": "GetStereoViewProjection"
+        },
+        {
+          "ReturnType": "Frustum",
+          "Parameters": [
+            {
+              "Name": "pose",
+              "Type": "Pose"
+            }
+          ],
+          "Name": "GetViewFrustum"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "RequestActivation"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "ResetSwapChain"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "normal",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "velocity",
+              "Type": "Vector3"
+            }
+          ],
+          "Name": "SetStabilizationPlane"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "TypedEventHandler<IPositionalLocator,Object>",
+          "Name": "StateChanged"
+        },
+        {
+          "Type": "TypedEventHandler<StereoHeadMountedDisplay,Object>",
+          "Name": "SwapChainResized"
+        },
+        {
+          "Type": "TypedEventHandler<StereoHeadMountedDisplay,Object>",
+          "Name": "SwapChainResizing"
+        }
+      ],
+      "Name": "Windows.Graphics.Display.StereoHeadMountedDisplay"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IDisposable",
+        "IMemoryBuffer"
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IMemoryBufferReference",
+          "Name": "CreateReference"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Dispose"
+        },
+        {
+          "ReturnType": "Int32",
+          "Name": "GetPlaneCount"
+        },
+        {
+          "ReturnType": "BitmapPlaneDescription",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "Int32"
+            }
+          ],
+          "Name": "GetPlaneDescription"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.BitmapBuffer"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Guid",
+          "IsGet": true,
+          "Name": "CodecId"
+        },
+        {
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true,
+          "Name": "FileExtensions"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "FriendlyName"
+        },
+        {
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true,
+          "Name": "MimeTypes"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.BitmapCodecInformation"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IBitmapFrame",
+        "IBitmapFrameWithSoftwareBitmap"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "BitmapAlphaMode",
+          "IsGet": true,
+          "Name": "BitmapAlphaMode"
+        },
+        {
+          "Type": "BitmapPropertiesView",
+          "IsGet": true,
+          "Name": "BitmapContainerProperties"
+        },
+        {
+          "Type": "BitmapPixelFormat",
+          "IsGet": true,
+          "Name": "BitmapPixelFormat"
+        },
+        {
+          "Type": "BitmapPropertiesView",
+          "IsGet": true,
+          "Name": "BitmapProperties"
+        },
+        {
+          "Type": "Guid",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "BmpDecoderId"
+        },
+        {
+          "Type": "BitmapCodecInformation",
+          "IsGet": true,
+          "Name": "DecoderInformation"
+        },
+        {
+          "Type": "Double",
+          "IsGet": true,
+          "Name": "DpiX"
+        },
+        {
+          "Type": "Double",
+          "IsGet": true,
+          "Name": "DpiY"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "FrameCount"
+        },
+        {
+          "Type": "Guid",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "GifDecoderId"
+        },
+        {
+          "Type": "Guid",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "IcoDecoderId"
+        },
+        {
+          "Type": "Guid",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "JpegDecoderId"
+        },
+        {
+          "Type": "Guid",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "JpegXRDecoderId"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "OrientedPixelHeight"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "OrientedPixelWidth"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "PixelHeight"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "PixelWidth"
+        },
+        {
+          "Type": "Guid",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "PngDecoderId"
+        },
+        {
+          "Type": "Guid",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "TiffDecoderId"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<BitmapDecoder>",
+          "Parameters": [
+            {
+              "Name": "stream",
+              "Type": "IRandomAccessStream"
+            }
+          ],
+          "Name": "CreateAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<BitmapDecoder>",
+          "Parameters": [
+            {
+              "Name": "decoderId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "stream",
+              "Type": "IRandomAccessStream"
+            }
+          ],
+          "Name": "CreateAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IReadOnlyList<BitmapCodecInformation>",
+          "Name": "GetDecoderInformationEnumerator"
+        },
+        {
+          "ReturnType": "IAsyncOperation<BitmapFrame>",
+          "Parameters": [
+            {
+              "Name": "frameIndex",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GetFrameAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<PixelDataProvider>",
+          "Name": "GetPixelDataAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<PixelDataProvider>",
+          "Parameters": [
+            {
+              "Name": "pixelFormat",
+              "Type": "BitmapPixelFormat"
+            },
+            {
+              "Name": "alphaMode",
+              "Type": "BitmapAlphaMode"
+            },
+            {
+              "Name": "transform",
+              "Type": "BitmapTransform"
+            },
+            {
+              "Name": "exifOrientationMode",
+              "Type": "ExifOrientationMode"
+            },
+            {
+              "Name": "colorManagementMode",
+              "Type": "ColorManagementMode"
+            }
+          ],
+          "Name": "GetPixelDataAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<ImageStream>",
+          "Name": "GetPreviewAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<SoftwareBitmap>",
+          "Name": "GetSoftwareBitmapAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<SoftwareBitmap>",
+          "Parameters": [
+            {
+              "Name": "pixelFormat",
+              "Type": "BitmapPixelFormat"
+            },
+            {
+              "Name": "alphaMode",
+              "Type": "BitmapAlphaMode"
+            }
+          ],
+          "Name": "GetSoftwareBitmapAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<SoftwareBitmap>",
+          "Parameters": [
+            {
+              "Name": "pixelFormat",
+              "Type": "BitmapPixelFormat"
+            },
+            {
+              "Name": "alphaMode",
+              "Type": "BitmapAlphaMode"
+            },
+            {
+              "Name": "transform",
+              "Type": "BitmapTransform"
+            },
+            {
+              "Name": "exifOrientationMode",
+              "Type": "ExifOrientationMode"
+            },
+            {
+              "Name": "colorManagementMode",
+              "Type": "ColorManagementMode"
+            }
+          ],
+          "Name": "GetSoftwareBitmapAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<ImageStream>",
+          "Name": "GetThumbnailAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.BitmapDecoder"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "BitmapProperties",
+          "IsGet": true,
+          "Name": "BitmapContainerProperties"
+        },
+        {
+          "Type": "BitmapProperties",
+          "IsGet": true,
+          "Name": "BitmapProperties"
+        },
+        {
+          "Type": "BitmapTransform",
+          "IsGet": true,
+          "Name": "BitmapTransform"
+        },
+        {
+          "Type": "Guid",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "BmpEncoderId"
+        },
+        {
+          "Type": "BitmapCodecInformation",
+          "IsGet": true,
+          "Name": "EncoderInformation"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "GeneratedThumbnailHeight"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "GeneratedThumbnailWidth"
+        },
+        {
+          "Type": "Guid",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "GifEncoderId"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "IsThumbnailGenerated"
+        },
+        {
+          "Type": "Guid",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "JpegEncoderId"
+        },
+        {
+          "Type": "Guid",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "JpegXREncoderId"
+        },
+        {
+          "Type": "Guid",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "PngEncoderId"
+        },
+        {
+          "Type": "Guid",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "TiffEncoderId"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<BitmapEncoder>",
+          "Parameters": [
+            {
+              "Name": "encoderId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "stream",
+              "Type": "IRandomAccessStream"
+            }
+          ],
+          "Name": "CreateAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<BitmapEncoder>",
+          "Parameters": [
+            {
+              "Name": "encoderId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "stream",
+              "Type": "IRandomAccessStream"
+            },
+            {
+              "Name": "encodingOptions",
+              "Type": "IEnumerable<KeyValuePair<String,BitmapTypedValue>>"
+            }
+          ],
+          "Name": "CreateAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<BitmapEncoder>",
+          "Parameters": [
+            {
+              "Name": "bitmapDecoder",
+              "Type": "BitmapDecoder"
+            }
+          ],
+          "Name": "CreateForInPlacePropertyEncodingAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<BitmapEncoder>",
+          "Parameters": [
+            {
+              "Name": "stream",
+              "Type": "IRandomAccessStream"
+            },
+            {
+              "Name": "bitmapDecoder",
+              "Type": "BitmapDecoder"
+            }
+          ],
+          "Name": "CreateForTranscodingAsync"
+        },
+        {
+          "ReturnType": "IAsyncAction",
+          "Name": "FlushAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IReadOnlyList<BitmapCodecInformation>",
+          "Name": "GetEncoderInformationEnumerator"
+        },
+        {
+          "ReturnType": "IAsyncAction",
+          "Name": "GoToNextFrameAsync"
+        },
+        {
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "encodingOptions",
+              "Type": "IEnumerable<KeyValuePair<String,BitmapTypedValue>>"
+            }
+          ],
+          "Name": "GoToNextFrameAsync"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "pixelFormat",
+              "Type": "BitmapPixelFormat"
+            },
+            {
+              "Name": "alphaMode",
+              "Type": "BitmapAlphaMode"
+            },
+            {
+              "Name": "width",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "height",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "dpiX",
+              "Type": "Double"
+            },
+            {
+              "Name": "dpiY",
+              "Type": "Double"
+            },
+            {
+              "Name": "pixels",
+              "Type": "Byte[]"
+            }
+          ],
+          "Name": "SetPixelData"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "bitmap",
+              "Type": "SoftwareBitmap"
+            }
+          ],
+          "Name": "SetSoftwareBitmap"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.BitmapEncoder"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IBitmapFrame",
+        "IBitmapFrameWithSoftwareBitmap"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "BitmapAlphaMode",
+          "IsGet": true,
+          "Name": "BitmapAlphaMode"
+        },
+        {
+          "Type": "BitmapPixelFormat",
+          "IsGet": true,
+          "Name": "BitmapPixelFormat"
+        },
+        {
+          "Type": "BitmapPropertiesView",
+          "IsGet": true,
+          "Name": "BitmapProperties"
+        },
+        {
+          "Type": "Double",
+          "IsGet": true,
+          "Name": "DpiX"
+        },
+        {
+          "Type": "Double",
+          "IsGet": true,
+          "Name": "DpiY"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "OrientedPixelHeight"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "OrientedPixelWidth"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "PixelHeight"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "PixelWidth"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncOperation<PixelDataProvider>",
+          "Name": "GetPixelDataAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<PixelDataProvider>",
+          "Parameters": [
+            {
+              "Name": "pixelFormat",
+              "Type": "BitmapPixelFormat"
+            },
+            {
+              "Name": "alphaMode",
+              "Type": "BitmapAlphaMode"
+            },
+            {
+              "Name": "transform",
+              "Type": "BitmapTransform"
+            },
+            {
+              "Name": "exifOrientationMode",
+              "Type": "ExifOrientationMode"
+            },
+            {
+              "Name": "colorManagementMode",
+              "Type": "ColorManagementMode"
+            }
+          ],
+          "Name": "GetPixelDataAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<SoftwareBitmap>",
+          "Name": "GetSoftwareBitmapAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<SoftwareBitmap>",
+          "Parameters": [
+            {
+              "Name": "pixelFormat",
+              "Type": "BitmapPixelFormat"
+            },
+            {
+              "Name": "alphaMode",
+              "Type": "BitmapAlphaMode"
+            }
+          ],
+          "Name": "GetSoftwareBitmapAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<SoftwareBitmap>",
+          "Parameters": [
+            {
+              "Name": "pixelFormat",
+              "Type": "BitmapPixelFormat"
+            },
+            {
+              "Name": "alphaMode",
+              "Type": "BitmapAlphaMode"
+            },
+            {
+              "Name": "transform",
+              "Type": "BitmapTransform"
+            },
+            {
+              "Name": "exifOrientationMode",
+              "Type": "ExifOrientationMode"
+            },
+            {
+              "Name": "colorManagementMode",
+              "Type": "ColorManagementMode"
+            }
+          ],
+          "Name": "GetSoftwareBitmapAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<ImageStream>",
+          "Name": "GetThumbnailAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.BitmapFrame"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IBitmapPropertiesView"
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncOperation<BitmapPropertySet>",
+          "Parameters": [
+            {
+              "Name": "propertiesToRetrieve",
+              "Type": "IEnumerable<String>"
+            }
+          ],
+          "Name": "GetPropertiesAsync"
+        },
+        {
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "propertiesToSet",
+              "Type": "IEnumerable<KeyValuePair<String,BitmapTypedValue>>"
+            }
+          ],
+          "Name": "SetPropertiesAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.BitmapProperties"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IBitmapPropertiesView"
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncOperation<BitmapPropertySet>",
+          "Parameters": [
+            {
+              "Name": "propertiesToRetrieve",
+              "Type": "IEnumerable<String>"
+            }
+          ],
+          "Name": "GetPropertiesAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.BitmapPropertiesView"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "ICollection<KeyValuePair<String,BitmapTypedValue>>",
+        "IDictionary<String,BitmapTypedValue>",
+        "IEnumerable",
+        "IEnumerable<KeyValuePair<String,BitmapTypedValue>>"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "Size"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.BitmapPropertySet"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "BitmapBounds",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Bounds"
+        },
+        {
+          "Type": "BitmapFlip",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Flip"
+        },
+        {
+          "Type": "BitmapInterpolationMode",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "InterpolationMode"
+        },
+        {
+          "Type": "BitmapRotation",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Rotation"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ScaledHeight"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ScaledWidth"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.BitmapTransform"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Object"
+            },
+            {
+              "Name": "type",
+              "Type": "PropertyType"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "PropertyType",
+          "IsGet": true,
+          "Name": "Type"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "Value"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.BitmapTypedValue"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IContentTypeProvider",
+        "IDisposable",
+        "IInputStream",
+        "IOutputStream",
+        "IRandomAccessStream",
+        "IRandomAccessStreamWithContentType"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "CanRead"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "CanWrite"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "ContentType"
+        },
+        {
+          "Type": "UInt64",
+          "IsGet": true,
+          "Name": "Position"
+        },
+        {
+          "Type": "UInt64",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Size"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IRandomAccessStream",
+          "Name": "CloneStream"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Dispose"
+        },
+        {
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Name": "FlushAsync"
+        },
+        {
+          "ReturnType": "IInputStream",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "UInt64"
+            }
+          ],
+          "Name": "GetInputStreamAt"
+        },
+        {
+          "ReturnType": "IOutputStream",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "UInt64"
+            }
+          ],
+          "Name": "GetOutputStreamAt"
+        },
+        {
+          "ReturnType": "IAsyncOperationWithProgress<IBuffer,UInt32>",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "count",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "options",
+              "Type": "InputStreamOptions"
+            }
+          ],
+          "Name": "ReadAsync"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "UInt64"
+            }
+          ],
+          "Name": "Seek"
+        },
+        {
+          "ReturnType": "IAsyncOperationWithProgress<UInt32,UInt32>",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "WriteAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.ImageStream"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Byte[]",
+          "Name": "DetachPixelData"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.PixelDataProvider"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IDisposable"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "format",
+              "Type": "BitmapPixelFormat"
+            },
+            {
+              "Name": "width",
+              "Type": "Int32"
+            },
+            {
+              "Name": "height",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "format",
+              "Type": "BitmapPixelFormat"
+            },
+            {
+              "Name": "width",
+              "Type": "Int32"
+            },
+            {
+              "Name": "height",
+              "Type": "Int32"
+            },
+            {
+              "Name": "alpha",
+              "Type": "BitmapAlphaMode"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "BitmapAlphaMode",
+          "IsGet": true,
+          "Name": "BitmapAlphaMode"
+        },
+        {
+          "Type": "BitmapPixelFormat",
+          "IsGet": true,
+          "Name": "BitmapPixelFormat"
+        },
+        {
+          "Type": "Double",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "DpiX"
+        },
+        {
+          "Type": "Double",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "DpiY"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "IsReadOnly"
+        },
+        {
+          "Type": "Int32",
+          "IsGet": true,
+          "Name": "PixelHeight"
+        },
+        {
+          "Type": "Int32",
+          "IsGet": true,
+          "Name": "PixelWidth"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "SoftwareBitmap",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "SoftwareBitmap"
+            },
+            {
+              "Name": "format",
+              "Type": "BitmapPixelFormat"
+            }
+          ],
+          "Name": "Convert"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "SoftwareBitmap",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "SoftwareBitmap"
+            },
+            {
+              "Name": "format",
+              "Type": "BitmapPixelFormat"
+            },
+            {
+              "Name": "alpha",
+              "Type": "BitmapAlphaMode"
+            }
+          ],
+          "Name": "Convert"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "SoftwareBitmap",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "SoftwareBitmap"
+            }
+          ],
+          "Name": "Copy"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "CopyFromBuffer"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "bitmap",
+              "Type": "SoftwareBitmap"
+            }
+          ],
+          "Name": "CopyTo"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "CopyToBuffer"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "SoftwareBitmap",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "format",
+              "Type": "BitmapPixelFormat"
+            },
+            {
+              "Name": "width",
+              "Type": "Int32"
+            },
+            {
+              "Name": "height",
+              "Type": "Int32"
+            }
+          ],
+          "Name": "CreateCopyFromBuffer"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "SoftwareBitmap",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "format",
+              "Type": "BitmapPixelFormat"
+            },
+            {
+              "Name": "width",
+              "Type": "Int32"
+            },
+            {
+              "Name": "height",
+              "Type": "Int32"
+            },
+            {
+              "Name": "alpha",
+              "Type": "BitmapAlphaMode"
+            }
+          ],
+          "Name": "CreateCopyFromBuffer"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<SoftwareBitmap>",
+          "Parameters": [
+            {
+              "Name": "surface",
+              "Type": "IDirect3DSurface"
+            }
+          ],
+          "Name": "CreateCopyFromSurfaceAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<SoftwareBitmap>",
+          "Parameters": [
+            {
+              "Name": "surface",
+              "Type": "IDirect3DSurface"
+            },
+            {
+              "Name": "alpha",
+              "Type": "BitmapAlphaMode"
+            }
+          ],
+          "Name": "CreateCopyFromSurfaceAsync"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Dispose"
+        },
+        {
+          "ReturnType": "SoftwareBitmap",
+          "Name": "GetReadOnlyView"
+        },
+        {
+          "ReturnType": "BitmapBuffer",
+          "Parameters": [
+            {
+              "Name": "mode",
+              "Type": "BitmapBufferAccessMode"
+            }
+          ],
+          "Name": "LockBuffer"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.SoftwareBitmap"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Name"
+        },
+        {
+          "Type": "IRandomAccessStreamWithContentType",
+          "IsGet": true,
+          "Name": "Texture"
+        },
+        {
+          "Type": "TextureFormat",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Type"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "IRandomAccessStreamWithContentType"
+            }
+          ],
+          "Name": "SetTexture"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.ModelTexture"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IPrintItemListOptionDetails",
+        "IPrintOptionDetails"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ErrorText"
+        },
+        {
+          "Type": "IReadOnlyList<Object>",
+          "IsGet": true,
+          "Name": "Items"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "OptionId"
+        },
+        {
+          "Type": "PrintOptionType",
+          "IsGet": true,
+          "Name": "OptionType"
+        },
+        {
+          "Type": "PrintOptionStates",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "State"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "Value"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Object"
+            }
+          ],
+          "Name": "TrySetValue"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintBindingOptionDetails"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IPrintItemListOptionDetails",
+        "IPrintOptionDetails"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ErrorText"
+        },
+        {
+          "Type": "IReadOnlyList<Object>",
+          "IsGet": true,
+          "Name": "Items"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "OptionId"
+        },
+        {
+          "Type": "PrintOptionType",
+          "IsGet": true,
+          "Name": "OptionType"
+        },
+        {
+          "Type": "PrintOptionStates",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "State"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "Value"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Object"
+            }
+          ],
+          "Name": "TrySetValue"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintCollationOptionDetails"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IPrintItemListOptionDetails",
+        "IPrintOptionDetails"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ErrorText"
+        },
+        {
+          "Type": "IReadOnlyList<Object>",
+          "IsGet": true,
+          "Name": "Items"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "OptionId"
+        },
+        {
+          "Type": "PrintOptionType",
+          "IsGet": true,
+          "Name": "OptionType"
+        },
+        {
+          "Type": "PrintOptionStates",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "State"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "Value"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Object"
+            }
+          ],
+          "Name": "TrySetValue"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintColorModeOptionDetails"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IPrintNumberOptionDetails",
+        "IPrintOptionDetails"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ErrorText"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "MaxValue"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "MinValue"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "OptionId"
+        },
+        {
+          "Type": "PrintOptionType",
+          "IsGet": true,
+          "Name": "OptionType"
+        },
+        {
+          "Type": "PrintOptionStates",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "State"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "Value"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Object"
+            }
+          ],
+          "Name": "TrySetValue"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintCopiesOptionDetails"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ItemDisplayName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "ItemId"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintCustomItemDetails"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IPrintCustomOptionDetails",
+        "IPrintItemListOptionDetails",
+        "IPrintOptionDetails"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "DisplayName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ErrorText"
+        },
+        {
+          "Type": "IReadOnlyList<Object>",
+          "IsGet": true,
+          "Name": "Items"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "OptionId"
+        },
+        {
+          "Type": "PrintOptionType",
+          "IsGet": true,
+          "Name": "OptionType"
+        },
+        {
+          "Type": "PrintOptionStates",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "State"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "Value"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "itemId",
+              "Type": "String"
+            },
+            {
+              "Name": "displayName",
+              "Type": "String"
+            }
+          ],
+          "Name": "AddItem"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Object"
+            }
+          ],
+          "Name": "TrySetValue"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintCustomItemListOptionDetails"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IPrintCustomOptionDetails",
+        "IPrintOptionDetails"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "DisplayName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ErrorText"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "MaxCharacters"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "OptionId"
+        },
+        {
+          "Type": "PrintOptionType",
+          "IsGet": true,
+          "Name": "OptionType"
+        },
+        {
+          "Type": "PrintOptionStates",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "State"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "Value"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Object"
+            }
+          ],
+          "Name": "TrySetValue"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintCustomTextOptionDetails"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IPrintItemListOptionDetails",
+        "IPrintOptionDetails"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ErrorText"
+        },
+        {
+          "Type": "IReadOnlyList<Object>",
+          "IsGet": true,
+          "Name": "Items"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "OptionId"
+        },
+        {
+          "Type": "PrintOptionType",
+          "IsGet": true,
+          "Name": "OptionType"
+        },
+        {
+          "Type": "PrintOptionStates",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "State"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "Value"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Object"
+            }
+          ],
+          "Name": "TrySetValue"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintDuplexOptionDetails"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IPrintItemListOptionDetails",
+        "IPrintOptionDetails"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ErrorText"
+        },
+        {
+          "Type": "IReadOnlyList<Object>",
+          "IsGet": true,
+          "Name": "Items"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "OptionId"
+        },
+        {
+          "Type": "PrintOptionType",
+          "IsGet": true,
+          "Name": "OptionType"
+        },
+        {
+          "Type": "PrintOptionStates",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "State"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "Value"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Object"
+            }
+          ],
+          "Name": "TrySetValue"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintHolePunchOptionDetails"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IPrintItemListOptionDetails",
+        "IPrintOptionDetails"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ErrorText"
+        },
+        {
+          "Type": "IReadOnlyList<Object>",
+          "IsGet": true,
+          "Name": "Items"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "OptionId"
+        },
+        {
+          "Type": "PrintOptionType",
+          "IsGet": true,
+          "Name": "OptionType"
+        },
+        {
+          "Type": "PrintOptionStates",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "State"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "Value"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Object"
+            }
+          ],
+          "Name": "TrySetValue"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintMediaSizeOptionDetails"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IPrintItemListOptionDetails",
+        "IPrintOptionDetails"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ErrorText"
+        },
+        {
+          "Type": "IReadOnlyList<Object>",
+          "IsGet": true,
+          "Name": "Items"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "OptionId"
+        },
+        {
+          "Type": "PrintOptionType",
+          "IsGet": true,
+          "Name": "OptionType"
+        },
+        {
+          "Type": "PrintOptionStates",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "State"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "Value"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Object"
+            }
+          ],
+          "Name": "TrySetValue"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintMediaTypeOptionDetails"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IPrintItemListOptionDetails",
+        "IPrintOptionDetails"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ErrorText"
+        },
+        {
+          "Type": "IReadOnlyList<Object>",
+          "IsGet": true,
+          "Name": "Items"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "OptionId"
+        },
+        {
+          "Type": "PrintOptionType",
+          "IsGet": true,
+          "Name": "OptionType"
+        },
+        {
+          "Type": "PrintOptionStates",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "State"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "Value"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Object"
+            }
+          ],
+          "Name": "TrySetValue"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintOrientationOptionDetails"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IPrintItemListOptionDetails",
+        "IPrintOptionDetails"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ErrorText"
+        },
+        {
+          "Type": "IReadOnlyList<Object>",
+          "IsGet": true,
+          "Name": "Items"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "OptionId"
+        },
+        {
+          "Type": "PrintOptionType",
+          "IsGet": true,
+          "Name": "OptionType"
+        },
+        {
+          "Type": "PrintOptionStates",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "State"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "Value"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Object"
+            }
+          ],
+          "Name": "TrySetValue"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintQualityOptionDetails"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IPrintItemListOptionDetails",
+        "IPrintOptionDetails"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ErrorText"
+        },
+        {
+          "Type": "IReadOnlyList<Object>",
+          "IsGet": true,
+          "Name": "Items"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "OptionId"
+        },
+        {
+          "Type": "PrintOptionType",
+          "IsGet": true,
+          "Name": "OptionType"
+        },
+        {
+          "Type": "PrintOptionStates",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "State"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "Value"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Object"
+            }
+          ],
+          "Name": "TrySetValue"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintStapleOptionDetails"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IPrintTaskOptionsCore",
+        "IPrintTaskOptionsCoreUIConfiguration"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "IList<String>",
+          "IsGet": true,
+          "Name": "DisplayedOptions"
+        },
+        {
+          "Type": "IReadOnlyDictionary<String,IPrintOptionDetails>",
+          "IsGet": true,
+          "Name": "Options"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "PrintCustomItemListOptionDetails",
+          "Parameters": [
+            {
+              "Name": "optionId",
+              "Type": "String"
+            },
+            {
+              "Name": "displayName",
+              "Type": "String"
+            }
+          ],
+          "Name": "CreateItemListOption"
+        },
+        {
+          "ReturnType": "PrintCustomTextOptionDetails",
+          "Parameters": [
+            {
+              "Name": "optionId",
+              "Type": "String"
+            },
+            {
+              "Name": "displayName",
+              "Type": "String"
+            }
+          ],
+          "Name": "CreateTextOption"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "PrintTaskOptionDetails",
+          "Parameters": [
+            {
+              "Name": "printTaskOptions",
+              "Type": "PrintTaskOptions"
+            }
+          ],
+          "Name": "GetFromPrintTaskOptions"
+        },
+        {
+          "ReturnType": "PrintPageDescription",
+          "Parameters": [
+            {
+              "Name": "jobPageNumber",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GetPageDescription"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "TypedEventHandler<PrintTaskOptionDetails,Object>",
+          "Name": "BeginValidation"
+        },
+        {
+          "Type": "TypedEventHandler<PrintTaskOptionDetails,PrintTaskOptionChangedEventArgs>",
+          "Name": "OptionChanged"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "OptionId"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintTaskOptionChangedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "Print3DManager",
+          "Name": "GetForCurrentView"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "String"
+            }
+          ],
+          "Name": "SetDefaultPrinter"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Name": "ShowPrintUIAsync"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "TypedEventHandler<Print3DManager,Print3DTaskRequestedEventArgs>",
+          "Name": "TaskRequested"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.Print3DManager"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "IRandomAccessStreamWithContentType",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Model"
+        },
+        {
+          "Type": "IRandomAccessStreamWithContentType",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "PrintTicket"
+        },
+        {
+          "Type": "IReadOnlyList<ModelTexture>",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Textures"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.Print3DModel"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Print3DModel",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Model"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IRandomAccessStreamWithContentType",
+          "Name": "Generate3mfPackage"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "packageStream",
+              "Type": "IRandomAccessStreamWithContentType"
+            }
+          ],
+          "Name": "LoadPackage"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.Print3DModelPackage"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Print3DModelPackage",
+          "IsGet": true,
+          "Name": "Source"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [
+        {
+          "Type": "TypedEventHandler<Print3DTask,Print3DTaskCompletedEventArgs>",
+          "Name": "Completed"
+        },
+        {
+          "Type": "TypedEventHandler<Print3DTask,Print3DTaskSourceChangedEventArgs>",
+          "Name": "SourceChanged"
+        },
+        {
+          "Type": "TypedEventHandler<Print3DTask,Object>",
+          "Name": "Submitting"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.Print3DTask"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "PrintTaskCompletion",
+          "IsGet": true,
+          "Name": "Completion"
+        },
+        {
+          "Type": "Print3DTaskDetail",
+          "IsGet": true,
+          "Name": "ExtendedStatus"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.Print3DTaskCompletedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "DateTimeOffset",
+          "IsGet": true,
+          "Name": "Deadline"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Print3DTask",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "String"
+            },
+            {
+              "Name": "handler",
+              "Type": "Print3DTaskSourceRequestedHandler"
+            }
+          ],
+          "Name": "CreateTask"
+        },
+        {
+          "ReturnType": "Print3DTaskRequestedDeferral",
+          "Name": "GetDeferral"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.Print3DTaskRequest"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "Complete"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.Print3DTaskRequestedDeferral"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Print3DTaskRequest",
+          "IsGet": true,
+          "Name": "Request"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.Print3DTaskRequestedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Print3DModelPackage",
+          "IsGet": true,
+          "Name": "Source"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.Print3DTaskSourceChangedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "DateTimeOffset",
+          "IsGet": true,
+          "Name": "Deadline"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Print3DTaskSourceRequestedDeferral",
+          "Name": "GetDeferral"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "Print3DModelPackage"
+            }
+          ],
+          "Name": "SetSource"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.Print3DTaskSourceRequestedArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "Complete"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.Print3DTaskSourceRequestedDeferral"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "PrintManager",
+          "Name": "GetForCurrentView"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Name": "ShowPrintUIAsync"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "TypedEventHandler<PrintManager,PrintTaskRequestedEventArgs>",
+          "Name": "PrintTaskRequested"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.PrintManager"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Is3DManufacturingTargetEnabled"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "IsPrinterTargetEnabled"
+        },
+        {
+          "Type": "PrintTaskOptions",
+          "IsGet": true,
+          "Name": "Options"
+        },
+        {
+          "Type": "DataPackagePropertySet",
+          "IsGet": true,
+          "Name": "Properties"
+        },
+        {
+          "Type": "IPrintDocumentSource",
+          "IsGet": true,
+          "Name": "Source"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [
+        {
+          "Type": "TypedEventHandler<PrintTask,PrintTaskCompletedEventArgs>",
+          "Name": "Completed"
+        },
+        {
+          "Type": "TypedEventHandler<PrintTask,Object>",
+          "Name": "Previewing"
+        },
+        {
+          "Type": "TypedEventHandler<PrintTask,PrintTaskProgressingEventArgs>",
+          "Name": "Progressing"
+        },
+        {
+          "Type": "TypedEventHandler<PrintTask,Object>",
+          "Name": "Submitting"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.PrintTask"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "PrintTaskCompletion",
+          "IsGet": true,
+          "Name": "Completion"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.PrintTaskCompletedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IPrintTaskOptionsCore",
+        "IPrintTaskOptionsCoreProperties",
+        "IPrintTaskOptionsCoreUIConfiguration"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "PrintBinding",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Binding"
+        },
+        {
+          "Type": "PrintCollation",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Collation"
+        },
+        {
+          "Type": "PrintColorMode",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ColorMode"
+        },
+        {
+          "Type": "IList<String>",
+          "IsGet": true,
+          "Name": "DisplayedOptions"
+        },
+        {
+          "Type": "PrintDuplex",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Duplex"
+        },
+        {
+          "Type": "PrintHolePunch",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "HolePunch"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "MaxCopies"
+        },
+        {
+          "Type": "PrintMediaSize",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "MediaSize"
+        },
+        {
+          "Type": "PrintMediaType",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "MediaType"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "MinCopies"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NumberOfCopies"
+        },
+        {
+          "Type": "PrintOrientation",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Orientation"
+        },
+        {
+          "Type": "PrintQuality",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "PrintQuality"
+        },
+        {
+          "Type": "PrintStaple",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Staple"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "PrintPageDescription",
+          "Parameters": [
+            {
+              "Name": "jobPageNumber",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GetPageDescription"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.PrintTaskOptions"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "DocumentPageCount"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.PrintTaskProgressingEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "DateTimeOffset",
+          "IsGet": true,
+          "Name": "Deadline"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "PrintTask",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "String"
+            },
+            {
+              "Name": "handler",
+              "Type": "PrintTaskSourceRequestedHandler"
+            }
+          ],
+          "Name": "CreatePrintTask"
+        },
+        {
+          "ReturnType": "PrintTaskRequestedDeferral",
+          "Name": "GetDeferral"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.PrintTaskRequest"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "Complete"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.PrintTaskRequestedDeferral"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "PrintTaskRequest",
+          "IsGet": true,
+          "Name": "Request"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.PrintTaskRequestedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "DateTimeOffset",
+          "IsGet": true,
+          "Name": "Deadline"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "PrintTaskSourceRequestedDeferral",
+          "Name": "GetDeferral"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "IPrintDocumentSource"
+            }
+          ],
+          "Name": "SetSource"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.PrintTaskSourceRequestedArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "Complete"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.PrintTaskSourceRequestedDeferral"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Binding"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Collation"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "ColorMode"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Copies"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Duplex"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "HolePunch"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "InputBin"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "MediaSize"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "MediaType"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "NUp"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Orientation"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "PrintQuality"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "Staple"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.StandardPrintTaskOptions"
+    }
+  ],
+  "Structs": [
+    {
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [
+        {
+          "Type": "Int32",
+          "Name": "Count"
+        },
+        {
+          "Type": "Int32",
+          "Name": "Quality"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.DirectX.Direct3D11.Direct3DMultisampleDescription"
+    },
+    {
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [
+        {
+          "Type": "DirectXPixelFormat",
+          "Name": "Format"
+        },
+        {
+          "Type": "Int32",
+          "Name": "Height"
+        },
+        {
+          "Type": "Direct3DMultisampleDescription",
+          "Name": "MultisampleDescription"
+        },
+        {
+          "Type": "Int32",
+          "Name": "Width"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.DirectX.Direct3D11.Direct3DSurfaceDescription"
+    },
+    {
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [
+        {
+          "Type": "ViewProjection",
+          "Name": "Left"
+        },
+        {
+          "Type": "ViewProjection",
+          "Name": "Right"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Display.StereoViewProjection"
+    },
+    {
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [
+        {
+          "Type": "Matrix4x4",
+          "Name": "Projection"
+        },
+        {
+          "Type": "Matrix4x4",
+          "Name": "View"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Display.ViewProjection"
+    },
+    {
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [
+        {
+          "Type": "UInt32",
+          "Name": "Height"
+        },
+        {
+          "Type": "UInt32",
+          "Name": "Width"
+        },
+        {
+          "Type": "UInt32",
+          "Name": "X"
+        },
+        {
+          "Type": "UInt32",
+          "Name": "Y"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.BitmapBounds"
+    },
+    {
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [
+        {
+          "Type": "Int32",
+          "Name": "Height"
+        },
+        {
+          "Type": "Int32",
+          "Name": "StartIndex"
+        },
+        {
+          "Type": "Int32",
+          "Name": "Stride"
+        },
+        {
+          "Type": "Int32",
+          "Name": "Width"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.BitmapPlaneDescription"
+    },
+    {
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [
+        {
+          "Type": "UInt32",
+          "Name": "Height"
+        },
+        {
+          "Type": "UInt32",
+          "Name": "Width"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.BitmapSize"
+    },
+    {
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [
+        {
+          "Type": "UInt32",
+          "Name": "DpiX"
+        },
+        {
+          "Type": "UInt32",
+          "Name": "DpiY"
+        },
+        {
+          "Type": "Rect",
+          "Name": "ImageableRect"
+        },
+        {
+          "Type": "Size",
+          "Name": "PageSize"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.PrintPageDescription"
+    }
+  ],
+  "Interfaces": [
+    {
+      "Interfaces": [
+        "IDisposable"
+      ],
+      "Properties": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "Trim"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.DirectX.Direct3D11.IDirect3DDevice"
+    },
+    {
+      "Interfaces": [
+        "IDisposable"
+      ],
+      "Properties": [
+        {
+          "Type": "Direct3DSurfaceDescription",
+          "IsGet": true,
+          "Name": "Description"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.DirectX.Direct3D11.IDirect3DSurface"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Type": "BitmapAlphaMode",
+          "IsGet": true,
+          "Name": "BitmapAlphaMode"
+        },
+        {
+          "Type": "BitmapPixelFormat",
+          "IsGet": true,
+          "Name": "BitmapPixelFormat"
+        },
+        {
+          "Type": "BitmapPropertiesView",
+          "IsGet": true,
+          "Name": "BitmapProperties"
+        },
+        {
+          "Type": "Double",
+          "IsGet": true,
+          "Name": "DpiX"
+        },
+        {
+          "Type": "Double",
+          "IsGet": true,
+          "Name": "DpiY"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "OrientedPixelHeight"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "OrientedPixelWidth"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "PixelHeight"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "PixelWidth"
+        }
+      ],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncOperation<PixelDataProvider>",
+          "Name": "GetPixelDataAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<PixelDataProvider>",
+          "Parameters": [
+            {
+              "Name": "pixelFormat",
+              "Type": "BitmapPixelFormat"
+            },
+            {
+              "Name": "alphaMode",
+              "Type": "BitmapAlphaMode"
+            },
+            {
+              "Name": "transform",
+              "Type": "BitmapTransform"
+            },
+            {
+              "Name": "exifOrientationMode",
+              "Type": "ExifOrientationMode"
+            },
+            {
+              "Name": "colorManagementMode",
+              "Type": "ColorManagementMode"
+            }
+          ],
+          "Name": "GetPixelDataAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<ImageStream>",
+          "Name": "GetThumbnailAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.IBitmapFrame"
+    },
+    {
+      "Interfaces": [
+        "IBitmapFrame"
+      ],
+      "Properties": [],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncOperation<SoftwareBitmap>",
+          "Name": "GetSoftwareBitmapAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<SoftwareBitmap>",
+          "Parameters": [
+            {
+              "Name": "pixelFormat",
+              "Type": "BitmapPixelFormat"
+            },
+            {
+              "Name": "alphaMode",
+              "Type": "BitmapAlphaMode"
+            }
+          ],
+          "Name": "GetSoftwareBitmapAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<SoftwareBitmap>",
+          "Parameters": [
+            {
+              "Name": "pixelFormat",
+              "Type": "BitmapPixelFormat"
+            },
+            {
+              "Name": "alphaMode",
+              "Type": "BitmapAlphaMode"
+            },
+            {
+              "Name": "transform",
+              "Type": "BitmapTransform"
+            },
+            {
+              "Name": "exifOrientationMode",
+              "Type": "ExifOrientationMode"
+            },
+            {
+              "Name": "colorManagementMode",
+              "Type": "ColorManagementMode"
+            }
+          ],
+          "Name": "GetSoftwareBitmapAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.IBitmapFrameWithSoftwareBitmap"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncOperation<BitmapPropertySet>",
+          "Parameters": [
+            {
+              "Name": "propertiesToRetrieve",
+              "Type": "IEnumerable<String>"
+            }
+          ],
+          "Name": "GetPropertiesAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Imaging.IBitmapPropertiesView"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.IPrintDocumentSource"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [],
+      "Methods": [
+        {
+          "ReturnType": "PrintPageDescription",
+          "Parameters": [
+            {
+              "Name": "jobPageNumber",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GetPageDescription"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.IPrintTaskOptionsCore"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Type": "PrintBinding",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Binding"
+        },
+        {
+          "Type": "PrintCollation",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Collation"
+        },
+        {
+          "Type": "PrintColorMode",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ColorMode"
+        },
+        {
+          "Type": "PrintDuplex",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Duplex"
+        },
+        {
+          "Type": "PrintHolePunch",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "HolePunch"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "MaxCopies"
+        },
+        {
+          "Type": "PrintMediaSize",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "MediaSize"
+        },
+        {
+          "Type": "PrintMediaType",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "MediaType"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "MinCopies"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NumberOfCopies"
+        },
+        {
+          "Type": "PrintOrientation",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Orientation"
+        },
+        {
+          "Type": "PrintQuality",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "PrintQuality"
+        },
+        {
+          "Type": "PrintStaple",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Staple"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.IPrintTaskOptionsCoreProperties"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Type": "IList<String>",
+          "IsGet": true,
+          "Name": "DisplayedOptions"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.IPrintTaskOptionsCoreUIConfiguration"
+    },
+    {
+      "Interfaces": [
+        "IPrintOptionDetails"
+      ],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "DisplayName"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.IPrintCustomOptionDetails"
+    },
+    {
+      "Interfaces": [
+        "IPrintOptionDetails"
+      ],
+      "Properties": [
+        {
+          "Type": "IReadOnlyList<Object>",
+          "IsGet": true,
+          "Name": "Items"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.IPrintItemListOptionDetails"
+    },
+    {
+      "Interfaces": [
+        "IPrintOptionDetails"
+      ],
+      "Properties": [
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "MaxValue"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "MinValue"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.IPrintNumberOptionDetails"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ErrorText"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "OptionId"
+        },
+        {
+          "Type": "PrintOptionType",
+          "IsGet": true,
+          "Name": "OptionType"
+        },
+        {
+          "Type": "PrintOptionStates",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "State"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "Value"
+        }
+      ],
+      "Methods": [
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Object"
+            }
+          ],
+          "Name": "TrySetValue"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails"
+    },
+    {
+      "Interfaces": [
+        "IPrintOptionDetails"
+      ],
+      "Properties": [
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "MaxCharacters"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Graphics.Printing.OptionDetails.IPrintTextOptionDetails"
+    }
+  ],
+  "Enums": [
+    {
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Value": "1",
+          "Name": "VertexBuffer"
+        },
+        {
+          "Value": "2",
+          "Name": "IndexBuffer"
+        },
+        {
+          "Value": "4",
+          "Name": "ConstantBuffer"
+        },
+        {
+          "Value": "8",
+          "Name": "ShaderResource"
+        },
+        {
+          "Value": "16",
+          "Name": "StreamOutput"
+        },
+        {
+          "Value": "32",
+          "Name": "RenderTarget"
+        },
+        {
+          "Value": "64",
+          "Name": "DepthStencil"
+        },
+        {
+          "Value": "128",
+          "Name": "UnorderedAccess"
+        },
+        {
+          "Value": "512",
+          "Name": "Decoder"
+        },
+        {
+          "Value": "1024",
+          "Name": "VideoEncoder"
+        }
+      ],
+      "Name": "Windows.Graphics.DirectX.Direct3D11.Direct3DBindings"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Default"
+        },
+        {
+          "Value": "1",
+          "Name": "Immutable"
+        },
+        {
+          "Value": "2",
+          "Name": "Dynamic"
+        },
+        {
+          "Value": "3",
+          "Name": "Staging"
+        }
+      ],
+      "Name": "Windows.Graphics.DirectX.Direct3D11.Direct3DUsage"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Unknown"
+        },
+        {
+          "Value": "1",
+          "Name": "R32G32B32A32Typeless"
+        },
+        {
+          "Value": "2",
+          "Name": "R32G32B32A32Float"
+        },
+        {
+          "Value": "3",
+          "Name": "R32G32B32A32UInt"
+        },
+        {
+          "Value": "4",
+          "Name": "R32G32B32A32Int"
+        },
+        {
+          "Value": "5",
+          "Name": "R32G32B32Typeless"
+        },
+        {
+          "Value": "6",
+          "Name": "R32G32B32Float"
+        },
+        {
+          "Value": "7",
+          "Name": "R32G32B32UInt"
+        },
+        {
+          "Value": "8",
+          "Name": "R32G32B32Int"
+        },
+        {
+          "Value": "9",
+          "Name": "R16G16B16A16Typeless"
+        },
+        {
+          "Value": "10",
+          "Name": "R16G16B16A16Float"
+        },
+        {
+          "Value": "11",
+          "Name": "R16G16B16A16UIntNormalized"
+        },
+        {
+          "Value": "12",
+          "Name": "R16G16B16A16UInt"
+        },
+        {
+          "Value": "13",
+          "Name": "R16G16B16A16IntNormalized"
+        },
+        {
+          "Value": "14",
+          "Name": "R16G16B16A16Int"
+        },
+        {
+          "Value": "15",
+          "Name": "R32G32Typeless"
+        },
+        {
+          "Value": "16",
+          "Name": "R32G32Float"
+        },
+        {
+          "Value": "17",
+          "Name": "R32G32UInt"
+        },
+        {
+          "Value": "18",
+          "Name": "R32G32Int"
+        },
+        {
+          "Value": "19",
+          "Name": "R32G8X24Typeless"
+        },
+        {
+          "Value": "20",
+          "Name": "D32FloatS8X24UInt"
+        },
+        {
+          "Value": "21",
+          "Name": "R32FloatX8X24Typeless"
+        },
+        {
+          "Value": "22",
+          "Name": "X32TypelessG8X24UInt"
+        },
+        {
+          "Value": "23",
+          "Name": "R10G10B10A2Typeless"
+        },
+        {
+          "Value": "24",
+          "Name": "R10G10B10A2UIntNormalized"
+        },
+        {
+          "Value": "25",
+          "Name": "R10G10B10A2UInt"
+        },
+        {
+          "Value": "26",
+          "Name": "R11G11B10Float"
+        },
+        {
+          "Value": "27",
+          "Name": "R8G8B8A8Typeless"
+        },
+        {
+          "Value": "28",
+          "Name": "R8G8B8A8UIntNormalized"
+        },
+        {
+          "Value": "29",
+          "Name": "R8G8B8A8UIntNormalizedSrgb"
+        },
+        {
+          "Value": "30",
+          "Name": "R8G8B8A8UInt"
+        },
+        {
+          "Value": "31",
+          "Name": "R8G8B8A8IntNormalized"
+        },
+        {
+          "Value": "32",
+          "Name": "R8G8B8A8Int"
+        },
+        {
+          "Value": "33",
+          "Name": "R16G16Typeless"
+        },
+        {
+          "Value": "34",
+          "Name": "R16G16Float"
+        },
+        {
+          "Value": "35",
+          "Name": "R16G16UIntNormalized"
+        },
+        {
+          "Value": "36",
+          "Name": "R16G16UInt"
+        },
+        {
+          "Value": "37",
+          "Name": "R16G16IntNormalized"
+        },
+        {
+          "Value": "38",
+          "Name": "R16G16Int"
+        },
+        {
+          "Value": "39",
+          "Name": "R32Typeless"
+        },
+        {
+          "Value": "40",
+          "Name": "D32Float"
+        },
+        {
+          "Value": "41",
+          "Name": "R32Float"
+        },
+        {
+          "Value": "42",
+          "Name": "R32UInt"
+        },
+        {
+          "Value": "43",
+          "Name": "R32Int"
+        },
+        {
+          "Value": "44",
+          "Name": "R24G8Typeless"
+        },
+        {
+          "Value": "45",
+          "Name": "D24UIntNormalizedS8UInt"
+        },
+        {
+          "Value": "46",
+          "Name": "R24UIntNormalizedX8Typeless"
+        },
+        {
+          "Value": "47",
+          "Name": "X24TypelessG8UInt"
+        },
+        {
+          "Value": "48",
+          "Name": "R8G8Typeless"
+        },
+        {
+          "Value": "49",
+          "Name": "R8G8UIntNormalized"
+        },
+        {
+          "Value": "50",
+          "Name": "R8G8UInt"
+        },
+        {
+          "Value": "51",
+          "Name": "R8G8IntNormalized"
+        },
+        {
+          "Value": "52",
+          "Name": "R8G8Int"
+        },
+        {
+          "Value": "53",
+          "Name": "R16Typeless"
+        },
+        {
+          "Value": "54",
+          "Name": "R16Float"
+        },
+        {
+          "Value": "55",
+          "Name": "D16UIntNormalized"
+        },
+        {
+          "Value": "56",
+          "Name": "R16UIntNormalized"
+        },
+        {
+          "Value": "57",
+          "Name": "R16UInt"
+        },
+        {
+          "Value": "58",
+          "Name": "R16IntNormalized"
+        },
+        {
+          "Value": "59",
+          "Name": "R16Int"
+        },
+        {
+          "Value": "60",
+          "Name": "R8Typeless"
+        },
+        {
+          "Value": "61",
+          "Name": "R8UIntNormalized"
+        },
+        {
+          "Value": "62",
+          "Name": "R8UInt"
+        },
+        {
+          "Value": "63",
+          "Name": "R8IntNormalized"
+        },
+        {
+          "Value": "64",
+          "Name": "R8Int"
+        },
+        {
+          "Value": "65",
+          "Name": "A8UIntNormalized"
+        },
+        {
+          "Value": "66",
+          "Name": "R1UIntNormalized"
+        },
+        {
+          "Value": "67",
+          "Name": "R9G9B9E5SharedExponent"
+        },
+        {
+          "Value": "68",
+          "Name": "R8G8B8G8UIntNormalized"
+        },
+        {
+          "Value": "69",
+          "Name": "G8R8G8B8UIntNormalized"
+        },
+        {
+          "Value": "70",
+          "Name": "BC1Typeless"
+        },
+        {
+          "Value": "71",
+          "Name": "BC1UIntNormalized"
+        },
+        {
+          "Value": "72",
+          "Name": "BC1UIntNormalizedSrgb"
+        },
+        {
+          "Value": "73",
+          "Name": "BC2Typeless"
+        },
+        {
+          "Value": "74",
+          "Name": "BC2UIntNormalized"
+        },
+        {
+          "Value": "75",
+          "Name": "BC2UIntNormalizedSrgb"
+        },
+        {
+          "Value": "76",
+          "Name": "BC3Typeless"
+        },
+        {
+          "Value": "77",
+          "Name": "BC3UIntNormalized"
+        },
+        {
+          "Value": "78",
+          "Name": "BC3UIntNormalizedSrgb"
+        },
+        {
+          "Value": "79",
+          "Name": "BC4Typeless"
+        },
+        {
+          "Value": "80",
+          "Name": "BC4UIntNormalized"
+        },
+        {
+          "Value": "81",
+          "Name": "BC4IntNormalized"
+        },
+        {
+          "Value": "82",
+          "Name": "BC5Typeless"
+        },
+        {
+          "Value": "83",
+          "Name": "BC5UIntNormalized"
+        },
+        {
+          "Value": "84",
+          "Name": "BC5IntNormalized"
+        },
+        {
+          "Value": "85",
+          "Name": "B5G6R5UIntNormalized"
+        },
+        {
+          "Value": "86",
+          "Name": "B5G5R5A1UIntNormalized"
+        },
+        {
+          "Value": "87",
+          "Name": "B8G8R8A8UIntNormalized"
+        },
+        {
+          "Value": "88",
+          "Name": "B8G8R8X8UIntNormalized"
+        },
+        {
+          "Value": "89",
+          "Name": "R10G10B10XRBiasA2UIntNormalized"
+        },
+        {
+          "Value": "90",
+          "Name": "B8G8R8A8Typeless"
+        },
+        {
+          "Value": "91",
+          "Name": "B8G8R8A8UIntNormalizedSrgb"
+        },
+        {
+          "Value": "92",
+          "Name": "B8G8R8X8Typeless"
+        },
+        {
+          "Value": "93",
+          "Name": "B8G8R8X8UIntNormalizedSrgb"
+        },
+        {
+          "Value": "94",
+          "Name": "BC6HTypeless"
+        },
+        {
+          "Value": "95",
+          "Name": "BC6H16UnsignedFloat"
+        },
+        {
+          "Value": "96",
+          "Name": "BC6H16Float"
+        },
+        {
+          "Value": "97",
+          "Name": "BC7Typeless"
+        },
+        {
+          "Value": "98",
+          "Name": "BC7UIntNormalized"
+        },
+        {
+          "Value": "99",
+          "Name": "BC7UIntNormalizedSrgb"
+        },
+        {
+          "Value": "100",
+          "Name": "Ayuv"
+        },
+        {
+          "Value": "101",
+          "Name": "Y410"
+        },
+        {
+          "Value": "102",
+          "Name": "Y416"
+        },
+        {
+          "Value": "103",
+          "Name": "NV12"
+        },
+        {
+          "Value": "104",
+          "Name": "P010"
+        },
+        {
+          "Value": "105",
+          "Name": "P016"
+        },
+        {
+          "Value": "106",
+          "Name": "Opaque420"
+        },
+        {
+          "Value": "107",
+          "Name": "Yuy2"
+        },
+        {
+          "Value": "108",
+          "Name": "Y210"
+        },
+        {
+          "Value": "109",
+          "Name": "Y216"
+        },
+        {
+          "Value": "110",
+          "Name": "NV11"
+        },
+        {
+          "Value": "111",
+          "Name": "AI44"
+        },
+        {
+          "Value": "112",
+          "Name": "IA44"
+        },
+        {
+          "Value": "113",
+          "Name": "P8"
+        },
+        {
+          "Value": "114",
+          "Name": "A8P8"
+        },
+        {
+          "Value": "115",
+          "Name": "B4G4R4A4UIntNormalized"
+        },
+        {
+          "Value": "130",
+          "Name": "P208"
+        },
+        {
+          "Value": "131",
+          "Name": "V208"
+        },
+        {
+          "Value": "132",
+          "Name": "V408"
+        },
+        {
+          "Value": "133",
+          "Name": "Astc4x4Typeless"
+        },
+        {
+          "Value": "134",
+          "Name": "Astc4x4Normalized"
+        },
+        {
+          "Value": "135",
+          "Name": "Astc4x4NormalizedSrgb"
+        },
+        {
+          "Value": "137",
+          "Name": "Astc5x4Typeless"
+        },
+        {
+          "Value": "138",
+          "Name": "Astc5x4Normalized"
+        },
+        {
+          "Value": "139",
+          "Name": "Astc5x4NormalizedSrgb"
+        },
+        {
+          "Value": "141",
+          "Name": "Astc5x5Typeless"
+        },
+        {
+          "Value": "142",
+          "Name": "Astc5x5Normalized"
+        },
+        {
+          "Value": "143",
+          "Name": "Astc5x5NormalizedSrgb"
+        },
+        {
+          "Value": "145",
+          "Name": "Astc6x5Typeless"
+        },
+        {
+          "Value": "146",
+          "Name": "Astc6x5Normalized"
+        },
+        {
+          "Value": "147",
+          "Name": "Astc6x5NormalizedSrgb"
+        },
+        {
+          "Value": "149",
+          "Name": "Astc6x6Typeless"
+        },
+        {
+          "Value": "150",
+          "Name": "Astc6x6Normalized"
+        },
+        {
+          "Value": "151",
+          "Name": "Astc6x6NormalizedSrgb"
+        },
+        {
+          "Value": "153",
+          "Name": "Astc8x5Typeless"
+        },
+        {
+          "Value": "154",
+          "Name": "Astc8x5Normalized"
+        },
+        {
+          "Value": "155",
+          "Name": "Astc8x5NormalizedSrgb"
+        },
+        {
+          "Value": "157",
+          "Name": "Astc8x6Typeless"
+        },
+        {
+          "Value": "158",
+          "Name": "Astc8x6Normalized"
+        },
+        {
+          "Value": "159",
+          "Name": "Astc8x6NormalizedSrgb"
+        },
+        {
+          "Value": "161",
+          "Name": "Astc8x8Typeless"
+        },
+        {
+          "Value": "162",
+          "Name": "Astc8x8Normalized"
+        },
+        {
+          "Value": "163",
+          "Name": "Astc8x8NormalizedSrgb"
+        },
+        {
+          "Value": "165",
+          "Name": "Astc10x5Typeless"
+        },
+        {
+          "Value": "166",
+          "Name": "Astc10x5Normalized"
+        },
+        {
+          "Value": "167",
+          "Name": "Astc10x5NormalizedSrgb"
+        },
+        {
+          "Value": "169",
+          "Name": "Astc10x6Typeless"
+        },
+        {
+          "Value": "170",
+          "Name": "Astc10x6Normalized"
+        },
+        {
+          "Value": "171",
+          "Name": "Astc10x6NormalizedSrgb"
+        },
+        {
+          "Value": "173",
+          "Name": "Astc10x8Typeless"
+        },
+        {
+          "Value": "174",
+          "Name": "Astc10x8Normalized"
+        },
+        {
+          "Value": "175",
+          "Name": "Astc10x8NormalizedSrgb"
+        },
+        {
+          "Value": "177",
+          "Name": "Astc10x10Typeless"
+        },
+        {
+          "Value": "178",
+          "Name": "Astc10x10Normalized"
+        },
+        {
+          "Value": "179",
+          "Name": "Astc10x10NormalizedSrgb"
+        },
+        {
+          "Value": "181",
+          "Name": "Astc12x10Typeless"
+        },
+        {
+          "Value": "182",
+          "Name": "Astc12x10Normalized"
+        },
+        {
+          "Value": "183",
+          "Name": "Astc12x10NormalizedSrgb"
+        },
+        {
+          "Value": "185",
+          "Name": "Astc12x12Typeless"
+        },
+        {
+          "Value": "186",
+          "Name": "Astc12x12Normalized"
+        },
+        {
+          "Value": "187",
+          "Name": "Astc12x12NormalizedSrgb"
+        }
+      ],
+      "Name": "Windows.Graphics.DirectX.DirectXPixelFormat"
+    },
+    {
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "None"
+        },
+        {
+          "Value": "1",
+          "Name": "Landscape"
+        },
+        {
+          "Value": "2",
+          "Name": "Portrait"
+        },
+        {
+          "Value": "4",
+          "Name": "LandscapeFlipped"
+        },
+        {
+          "Value": "8",
+          "Name": "PortraitFlipped"
+        }
+      ],
+      "Name": "Windows.Graphics.Display.DisplayOrientations"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Invalid"
+        },
+        {
+          "Value": "100",
+          "Name": "Scale100Percent"
+        },
+        {
+          "Value": "120",
+          "Name": "Scale120Percent"
+        },
+        {
+          "Value": "140",
+          "Name": "Scale140Percent"
+        },
+        {
+          "Value": "150",
+          "Name": "Scale150Percent"
+        },
+        {
+          "Value": "160",
+          "Name": "Scale160Percent"
+        },
+        {
+          "Value": "180",
+          "Name": "Scale180Percent"
+        },
+        {
+          "Value": "225",
+          "Name": "Scale225Percent"
+        }
+      ],
+      "Name": "Windows.Graphics.Display.ResolutionScale"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Premultiplied"
+        },
+        {
+          "Value": "1",
+          "Name": "Straight"
+        },
+        {
+          "Value": "2",
+          "Name": "Ignore"
+        }
+      ],
+      "Name": "Windows.Graphics.Imaging.BitmapAlphaMode"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Read"
+        },
+        {
+          "Value": "1",
+          "Name": "ReadWrite"
+        },
+        {
+          "Value": "2",
+          "Name": "Write"
+        }
+      ],
+      "Name": "Windows.Graphics.Imaging.BitmapBufferAccessMode"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "None"
+        },
+        {
+          "Value": "1",
+          "Name": "Horizontal"
+        },
+        {
+          "Value": "2",
+          "Name": "Vertical"
+        }
+      ],
+      "Name": "Windows.Graphics.Imaging.BitmapFlip"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "NearestNeighbor"
+        },
+        {
+          "Value": "1",
+          "Name": "Linear"
+        },
+        {
+          "Value": "2",
+          "Name": "Cubic"
+        },
+        {
+          "Value": "3",
+          "Name": "Fant"
+        }
+      ],
+      "Name": "Windows.Graphics.Imaging.BitmapInterpolationMode"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Unknown"
+        },
+        {
+          "Value": "12",
+          "Name": "Rgba16"
+        },
+        {
+          "Value": "30",
+          "Name": "Rgba8"
+        },
+        {
+          "Value": "57",
+          "Name": "Gray16"
+        },
+        {
+          "Value": "62",
+          "Name": "Gray8"
+        },
+        {
+          "Value": "87",
+          "Name": "Bgra8"
+        },
+        {
+          "Value": "103",
+          "Name": "Nv12"
+        },
+        {
+          "Value": "107",
+          "Name": "Yuy2"
+        }
+      ],
+      "Name": "Windows.Graphics.Imaging.BitmapPixelFormat"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "None"
+        },
+        {
+          "Value": "1",
+          "Name": "Clockwise90Degrees"
+        },
+        {
+          "Value": "2",
+          "Name": "Clockwise180Degrees"
+        },
+        {
+          "Value": "3",
+          "Name": "Clockwise270Degrees"
+        }
+      ],
+      "Name": "Windows.Graphics.Imaging.BitmapRotation"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "DoNotColorManage"
+        },
+        {
+          "Value": "1",
+          "Name": "ColorManageToSRgb"
+        }
+      ],
+      "Name": "Windows.Graphics.Imaging.ColorManagementMode"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "IgnoreExifOrientation"
+        },
+        {
+          "Value": "1",
+          "Name": "RespectExifOrientation"
+        }
+      ],
+      "Name": "Windows.Graphics.Imaging.ExifOrientationMode"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Default"
+        },
+        {
+          "Value": "1",
+          "Name": "Y4Cb2Cr0"
+        },
+        {
+          "Value": "2",
+          "Name": "Y4Cb2Cr2"
+        },
+        {
+          "Value": "3",
+          "Name": "Y4Cb4Cr4"
+        }
+      ],
+      "Name": "Windows.Graphics.Imaging.JpegSubsamplingMode"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Automatic"
+        },
+        {
+          "Value": "1",
+          "Name": "None"
+        },
+        {
+          "Value": "2",
+          "Name": "Sub"
+        },
+        {
+          "Value": "3",
+          "Name": "Up"
+        },
+        {
+          "Value": "4",
+          "Name": "Average"
+        },
+        {
+          "Value": "5",
+          "Name": "Paeth"
+        },
+        {
+          "Value": "6",
+          "Name": "Adaptive"
+        }
+      ],
+      "Name": "Windows.Graphics.Imaging.PngFilterMode"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Automatic"
+        },
+        {
+          "Value": "1",
+          "Name": "None"
+        },
+        {
+          "Value": "2",
+          "Name": "Ccitt3"
+        },
+        {
+          "Value": "3",
+          "Name": "Ccitt4"
+        },
+        {
+          "Value": "4",
+          "Name": "Lzw"
+        },
+        {
+          "Value": "5",
+          "Name": "Rle"
+        },
+        {
+          "Value": "6",
+          "Name": "Zip"
+        },
+        {
+          "Value": "7",
+          "Name": "LzwhDifferencing"
+        }
+      ],
+      "Name": "Windows.Graphics.Imaging.TiffCompressionMode"
+    },
+    {
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "None"
+        },
+        {
+          "Value": "1",
+          "Name": "Enabled"
+        },
+        {
+          "Value": "2",
+          "Name": "Constrained"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintOptionStates"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Unknown"
+        },
+        {
+          "Value": "1",
+          "Name": "Number"
+        },
+        {
+          "Value": "2",
+          "Name": "Text"
+        },
+        {
+          "Value": "3",
+          "Name": "ItemList"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.OptionDetails.PrintOptionType"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Unknown"
+        },
+        {
+          "Value": "1",
+          "Name": "ModelExceedsPrintBed"
+        },
+        {
+          "Value": "2",
+          "Name": "UploadFailed"
+        },
+        {
+          "Value": "3",
+          "Name": "InvalidMaterialSelection"
+        },
+        {
+          "Value": "4",
+          "Name": "InvalidModel"
+        },
+        {
+          "Value": "5",
+          "Name": "ModelNotManifold"
+        },
+        {
+          "Value": "6",
+          "Name": "InvalidPrintTicket"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.Print3DTaskDetail"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Default"
+        },
+        {
+          "Value": "1",
+          "Name": "NotAvailable"
+        },
+        {
+          "Value": "2",
+          "Name": "PrinterCustom"
+        },
+        {
+          "Value": "3",
+          "Name": "None"
+        },
+        {
+          "Value": "4",
+          "Name": "Bale"
+        },
+        {
+          "Value": "5",
+          "Name": "BindBottom"
+        },
+        {
+          "Value": "6",
+          "Name": "BindLeft"
+        },
+        {
+          "Value": "7",
+          "Name": "BindRight"
+        },
+        {
+          "Value": "8",
+          "Name": "BindTop"
+        },
+        {
+          "Value": "9",
+          "Name": "Booklet"
+        },
+        {
+          "Value": "10",
+          "Name": "EdgeStitchBottom"
+        },
+        {
+          "Value": "11",
+          "Name": "EdgeStitchLeft"
+        },
+        {
+          "Value": "12",
+          "Name": "EdgeStitchRight"
+        },
+        {
+          "Value": "13",
+          "Name": "EdgeStitchTop"
+        },
+        {
+          "Value": "14",
+          "Name": "Fold"
+        },
+        {
+          "Value": "15",
+          "Name": "JogOffset"
+        },
+        {
+          "Value": "16",
+          "Name": "Trim"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.PrintBinding"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Default"
+        },
+        {
+          "Value": "1",
+          "Name": "NotAvailable"
+        },
+        {
+          "Value": "2",
+          "Name": "PrinterCustom"
+        },
+        {
+          "Value": "3",
+          "Name": "Collated"
+        },
+        {
+          "Value": "4",
+          "Name": "Uncollated"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.PrintCollation"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Default"
+        },
+        {
+          "Value": "1",
+          "Name": "NotAvailable"
+        },
+        {
+          "Value": "2",
+          "Name": "PrinterCustom"
+        },
+        {
+          "Value": "3",
+          "Name": "Color"
+        },
+        {
+          "Value": "4",
+          "Name": "Grayscale"
+        },
+        {
+          "Value": "5",
+          "Name": "Monochrome"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.PrintColorMode"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Default"
+        },
+        {
+          "Value": "1",
+          "Name": "NotAvailable"
+        },
+        {
+          "Value": "2",
+          "Name": "PrinterCustom"
+        },
+        {
+          "Value": "3",
+          "Name": "OneSided"
+        },
+        {
+          "Value": "4",
+          "Name": "TwoSidedShortEdge"
+        },
+        {
+          "Value": "5",
+          "Name": "TwoSidedLongEdge"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.PrintDuplex"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Default"
+        },
+        {
+          "Value": "1",
+          "Name": "NotAvailable"
+        },
+        {
+          "Value": "2",
+          "Name": "PrinterCustom"
+        },
+        {
+          "Value": "3",
+          "Name": "None"
+        },
+        {
+          "Value": "4",
+          "Name": "LeftEdge"
+        },
+        {
+          "Value": "5",
+          "Name": "RightEdge"
+        },
+        {
+          "Value": "6",
+          "Name": "TopEdge"
+        },
+        {
+          "Value": "7",
+          "Name": "BottomEdge"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.PrintHolePunch"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Default"
+        },
+        {
+          "Value": "1",
+          "Name": "NotAvailable"
+        },
+        {
+          "Value": "2",
+          "Name": "PrinterCustom"
+        },
+        {
+          "Value": "3",
+          "Name": "BusinessCard"
+        },
+        {
+          "Value": "4",
+          "Name": "CreditCard"
+        },
+        {
+          "Value": "5",
+          "Name": "IsoA0"
+        },
+        {
+          "Value": "6",
+          "Name": "IsoA1"
+        },
+        {
+          "Value": "7",
+          "Name": "IsoA10"
+        },
+        {
+          "Value": "8",
+          "Name": "IsoA2"
+        },
+        {
+          "Value": "9",
+          "Name": "IsoA3"
+        },
+        {
+          "Value": "10",
+          "Name": "IsoA3Extra"
+        },
+        {
+          "Value": "11",
+          "Name": "IsoA3Rotated"
+        },
+        {
+          "Value": "12",
+          "Name": "IsoA4"
+        },
+        {
+          "Value": "13",
+          "Name": "IsoA4Extra"
+        },
+        {
+          "Value": "14",
+          "Name": "IsoA4Rotated"
+        },
+        {
+          "Value": "15",
+          "Name": "IsoA5"
+        },
+        {
+          "Value": "16",
+          "Name": "IsoA5Extra"
+        },
+        {
+          "Value": "17",
+          "Name": "IsoA5Rotated"
+        },
+        {
+          "Value": "18",
+          "Name": "IsoA6"
+        },
+        {
+          "Value": "19",
+          "Name": "IsoA6Rotated"
+        },
+        {
+          "Value": "20",
+          "Name": "IsoA7"
+        },
+        {
+          "Value": "21",
+          "Name": "IsoA8"
+        },
+        {
+          "Value": "22",
+          "Name": "IsoA9"
+        },
+        {
+          "Value": "23",
+          "Name": "IsoB0"
+        },
+        {
+          "Value": "24",
+          "Name": "IsoB1"
+        },
+        {
+          "Value": "25",
+          "Name": "IsoB10"
+        },
+        {
+          "Value": "26",
+          "Name": "IsoB2"
+        },
+        {
+          "Value": "27",
+          "Name": "IsoB3"
+        },
+        {
+          "Value": "28",
+          "Name": "IsoB4"
+        },
+        {
+          "Value": "29",
+          "Name": "IsoB4Envelope"
+        },
+        {
+          "Value": "30",
+          "Name": "IsoB5Envelope"
+        },
+        {
+          "Value": "31",
+          "Name": "IsoB5Extra"
+        },
+        {
+          "Value": "32",
+          "Name": "IsoB7"
+        },
+        {
+          "Value": "33",
+          "Name": "IsoB8"
+        },
+        {
+          "Value": "34",
+          "Name": "IsoB9"
+        },
+        {
+          "Value": "35",
+          "Name": "IsoC0"
+        },
+        {
+          "Value": "36",
+          "Name": "IsoC1"
+        },
+        {
+          "Value": "37",
+          "Name": "IsoC10"
+        },
+        {
+          "Value": "38",
+          "Name": "IsoC2"
+        },
+        {
+          "Value": "39",
+          "Name": "IsoC3"
+        },
+        {
+          "Value": "40",
+          "Name": "IsoC3Envelope"
+        },
+        {
+          "Value": "41",
+          "Name": "IsoC4"
+        },
+        {
+          "Value": "42",
+          "Name": "IsoC4Envelope"
+        },
+        {
+          "Value": "43",
+          "Name": "IsoC5"
+        },
+        {
+          "Value": "44",
+          "Name": "IsoC5Envelope"
+        },
+        {
+          "Value": "45",
+          "Name": "IsoC6"
+        },
+        {
+          "Value": "46",
+          "Name": "IsoC6C5Envelope"
+        },
+        {
+          "Value": "47",
+          "Name": "IsoC6Envelope"
+        },
+        {
+          "Value": "48",
+          "Name": "IsoC7"
+        },
+        {
+          "Value": "49",
+          "Name": "IsoC8"
+        },
+        {
+          "Value": "50",
+          "Name": "IsoC9"
+        },
+        {
+          "Value": "51",
+          "Name": "IsoDLEnvelope"
+        },
+        {
+          "Value": "52",
+          "Name": "IsoDLEnvelopeRotated"
+        },
+        {
+          "Value": "53",
+          "Name": "IsoSRA3"
+        },
+        {
+          "Value": "54",
+          "Name": "Japan2LPhoto"
+        },
+        {
+          "Value": "55",
+          "Name": "JapanChou3Envelope"
+        },
+        {
+          "Value": "56",
+          "Name": "JapanChou3EnvelopeRotated"
+        },
+        {
+          "Value": "57",
+          "Name": "JapanChou4Envelope"
+        },
+        {
+          "Value": "58",
+          "Name": "JapanChou4EnvelopeRotated"
+        },
+        {
+          "Value": "59",
+          "Name": "JapanDoubleHagakiPostcard"
+        },
+        {
+          "Value": "60",
+          "Name": "JapanDoubleHagakiPostcardRotated"
+        },
+        {
+          "Value": "61",
+          "Name": "JapanHagakiPostcard"
+        },
+        {
+          "Value": "62",
+          "Name": "JapanHagakiPostcardRotated"
+        },
+        {
+          "Value": "63",
+          "Name": "JapanKaku2Envelope"
+        },
+        {
+          "Value": "64",
+          "Name": "JapanKaku2EnvelopeRotated"
+        },
+        {
+          "Value": "65",
+          "Name": "JapanKaku3Envelope"
+        },
+        {
+          "Value": "66",
+          "Name": "JapanKaku3EnvelopeRotated"
+        },
+        {
+          "Value": "67",
+          "Name": "JapanLPhoto"
+        },
+        {
+          "Value": "68",
+          "Name": "JapanQuadrupleHagakiPostcard"
+        },
+        {
+          "Value": "69",
+          "Name": "JapanYou1Envelope"
+        },
+        {
+          "Value": "70",
+          "Name": "JapanYou2Envelope"
+        },
+        {
+          "Value": "71",
+          "Name": "JapanYou3Envelope"
+        },
+        {
+          "Value": "72",
+          "Name": "JapanYou4Envelope"
+        },
+        {
+          "Value": "73",
+          "Name": "JapanYou4EnvelopeRotated"
+        },
+        {
+          "Value": "74",
+          "Name": "JapanYou6Envelope"
+        },
+        {
+          "Value": "75",
+          "Name": "JapanYou6EnvelopeRotated"
+        },
+        {
+          "Value": "76",
+          "Name": "JisB0"
+        },
+        {
+          "Value": "77",
+          "Name": "JisB1"
+        },
+        {
+          "Value": "78",
+          "Name": "JisB10"
+        },
+        {
+          "Value": "79",
+          "Name": "JisB2"
+        },
+        {
+          "Value": "80",
+          "Name": "JisB3"
+        },
+        {
+          "Value": "81",
+          "Name": "JisB4"
+        },
+        {
+          "Value": "82",
+          "Name": "JisB4Rotated"
+        },
+        {
+          "Value": "83",
+          "Name": "JisB5"
+        },
+        {
+          "Value": "84",
+          "Name": "JisB5Rotated"
+        },
+        {
+          "Value": "85",
+          "Name": "JisB6"
+        },
+        {
+          "Value": "86",
+          "Name": "JisB6Rotated"
+        },
+        {
+          "Value": "87",
+          "Name": "JisB7"
+        },
+        {
+          "Value": "88",
+          "Name": "JisB8"
+        },
+        {
+          "Value": "89",
+          "Name": "JisB9"
+        },
+        {
+          "Value": "90",
+          "Name": "NorthAmerica10x11"
+        },
+        {
+          "Value": "91",
+          "Name": "NorthAmerica10x12"
+        },
+        {
+          "Value": "92",
+          "Name": "NorthAmerica10x14"
+        },
+        {
+          "Value": "93",
+          "Name": "NorthAmerica11x17"
+        },
+        {
+          "Value": "94",
+          "Name": "NorthAmerica14x17"
+        },
+        {
+          "Value": "95",
+          "Name": "NorthAmerica4x6"
+        },
+        {
+          "Value": "96",
+          "Name": "NorthAmerica4x8"
+        },
+        {
+          "Value": "97",
+          "Name": "NorthAmerica5x7"
+        },
+        {
+          "Value": "98",
+          "Name": "NorthAmerica8x10"
+        },
+        {
+          "Value": "99",
+          "Name": "NorthAmerica9x11"
+        },
+        {
+          "Value": "100",
+          "Name": "NorthAmericaArchitectureASheet"
+        },
+        {
+          "Value": "101",
+          "Name": "NorthAmericaArchitectureBSheet"
+        },
+        {
+          "Value": "102",
+          "Name": "NorthAmericaArchitectureCSheet"
+        },
+        {
+          "Value": "103",
+          "Name": "NorthAmericaArchitectureDSheet"
+        },
+        {
+          "Value": "104",
+          "Name": "NorthAmericaArchitectureESheet"
+        },
+        {
+          "Value": "105",
+          "Name": "NorthAmericaCSheet"
+        },
+        {
+          "Value": "106",
+          "Name": "NorthAmericaDSheet"
+        },
+        {
+          "Value": "107",
+          "Name": "NorthAmericaESheet"
+        },
+        {
+          "Value": "108",
+          "Name": "NorthAmericaExecutive"
+        },
+        {
+          "Value": "109",
+          "Name": "NorthAmericaGermanLegalFanfold"
+        },
+        {
+          "Value": "110",
+          "Name": "NorthAmericaGermanStandardFanfold"
+        },
+        {
+          "Value": "111",
+          "Name": "NorthAmericaLegal"
+        },
+        {
+          "Value": "112",
+          "Name": "NorthAmericaLegalExtra"
+        },
+        {
+          "Value": "113",
+          "Name": "NorthAmericaLetter"
+        },
+        {
+          "Value": "114",
+          "Name": "NorthAmericaLetterExtra"
+        },
+        {
+          "Value": "115",
+          "Name": "NorthAmericaLetterPlus"
+        },
+        {
+          "Value": "116",
+          "Name": "NorthAmericaLetterRotated"
+        },
+        {
+          "Value": "117",
+          "Name": "NorthAmericaMonarchEnvelope"
+        },
+        {
+          "Value": "118",
+          "Name": "NorthAmericaNote"
+        },
+        {
+          "Value": "119",
+          "Name": "NorthAmericaNumber10Envelope"
+        },
+        {
+          "Value": "120",
+          "Name": "NorthAmericaNumber10EnvelopeRotated"
+        },
+        {
+          "Value": "121",
+          "Name": "NorthAmericaNumber11Envelope"
+        },
+        {
+          "Value": "122",
+          "Name": "NorthAmericaNumber12Envelope"
+        },
+        {
+          "Value": "123",
+          "Name": "NorthAmericaNumber14Envelope"
+        },
+        {
+          "Value": "124",
+          "Name": "NorthAmericaNumber9Envelope"
+        },
+        {
+          "Value": "125",
+          "Name": "NorthAmericaPersonalEnvelope"
+        },
+        {
+          "Value": "126",
+          "Name": "NorthAmericaQuarto"
+        },
+        {
+          "Value": "127",
+          "Name": "NorthAmericaStatement"
+        },
+        {
+          "Value": "128",
+          "Name": "NorthAmericaSuperA"
+        },
+        {
+          "Value": "129",
+          "Name": "NorthAmericaSuperB"
+        },
+        {
+          "Value": "130",
+          "Name": "NorthAmericaTabloid"
+        },
+        {
+          "Value": "131",
+          "Name": "NorthAmericaTabloidExtra"
+        },
+        {
+          "Value": "132",
+          "Name": "OtherMetricA3Plus"
+        },
+        {
+          "Value": "133",
+          "Name": "OtherMetricA4Plus"
+        },
+        {
+          "Value": "134",
+          "Name": "OtherMetricFolio"
+        },
+        {
+          "Value": "135",
+          "Name": "OtherMetricInviteEnvelope"
+        },
+        {
+          "Value": "136",
+          "Name": "OtherMetricItalianEnvelope"
+        },
+        {
+          "Value": "137",
+          "Name": "Prc10Envelope"
+        },
+        {
+          "Value": "138",
+          "Name": "Prc10EnvelopeRotated"
+        },
+        {
+          "Value": "139",
+          "Name": "Prc16K"
+        },
+        {
+          "Value": "140",
+          "Name": "Prc16KRotated"
+        },
+        {
+          "Value": "141",
+          "Name": "Prc1Envelope"
+        },
+        {
+          "Value": "142",
+          "Name": "Prc1EnvelopeRotated"
+        },
+        {
+          "Value": "143",
+          "Name": "Prc2Envelope"
+        },
+        {
+          "Value": "144",
+          "Name": "Prc2EnvelopeRotated"
+        },
+        {
+          "Value": "145",
+          "Name": "Prc32K"
+        },
+        {
+          "Value": "146",
+          "Name": "Prc32KBig"
+        },
+        {
+          "Value": "147",
+          "Name": "Prc32KRotated"
+        },
+        {
+          "Value": "148",
+          "Name": "Prc3Envelope"
+        },
+        {
+          "Value": "149",
+          "Name": "Prc3EnvelopeRotated"
+        },
+        {
+          "Value": "150",
+          "Name": "Prc4Envelope"
+        },
+        {
+          "Value": "151",
+          "Name": "Prc4EnvelopeRotated"
+        },
+        {
+          "Value": "152",
+          "Name": "Prc5Envelope"
+        },
+        {
+          "Value": "153",
+          "Name": "Prc5EnvelopeRotated"
+        },
+        {
+          "Value": "154",
+          "Name": "Prc6Envelope"
+        },
+        {
+          "Value": "155",
+          "Name": "Prc6EnvelopeRotated"
+        },
+        {
+          "Value": "156",
+          "Name": "Prc7Envelope"
+        },
+        {
+          "Value": "157",
+          "Name": "Prc7EnvelopeRotated"
+        },
+        {
+          "Value": "158",
+          "Name": "Prc8Envelope"
+        },
+        {
+          "Value": "159",
+          "Name": "Prc8EnvelopeRotated"
+        },
+        {
+          "Value": "160",
+          "Name": "Prc9Envelope"
+        },
+        {
+          "Value": "161",
+          "Name": "Prc9EnvelopeRotated"
+        },
+        {
+          "Value": "162",
+          "Name": "Roll04Inch"
+        },
+        {
+          "Value": "163",
+          "Name": "Roll06Inch"
+        },
+        {
+          "Value": "164",
+          "Name": "Roll08Inch"
+        },
+        {
+          "Value": "165",
+          "Name": "Roll12Inch"
+        },
+        {
+          "Value": "166",
+          "Name": "Roll15Inch"
+        },
+        {
+          "Value": "167",
+          "Name": "Roll18Inch"
+        },
+        {
+          "Value": "168",
+          "Name": "Roll22Inch"
+        },
+        {
+          "Value": "169",
+          "Name": "Roll24Inch"
+        },
+        {
+          "Value": "170",
+          "Name": "Roll30Inch"
+        },
+        {
+          "Value": "171",
+          "Name": "Roll36Inch"
+        },
+        {
+          "Value": "172",
+          "Name": "Roll54Inch"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.PrintMediaSize"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Default"
+        },
+        {
+          "Value": "1",
+          "Name": "NotAvailable"
+        },
+        {
+          "Value": "2",
+          "Name": "PrinterCustom"
+        },
+        {
+          "Value": "3",
+          "Name": "AutoSelect"
+        },
+        {
+          "Value": "4",
+          "Name": "Archival"
+        },
+        {
+          "Value": "5",
+          "Name": "BackPrintFilm"
+        },
+        {
+          "Value": "6",
+          "Name": "Bond"
+        },
+        {
+          "Value": "7",
+          "Name": "CardStock"
+        },
+        {
+          "Value": "8",
+          "Name": "Continuous"
+        },
+        {
+          "Value": "9",
+          "Name": "EnvelopePlain"
+        },
+        {
+          "Value": "10",
+          "Name": "EnvelopeWindow"
+        },
+        {
+          "Value": "11",
+          "Name": "Fabric"
+        },
+        {
+          "Value": "12",
+          "Name": "HighResolution"
+        },
+        {
+          "Value": "13",
+          "Name": "Label"
+        },
+        {
+          "Value": "14",
+          "Name": "MultiLayerForm"
+        },
+        {
+          "Value": "15",
+          "Name": "MultiPartForm"
+        },
+        {
+          "Value": "16",
+          "Name": "Photographic"
+        },
+        {
+          "Value": "17",
+          "Name": "PhotographicFilm"
+        },
+        {
+          "Value": "18",
+          "Name": "PhotographicGlossy"
+        },
+        {
+          "Value": "19",
+          "Name": "PhotographicHighGloss"
+        },
+        {
+          "Value": "20",
+          "Name": "PhotographicMatte"
+        },
+        {
+          "Value": "21",
+          "Name": "PhotographicSatin"
+        },
+        {
+          "Value": "22",
+          "Name": "PhotographicSemiGloss"
+        },
+        {
+          "Value": "23",
+          "Name": "Plain"
+        },
+        {
+          "Value": "24",
+          "Name": "Screen"
+        },
+        {
+          "Value": "25",
+          "Name": "ScreenPaged"
+        },
+        {
+          "Value": "26",
+          "Name": "Stationery"
+        },
+        {
+          "Value": "27",
+          "Name": "TabStockFull"
+        },
+        {
+          "Value": "28",
+          "Name": "TabStockPreCut"
+        },
+        {
+          "Value": "29",
+          "Name": "Transparency"
+        },
+        {
+          "Value": "30",
+          "Name": "TShirtTransfer"
+        },
+        {
+          "Value": "31",
+          "Name": "None"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.PrintMediaType"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Default"
+        },
+        {
+          "Value": "1",
+          "Name": "NotAvailable"
+        },
+        {
+          "Value": "2",
+          "Name": "PrinterCustom"
+        },
+        {
+          "Value": "3",
+          "Name": "Portrait"
+        },
+        {
+          "Value": "4",
+          "Name": "PortraitFlipped"
+        },
+        {
+          "Value": "5",
+          "Name": "Landscape"
+        },
+        {
+          "Value": "6",
+          "Name": "LandscapeFlipped"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.PrintOrientation"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Default"
+        },
+        {
+          "Value": "1",
+          "Name": "NotAvailable"
+        },
+        {
+          "Value": "2",
+          "Name": "PrinterCustom"
+        },
+        {
+          "Value": "3",
+          "Name": "Automatic"
+        },
+        {
+          "Value": "4",
+          "Name": "Draft"
+        },
+        {
+          "Value": "5",
+          "Name": "Fax"
+        },
+        {
+          "Value": "6",
+          "Name": "High"
+        },
+        {
+          "Value": "7",
+          "Name": "Normal"
+        },
+        {
+          "Value": "8",
+          "Name": "Photographic"
+        },
+        {
+          "Value": "9",
+          "Name": "Text"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.PrintQuality"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Default"
+        },
+        {
+          "Value": "1",
+          "Name": "NotAvailable"
+        },
+        {
+          "Value": "2",
+          "Name": "PrinterCustom"
+        },
+        {
+          "Value": "3",
+          "Name": "None"
+        },
+        {
+          "Value": "4",
+          "Name": "StapleTopLeft"
+        },
+        {
+          "Value": "5",
+          "Name": "StapleTopRight"
+        },
+        {
+          "Value": "6",
+          "Name": "StapleBottomLeft"
+        },
+        {
+          "Value": "7",
+          "Name": "StapleBottomRight"
+        },
+        {
+          "Value": "8",
+          "Name": "StapleDualLeft"
+        },
+        {
+          "Value": "9",
+          "Name": "StapleDualRight"
+        },
+        {
+          "Value": "10",
+          "Name": "StapleDualTop"
+        },
+        {
+          "Value": "11",
+          "Name": "StapleDualBottom"
+        },
+        {
+          "Value": "12",
+          "Name": "SaddleStitch"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.PrintStaple"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Abandoned"
+        },
+        {
+          "Value": "1",
+          "Name": "Canceled"
+        },
+        {
+          "Value": "2",
+          "Name": "Failed"
+        },
+        {
+          "Value": "3",
+          "Name": "Submitted"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.PrintTaskCompletion"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Jpeg"
+        },
+        {
+          "Value": "1",
+          "Name": "Png"
+        },
+        {
+          "Value": "2",
+          "Name": "Tiff"
+        },
+        {
+          "Value": "3",
+          "Name": "Tbmp"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.TextureFormat"
+    }
+  ],
+  "Delegates": [
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "sender",
+          "Type": "Object"
+        }
+      ],
+      "Name": "Windows.Graphics.Display.DisplayPropertiesEventHandler"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "args",
+          "Type": "Print3DTaskSourceRequestedArgs"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.Print3DTaskSourceRequestedHandler"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "args",
+          "Type": "PrintTaskSourceRequestedArgs"
+        }
+      ],
+      "Name": "Windows.Graphics.Printing.PrintTaskSourceRequestedHandler"
+    }
+  ]
+}

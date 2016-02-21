@@ -1,0 +1,7379 @@
+{
+  "Name": "Windows.Media, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime",
+  "Classes": [
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "PhotoSettings",
+          "Type": "CameraCaptureUIPhotoCaptureSettings",
+          "IsGet": true
+        },
+        {
+          "Name": "VideoSettings",
+          "Type": "CameraCaptureUIVideoCaptureSettings",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "CaptureFileAsync",
+          "ReturnType": "IAsyncOperation<StorageFile>",
+          "Parameters": [
+            {
+              "Name": "mode",
+              "Type": "CameraCaptureUIMode"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Capture.CameraCaptureUI"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "AllowCropping",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "CroppedAspectRatio",
+          "Type": "Size",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "CroppedSizeInPixels",
+          "Type": "Size",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Format",
+          "Type": "CameraCaptureUIPhotoFormat",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "MaxResolution",
+          "Type": "CameraCaptureUIMaxPhotoResolution",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Capture.CameraCaptureUIPhotoCaptureSettings"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "AllowTrimming",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Format",
+          "Type": "CameraCaptureUIVideoFormat",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "MaxDurationInSeconds",
+          "Type": "Single",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "MaxResolution",
+          "Type": "CameraCaptureUIMaxVideoResolution",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Capture.CameraCaptureUIVideoCaptureSettings"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "Show",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "mediaCapture",
+              "Type": "MediaCapture"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Capture.CameraOptionsUI"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IContentTypeProvider",
+        "IDisposable",
+        "IInputStream",
+        "IOutputStream",
+        "IRandomAccessStream",
+        "IRandomAccessStreamWithContentType"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "CanRead",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "CanWrite",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "ContentType",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Height",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "Position",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt64",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Width",
+          "Type": "UInt32",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "CloneStream",
+          "ReturnType": "IRandomAccessStream"
+        },
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "FlushAsync",
+          "ReturnType": "IAsyncOperation<Boolean>"
+        },
+        {
+          "Name": "GetInputStreamAt",
+          "ReturnType": "IInputStream",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "GetOutputStreamAt",
+          "ReturnType": "IOutputStream",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "ReadAsync",
+          "ReturnType": "IAsyncOperationWithProgress<IBuffer,UInt32>",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "count",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "options",
+              "Type": "InputStreamOptions"
+            }
+          ]
+        },
+        {
+          "Name": "Seek",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "WriteAsync",
+          "ReturnType": "IAsyncOperationWithProgress<UInt32,UInt32>",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "IBuffer"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Capture.CapturedFrame"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Frame",
+          "Type": "CapturedFrame",
+          "IsGet": true
+        },
+        {
+          "Name": "Thumbnail",
+          "Type": "CapturedFrame",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Capture.CapturedPhoto"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "FinishAsync",
+          "ReturnType": "IAsyncAction"
+        },
+        {
+          "Name": "StartAsync",
+          "ReturnType": "IAsyncAction"
+        },
+        {
+          "Name": "StopAsync",
+          "ReturnType": "IAsyncAction"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Capture.LowLagMediaRecording"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "CaptureAsync",
+          "ReturnType": "IAsyncOperation<CapturedPhoto>"
+        },
+        {
+          "Name": "FinishAsync",
+          "ReturnType": "IAsyncAction"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Capture.LowLagPhotoCapture"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "FinishAsync",
+          "ReturnType": "IAsyncAction"
+        },
+        {
+          "Name": "StartAsync",
+          "ReturnType": "IAsyncAction"
+        },
+        {
+          "Name": "StopAsync",
+          "ReturnType": "IAsyncAction"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "PhotoCaptured",
+          "Type": "TypedEventHandler<LowLagPhotoSequenceCapture,PhotoCapturedEventArgs>"
+        }
+      ],
+      "Name": "Windows.Media.Capture.LowLagPhotoSequenceCapture"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IDisposable"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "AudioDeviceController",
+          "Type": "AudioDeviceController",
+          "IsGet": true
+        },
+        {
+          "Name": "MediaCaptureSettings",
+          "Type": "MediaCaptureSettings",
+          "IsGet": true
+        },
+        {
+          "Name": "VideoDeviceController",
+          "Type": "VideoDeviceController",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "AddEffectAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "mediaStreamType",
+              "Type": "MediaStreamType"
+            },
+            {
+              "Name": "effectActivationID",
+              "Type": "String"
+            },
+            {
+              "Name": "effectSettings",
+              "Type": "IPropertySet"
+            }
+          ]
+        },
+        {
+          "Name": "CapturePhotoToStorageFileAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "ImageEncodingProperties"
+            },
+            {
+              "Name": "file",
+              "Type": "IStorageFile"
+            }
+          ]
+        },
+        {
+          "Name": "CapturePhotoToStreamAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "ImageEncodingProperties"
+            },
+            {
+              "Name": "stream",
+              "Type": "IRandomAccessStream"
+            }
+          ]
+        },
+        {
+          "Name": "ClearEffectsAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "mediaStreamType",
+              "Type": "MediaStreamType"
+            }
+          ]
+        },
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "GetEncoderProperty",
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "mediaStreamType",
+              "Type": "MediaStreamType"
+            },
+            {
+              "Name": "propertyId",
+              "Type": "Guid"
+            }
+          ]
+        },
+        {
+          "Name": "GetPreviewMirroring",
+          "ReturnType": "Boolean"
+        },
+        {
+          "Name": "GetPreviewRotation",
+          "ReturnType": "VideoRotation"
+        },
+        {
+          "Name": "GetRecordRotation",
+          "ReturnType": "VideoRotation"
+        },
+        {
+          "Name": "InitializeAsync",
+          "ReturnType": "IAsyncAction"
+        },
+        {
+          "Name": "InitializeAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "mediaCaptureInitializationSettings",
+              "Type": "MediaCaptureInitializationSettings"
+            }
+          ]
+        },
+        {
+          "Name": "PrepareLowLagPhotoCaptureAsync",
+          "ReturnType": "IAsyncOperation<LowLagPhotoCapture>",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "ImageEncodingProperties"
+            }
+          ]
+        },
+        {
+          "Name": "PrepareLowLagPhotoSequenceCaptureAsync",
+          "ReturnType": "IAsyncOperation<LowLagPhotoSequenceCapture>",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "ImageEncodingProperties"
+            }
+          ]
+        },
+        {
+          "Name": "PrepareLowLagRecordToCustomSinkAsync",
+          "ReturnType": "IAsyncOperation<LowLagMediaRecording>",
+          "Parameters": [
+            {
+              "Name": "encodingProfile",
+              "Type": "MediaEncodingProfile"
+            },
+            {
+              "Name": "customMediaSink",
+              "Type": "IMediaExtension"
+            }
+          ]
+        },
+        {
+          "Name": "PrepareLowLagRecordToCustomSinkAsync",
+          "ReturnType": "IAsyncOperation<LowLagMediaRecording>",
+          "Parameters": [
+            {
+              "Name": "encodingProfile",
+              "Type": "MediaEncodingProfile"
+            },
+            {
+              "Name": "customSinkActivationId",
+              "Type": "String"
+            },
+            {
+              "Name": "customSinkSettings",
+              "Type": "IPropertySet"
+            }
+          ]
+        },
+        {
+          "Name": "PrepareLowLagRecordToStorageFileAsync",
+          "ReturnType": "IAsyncOperation<LowLagMediaRecording>",
+          "Parameters": [
+            {
+              "Name": "encodingProfile",
+              "Type": "MediaEncodingProfile"
+            },
+            {
+              "Name": "file",
+              "Type": "IStorageFile"
+            }
+          ]
+        },
+        {
+          "Name": "PrepareLowLagRecordToStreamAsync",
+          "ReturnType": "IAsyncOperation<LowLagMediaRecording>",
+          "Parameters": [
+            {
+              "Name": "encodingProfile",
+              "Type": "MediaEncodingProfile"
+            },
+            {
+              "Name": "stream",
+              "Type": "IRandomAccessStream"
+            }
+          ]
+        },
+        {
+          "Name": "SetEncoderProperty",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "mediaStreamType",
+              "Type": "MediaStreamType"
+            },
+            {
+              "Name": "propertyId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "propertyValue",
+              "Type": "Object"
+            }
+          ]
+        },
+        {
+          "Name": "SetEncodingPropertiesAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "mediaStreamType",
+              "Type": "MediaStreamType"
+            },
+            {
+              "Name": "mediaEncodingProperties",
+              "Type": "IMediaEncodingProperties"
+            },
+            {
+              "Name": "encoderProperties",
+              "Type": "MediaPropertySet"
+            }
+          ]
+        },
+        {
+          "Name": "SetPreviewMirroring",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "SetPreviewRotation",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "VideoRotation"
+            }
+          ]
+        },
+        {
+          "Name": "SetRecordRotation",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "VideoRotation"
+            }
+          ]
+        },
+        {
+          "Name": "StartPreviewAsync",
+          "ReturnType": "IAsyncAction"
+        },
+        {
+          "Name": "StartPreviewToCustomSinkAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "encodingProfile",
+              "Type": "MediaEncodingProfile"
+            },
+            {
+              "Name": "customMediaSink",
+              "Type": "IMediaExtension"
+            }
+          ]
+        },
+        {
+          "Name": "StartPreviewToCustomSinkAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "encodingProfile",
+              "Type": "MediaEncodingProfile"
+            },
+            {
+              "Name": "customSinkActivationId",
+              "Type": "String"
+            },
+            {
+              "Name": "customSinkSettings",
+              "Type": "IPropertySet"
+            }
+          ]
+        },
+        {
+          "Name": "StartRecordToCustomSinkAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "encodingProfile",
+              "Type": "MediaEncodingProfile"
+            },
+            {
+              "Name": "customMediaSink",
+              "Type": "IMediaExtension"
+            }
+          ]
+        },
+        {
+          "Name": "StartRecordToCustomSinkAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "encodingProfile",
+              "Type": "MediaEncodingProfile"
+            },
+            {
+              "Name": "customSinkActivationId",
+              "Type": "String"
+            },
+            {
+              "Name": "customSinkSettings",
+              "Type": "IPropertySet"
+            }
+          ]
+        },
+        {
+          "Name": "StartRecordToStorageFileAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "encodingProfile",
+              "Type": "MediaEncodingProfile"
+            },
+            {
+              "Name": "file",
+              "Type": "IStorageFile"
+            }
+          ]
+        },
+        {
+          "Name": "StartRecordToStreamAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "encodingProfile",
+              "Type": "MediaEncodingProfile"
+            },
+            {
+              "Name": "stream",
+              "Type": "IRandomAccessStream"
+            }
+          ]
+        },
+        {
+          "Name": "StopPreviewAsync",
+          "ReturnType": "IAsyncAction"
+        },
+        {
+          "Name": "StopRecordAsync",
+          "ReturnType": "IAsyncAction"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "Failed",
+          "Type": "MediaCaptureFailedEventHandler"
+        },
+        {
+          "Name": "RecordLimitationExceeded",
+          "Type": "RecordLimitationExceededEventHandler"
+        }
+      ],
+      "Name": "Windows.Media.Capture.MediaCapture"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Code",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "Message",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Capture.MediaCaptureFailedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "AudioDeviceId",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "AudioProcessing",
+          "Type": "AudioProcessing",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "MediaCategory",
+          "Type": "MediaCategory",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "PhotoCaptureSource",
+          "Type": "PhotoCaptureSource",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "StreamingCaptureMode",
+          "Type": "StreamingCaptureMode",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "VideoDeviceId",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Capture.MediaCaptureInitializationSettings"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "AudioDeviceId",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "AudioProcessing",
+          "Type": "AudioProcessing",
+          "IsGet": true
+        },
+        {
+          "Name": "CameraSoundRequiredForRegion",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "ConcurrentRecordAndPhotoSequenceSupported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "ConcurrentRecordAndPhotoSupported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Horizontal35mmEquivalentFocalLength",
+          "Type": "Nullable<UInt32>",
+          "IsGet": true
+        },
+        {
+          "Name": "MediaCategory",
+          "Type": "MediaCategory",
+          "IsGet": true
+        },
+        {
+          "Name": "PhotoCaptureSource",
+          "Type": "PhotoCaptureSource",
+          "IsGet": true
+        },
+        {
+          "Name": "PitchOffsetDegrees",
+          "Type": "Nullable<Int32>",
+          "IsGet": true
+        },
+        {
+          "Name": "StreamingCaptureMode",
+          "Type": "StreamingCaptureMode",
+          "IsGet": true
+        },
+        {
+          "Name": "Vertical35mmEquivalentFocalLength",
+          "Type": "Nullable<UInt32>",
+          "IsGet": true
+        },
+        {
+          "Name": "VideoDeviceCharacteristic",
+          "Type": "VideoDeviceCharacteristic",
+          "IsGet": true
+        },
+        {
+          "Name": "VideoDeviceId",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Capture.MediaCaptureSettings"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "CaptureTimeOffset",
+          "Type": "TimeSpan",
+          "IsGet": true
+        },
+        {
+          "Name": "Frame",
+          "Type": "CapturedFrame",
+          "IsGet": true
+        },
+        {
+          "Name": "Thumbnail",
+          "Type": "CapturedFrame",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Capture.PhotoCapturedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "GeographicRegion",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "MaxBrowsableAgeRating",
+          "Type": "Nullable<UInt32>",
+          "IsGet": true
+        },
+        {
+          "Name": "PreferredAgeRating",
+          "Type": "Nullable<UInt32>",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.ContentRestrictions.ContentRestrictionsBrowsePolicy"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "id",
+              "Type": "String"
+            },
+            {
+              "Name": "title",
+              "Type": "String"
+            },
+            {
+              "Name": "category",
+              "Type": "RatedContentCategory"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "Category",
+          "Type": "RatedContentCategory",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Id",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Image",
+          "Type": "IRandomAccessStreamReference",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Ratings",
+          "Type": "IList<String>",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Title",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.ContentRestrictions.RatedContentDescription"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {},
+        {
+          "Parameters": [
+            {
+              "Name": "maxAgeRating",
+              "Type": "UInt32"
+            }
+          ]
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "GetBrowsePolicyAsync",
+          "ReturnType": "IAsyncOperation<ContentRestrictionsBrowsePolicy>"
+        },
+        {
+          "Name": "GetRestrictionLevelAsync",
+          "ReturnType": "IAsyncOperation<ContentAccessRestrictionLevel>",
+          "Parameters": [
+            {
+              "Name": "RatedContentDescription",
+              "Type": "RatedContentDescription"
+            }
+          ]
+        },
+        {
+          "Name": "RequestContentAccessAsync",
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "RatedContentDescription",
+              "Type": "RatedContentDescription"
+            }
+          ]
+        }
+      ],
+      "Events": [
+        {
+          "Name": "RestrictionsChanged",
+          "Type": "EventHandler<Object>"
+        }
+      ],
+      "Name": "Windows.Media.ContentRestrictions.RatedContentRestrictions"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IMediaStreamDescriptor"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "encodingProperties",
+              "Type": "AudioEncodingProperties"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "EncodingProperties",
+          "Type": "AudioEncodingProperties",
+          "IsGet": true
+        },
+        {
+          "Name": "IsSelected",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Language",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Core.AudioStreamDescriptor"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Buffer",
+          "Type": "Buffer",
+          "IsGet": true
+        },
+        {
+          "Name": "DecodeTimestamp",
+          "Type": "TimeSpan",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Discontinuous",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Duration",
+          "Type": "TimeSpan",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "ExtendedProperties",
+          "Type": "MediaStreamSamplePropertySet",
+          "IsGet": true
+        },
+        {
+          "Name": "KeyFrame",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Protection",
+          "Type": "MediaStreamSampleProtectionProperties",
+          "IsGet": true
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "TimeSpan",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "CreateFromBuffer",
+          "IsStatic": true,
+          "ReturnType": "MediaStreamSample",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "timestamp",
+              "Type": "TimeSpan"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromStreamAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MediaStreamSample>",
+          "Parameters": [
+            {
+              "Name": "stream",
+              "Type": "IInputStream"
+            },
+            {
+              "Name": "count",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "timestamp",
+              "Type": "TimeSpan"
+            }
+          ]
+        }
+      ],
+      "Events": [
+        {
+          "Name": "Processed",
+          "Type": "TypedEventHandler<MediaStreamSample,Object>"
+        }
+      ],
+      "Name": "Windows.Media.Core.MediaStreamSample"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "ICollection<KeyValuePair<Guid,Object>>",
+        "IDictionary<Guid,Object>",
+        "IEnumerable",
+        "IEnumerable<KeyValuePair<Guid,Object>>"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Core.MediaStreamSamplePropertySet"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "GetInitializationVector",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Byte[]&",
+              "Out": true
+            }
+          ]
+        },
+        {
+          "Name": "GetKeyIdentifier",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Byte[]&",
+              "Out": true
+            }
+          ]
+        },
+        {
+          "Name": "GetSubSampleMapping",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Byte[]&",
+              "Out": true
+            }
+          ]
+        },
+        {
+          "Name": "SetInitializationVector",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Byte[]"
+            }
+          ]
+        },
+        {
+          "Name": "SetKeyIdentifier",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Byte[]"
+            }
+          ]
+        },
+        {
+          "Name": "SetSubSampleMapping",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Byte[]"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Core.MediaStreamSampleProtectionProperties"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IMediaSource"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "descriptor",
+              "Type": "IMediaStreamDescriptor"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "descriptor",
+              "Type": "IMediaStreamDescriptor"
+            },
+            {
+              "Name": "descriptor2",
+              "Type": "IMediaStreamDescriptor"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "BufferTime",
+          "Type": "TimeSpan",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "CanSeek",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Duration",
+          "Type": "TimeSpan",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "MediaProtectionManager",
+          "Type": "MediaProtectionManager",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "MusicProperties",
+          "Type": "MusicProperties",
+          "IsGet": true
+        },
+        {
+          "Name": "Thumbnail",
+          "Type": "IRandomAccessStreamReference",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "VideoProperties",
+          "Type": "VideoProperties",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "AddProtectionKey",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "streamDescriptor",
+              "Type": "IMediaStreamDescriptor"
+            },
+            {
+              "Name": "keyIdentifier",
+              "Type": "Byte[]"
+            },
+            {
+              "Name": "licenseData",
+              "Type": "Byte[]"
+            }
+          ]
+        },
+        {
+          "Name": "AddStreamDescriptor",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "descriptor",
+              "Type": "IMediaStreamDescriptor"
+            }
+          ]
+        },
+        {
+          "Name": "NotifyError",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "errorStatus",
+              "Type": "MediaStreamSourceErrorStatus"
+            }
+          ]
+        },
+        {
+          "Name": "SetBufferedRange",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "startOffset",
+              "Type": "TimeSpan"
+            },
+            {
+              "Name": "endOffset",
+              "Type": "TimeSpan"
+            }
+          ]
+        }
+      ],
+      "Events": [
+        {
+          "Name": "Closed",
+          "Type": "TypedEventHandler<MediaStreamSource,MediaStreamSourceClosedEventArgs>"
+        },
+        {
+          "Name": "Paused",
+          "Type": "TypedEventHandler<MediaStreamSource,Object>"
+        },
+        {
+          "Name": "SampleRequested",
+          "Type": "TypedEventHandler<MediaStreamSource,MediaStreamSourceSampleRequestedEventArgs>"
+        },
+        {
+          "Name": "Starting",
+          "Type": "TypedEventHandler<MediaStreamSource,MediaStreamSourceStartingEventArgs>"
+        },
+        {
+          "Name": "SwitchStreamsRequested",
+          "Type": "TypedEventHandler<MediaStreamSource,MediaStreamSourceSwitchStreamsRequestedEventArgs>"
+        }
+      ],
+      "Name": "Windows.Media.Core.MediaStreamSource"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Request",
+          "Type": "MediaStreamSourceClosedRequest",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Core.MediaStreamSourceClosedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Reason",
+          "Type": "MediaStreamSourceClosedReason",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Core.MediaStreamSourceClosedRequest"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Sample",
+          "Type": "MediaStreamSample",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "StreamDescriptor",
+          "Type": "IMediaStreamDescriptor",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "GetDeferral",
+          "ReturnType": "MediaStreamSourceSampleRequestDeferral"
+        },
+        {
+          "Name": "ReportSampleProgress",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "progress",
+              "Type": "UInt32"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Core.MediaStreamSourceSampleRequest"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "Complete",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Core.MediaStreamSourceSampleRequestDeferral"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Request",
+          "Type": "MediaStreamSourceSampleRequest",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Core.MediaStreamSourceSampleRequestedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Request",
+          "Type": "MediaStreamSourceStartingRequest",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Core.MediaStreamSourceStartingEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "StartPosition",
+          "Type": "Nullable<TimeSpan>",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "GetDeferral",
+          "ReturnType": "MediaStreamSourceStartingRequestDeferral"
+        },
+        {
+          "Name": "SetActualStartPosition",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "TimeSpan"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Core.MediaStreamSourceStartingRequest"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "Complete",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Core.MediaStreamSourceStartingRequestDeferral"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "NewStreamDescriptor",
+          "Type": "IMediaStreamDescriptor",
+          "IsGet": true
+        },
+        {
+          "Name": "OldStreamDescriptor",
+          "Type": "IMediaStreamDescriptor",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "GetDeferral",
+          "ReturnType": "MediaStreamSourceSwitchStreamsRequestDeferral"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Core.MediaStreamSourceSwitchStreamsRequest"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "Complete",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Core.MediaStreamSourceSwitchStreamsRequestDeferral"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Request",
+          "Type": "MediaStreamSourceSwitchStreamsRequest",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Core.MediaStreamSourceSwitchStreamsRequestedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IMediaStreamDescriptor"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "encodingProperties",
+              "Type": "VideoEncodingProperties"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "EncodingProperties",
+          "Type": "VideoEncodingProperties",
+          "IsGet": true
+        },
+        {
+          "Name": "IsSelected",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Language",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Core.VideoStreamDescriptor"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IMediaDeviceController"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Muted",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "VolumePercent",
+          "Type": "Single",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "GetAvailableMediaStreamProperties",
+          "ReturnType": "IReadOnlyList<IMediaEncodingProperties>",
+          "Parameters": [
+            {
+              "Name": "mediaStreamType",
+              "Type": "MediaStreamType"
+            }
+          ]
+        },
+        {
+          "Name": "GetMediaStreamProperties",
+          "ReturnType": "IMediaEncodingProperties",
+          "Parameters": [
+            {
+              "Name": "mediaStreamType",
+              "Type": "MediaStreamType"
+            }
+          ]
+        },
+        {
+          "Name": "SetMediaStreamPropertiesAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "mediaStreamType",
+              "Type": "MediaStreamType"
+            },
+            {
+              "Name": "mediaEncodingProperties",
+              "Type": "IMediaEncodingProperties"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Devices.AudioDeviceController"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "HasRinger",
+          "Type": "Boolean",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "EndCall",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "callToken",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "FromId",
+          "IsStatic": true,
+          "ReturnType": "CallControl",
+          "Parameters": [
+            {
+              "Name": "deviceId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "GetDefault",
+          "IsStatic": true,
+          "ReturnType": "CallControl"
+        },
+        {
+          "Name": "IndicateActiveCall",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "callToken",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "IndicateNewIncomingCall",
+          "ReturnType": "UInt64",
+          "Parameters": [
+            {
+              "Name": "enableRinger",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "callerId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "IndicateNewOutgoingCall",
+          "ReturnType": "UInt64"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "AnswerRequested",
+          "Type": "CallControlEventHandler"
+        },
+        {
+          "Name": "AudioTransferRequested",
+          "Type": "CallControlEventHandler"
+        },
+        {
+          "Name": "DialRequested",
+          "Type": "DialRequestedEventHandler"
+        },
+        {
+          "Name": "HangUpRequested",
+          "Type": "CallControlEventHandler"
+        },
+        {
+          "Name": "KeypadPressed",
+          "Type": "KeypadPressedEventHandler"
+        },
+        {
+          "Name": "RedialRequested",
+          "Type": "RedialRequestedEventHandler"
+        }
+      ],
+      "Name": "Windows.Media.Devices.CallControl"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IDefaultAudioDeviceChangedEventArgs"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Id",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Role",
+          "Type": "AudioDeviceRole",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Devices.DefaultAudioCaptureDeviceChangedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IDefaultAudioDeviceChangedEventArgs"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Id",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Role",
+          "Type": "AudioDeviceRole",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Devices.DefaultAudioRenderDeviceChangedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Contact",
+          "Type": "Object",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "Handled",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Devices.DialRequestedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Max",
+          "Type": "Single",
+          "IsGet": true
+        },
+        {
+          "Name": "Min",
+          "Type": "Single",
+          "IsGet": true
+        },
+        {
+          "Name": "Step",
+          "Type": "Single",
+          "IsGet": true
+        },
+        {
+          "Name": "Supported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Value",
+          "Type": "Single",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "SetValueAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Single"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Devices.ExposureCompensationControl"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Auto",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Max",
+          "Type": "TimeSpan",
+          "IsGet": true
+        },
+        {
+          "Name": "Min",
+          "Type": "TimeSpan",
+          "IsGet": true
+        },
+        {
+          "Name": "Step",
+          "Type": "TimeSpan",
+          "IsGet": true
+        },
+        {
+          "Name": "Supported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Value",
+          "Type": "TimeSpan",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "SetAutoAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "SetValueAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "shutterDuration",
+              "Type": "TimeSpan"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Devices.ExposureControl"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Auto",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Enabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "PowerPercent",
+          "Type": "Single",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "PowerSupported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "RedEyeReduction",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "RedEyeReductionSupported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Supported",
+          "Type": "Boolean",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Devices.FlashControl"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Max",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "Min",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "Preset",
+          "Type": "FocusPreset",
+          "IsGet": true
+        },
+        {
+          "Name": "Step",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "Supported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "SupportedPresets",
+          "Type": "IReadOnlyList<FocusPreset>",
+          "IsGet": true
+        },
+        {
+          "Name": "Value",
+          "Type": "UInt32",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "FocusAsync",
+          "ReturnType": "IAsyncAction"
+        },
+        {
+          "Name": "SetPresetAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "preset",
+              "Type": "FocusPreset"
+            }
+          ]
+        },
+        {
+          "Name": "SetPresetAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "preset",
+              "Type": "FocusPreset"
+            },
+            {
+              "Name": "completeBeforeFocus",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "SetValueAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "focus",
+              "Type": "UInt32"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Devices.FocusControl"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Preset",
+          "Type": "IsoSpeedPreset",
+          "IsGet": true
+        },
+        {
+          "Name": "Supported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "SupportedPresets",
+          "Type": "IReadOnlyList<IsoSpeedPreset>",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "SetPresetAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "preset",
+              "Type": "IsoSpeedPreset"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Devices.IsoSpeedControl"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "TelephonyKey",
+          "Type": "TelephonyKey",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Devices.KeypadPressedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "DesiredThumbnailSize",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "HardwareAcceleratedThumbnailSupported",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "ThumbnailEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "ThumbnailFormat",
+          "Type": "MediaThumbnailFormat",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "GetCurrentFrameRate",
+          "ReturnType": "MediaRatio"
+        },
+        {
+          "Name": "GetHighestConcurrentFrameRate",
+          "ReturnType": "MediaRatio",
+          "Parameters": [
+            {
+              "Name": "captureProperties",
+              "Type": "IMediaEncodingProperties"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Devices.LowLagPhotoControl"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "DesiredThumbnailSize",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "HardwareAcceleratedThumbnailSupported",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "MaxPastPhotos",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "MaxPhotosPerSecond",
+          "Type": "Single",
+          "IsGet": true
+        },
+        {
+          "Name": "PastPhotoLimit",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "PhotosPerSecondLimit",
+          "Type": "Single",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Supported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "ThumbnailEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "ThumbnailFormat",
+          "Type": "MediaThumbnailFormat",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "GetCurrentFrameRate",
+          "ReturnType": "MediaRatio"
+        },
+        {
+          "Name": "GetHighestConcurrentFrameRate",
+          "ReturnType": "MediaRatio",
+          "Parameters": [
+            {
+              "Name": "captureProperties",
+              "Type": "IMediaEncodingProperties"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Devices.LowLagPhotoSequenceControl"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "GetAudioCaptureSelector",
+          "IsStatic": true,
+          "ReturnType": "String"
+        },
+        {
+          "Name": "GetAudioRenderSelector",
+          "IsStatic": true,
+          "ReturnType": "String"
+        },
+        {
+          "Name": "GetDefaultAudioCaptureId",
+          "IsStatic": true,
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "role",
+              "Type": "AudioDeviceRole"
+            }
+          ]
+        },
+        {
+          "Name": "GetDefaultAudioRenderId",
+          "IsStatic": true,
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "role",
+              "Type": "AudioDeviceRole"
+            }
+          ]
+        },
+        {
+          "Name": "GetVideoCaptureSelector",
+          "IsStatic": true,
+          "ReturnType": "String"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "DefaultAudioCaptureDeviceChanged",
+          "Type": "TypedEventHandler<Object,DefaultAudioCaptureDeviceChangedEventArgs>",
+          "IsStatic": true
+        },
+        {
+          "Name": "DefaultAudioRenderDeviceChanged",
+          "Type": "TypedEventHandler<Object,DefaultAudioRenderDeviceChangedEventArgs>",
+          "IsStatic": true
+        }
+      ],
+      "Name": "Windows.Media.Devices.MediaDevice"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Capabilities",
+          "Type": "MediaDeviceControlCapabilities",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "TryGetAuto",
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Boolean&",
+              "Out": true
+            }
+          ]
+        },
+        {
+          "Name": "TryGetValue",
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Double&",
+              "Out": true
+            }
+          ]
+        },
+        {
+          "Name": "TrySetAuto",
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "TrySetValue",
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Double"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Devices.MediaDeviceControl"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "AutoModeSupported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Default",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "Max",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "Min",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "Step",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "Supported",
+          "Type": "Boolean",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Devices.MediaDeviceControlCapabilities"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "Handled",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Devices.RedialRequestedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "AutoExposureEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "AutoFocusEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "AutoWhiteBalanceEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Bounds",
+          "Type": "Rect",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Devices.RegionOfInterest"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "AutoExposureSupported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "AutoFocusSupported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "AutoWhiteBalanceSupported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "MaxRegions",
+          "Type": "UInt32",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "ClearRegionsAsync",
+          "ReturnType": "IAsyncAction"
+        },
+        {
+          "Name": "SetRegionsAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "regions",
+              "Type": "IEnumerable<RegionOfInterest>"
+            }
+          ]
+        },
+        {
+          "Name": "SetRegionsAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "regions",
+              "Type": "IEnumerable<RegionOfInterest>"
+            },
+            {
+              "Name": "lockValues",
+              "Type": "Boolean"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Devices.RegionsOfInterestControl"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "SupportedModes",
+          "Type": "IReadOnlyList<CaptureSceneMode>",
+          "IsGet": true
+        },
+        {
+          "Name": "Value",
+          "Type": "CaptureSceneMode",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "SetValueAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "sceneMode",
+              "Type": "CaptureSceneMode"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Devices.SceneModeControl"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Enabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "PowerPercent",
+          "Type": "Single",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "PowerSupported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Supported",
+          "Type": "Boolean",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Devices.TorchControl"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IMediaDeviceController"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "BacklightCompensation",
+          "Type": "MediaDeviceControl",
+          "IsGet": true
+        },
+        {
+          "Name": "Brightness",
+          "Type": "MediaDeviceControl",
+          "IsGet": true
+        },
+        {
+          "Name": "Contrast",
+          "Type": "MediaDeviceControl",
+          "IsGet": true
+        },
+        {
+          "Name": "Exposure",
+          "Type": "MediaDeviceControl",
+          "IsGet": true
+        },
+        {
+          "Name": "ExposureCompensationControl",
+          "Type": "ExposureCompensationControl",
+          "IsGet": true
+        },
+        {
+          "Name": "ExposureControl",
+          "Type": "ExposureControl",
+          "IsGet": true
+        },
+        {
+          "Name": "FlashControl",
+          "Type": "FlashControl",
+          "IsGet": true
+        },
+        {
+          "Name": "Focus",
+          "Type": "MediaDeviceControl",
+          "IsGet": true
+        },
+        {
+          "Name": "FocusControl",
+          "Type": "FocusControl",
+          "IsGet": true
+        },
+        {
+          "Name": "Hue",
+          "Type": "MediaDeviceControl",
+          "IsGet": true
+        },
+        {
+          "Name": "IsoSpeedControl",
+          "Type": "IsoSpeedControl",
+          "IsGet": true
+        },
+        {
+          "Name": "LowLagPhoto",
+          "Type": "LowLagPhotoControl",
+          "IsGet": true
+        },
+        {
+          "Name": "LowLagPhotoSequence",
+          "Type": "LowLagPhotoSequenceControl",
+          "IsGet": true
+        },
+        {
+          "Name": "Pan",
+          "Type": "MediaDeviceControl",
+          "IsGet": true
+        },
+        {
+          "Name": "PrimaryUse",
+          "Type": "CaptureUse",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "RegionsOfInterestControl",
+          "Type": "RegionsOfInterestControl",
+          "IsGet": true
+        },
+        {
+          "Name": "Roll",
+          "Type": "MediaDeviceControl",
+          "IsGet": true
+        },
+        {
+          "Name": "SceneModeControl",
+          "Type": "SceneModeControl",
+          "IsGet": true
+        },
+        {
+          "Name": "Tilt",
+          "Type": "MediaDeviceControl",
+          "IsGet": true
+        },
+        {
+          "Name": "TorchControl",
+          "Type": "TorchControl",
+          "IsGet": true
+        },
+        {
+          "Name": "WhiteBalance",
+          "Type": "MediaDeviceControl",
+          "IsGet": true
+        },
+        {
+          "Name": "WhiteBalanceControl",
+          "Type": "WhiteBalanceControl",
+          "IsGet": true
+        },
+        {
+          "Name": "Zoom",
+          "Type": "MediaDeviceControl",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "GetAvailableMediaStreamProperties",
+          "ReturnType": "IReadOnlyList<IMediaEncodingProperties>",
+          "Parameters": [
+            {
+              "Name": "mediaStreamType",
+              "Type": "MediaStreamType"
+            }
+          ]
+        },
+        {
+          "Name": "GetDeviceProperty",
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "propertyId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "GetMediaStreamProperties",
+          "ReturnType": "IMediaEncodingProperties",
+          "Parameters": [
+            {
+              "Name": "mediaStreamType",
+              "Type": "MediaStreamType"
+            }
+          ]
+        },
+        {
+          "Name": "SetDeviceProperty",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "propertyId",
+              "Type": "String"
+            },
+            {
+              "Name": "propertyValue",
+              "Type": "Object"
+            }
+          ]
+        },
+        {
+          "Name": "SetMediaStreamPropertiesAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "mediaStreamType",
+              "Type": "MediaStreamType"
+            },
+            {
+              "Name": "mediaEncodingProperties",
+              "Type": "IMediaEncodingProperties"
+            }
+          ]
+        },
+        {
+          "Name": "TryGetPowerlineFrequency",
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "PowerlineFrequency&",
+              "Out": true
+            }
+          ]
+        },
+        {
+          "Name": "TrySetPowerlineFrequency",
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "PowerlineFrequency"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Devices.VideoDeviceController"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Max",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "Min",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "Preset",
+          "Type": "ColorTemperaturePreset",
+          "IsGet": true
+        },
+        {
+          "Name": "Step",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "Supported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Value",
+          "Type": "UInt32",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "SetPresetAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "preset",
+              "Type": "ColorTemperaturePreset"
+            }
+          ]
+        },
+        {
+          "Name": "SetValueAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "temperature",
+              "Type": "UInt32"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Devices.WhiteBalanceControl"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "GetAudioCaptureEffects",
+          "ReturnType": "IReadOnlyList<AudioEffect>"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "AudioCaptureEffectsChanged",
+          "Type": "TypedEventHandler<AudioCaptureEffectsManager,Object>"
+        }
+      ],
+      "Name": "Windows.Media.Effects.AudioCaptureEffectsManager"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "AudioEffectType",
+          "Type": "AudioEffectType",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Effects.AudioEffect"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "CreateAudioCaptureEffectsManager",
+          "IsStatic": true,
+          "ReturnType": "AudioCaptureEffectsManager",
+          "Parameters": [
+            {
+              "Name": "deviceId",
+              "Type": "String"
+            },
+            {
+              "Name": "category",
+              "Type": "MediaCategory"
+            }
+          ]
+        },
+        {
+          "Name": "CreateAudioCaptureEffectsManager",
+          "IsStatic": true,
+          "ReturnType": "AudioCaptureEffectsManager",
+          "Parameters": [
+            {
+              "Name": "deviceId",
+              "Type": "String"
+            },
+            {
+              "Name": "category",
+              "Type": "MediaCategory"
+            },
+            {
+              "Name": "mode",
+              "Type": "AudioProcessing"
+            }
+          ]
+        },
+        {
+          "Name": "CreateAudioRenderEffectsManager",
+          "IsStatic": true,
+          "ReturnType": "AudioRenderEffectsManager",
+          "Parameters": [
+            {
+              "Name": "deviceId",
+              "Type": "String"
+            },
+            {
+              "Name": "category",
+              "Type": "AudioRenderCategory"
+            }
+          ]
+        },
+        {
+          "Name": "CreateAudioRenderEffectsManager",
+          "IsStatic": true,
+          "ReturnType": "AudioRenderEffectsManager",
+          "Parameters": [
+            {
+              "Name": "deviceId",
+              "Type": "String"
+            },
+            {
+              "Name": "category",
+              "Type": "AudioRenderCategory"
+            },
+            {
+              "Name": "mode",
+              "Type": "AudioProcessing"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Effects.AudioEffectsManager"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "GetAudioRenderEffects",
+          "ReturnType": "IReadOnlyList<AudioEffect>"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "AudioRenderEffectsChanged",
+          "Type": "TypedEventHandler<AudioRenderEffectsManager,Object>"
+        }
+      ],
+      "Name": "Windows.Media.Effects.AudioRenderEffectsManager"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Subtitle",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Title",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.ImageDisplayProperties"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "AlbumArt",
+          "Type": "Uri",
+          "IsStatic": true,
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "ArtistName",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsPlaying",
+          "Type": "Boolean",
+          "IsStatic": true,
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "SoundLevel",
+          "Type": "SoundLevel",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "TrackName",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [
+        {
+          "Name": "FastForwardPressed",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "ChannelDownPressed",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "ChannelUpPressed",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "NextTrackPressed",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "PausePressed",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "PlayPauseTogglePressed",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "PlayPressed",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "PreviousTrackPressed",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "RecordPressed",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "RewindPressed",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "SoundLevelChanged",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "StopPressed",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        }
+      ],
+      "Name": "Windows.Media.MediaControl"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "RegisterAudioDecoder",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "activatableClassId",
+              "Type": "String"
+            },
+            {
+              "Name": "inputSubtype",
+              "Type": "Guid"
+            },
+            {
+              "Name": "outputSubtype",
+              "Type": "Guid"
+            }
+          ]
+        },
+        {
+          "Name": "RegisterAudioDecoder",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "activatableClassId",
+              "Type": "String"
+            },
+            {
+              "Name": "inputSubtype",
+              "Type": "Guid"
+            },
+            {
+              "Name": "outputSubtype",
+              "Type": "Guid"
+            },
+            {
+              "Name": "configuration",
+              "Type": "IPropertySet"
+            }
+          ]
+        },
+        {
+          "Name": "RegisterAudioEncoder",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "activatableClassId",
+              "Type": "String"
+            },
+            {
+              "Name": "inputSubtype",
+              "Type": "Guid"
+            },
+            {
+              "Name": "outputSubtype",
+              "Type": "Guid"
+            }
+          ]
+        },
+        {
+          "Name": "RegisterAudioEncoder",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "activatableClassId",
+              "Type": "String"
+            },
+            {
+              "Name": "inputSubtype",
+              "Type": "Guid"
+            },
+            {
+              "Name": "outputSubtype",
+              "Type": "Guid"
+            },
+            {
+              "Name": "configuration",
+              "Type": "IPropertySet"
+            }
+          ]
+        },
+        {
+          "Name": "RegisterByteStreamHandler",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "activatableClassId",
+              "Type": "String"
+            },
+            {
+              "Name": "fileExtension",
+              "Type": "String"
+            },
+            {
+              "Name": "mimeType",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "RegisterByteStreamHandler",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "activatableClassId",
+              "Type": "String"
+            },
+            {
+              "Name": "fileExtension",
+              "Type": "String"
+            },
+            {
+              "Name": "mimeType",
+              "Type": "String"
+            },
+            {
+              "Name": "configuration",
+              "Type": "IPropertySet"
+            }
+          ]
+        },
+        {
+          "Name": "RegisterSchemeHandler",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "activatableClassId",
+              "Type": "String"
+            },
+            {
+              "Name": "scheme",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "RegisterSchemeHandler",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "activatableClassId",
+              "Type": "String"
+            },
+            {
+              "Name": "scheme",
+              "Type": "String"
+            },
+            {
+              "Name": "configuration",
+              "Type": "IPropertySet"
+            }
+          ]
+        },
+        {
+          "Name": "RegisterVideoDecoder",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "activatableClassId",
+              "Type": "String"
+            },
+            {
+              "Name": "inputSubtype",
+              "Type": "Guid"
+            },
+            {
+              "Name": "outputSubtype",
+              "Type": "Guid"
+            }
+          ]
+        },
+        {
+          "Name": "RegisterVideoDecoder",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "activatableClassId",
+              "Type": "String"
+            },
+            {
+              "Name": "inputSubtype",
+              "Type": "Guid"
+            },
+            {
+              "Name": "outputSubtype",
+              "Type": "Guid"
+            },
+            {
+              "Name": "configuration",
+              "Type": "IPropertySet"
+            }
+          ]
+        },
+        {
+          "Name": "RegisterVideoEncoder",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "activatableClassId",
+              "Type": "String"
+            },
+            {
+              "Name": "inputSubtype",
+              "Type": "Guid"
+            },
+            {
+              "Name": "outputSubtype",
+              "Type": "Guid"
+            }
+          ]
+        },
+        {
+          "Name": "RegisterVideoEncoder",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "activatableClassId",
+              "Type": "String"
+            },
+            {
+              "Name": "inputSubtype",
+              "Type": "Guid"
+            },
+            {
+              "Name": "outputSubtype",
+              "Type": "Guid"
+            },
+            {
+              "Name": "configuration",
+              "Type": "IPropertySet"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.MediaExtensionManager"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Bookmark",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.MediaMarkerTypes"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IMediaEncodingProperties"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Bitrate",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "BitsPerSample",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "ChannelCount",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Properties",
+          "Type": "MediaPropertySet",
+          "IsGet": true
+        },
+        {
+          "Name": "SampleRate",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Subtype",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Type",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "CreateAac",
+          "IsStatic": true,
+          "ReturnType": "AudioEncodingProperties",
+          "Parameters": [
+            {
+              "Name": "sampleRate",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "channelCount",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "bitrate",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "CreateAacAdts",
+          "IsStatic": true,
+          "ReturnType": "AudioEncodingProperties",
+          "Parameters": [
+            {
+              "Name": "sampleRate",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "channelCount",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "bitrate",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "CreateMp3",
+          "IsStatic": true,
+          "ReturnType": "AudioEncodingProperties",
+          "Parameters": [
+            {
+              "Name": "sampleRate",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "channelCount",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "bitrate",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "CreatePcm",
+          "IsStatic": true,
+          "ReturnType": "AudioEncodingProperties",
+          "Parameters": [
+            {
+              "Name": "sampleRate",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "channelCount",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "bitsPerSample",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "CreateWma",
+          "IsStatic": true,
+          "ReturnType": "AudioEncodingProperties",
+          "Parameters": [
+            {
+              "Name": "sampleRate",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "channelCount",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "bitrate",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "GetFormatUserData",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Byte[]&",
+              "Out": true
+            }
+          ]
+        },
+        {
+          "Name": "SetFormatUserData",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Byte[]"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.MediaProperties.AudioEncodingProperties"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IMediaEncodingProperties"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Properties",
+          "Type": "MediaPropertySet",
+          "IsGet": true
+        },
+        {
+          "Name": "Subtype",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Type",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.MediaProperties.ContainerEncodingProperties"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Baseline",
+          "Type": "Int32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ConstrainedBaseline",
+          "Type": "Int32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Extended",
+          "Type": "Int32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "High",
+          "Type": "Int32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "High10",
+          "Type": "Int32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "High422",
+          "Type": "Int32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "High444",
+          "Type": "Int32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Main",
+          "Type": "Int32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MultiviewHigh",
+          "Type": "Int32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "StereoHigh",
+          "Type": "Int32",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.MediaProperties.H264ProfileIds"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IMediaEncodingProperties"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Height",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Properties",
+          "Type": "MediaPropertySet",
+          "IsGet": true
+        },
+        {
+          "Name": "Subtype",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Type",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Width",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "CreateBmp",
+          "IsStatic": true,
+          "ReturnType": "ImageEncodingProperties"
+        },
+        {
+          "Name": "CreateJpeg",
+          "IsStatic": true,
+          "ReturnType": "ImageEncodingProperties"
+        },
+        {
+          "Name": "CreateJpegXR",
+          "IsStatic": true,
+          "ReturnType": "ImageEncodingProperties"
+        },
+        {
+          "Name": "CreatePng",
+          "IsStatic": true,
+          "ReturnType": "ImageEncodingProperties"
+        },
+        {
+          "Name": "CreateUncompressed",
+          "IsStatic": true,
+          "ReturnType": "ImageEncodingProperties",
+          "Parameters": [
+            {
+              "Name": "format",
+              "Type": "MediaPixelFormat"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.MediaProperties.ImageEncodingProperties"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Audio",
+          "Type": "AudioEncodingProperties",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Container",
+          "Type": "ContainerEncodingProperties",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Video",
+          "Type": "VideoEncodingProperties",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "CreateAvi",
+          "IsStatic": true,
+          "ReturnType": "MediaEncodingProfile",
+          "Parameters": [
+            {
+              "Name": "quality",
+              "Type": "VideoEncodingQuality"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromFileAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MediaEncodingProfile>",
+          "Parameters": [
+            {
+              "Name": "file",
+              "Type": "IStorageFile"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromStreamAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MediaEncodingProfile>",
+          "Parameters": [
+            {
+              "Name": "stream",
+              "Type": "IRandomAccessStream"
+            }
+          ]
+        },
+        {
+          "Name": "CreateM4a",
+          "IsStatic": true,
+          "ReturnType": "MediaEncodingProfile",
+          "Parameters": [
+            {
+              "Name": "quality",
+              "Type": "AudioEncodingQuality"
+            }
+          ]
+        },
+        {
+          "Name": "CreateMp3",
+          "IsStatic": true,
+          "ReturnType": "MediaEncodingProfile",
+          "Parameters": [
+            {
+              "Name": "quality",
+              "Type": "AudioEncodingQuality"
+            }
+          ]
+        },
+        {
+          "Name": "CreateMp4",
+          "IsStatic": true,
+          "ReturnType": "MediaEncodingProfile",
+          "Parameters": [
+            {
+              "Name": "quality",
+              "Type": "VideoEncodingQuality"
+            }
+          ]
+        },
+        {
+          "Name": "CreateWav",
+          "IsStatic": true,
+          "ReturnType": "MediaEncodingProfile",
+          "Parameters": [
+            {
+              "Name": "quality",
+              "Type": "AudioEncodingQuality"
+            }
+          ]
+        },
+        {
+          "Name": "CreateWma",
+          "IsStatic": true,
+          "ReturnType": "MediaEncodingProfile",
+          "Parameters": [
+            {
+              "Name": "quality",
+              "Type": "AudioEncodingQuality"
+            }
+          ]
+        },
+        {
+          "Name": "CreateWmv",
+          "IsStatic": true,
+          "ReturnType": "MediaEncodingProfile",
+          "Parameters": [
+            {
+              "Name": "quality",
+              "Type": "VideoEncodingQuality"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.MediaProperties.MediaEncodingProfile"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Aac",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "AacAdts",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Ac3",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "AmrNb",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "AmrWb",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Argb32",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Asf",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Avi",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Bgra8",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Bmp",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Eac3",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Float",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Gif",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "H263",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "H264",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "H264Es",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Hevc",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "HevcEs",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Iyuv",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Jpeg",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "JpegXr",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Mjpg",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Mp3",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Mpeg",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Mpeg1",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Mpeg2",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Mpeg4",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Nv12",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Pcm",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Png",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Rgb24",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Rgb32",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Tiff",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Wave",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Wma8",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Wma9",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Wmv3",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Wvc1",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Yuy2",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Yv12",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.MediaProperties.MediaEncodingSubtypes"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "ICollection<KeyValuePair<Guid,Object>>",
+        "IDictionary<Guid,Object>",
+        "IEnumerable",
+        "IEnumerable<KeyValuePair<Guid,Object>>"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.MediaProperties.MediaPropertySet"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Denominator",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Numerator",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.MediaProperties.MediaRatio"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "High",
+          "Type": "Int32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Main",
+          "Type": "Int32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SignalNoiseRatioScalable",
+          "Type": "Int32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Simple",
+          "Type": "Int32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SpatiallyScalable",
+          "Type": "Int32",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.MediaProperties.Mpeg2ProfileIds"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IMediaEncodingProperties"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Bitrate",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "FrameRate",
+          "Type": "MediaRatio",
+          "IsGet": true
+        },
+        {
+          "Name": "Height",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "PixelAspectRatio",
+          "Type": "MediaRatio",
+          "IsGet": true
+        },
+        {
+          "Name": "ProfileId",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Properties",
+          "Type": "MediaPropertySet",
+          "IsGet": true
+        },
+        {
+          "Name": "Subtype",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Type",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Width",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "CreateH264",
+          "IsStatic": true,
+          "ReturnType": "VideoEncodingProperties"
+        },
+        {
+          "Name": "CreateMpeg2",
+          "IsStatic": true,
+          "ReturnType": "VideoEncodingProperties"
+        },
+        {
+          "Name": "CreateUncompressed",
+          "IsStatic": true,
+          "ReturnType": "VideoEncodingProperties",
+          "Parameters": [
+            {
+              "Name": "subtype",
+              "Type": "String"
+            },
+            {
+              "Name": "width",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "height",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "GetFormatUserData",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Byte[]&",
+              "Out": true
+            }
+          ]
+        },
+        {
+          "Name": "SetFormatUserData",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Byte[]"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.MediaProperties.VideoEncodingProperties"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "AlbumArtist",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Artist",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Title",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.MusicDisplayProperties"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Files",
+          "Type": "IList<StorageFile>",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "LoadAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<Playlist>",
+          "Parameters": [
+            {
+              "Name": "file",
+              "Type": "IStorageFile"
+            }
+          ]
+        },
+        {
+          "Name": "SaveAsAsync",
+          "ReturnType": "IAsyncOperation<StorageFile>",
+          "Parameters": [
+            {
+              "Name": "saveLocation",
+              "Type": "IStorageFolder"
+            },
+            {
+              "Name": "desiredName",
+              "Type": "String"
+            },
+            {
+              "Name": "option",
+              "Type": "NameCollisionOption"
+            }
+          ]
+        },
+        {
+          "Name": "SaveAsAsync",
+          "ReturnType": "IAsyncOperation<StorageFile>",
+          "Parameters": [
+            {
+              "Name": "saveLocation",
+              "Type": "IStorageFolder"
+            },
+            {
+              "Name": "desiredName",
+              "Type": "String"
+            },
+            {
+              "Name": "option",
+              "Type": "NameCollisionOption"
+            },
+            {
+              "Name": "playlistFormat",
+              "Type": "PlaylistFormat"
+            }
+          ]
+        },
+        {
+          "Name": "SaveAsync",
+          "ReturnType": "IAsyncAction"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Playlists.Playlist"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Time",
+          "Type": "TimeSpan",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.PlayTo.CurrentTimeChangeRequestedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Mute",
+          "Type": "Boolean",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.PlayTo.MuteChangeRequestedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Rate",
+          "Type": "Double",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.PlayTo.PlaybackRateChangeRequestedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "State",
+          "Type": "PlayToConnectionState",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [
+        {
+          "Name": "Error",
+          "Type": "TypedEventHandler<PlayToConnection,PlayToConnectionErrorEventArgs>"
+        },
+        {
+          "Name": "StateChanged",
+          "Type": "TypedEventHandler<PlayToConnection,PlayToConnectionStateChangedEventArgs>"
+        },
+        {
+          "Name": "Transferred",
+          "Type": "TypedEventHandler<PlayToConnection,PlayToConnectionTransferredEventArgs>"
+        }
+      ],
+      "Name": "Windows.Media.PlayTo.PlayToConnection"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Code",
+          "Type": "PlayToConnectionError",
+          "IsGet": true
+        },
+        {
+          "Name": "Message",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.PlayTo.PlayToConnectionErrorEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "CurrentState",
+          "Type": "PlayToConnectionState",
+          "IsGet": true
+        },
+        {
+          "Name": "PreviousState",
+          "Type": "PlayToConnectionState",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.PlayTo.PlayToConnectionStateChangedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "CurrentSource",
+          "Type": "PlayToSource",
+          "IsGet": true
+        },
+        {
+          "Name": "PreviousSource",
+          "Type": "PlayToSource",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.PlayTo.PlayToConnectionTransferredEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "DefaultSourceSelection",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "GetForCurrentView",
+          "IsStatic": true,
+          "ReturnType": "PlayToManager"
+        },
+        {
+          "Name": "ShowPlayToUI",
+          "IsStatic": true,
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "SourceRequested",
+          "Type": "TypedEventHandler<PlayToManager,PlayToSourceRequestedEventArgs>"
+        },
+        {
+          "Name": "SourceSelected",
+          "Type": "TypedEventHandler<PlayToManager,PlayToSourceSelectedEventArgs>"
+        }
+      ],
+      "Name": "Windows.Media.PlayTo.PlayToManager"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "FriendlyName",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Properties",
+          "Type": "IPropertySet",
+          "IsGet": true
+        },
+        {
+          "Name": "SupportsAudio",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "SupportsImage",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "SupportsVideo",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "NotifyDurationChange",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "duration",
+              "Type": "TimeSpan"
+            }
+          ]
+        },
+        {
+          "Name": "NotifyEnded",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "NotifyError",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "NotifyLoadedMetadata",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "NotifyPaused",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "NotifyPlaying",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "NotifyRateChange",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "rate",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "NotifySeeked",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "NotifySeeking",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "NotifyStopped",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "NotifyTimeUpdate",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "currentTime",
+              "Type": "TimeSpan"
+            }
+          ]
+        },
+        {
+          "Name": "NotifyVolumeChange",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "volume",
+              "Type": "Double"
+            },
+            {
+              "Name": "mute",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "StartAsync",
+          "ReturnType": "IAsyncAction"
+        },
+        {
+          "Name": "StopAsync",
+          "ReturnType": "IAsyncAction"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "CurrentTimeChangeRequested",
+          "Type": "TypedEventHandler<PlayToReceiver,CurrentTimeChangeRequestedEventArgs>"
+        },
+        {
+          "Name": "MuteChangeRequested",
+          "Type": "TypedEventHandler<PlayToReceiver,MuteChangeRequestedEventArgs>"
+        },
+        {
+          "Name": "PauseRequested",
+          "Type": "TypedEventHandler<PlayToReceiver,Object>"
+        },
+        {
+          "Name": "PlaybackRateChangeRequested",
+          "Type": "TypedEventHandler<PlayToReceiver,PlaybackRateChangeRequestedEventArgs>"
+        },
+        {
+          "Name": "PlayRequested",
+          "Type": "TypedEventHandler<PlayToReceiver,Object>"
+        },
+        {
+          "Name": "SourceChangeRequested",
+          "Type": "TypedEventHandler<PlayToReceiver,SourceChangeRequestedEventArgs>"
+        },
+        {
+          "Name": "StopRequested",
+          "Type": "TypedEventHandler<PlayToReceiver,Object>"
+        },
+        {
+          "Name": "TimeUpdateRequested",
+          "Type": "TypedEventHandler<PlayToReceiver,Object>"
+        },
+        {
+          "Name": "VolumeChangeRequested",
+          "Type": "TypedEventHandler<PlayToReceiver,VolumeChangeRequestedEventArgs>"
+        }
+      ],
+      "Name": "Windows.Media.PlayTo.PlayToReceiver"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Connection",
+          "Type": "PlayToConnection",
+          "IsGet": true
+        },
+        {
+          "Name": "Next",
+          "Type": "PlayToSource",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "PreferredSourceUri",
+          "Type": "Uri",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "PlayNext",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.PlayTo.PlayToSource"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "Complete",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.PlayTo.PlayToSourceDeferral"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Deadline",
+          "Type": "DateTimeOffset",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "DisplayErrorString",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "errorString",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "GetDeferral",
+          "ReturnType": "PlayToSourceDeferral"
+        },
+        {
+          "Name": "SetSource",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "PlayToSource"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.PlayTo.PlayToSourceRequest"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "SourceRequest",
+          "Type": "PlayToSourceRequest",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.PlayTo.PlayToSourceRequestedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "FriendlyName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Icon",
+          "Type": "IRandomAccessStreamWithContentType",
+          "IsGet": true
+        },
+        {
+          "Name": "SupportsAudio",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "SupportsImage",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "SupportsVideo",
+          "Type": "Boolean",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.PlayTo.PlayToSourceSelectedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Album",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Author",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Date",
+          "Type": "Nullable<DateTimeOffset>",
+          "IsGet": true
+        },
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Genre",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Properties",
+          "Type": "IReadOnlyDictionary<String,Object>",
+          "IsGet": true
+        },
+        {
+          "Name": "Rating",
+          "Type": "Nullable<UInt32>",
+          "IsGet": true
+        },
+        {
+          "Name": "Stream",
+          "Type": "IRandomAccessStreamWithContentType",
+          "IsGet": true
+        },
+        {
+          "Name": "Thumbnail",
+          "Type": "IRandomAccessStreamReference",
+          "IsGet": true
+        },
+        {
+          "Name": "Title",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.PlayTo.SourceChangeRequestedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Volume",
+          "Type": "Double",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.PlayTo.VolumeChangeRequestedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Completion",
+          "Type": "MediaProtectionServiceCompletion",
+          "IsGet": true
+        },
+        {
+          "Name": "Information",
+          "Type": "RevocationAndRenewalInformation",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Protection.ComponentLoadFailedEventArgs"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "RenewSystemComponentsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperationWithProgress<RenewalStatus,UInt32>",
+          "Parameters": [
+            {
+              "Name": "information",
+              "Type": "RevocationAndRenewalInformation"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Protection.ComponentRenewal"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Properties",
+          "Type": "IPropertySet",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [
+        {
+          "Name": "ComponentLoadFailed",
+          "Type": "ComponentLoadFailedEventHandler"
+        },
+        {
+          "Name": "RebootNeeded",
+          "Type": "RebootNeededEventHandler"
+        },
+        {
+          "Name": "ServiceRequested",
+          "Type": "ServiceRequestedEventHandler"
+        }
+      ],
+      "Name": "Windows.Media.Protection.MediaProtectionManager"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "Complete",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "success",
+              "Type": "Boolean"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Protection.MediaProtectionServiceCompletion"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Items",
+          "Type": "IList<RevocationAndRenewalItem>",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Protection.RevocationAndRenewalInformation"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "HeaderHash",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "PublicKeyHash",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Reasons",
+          "Type": "RevocationAndRenewalReasons",
+          "IsGet": true
+        },
+        {
+          "Name": "RenewalId",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Protection.RevocationAndRenewalItem"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Completion",
+          "Type": "MediaProtectionServiceCompletion",
+          "IsGet": true
+        },
+        {
+          "Name": "Request",
+          "Type": "IMediaProtectionServiceRequest",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Protection.ServiceRequestedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IContentTypeProvider",
+        "IDisposable",
+        "IInputStream",
+        "IOutputStream",
+        "IRandomAccessStream",
+        "IRandomAccessStreamWithContentType"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "CanRead",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "CanWrite",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "ContentType",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Markers",
+          "Type": "IReadOnlyList<IMediaMarker>",
+          "IsGet": true
+        },
+        {
+          "Name": "Position",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt64",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "CloneStream",
+          "ReturnType": "IRandomAccessStream"
+        },
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "FlushAsync",
+          "ReturnType": "IAsyncOperation<Boolean>"
+        },
+        {
+          "Name": "GetInputStreamAt",
+          "ReturnType": "IInputStream",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "GetOutputStreamAt",
+          "ReturnType": "IOutputStream",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "ReadAsync",
+          "ReturnType": "IAsyncOperationWithProgress<IBuffer,UInt32>",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "count",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "options",
+              "Type": "InputStreamOptions"
+            }
+          ]
+        },
+        {
+          "Name": "Seek",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "WriteAsync",
+          "ReturnType": "IAsyncOperationWithProgress<UInt32,UInt32>",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "IBuffer"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.SpeechSynthesis.SpeechSynthesisStream"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IDisposable"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "AllVoices",
+          "Type": "IReadOnlyList<VoiceInformation>",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "DefaultVoice",
+          "Type": "VoiceInformation",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Voice",
+          "Type": "VoiceInformation",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "SynthesizeSsmlToStreamAsync",
+          "ReturnType": "IAsyncOperation<SpeechSynthesisStream>",
+          "Parameters": [
+            {
+              "Name": "Ssml",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "SynthesizeTextToStreamAsync",
+          "ReturnType": "IAsyncOperation<SpeechSynthesisStream>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.SpeechSynthesis.SpeechSynthesizer"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "DisplayName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Gender",
+          "Type": "VoiceGender",
+          "IsGet": true
+        },
+        {
+          "Name": "Id",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Language",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.SpeechSynthesis.VoiceInformation"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "DisplayUpdater",
+          "Type": "SystemMediaTransportControlsDisplayUpdater",
+          "IsGet": true
+        },
+        {
+          "Name": "IsEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsFastForwardEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsChannelDownEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsChannelUpEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsNextEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsPauseEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsPlayEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsPreviousEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsRecordEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsRewindEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsStopEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "PlaybackStatus",
+          "Type": "MediaPlaybackStatus",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "SoundLevel",
+          "Type": "SoundLevel",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "GetForCurrentView",
+          "IsStatic": true,
+          "ReturnType": "SystemMediaTransportControls"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "ButtonPressed",
+          "Type": "TypedEventHandler<SystemMediaTransportControls,SystemMediaTransportControlsButtonPressedEventArgs>"
+        },
+        {
+          "Name": "PropertyChanged",
+          "Type": "TypedEventHandler<SystemMediaTransportControls,SystemMediaTransportControlsPropertyChangedEventArgs>"
+        }
+      ],
+      "Name": "Windows.Media.SystemMediaTransportControls"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Button",
+          "Type": "SystemMediaTransportControlsButton",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.SystemMediaTransportControlsButtonPressedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "AppMediaId",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "ImageProperties",
+          "Type": "ImageDisplayProperties",
+          "IsGet": true
+        },
+        {
+          "Name": "MusicProperties",
+          "Type": "MusicDisplayProperties",
+          "IsGet": true
+        },
+        {
+          "Name": "Thumbnail",
+          "Type": "RandomAccessStreamReference",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Type",
+          "Type": "MediaPlaybackType",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "VideoProperties",
+          "Type": "VideoDisplayProperties",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "ClearAll",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "CopyFromFileAsync",
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "MediaPlaybackType"
+            },
+            {
+              "Name": "source",
+              "Type": "StorageFile"
+            }
+          ]
+        },
+        {
+          "Name": "Update",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.SystemMediaTransportControlsDisplayUpdater"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Property",
+          "Type": "SystemMediaTransportControlsProperty",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.SystemMediaTransportControlsPropertyChangedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "AlwaysReencode",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "HardwareAccelerationEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "TrimStartTime",
+          "Type": "TimeSpan",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "TrimStopTime",
+          "Type": "TimeSpan",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "VideoProcessingAlgorithm",
+          "Type": "MediaVideoProcessingAlgorithm",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "AddAudioEffect",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "activatableClassId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "AddAudioEffect",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "activatableClassId",
+              "Type": "String"
+            },
+            {
+              "Name": "effectRequired",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "configuration",
+              "Type": "IPropertySet"
+            }
+          ]
+        },
+        {
+          "Name": "AddVideoEffect",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "activatableClassId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "AddVideoEffect",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "activatableClassId",
+              "Type": "String"
+            },
+            {
+              "Name": "effectRequired",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "configuration",
+              "Type": "IPropertySet"
+            }
+          ]
+        },
+        {
+          "Name": "ClearEffects",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "PrepareFileTranscodeAsync",
+          "ReturnType": "IAsyncOperation<PrepareTranscodeResult>",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "IStorageFile"
+            },
+            {
+              "Name": "destination",
+              "Type": "IStorageFile"
+            },
+            {
+              "Name": "profile",
+              "Type": "MediaEncodingProfile"
+            }
+          ]
+        },
+        {
+          "Name": "PrepareMediaStreamSourceTranscodeAsync",
+          "ReturnType": "IAsyncOperation<PrepareTranscodeResult>",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "IMediaSource"
+            },
+            {
+              "Name": "destination",
+              "Type": "IRandomAccessStream"
+            },
+            {
+              "Name": "profile",
+              "Type": "MediaEncodingProfile"
+            }
+          ]
+        },
+        {
+          "Name": "PrepareStreamTranscodeAsync",
+          "ReturnType": "IAsyncOperation<PrepareTranscodeResult>",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "IRandomAccessStream"
+            },
+            {
+              "Name": "destination",
+              "Type": "IRandomAccessStream"
+            },
+            {
+              "Name": "profile",
+              "Type": "MediaEncodingProfile"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Transcoding.MediaTranscoder"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "CanTranscode",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "FailureReason",
+          "Type": "TranscodeFailureReason",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "TranscodeAsync",
+          "ReturnType": "IAsyncActionWithProgress<Double>"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Transcoding.PrepareTranscodeResult"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Subtitle",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Title",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.VideoDisplayProperties"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "VideoStabilization",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.VideoEffects"
+    }
+  ],
+  "Structs": [],
+  "Interfaces": [
+    {
+      "Interfaces": [],
+      "Properties": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Core.IMediaSource"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Name": "IsSelected",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Language",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Core.IMediaStreamDescriptor"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Name": "Id",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Role",
+          "Type": "AudioDeviceRole",
+          "IsGet": true
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Devices.IDefaultAudioDeviceChangedEventArgs"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [],
+      "Methods": [
+        {
+          "Name": "GetAvailableMediaStreamProperties",
+          "ReturnType": "IReadOnlyList<IMediaEncodingProperties>",
+          "Parameters": [
+            {
+              "Name": "mediaStreamType",
+              "Type": "MediaStreamType"
+            }
+          ]
+        },
+        {
+          "Name": "GetMediaStreamProperties",
+          "ReturnType": "IMediaEncodingProperties",
+          "Parameters": [
+            {
+              "Name": "mediaStreamType",
+              "Type": "MediaStreamType"
+            }
+          ]
+        },
+        {
+          "Name": "SetMediaStreamPropertiesAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "mediaStreamType",
+              "Type": "MediaStreamType"
+            },
+            {
+              "Name": "mediaEncodingProperties",
+              "Type": "IMediaEncodingProperties"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.Devices.IMediaDeviceController"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [],
+      "Methods": [
+        {
+          "Name": "SetProperties",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "configuration",
+              "Type": "IPropertySet"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Media.IMediaExtension"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Name": "MediaMarkerType",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Text",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Time",
+          "Type": "TimeSpan",
+          "IsGet": true
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.IMediaMarker"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Name": "Markers",
+          "Type": "IReadOnlyList<IMediaMarker>",
+          "IsGet": true
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.IMediaMarkers"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Name": "Properties",
+          "Type": "MediaPropertySet",
+          "IsGet": true
+        },
+        {
+          "Name": "Subtype",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Type",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.MediaProperties.IMediaEncodingProperties"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Name": "ProtectionSystem",
+          "Type": "Guid",
+          "IsGet": true
+        },
+        {
+          "Name": "Type",
+          "Type": "Guid",
+          "IsGet": true
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Media.Protection.IMediaProtectionServiceRequest"
+    }
+  ],
+  "Enums": [
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Default",
+          "Value": "0"
+        },
+        {
+          "Name": "Raw",
+          "Value": "1"
+        }
+      ],
+      "Name": "Windows.Media.AudioProcessing"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "HighestAvailable",
+          "Value": "0"
+        },
+        {
+          "Name": "VerySmallQvga",
+          "Value": "1"
+        },
+        {
+          "Name": "SmallVga",
+          "Value": "2"
+        },
+        {
+          "Name": "MediumXga",
+          "Value": "3"
+        },
+        {
+          "Name": "Large3M",
+          "Value": "4"
+        },
+        {
+          "Name": "VeryLarge5M",
+          "Value": "5"
+        }
+      ],
+      "Name": "Windows.Media.Capture.CameraCaptureUIMaxPhotoResolution"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "HighestAvailable",
+          "Value": "0"
+        },
+        {
+          "Name": "LowDefinition",
+          "Value": "1"
+        },
+        {
+          "Name": "StandardDefinition",
+          "Value": "2"
+        },
+        {
+          "Name": "HighDefinition",
+          "Value": "3"
+        }
+      ],
+      "Name": "Windows.Media.Capture.CameraCaptureUIMaxVideoResolution"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "PhotoOrVideo",
+          "Value": "0"
+        },
+        {
+          "Name": "Photo",
+          "Value": "1"
+        },
+        {
+          "Name": "Video",
+          "Value": "2"
+        }
+      ],
+      "Name": "Windows.Media.Capture.CameraCaptureUIMode"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Jpeg",
+          "Value": "0"
+        },
+        {
+          "Name": "Png",
+          "Value": "1"
+        },
+        {
+          "Name": "JpegXR",
+          "Value": "2"
+        }
+      ],
+      "Name": "Windows.Media.Capture.CameraCaptureUIPhotoFormat"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Mp4",
+          "Value": "0"
+        },
+        {
+          "Name": "Wmv",
+          "Value": "1"
+        }
+      ],
+      "Name": "Windows.Media.Capture.CameraCaptureUIVideoFormat"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Other",
+          "Value": "0"
+        },
+        {
+          "Name": "Communications",
+          "Value": "1"
+        }
+      ],
+      "Name": "Windows.Media.Capture.MediaCategory"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "VideoPreview",
+          "Value": "0"
+        },
+        {
+          "Name": "VideoRecord",
+          "Value": "1"
+        },
+        {
+          "Name": "Audio",
+          "Value": "2"
+        },
+        {
+          "Name": "Photo",
+          "Value": "3"
+        }
+      ],
+      "Name": "Windows.Media.Capture.MediaStreamType"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Auto",
+          "Value": "0"
+        },
+        {
+          "Name": "VideoPreview",
+          "Value": "1"
+        },
+        {
+          "Name": "Photo",
+          "Value": "2"
+        }
+      ],
+      "Name": "Windows.Media.Capture.PhotoCaptureSource"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Disabled",
+          "Value": "0"
+        },
+        {
+          "Name": "FiftyHertz",
+          "Value": "1"
+        },
+        {
+          "Name": "SixtyHertz",
+          "Value": "2"
+        }
+      ],
+      "Name": "Windows.Media.Capture.PowerlineFrequency"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "AudioAndVideo",
+          "Value": "0"
+        },
+        {
+          "Name": "Audio",
+          "Value": "1"
+        },
+        {
+          "Name": "Video",
+          "Value": "2"
+        }
+      ],
+      "Name": "Windows.Media.Capture.StreamingCaptureMode"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "AllStreamsIndependent",
+          "Value": "0"
+        },
+        {
+          "Name": "PreviewRecordStreamsIdentical",
+          "Value": "1"
+        },
+        {
+          "Name": "PreviewPhotoStreamsIdentical",
+          "Value": "2"
+        },
+        {
+          "Name": "RecordPhotoStreamsIdentical",
+          "Value": "3"
+        },
+        {
+          "Name": "AllStreamsIdentical",
+          "Value": "4"
+        }
+      ],
+      "Name": "Windows.Media.Capture.VideoDeviceCharacteristic"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Clockwise90Degrees",
+          "Value": "1"
+        },
+        {
+          "Name": "Clockwise180Degrees",
+          "Value": "2"
+        },
+        {
+          "Name": "Clockwise270Degrees",
+          "Value": "3"
+        }
+      ],
+      "Name": "Windows.Media.Capture.VideoRotation"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Allow",
+          "Value": "0"
+        },
+        {
+          "Name": "Warn",
+          "Value": "1"
+        },
+        {
+          "Name": "Block",
+          "Value": "2"
+        },
+        {
+          "Name": "Hide",
+          "Value": "3"
+        }
+      ],
+      "Name": "Windows.Media.ContentRestrictions.ContentAccessRestrictionLevel"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "General",
+          "Value": "0"
+        },
+        {
+          "Name": "Application",
+          "Value": "1"
+        },
+        {
+          "Name": "Game",
+          "Value": "2"
+        },
+        {
+          "Name": "Movie",
+          "Value": "3"
+        },
+        {
+          "Name": "Television",
+          "Value": "4"
+        },
+        {
+          "Name": "Music",
+          "Value": "5"
+        }
+      ],
+      "Name": "Windows.Media.ContentRestrictions.RatedContentCategory"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Done",
+          "Value": "0"
+        },
+        {
+          "Name": "UnknownError",
+          "Value": "1"
+        },
+        {
+          "Name": "AppReportedError",
+          "Value": "2"
+        },
+        {
+          "Name": "UnsupportedProtectionSystem",
+          "Value": "3"
+        },
+        {
+          "Name": "ProtectionSystemFailure",
+          "Value": "4"
+        },
+        {
+          "Name": "UnsupportedEncodingFormat",
+          "Value": "5"
+        },
+        {
+          "Name": "MissingSampleRequestedEventHandler",
+          "Value": "6"
+        }
+      ],
+      "Name": "Windows.Media.Core.MediaStreamSourceClosedReason"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Other",
+          "Value": "0"
+        },
+        {
+          "Name": "OutOfMemory",
+          "Value": "1"
+        },
+        {
+          "Name": "FailedToOpenFile",
+          "Value": "2"
+        },
+        {
+          "Name": "FailedToConnectToServer",
+          "Value": "3"
+        },
+        {
+          "Name": "ConnectionToServerLost",
+          "Value": "4"
+        },
+        {
+          "Name": "UnspecifiedNetworkError",
+          "Value": "5"
+        },
+        {
+          "Name": "DecodeError",
+          "Value": "6"
+        },
+        {
+          "Name": "UnsupportedMediaFormat",
+          "Value": "7"
+        }
+      ],
+      "Name": "Windows.Media.Core.MediaStreamSourceErrorStatus"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Default",
+          "Value": "0"
+        },
+        {
+          "Name": "Communications",
+          "Value": "1"
+        }
+      ],
+      "Name": "Windows.Media.Devices.AudioDeviceRole"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Auto",
+          "Value": "0"
+        },
+        {
+          "Name": "Manual",
+          "Value": "1"
+        },
+        {
+          "Name": "Macro",
+          "Value": "2"
+        },
+        {
+          "Name": "Portrait",
+          "Value": "3"
+        },
+        {
+          "Name": "Sport",
+          "Value": "4"
+        },
+        {
+          "Name": "Snow",
+          "Value": "5"
+        },
+        {
+          "Name": "Night",
+          "Value": "6"
+        },
+        {
+          "Name": "Beach",
+          "Value": "7"
+        },
+        {
+          "Name": "Sunset",
+          "Value": "8"
+        },
+        {
+          "Name": "Candlelight",
+          "Value": "9"
+        },
+        {
+          "Name": "Landscape",
+          "Value": "10"
+        },
+        {
+          "Name": "NightPortrait",
+          "Value": "11"
+        },
+        {
+          "Name": "Backlit",
+          "Value": "12"
+        }
+      ],
+      "Name": "Windows.Media.Devices.CaptureSceneMode"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Photo",
+          "Value": "1"
+        },
+        {
+          "Name": "Video",
+          "Value": "2"
+        }
+      ],
+      "Name": "Windows.Media.Devices.CaptureUse"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Auto",
+          "Value": "0"
+        },
+        {
+          "Name": "Manual",
+          "Value": "1"
+        },
+        {
+          "Name": "Cloudy",
+          "Value": "2"
+        },
+        {
+          "Name": "Daylight",
+          "Value": "3"
+        },
+        {
+          "Name": "Flash",
+          "Value": "4"
+        },
+        {
+          "Name": "Fluorescent",
+          "Value": "5"
+        },
+        {
+          "Name": "Tungsten",
+          "Value": "6"
+        },
+        {
+          "Name": "Candlelight",
+          "Value": "7"
+        }
+      ],
+      "Name": "Windows.Media.Devices.ColorTemperaturePreset"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Auto",
+          "Value": "0"
+        },
+        {
+          "Name": "Manual",
+          "Value": "1"
+        },
+        {
+          "Name": "AutoMacro",
+          "Value": "2"
+        },
+        {
+          "Name": "AutoNormal",
+          "Value": "3"
+        },
+        {
+          "Name": "AutoInfinity",
+          "Value": "4"
+        },
+        {
+          "Name": "AutoHyperfocal",
+          "Value": "5"
+        }
+      ],
+      "Name": "Windows.Media.Devices.FocusPreset"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Auto",
+          "Value": "0"
+        },
+        {
+          "Name": "Iso50",
+          "Value": "1"
+        },
+        {
+          "Name": "Iso80",
+          "Value": "2"
+        },
+        {
+          "Name": "Iso100",
+          "Value": "3"
+        },
+        {
+          "Name": "Iso200",
+          "Value": "4"
+        },
+        {
+          "Name": "Iso400",
+          "Value": "5"
+        },
+        {
+          "Name": "Iso800",
+          "Value": "6"
+        },
+        {
+          "Name": "Iso1600",
+          "Value": "7"
+        },
+        {
+          "Name": "Iso3200",
+          "Value": "8"
+        },
+        {
+          "Name": "Iso6400",
+          "Value": "9"
+        },
+        {
+          "Name": "Iso12800",
+          "Value": "10"
+        },
+        {
+          "Name": "Iso25600",
+          "Value": "11"
+        }
+      ],
+      "Name": "Windows.Media.Devices.IsoSpeedPreset"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "D0",
+          "Value": "0"
+        },
+        {
+          "Name": "D1",
+          "Value": "1"
+        },
+        {
+          "Name": "D2",
+          "Value": "2"
+        },
+        {
+          "Name": "D3",
+          "Value": "3"
+        },
+        {
+          "Name": "D4",
+          "Value": "4"
+        },
+        {
+          "Name": "D5",
+          "Value": "5"
+        },
+        {
+          "Name": "D6",
+          "Value": "6"
+        },
+        {
+          "Name": "D7",
+          "Value": "7"
+        },
+        {
+          "Name": "D8",
+          "Value": "8"
+        },
+        {
+          "Name": "D9",
+          "Value": "9"
+        },
+        {
+          "Name": "Star",
+          "Value": "10"
+        },
+        {
+          "Name": "Pound",
+          "Value": "11"
+        },
+        {
+          "Name": "A",
+          "Value": "12"
+        },
+        {
+          "Name": "B",
+          "Value": "13"
+        },
+        {
+          "Name": "C",
+          "Value": "14"
+        },
+        {
+          "Name": "D",
+          "Value": "15"
+        }
+      ],
+      "Name": "Windows.Media.Devices.TelephonyKey"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Other",
+          "Value": "0"
+        },
+        {
+          "Name": "AcousticEchoCancellation",
+          "Value": "1"
+        },
+        {
+          "Name": "NoiseSuppression",
+          "Value": "2"
+        },
+        {
+          "Name": "AutomaticGainControl",
+          "Value": "3"
+        },
+        {
+          "Name": "BeamForming",
+          "Value": "4"
+        },
+        {
+          "Name": "ConstantToneRemoval",
+          "Value": "5"
+        },
+        {
+          "Name": "Equalizer",
+          "Value": "6"
+        },
+        {
+          "Name": "LoudnessEqualizer",
+          "Value": "7"
+        },
+        {
+          "Name": "BassBoost",
+          "Value": "8"
+        },
+        {
+          "Name": "VirtualSurround",
+          "Value": "9"
+        },
+        {
+          "Name": "VirtualHeadphones",
+          "Value": "10"
+        },
+        {
+          "Name": "SpeakerFill",
+          "Value": "11"
+        },
+        {
+          "Name": "RoomCorrection",
+          "Value": "12"
+        },
+        {
+          "Name": "BassManagement",
+          "Value": "13"
+        },
+        {
+          "Name": "EnvironmentalEffects",
+          "Value": "14"
+        },
+        {
+          "Name": "SpeakerProtection",
+          "Value": "15"
+        },
+        {
+          "Name": "SpeakerCompensation",
+          "Value": "16"
+        },
+        {
+          "Name": "DynamicRangeCompression",
+          "Value": "17"
+        }
+      ],
+      "Name": "Windows.Media.Effects.AudioEffectType"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Closed",
+          "Value": "0"
+        },
+        {
+          "Name": "Changing",
+          "Value": "1"
+        },
+        {
+          "Name": "Stopped",
+          "Value": "2"
+        },
+        {
+          "Name": "Playing",
+          "Value": "3"
+        },
+        {
+          "Name": "Paused",
+          "Value": "4"
+        }
+      ],
+      "Name": "Windows.Media.MediaPlaybackStatus"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Unknown",
+          "Value": "0"
+        },
+        {
+          "Name": "Music",
+          "Value": "1"
+        },
+        {
+          "Name": "Video",
+          "Value": "2"
+        },
+        {
+          "Name": "Image",
+          "Value": "3"
+        }
+      ],
+      "Name": "Windows.Media.MediaPlaybackType"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Auto",
+          "Value": "0"
+        },
+        {
+          "Name": "High",
+          "Value": "1"
+        },
+        {
+          "Name": "Medium",
+          "Value": "2"
+        },
+        {
+          "Name": "Low",
+          "Value": "3"
+        }
+      ],
+      "Name": "Windows.Media.MediaProperties.AudioEncodingQuality"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Nv12",
+          "Value": "0"
+        },
+        {
+          "Name": "Bgra8",
+          "Value": "1"
+        }
+      ],
+      "Name": "Windows.Media.MediaProperties.MediaPixelFormat"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Bmp",
+          "Value": "0"
+        },
+        {
+          "Name": "Bgra8",
+          "Value": "1"
+        }
+      ],
+      "Name": "Windows.Media.MediaProperties.MediaThumbnailFormat"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Auto",
+          "Value": "0"
+        },
+        {
+          "Name": "HD1080p",
+          "Value": "1"
+        },
+        {
+          "Name": "HD720p",
+          "Value": "2"
+        },
+        {
+          "Name": "Wvga",
+          "Value": "3"
+        },
+        {
+          "Name": "Ntsc",
+          "Value": "4"
+        },
+        {
+          "Name": "Pal",
+          "Value": "5"
+        },
+        {
+          "Name": "Vga",
+          "Value": "6"
+        },
+        {
+          "Name": "Qvga",
+          "Value": "7"
+        }
+      ],
+      "Name": "Windows.Media.MediaProperties.VideoEncodingQuality"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "WindowsMedia",
+          "Value": "0"
+        },
+        {
+          "Name": "Zune",
+          "Value": "1"
+        },
+        {
+          "Name": "M3u",
+          "Value": "2"
+        }
+      ],
+      "Name": "Windows.Media.Playlists.PlaylistFormat"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "DeviceNotResponding",
+          "Value": "1"
+        },
+        {
+          "Name": "DeviceError",
+          "Value": "2"
+        },
+        {
+          "Name": "DeviceLocked",
+          "Value": "3"
+        },
+        {
+          "Name": "ProtectedPlaybackFailed",
+          "Value": "4"
+        }
+      ],
+      "Name": "Windows.Media.PlayTo.PlayToConnectionError"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Disconnected",
+          "Value": "0"
+        },
+        {
+          "Name": "Connected",
+          "Value": "1"
+        },
+        {
+          "Name": "Rendering",
+          "Value": "2"
+        }
+      ],
+      "Name": "Windows.Media.PlayTo.PlayToConnectionState"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "TrustNotRequired",
+          "Value": "0"
+        },
+        {
+          "Name": "TrustEstablished",
+          "Value": "1"
+        },
+        {
+          "Name": "EnvironmentNotSupported",
+          "Value": "2"
+        },
+        {
+          "Name": "DriverNotSupported",
+          "Value": "3"
+        },
+        {
+          "Name": "DriverSigningFailure",
+          "Value": "4"
+        },
+        {
+          "Name": "UnknownFailure",
+          "Value": "5"
+        }
+      ],
+      "Name": "Windows.Media.Protection.GraphicsTrustStatus"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "NotStarted",
+          "Value": "0"
+        },
+        {
+          "Name": "UpdatesInProgress",
+          "Value": "1"
+        },
+        {
+          "Name": "UserCancelled",
+          "Value": "2"
+        },
+        {
+          "Name": "AppComponentsMayNeedUpdating",
+          "Value": "3"
+        },
+        {
+          "Name": "NoComponentsFound",
+          "Value": "4"
+        }
+      ],
+      "Name": "Windows.Media.Protection.RenewalStatus"
+    },
+    {
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Name": "UserModeComponentLoad",
+          "Value": "1"
+        },
+        {
+          "Name": "KernelModeComponentLoad",
+          "Value": "2"
+        },
+        {
+          "Name": "AppComponent",
+          "Value": "4"
+        },
+        {
+          "Name": "GlobalRevocationListLoadFailed",
+          "Value": "16"
+        },
+        {
+          "Name": "InvalidGlobalRevocationListSignature",
+          "Value": "32"
+        },
+        {
+          "Name": "GlobalRevocationListAbsent",
+          "Value": "4096"
+        },
+        {
+          "Name": "ComponentRevoked",
+          "Value": "8192"
+        },
+        {
+          "Name": "InvalidComponentCertificateExtendedKeyUse",
+          "Value": "16384"
+        },
+        {
+          "Name": "ComponentCertificateRevoked",
+          "Value": "32768"
+        },
+        {
+          "Name": "InvalidComponentCertificateRoot",
+          "Value": "65536"
+        },
+        {
+          "Name": "ComponentHighSecurityCertificateRevoked",
+          "Value": "131072"
+        },
+        {
+          "Name": "ComponentLowSecurityCertificateRevoked",
+          "Value": "262144"
+        },
+        {
+          "Name": "BootDriverVerificationFailed",
+          "Value": "1048576"
+        },
+        {
+          "Name": "ComponentSignedWithTestCertificate",
+          "Value": "16777216"
+        },
+        {
+          "Name": "EncryptionFailure",
+          "Value": "268435456"
+        }
+      ],
+      "Name": "Windows.Media.Protection.RevocationAndRenewalReasons"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Other",
+          "Value": "0"
+        },
+        {
+          "Name": "ForegroundOnlyMedia",
+          "Value": "1"
+        },
+        {
+          "Name": "BackgroundCapableMedia",
+          "Value": "2"
+        },
+        {
+          "Name": "Communications",
+          "Value": "3"
+        },
+        {
+          "Name": "Alerts",
+          "Value": "4"
+        },
+        {
+          "Name": "SoundEffects",
+          "Value": "5"
+        },
+        {
+          "Name": "GameEffects",
+          "Value": "6"
+        },
+        {
+          "Name": "GameMedia",
+          "Value": "7"
+        }
+      ],
+      "Name": "Windows.Media.Render.AudioRenderCategory"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Muted",
+          "Value": "0"
+        },
+        {
+          "Name": "Low",
+          "Value": "1"
+        },
+        {
+          "Name": "Full",
+          "Value": "2"
+        }
+      ],
+      "Name": "Windows.Media.SoundLevel"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Male",
+          "Value": "0"
+        },
+        {
+          "Name": "Female",
+          "Value": "1"
+        }
+      ],
+      "Name": "Windows.Media.SpeechSynthesis.VoiceGender"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Play",
+          "Value": "0"
+        },
+        {
+          "Name": "Pause",
+          "Value": "1"
+        },
+        {
+          "Name": "Stop",
+          "Value": "2"
+        },
+        {
+          "Name": "Record",
+          "Value": "3"
+        },
+        {
+          "Name": "FastForward",
+          "Value": "4"
+        },
+        {
+          "Name": "Rewind",
+          "Value": "5"
+        },
+        {
+          "Name": "Next",
+          "Value": "6"
+        },
+        {
+          "Name": "Previous",
+          "Value": "7"
+        },
+        {
+          "Name": "ChannelUp",
+          "Value": "8"
+        },
+        {
+          "Name": "ChannelDown",
+          "Value": "9"
+        }
+      ],
+      "Name": "Windows.Media.SystemMediaTransportControlsButton"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "SoundLevel",
+          "Value": "0"
+        }
+      ],
+      "Name": "Windows.Media.SystemMediaTransportControlsProperty"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Default",
+          "Value": "0"
+        },
+        {
+          "Name": "MrfCrf444",
+          "Value": "1"
+        }
+      ],
+      "Name": "Windows.Media.Transcoding.MediaVideoProcessingAlgorithm"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Unknown",
+          "Value": "1"
+        },
+        {
+          "Name": "InvalidProfile",
+          "Value": "2"
+        },
+        {
+          "Name": "CodecNotFound",
+          "Value": "3"
+        }
+      ],
+      "Name": "Windows.Media.Transcoding.TranscodeFailureReason"
+    }
+  ],
+  "Delegates": [
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "sender",
+          "Type": "CallControl"
+        }
+      ],
+      "Name": "Windows.Media.Devices.CallControlEventHandler"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "sender",
+          "Type": "CallControl"
+        },
+        {
+          "Name": "e",
+          "Type": "DialRequestedEventArgs"
+        }
+      ],
+      "Name": "Windows.Media.Devices.DialRequestedEventHandler"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "sender",
+          "Type": "CallControl"
+        },
+        {
+          "Name": "e",
+          "Type": "RedialRequestedEventArgs"
+        }
+      ],
+      "Name": "Windows.Media.Devices.RedialRequestedEventHandler"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "sender",
+          "Type": "CallControl"
+        },
+        {
+          "Name": "e",
+          "Type": "KeypadPressedEventArgs"
+        }
+      ],
+      "Name": "Windows.Media.Devices.KeypadPressedEventHandler"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "sender",
+          "Type": "MediaCapture"
+        },
+        {
+          "Name": "errorEventArgs",
+          "Type": "MediaCaptureFailedEventArgs"
+        }
+      ],
+      "Name": "Windows.Media.Capture.MediaCaptureFailedEventHandler"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "sender",
+          "Type": "MediaCapture"
+        }
+      ],
+      "Name": "Windows.Media.Capture.RecordLimitationExceededEventHandler"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "sender",
+          "Type": "MediaProtectionManager"
+        },
+        {
+          "Name": "e",
+          "Type": "ServiceRequestedEventArgs"
+        }
+      ],
+      "Name": "Windows.Media.Protection.ServiceRequestedEventHandler"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "sender",
+          "Type": "MediaProtectionManager"
+        }
+      ],
+      "Name": "Windows.Media.Protection.RebootNeededEventHandler"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "sender",
+          "Type": "MediaProtectionManager"
+        },
+        {
+          "Name": "e",
+          "Type": "ComponentLoadFailedEventArgs"
+        }
+      ],
+      "Name": "Windows.Media.Protection.ComponentLoadFailedEventHandler"
+    }
+  ]
+}

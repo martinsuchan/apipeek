@@ -1,0 +1,1376 @@
+{
+  "Name": "Windows.Gaming, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime",
+  "Enums": [
+    {
+      "Name": "Windows.Gaming.Input.Custom.GipFirmwareUpdateStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Completed",
+          "Value": "0"
+        },
+        {
+          "Name": "UpToDate",
+          "Value": "1"
+        },
+        {
+          "Name": "Failed",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.Custom.GipMessageClass",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Command",
+          "Value": "0"
+        },
+        {
+          "Name": "LowLatency",
+          "Value": "1"
+        },
+        {
+          "Name": "StandardLatency",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.Custom.XusbDeviceType",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Unknown",
+          "Value": "0"
+        },
+        {
+          "Name": "Gamepad",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.Custom.XusbDeviceSubtype",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Unknown",
+          "Value": "0"
+        },
+        {
+          "Name": "Gamepad",
+          "Value": "1"
+        },
+        {
+          "Name": "ArcadePad",
+          "Value": "2"
+        },
+        {
+          "Name": "ArcadeStick",
+          "Value": "3"
+        },
+        {
+          "Name": "FlightStick",
+          "Value": "4"
+        },
+        {
+          "Name": "Wheel",
+          "Value": "5"
+        },
+        {
+          "Name": "Guitar",
+          "Value": "6"
+        },
+        {
+          "Name": "GuitarAlternate",
+          "Value": "7"
+        },
+        {
+          "Name": "GuitarBass",
+          "Value": "8"
+        },
+        {
+          "Name": "DrumKit",
+          "Value": "9"
+        },
+        {
+          "Name": "DancePad",
+          "Value": "10"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.GamepadButtons",
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Menu",
+          "Value": "1"
+        },
+        {
+          "Name": "View",
+          "Value": "2"
+        },
+        {
+          "Name": "A",
+          "Value": "4"
+        },
+        {
+          "Name": "B",
+          "Value": "8"
+        },
+        {
+          "Name": "X",
+          "Value": "16"
+        },
+        {
+          "Name": "Y",
+          "Value": "32"
+        },
+        {
+          "Name": "DPadUp",
+          "Value": "64"
+        },
+        {
+          "Name": "DPadDown",
+          "Value": "128"
+        },
+        {
+          "Name": "DPadLeft",
+          "Value": "256"
+        },
+        {
+          "Name": "DPadRight",
+          "Value": "512"
+        },
+        {
+          "Name": "LeftShoulder",
+          "Value": "1024"
+        },
+        {
+          "Name": "RightShoulder",
+          "Value": "2048"
+        },
+        {
+          "Name": "LeftThumbstick",
+          "Value": "4096"
+        },
+        {
+          "Name": "RightThumbstick",
+          "Value": "8192"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Ok",
+          "Value": "0"
+        },
+        {
+          "Name": "Abort",
+          "Value": "-2147467260"
+        },
+        {
+          "Name": "InvalidContainerName",
+          "Value": "-2138898431"
+        },
+        {
+          "Name": "NoAccess",
+          "Value": "-2138898430"
+        },
+        {
+          "Name": "OutOfLocalStorage",
+          "Value": "-2138898429"
+        },
+        {
+          "Name": "UserCanceled",
+          "Value": "-2138898428"
+        },
+        {
+          "Name": "UpdateTooBig",
+          "Value": "-2138898427"
+        },
+        {
+          "Name": "QuotaExceeded",
+          "Value": "-2138898426"
+        },
+        {
+          "Name": "ProvidedBufferTooSmall",
+          "Value": "-2138898425"
+        },
+        {
+          "Name": "BlobNotFound",
+          "Value": "-2138898424"
+        },
+        {
+          "Name": "NoXboxLiveInfo",
+          "Value": "-2138898423"
+        },
+        {
+          "Name": "ContainerNotInSync",
+          "Value": "-2138898422"
+        },
+        {
+          "Name": "ContainerSyncFailed",
+          "Value": "-2138898421"
+        },
+        {
+          "Name": "UserHasNoXboxLiveInfo",
+          "Value": "-2138898420"
+        },
+        {
+          "Name": "ObjectExpired",
+          "Value": "-2138898419"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Preview.GamesEnumeration.GameListCategory",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Candidate",
+          "Value": "0"
+        },
+        {
+          "Name": "ConfirmedBySystem",
+          "Value": "1"
+        },
+        {
+          "Name": "ConfirmedByUser",
+          "Value": "2"
+        }
+      ]
+    }
+  ],
+  "Interfaces": [
+    {
+      "Name": "Windows.Gaming.Input.Custom.IGameControllerInputSink",
+      "Methods": [
+        {
+          "Name": "OnInputResumed",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "timestamp",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "OnInputSuspended",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "timestamp",
+              "Type": "UInt64"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.Custom.IGipGameControllerInputSink",
+      "Interfaces": [
+        "IGameControllerInputSink"
+      ],
+      "Methods": [
+        {
+          "Name": "OnKeyReceived",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "timestamp",
+              "Type": "UInt64"
+            },
+            {
+              "Name": "keyCode",
+              "Type": "Byte"
+            },
+            {
+              "Name": "isPressed",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "OnMessageReceived",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "timestamp",
+              "Type": "UInt64"
+            },
+            {
+              "Name": "messageClass",
+              "Type": "GipMessageClass"
+            },
+            {
+              "Name": "messageId",
+              "Type": "Byte"
+            },
+            {
+              "Name": "sequenceId",
+              "Type": "Byte"
+            },
+            {
+              "Name": "messageBuffer",
+              "Type": "Byte[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.Custom.IXusbGameControllerInputSink",
+      "Interfaces": [
+        "IGameControllerInputSink"
+      ],
+      "Methods": [
+        {
+          "Name": "OnInputReceived",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "timestamp",
+              "Type": "UInt64"
+            },
+            {
+              "Name": "reportId",
+              "Type": "Byte"
+            },
+            {
+              "Name": "inputBuffer",
+              "Type": "Byte[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.Custom.IGameControllerProvider",
+      "Properties": [
+        {
+          "Name": "FirmwareVersionInfo",
+          "Type": "GameControllerVersionInfo",
+          "IsGet": true
+        },
+        {
+          "Name": "HardwareProductId",
+          "Type": "UInt16",
+          "IsGet": true
+        },
+        {
+          "Name": "HardwareVendorId",
+          "Type": "UInt16",
+          "IsGet": true
+        },
+        {
+          "Name": "HardwareVersionInfo",
+          "Type": "GameControllerVersionInfo",
+          "IsGet": true
+        },
+        {
+          "Name": "IsConnected",
+          "Type": "Boolean",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.Custom.ICustomGameControllerFactory",
+      "Methods": [
+        {
+          "Name": "CreateGameController",
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "provider",
+              "Type": "IGameControllerProvider"
+            }
+          ]
+        },
+        {
+          "Name": "OnGameControllerAdded",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "IGameController"
+            }
+          ]
+        },
+        {
+          "Name": "OnGameControllerRemoved",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "IGameController"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.IGameController",
+      "Properties": [
+        {
+          "Name": "Headset",
+          "Type": "Headset",
+          "IsGet": true
+        },
+        {
+          "Name": "IsWireless",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "User",
+          "Type": "User",
+          "IsGet": true
+        }
+      ],
+      "Events": [
+        {
+          "Name": "HeadsetConnected",
+          "Type": "TypedEventHandler<IGameController,Headset>"
+        },
+        {
+          "Name": "HeadsetDisconnected",
+          "Type": "TypedEventHandler<IGameController,Headset>"
+        },
+        {
+          "Name": "UserChanged",
+          "Type": "TypedEventHandler<IGameController,UserChangedEventArgs>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Preview.GamesEnumeration.IGameListEntry",
+      "Properties": [
+        {
+          "Name": "Category",
+          "Type": "GameListCategory",
+          "IsGet": true
+        },
+        {
+          "Name": "DisplayInfo",
+          "Type": "AppDisplayInfo",
+          "IsGet": true
+        },
+        {
+          "Name": "Properties",
+          "Type": "IReadOnlyDictionary<String,Object>",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "LaunchAsync",
+          "ReturnType": "IAsyncOperation<Boolean>"
+        },
+        {
+          "Name": "SetCategoryAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "GameListCategory"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Structs": [
+    {
+      "Name": "Windows.Gaming.Input.Custom.GameControllerVersionInfo",
+      "Fields": [
+        {
+          "Name": "Major",
+          "Type": "UInt16"
+        },
+        {
+          "Name": "Minor",
+          "Type": "UInt16"
+        },
+        {
+          "Name": "Build",
+          "Type": "UInt16"
+        },
+        {
+          "Name": "Revision",
+          "Type": "UInt16"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.Custom.GipFirmwareUpdateProgress",
+      "Fields": [
+        {
+          "Name": "PercentCompleted",
+          "Type": "Double"
+        },
+        {
+          "Name": "CurrentComponentId",
+          "Type": "UInt32"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.GamepadReading",
+      "Fields": [
+        {
+          "Name": "Timestamp",
+          "Type": "UInt64"
+        },
+        {
+          "Name": "Buttons",
+          "Type": "GamepadButtons"
+        },
+        {
+          "Name": "LeftTrigger",
+          "Type": "Double"
+        },
+        {
+          "Name": "RightTrigger",
+          "Type": "Double"
+        },
+        {
+          "Name": "LeftThumbstickX",
+          "Type": "Double"
+        },
+        {
+          "Name": "LeftThumbstickY",
+          "Type": "Double"
+        },
+        {
+          "Name": "RightThumbstickX",
+          "Type": "Double"
+        },
+        {
+          "Name": "RightThumbstickY",
+          "Type": "Double"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.GamepadVibration",
+      "Fields": [
+        {
+          "Name": "LeftMotor",
+          "Type": "Double"
+        },
+        {
+          "Name": "RightMotor",
+          "Type": "Double"
+        },
+        {
+          "Name": "LeftTrigger",
+          "Type": "Double"
+        },
+        {
+          "Name": "RightTrigger",
+          "Type": "Double"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.XboxLive.StorageApiContract"
+    },
+    {
+      "Name": "Windows.Gaming.Preview.GamesEnumerationContract"
+    }
+  ],
+  "Classes": [
+    {
+      "Name": "Windows.Gaming.Input.Custom.GipFirmwareUpdateResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "ExtendedErrorCode",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "FinalComponentId",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "Status",
+          "Type": "GipFirmwareUpdateStatus",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.Custom.GipGameControllerProvider",
+      "IsSealed": true,
+      "Interfaces": [
+        "IGameControllerProvider"
+      ],
+      "Properties": [
+        {
+          "Name": "FirmwareVersionInfo",
+          "Type": "GameControllerVersionInfo",
+          "IsGet": true
+        },
+        {
+          "Name": "HardwareProductId",
+          "Type": "UInt16",
+          "IsGet": true
+        },
+        {
+          "Name": "HardwareVendorId",
+          "Type": "UInt16",
+          "IsGet": true
+        },
+        {
+          "Name": "HardwareVersionInfo",
+          "Type": "GameControllerVersionInfo",
+          "IsGet": true
+        },
+        {
+          "Name": "IsConnected",
+          "Type": "Boolean",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "SendMessage",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "messageClass",
+              "Type": "GipMessageClass"
+            },
+            {
+              "Name": "messageId",
+              "Type": "Byte"
+            },
+            {
+              "Name": "messageBuffer",
+              "Type": "Byte[]"
+            }
+          ]
+        },
+        {
+          "Name": "SendReceiveMessage",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "messageClass",
+              "Type": "GipMessageClass"
+            },
+            {
+              "Name": "messageId",
+              "Type": "Byte"
+            },
+            {
+              "Name": "requestMessageBuffer",
+              "Type": "Byte[]"
+            },
+            {
+              "Name": "responseMessageBuffer",
+              "Type": "Byte[]",
+              "Out": true
+            }
+          ]
+        },
+        {
+          "Name": "UpdateFirmwareAsync",
+          "ReturnType": "IAsyncOperationWithProgress<GipFirmwareUpdateResult,GipFirmwareUpdateProgress>",
+          "Parameters": [
+            {
+              "Name": "firmwareImage",
+              "Type": "IInputStream"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.Custom.XusbGameControllerProvider",
+      "IsSealed": true,
+      "Interfaces": [
+        "IGameControllerProvider"
+      ],
+      "Properties": [
+        {
+          "Name": "FirmwareVersionInfo",
+          "Type": "GameControllerVersionInfo",
+          "IsGet": true
+        },
+        {
+          "Name": "HardwareProductId",
+          "Type": "UInt16",
+          "IsGet": true
+        },
+        {
+          "Name": "HardwareVendorId",
+          "Type": "UInt16",
+          "IsGet": true
+        },
+        {
+          "Name": "HardwareVersionInfo",
+          "Type": "GameControllerVersionInfo",
+          "IsGet": true
+        },
+        {
+          "Name": "IsConnected",
+          "Type": "Boolean",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "SetVibration",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "lowFrequencyMotorSpeed",
+              "Type": "Double"
+            },
+            {
+              "Name": "highFrequencyMotorSpeed",
+              "Type": "Double"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.Custom.GameControllerFactoryManager",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "RegisterCustomFactoryForGipInterface",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "factory",
+              "Type": "ICustomGameControllerFactory"
+            },
+            {
+              "Name": "interfaceId",
+              "Type": "Guid"
+            }
+          ]
+        },
+        {
+          "Name": "RegisterCustomFactoryForHardwareId",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "factory",
+              "Type": "ICustomGameControllerFactory"
+            },
+            {
+              "Name": "hardwareVendorId",
+              "Type": "UInt16"
+            },
+            {
+              "Name": "hardwareProductId",
+              "Type": "UInt16"
+            }
+          ]
+        },
+        {
+          "Name": "RegisterCustomFactoryForXusbType",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "factory",
+              "Type": "ICustomGameControllerFactory"
+            },
+            {
+              "Name": "xusbType",
+              "Type": "XusbDeviceType"
+            },
+            {
+              "Name": "xusbSubtype",
+              "Type": "XusbDeviceSubtype"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.Headset",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "CaptureDeviceId",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "RenderDeviceId",
+          "Type": "String",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Input.Gamepad",
+      "IsSealed": true,
+      "Interfaces": [
+        "IGameController"
+      ],
+      "Properties": [
+        {
+          "Name": "Headset",
+          "Type": "Headset",
+          "IsGet": true
+        },
+        {
+          "Name": "IsWireless",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "User",
+          "Type": "User",
+          "IsGet": true
+        },
+        {
+          "Name": "Vibration",
+          "Type": "GamepadVibration",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Gamepads",
+          "Type": "IReadOnlyList<Gamepad>",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetCurrentReading",
+          "ReturnType": "GamepadReading"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "HeadsetConnected",
+          "Type": "TypedEventHandler<IGameController,Headset>"
+        },
+        {
+          "Name": "HeadsetDisconnected",
+          "Type": "TypedEventHandler<IGameController,Headset>"
+        },
+        {
+          "Name": "UserChanged",
+          "Type": "TypedEventHandler<IGameController,UserChangedEventArgs>"
+        },
+        {
+          "Name": "GamepadAdded",
+          "Type": "EventHandler<Gamepad>",
+          "IsStatic": true
+        },
+        {
+          "Name": "GamepadRemoved",
+          "Type": "EventHandler<Gamepad>",
+          "IsStatic": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.UI.GameBar",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "IsInputRedirected",
+          "Type": "Boolean",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Visible",
+          "Type": "Boolean",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Events": [
+        {
+          "Name": "IsInputRedirectedChanged",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "VisibilityChanged",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.XboxLive.Storage.GameSaveContainer",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Provider",
+          "Type": "GameSaveProvider",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "SubmitUpdatesAsync",
+          "ReturnType": "IAsyncOperation<GameSaveOperationResult>",
+          "Parameters": [
+            {
+              "Name": "blobsToWrite",
+              "Type": "IReadOnlyDictionary<String,IBuffer>"
+            },
+            {
+              "Name": "blobsToDelete",
+              "Type": "IEnumerable<String>"
+            },
+            {
+              "Name": "displayName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "ReadAsync",
+          "ReturnType": "IAsyncOperation<GameSaveOperationResult>",
+          "Parameters": [
+            {
+              "Name": "blobsToRead",
+              "Type": "IReadOnlyDictionary<String,IBuffer>"
+            }
+          ]
+        },
+        {
+          "Name": "GetAsync",
+          "ReturnType": "IAsyncOperation<GameSaveBlobGetResult>",
+          "Parameters": [
+            {
+              "Name": "blobsToRead",
+              "Type": "IEnumerable<String>"
+            }
+          ]
+        },
+        {
+          "Name": "SubmitPropertySetUpdatesAsync",
+          "ReturnType": "IAsyncOperation<GameSaveOperationResult>",
+          "Parameters": [
+            {
+              "Name": "blobsToWrite",
+              "Type": "IPropertySet"
+            },
+            {
+              "Name": "blobsToDelete",
+              "Type": "IEnumerable<String>"
+            },
+            {
+              "Name": "displayName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "CreateBlobInfoQuery",
+          "ReturnType": "GameSaveBlobInfoQuery",
+          "Parameters": [
+            {
+              "Name": "blobNamePrefix",
+              "Type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.XboxLive.Storage.GameSaveOperationResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Status",
+          "Type": "GameSaveErrorStatus",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery",
+      "IsSealed": true,
+      "Methods": [
+        {
+          "Name": "GetContainerInfoAsync",
+          "ReturnType": "IAsyncOperation<GameSaveContainerInfoGetResult>"
+        },
+        {
+          "Name": "GetContainerInfoAsync",
+          "ReturnType": "IAsyncOperation<GameSaveContainerInfoGetResult>",
+          "Parameters": [
+            {
+              "Name": "startIndex",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "maxNumberOfItems",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "GetItemCountAsync",
+          "ReturnType": "IAsyncOperation<UInt32>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Status",
+          "Type": "GameSaveErrorStatus",
+          "IsGet": true
+        },
+        {
+          "Name": "Value",
+          "Type": "GameSaveProvider",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.XboxLive.Storage.GameSaveProvider",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "ContainersChangedSinceLastSync",
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true
+        },
+        {
+          "Name": "User",
+          "Type": "User",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "CreateContainer",
+          "ReturnType": "GameSaveContainer",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "DeleteContainerAsync",
+          "ReturnType": "IAsyncOperation<GameSaveOperationResult>",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "CreateContainerInfoQuery",
+          "ReturnType": "GameSaveContainerInfoQuery"
+        },
+        {
+          "Name": "CreateContainerInfoQuery",
+          "ReturnType": "GameSaveContainerInfoQuery",
+          "Parameters": [
+            {
+              "Name": "containerNamePrefix",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "GetRemainingBytesInQuotaAsync",
+          "ReturnType": "IAsyncOperation<Int64>"
+        },
+        {
+          "Name": "GetForUserAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<GameSaveProviderGetResult>",
+          "Parameters": [
+            {
+              "Name": "user",
+              "Type": "User"
+            },
+            {
+              "Name": "serviceConfigId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "GetSyncOnDemandForUserAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<GameSaveProviderGetResult>",
+          "Parameters": [
+            {
+              "Name": "user",
+              "Type": "User"
+            },
+            {
+              "Name": "serviceConfigId",
+              "Type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Status",
+          "Type": "GameSaveErrorStatus",
+          "IsGet": true
+        },
+        {
+          "Name": "Value",
+          "Type": "IReadOnlyDictionary<String,IBuffer>",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery",
+      "IsSealed": true,
+      "Methods": [
+        {
+          "Name": "GetBlobInfoAsync",
+          "ReturnType": "IAsyncOperation<GameSaveBlobInfoGetResult>"
+        },
+        {
+          "Name": "GetBlobInfoAsync",
+          "ReturnType": "IAsyncOperation<GameSaveBlobInfoGetResult>",
+          "Parameters": [
+            {
+              "Name": "startIndex",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "maxNumberOfItems",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "GetItemCountAsync",
+          "ReturnType": "IAsyncOperation<UInt32>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "DisplayName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "LastModifiedTime",
+          "Type": "DateTimeOffset",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "NeedsSync",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "TotalSize",
+          "Type": "UInt64",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Status",
+          "Type": "GameSaveErrorStatus",
+          "IsGet": true
+        },
+        {
+          "Name": "Value",
+          "Type": "IReadOnlyList<GameSaveContainerInfo>",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Status",
+          "Type": "GameSaveErrorStatus",
+          "IsGet": true
+        },
+        {
+          "Name": "Value",
+          "Type": "IReadOnlyList<GameSaveBlobInfo>",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Preview.GamesEnumeration.GameListEntry",
+      "IsSealed": true,
+      "Interfaces": [
+        "IGameListEntry"
+      ],
+      "Properties": [
+        {
+          "Name": "Category",
+          "Type": "GameListCategory",
+          "IsGet": true
+        },
+        {
+          "Name": "DisplayInfo",
+          "Type": "AppDisplayInfo",
+          "IsGet": true
+        },
+        {
+          "Name": "Properties",
+          "Type": "IReadOnlyDictionary<String,Object>",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "LaunchAsync",
+          "ReturnType": "IAsyncOperation<Boolean>"
+        },
+        {
+          "Name": "SetCategoryAsync",
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "GameListCategory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Preview.GamesEnumeration.GameList",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "FindAllAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IReadOnlyList<GameListEntry>>"
+        },
+        {
+          "Name": "FindAllAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IReadOnlyList<GameListEntry>>",
+          "Parameters": [
+            {
+              "Name": "packageFamilyName",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Events": [
+        {
+          "Name": "GameAdded",
+          "Type": "GameListChangedEventHandler",
+          "IsStatic": true
+        },
+        {
+          "Name": "GameRemoved",
+          "Type": "GameListRemovedEventHandler",
+          "IsStatic": true
+        },
+        {
+          "Name": "GameUpdated",
+          "Type": "GameListChangedEventHandler",
+          "IsStatic": true
+        }
+      ]
+    }
+  ],
+  "Delegates": [
+    {
+      "Name": "Windows.Gaming.Preview.GamesEnumeration.GameListChangedEventHandler",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "game",
+          "Type": "GameListEntry"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Gaming.Preview.GamesEnumeration.GameListRemovedEventHandler",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "identifier",
+          "Type": "String"
+        }
+      ]
+    }
+  ]
+}

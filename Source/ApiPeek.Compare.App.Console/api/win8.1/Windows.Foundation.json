@@ -1,0 +1,2745 @@
+{
+  "Name": "Windows.Foundation, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime",
+  "Classes": [
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "ICollection<KeyValuePair<String,Object>>",
+        "IDictionary<String,Object>",
+        "IEnumerable",
+        "IEnumerable<KeyValuePair<String,Object>>",
+        "IObservableMap<String,Object>",
+        "IPropertySet"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [
+        {
+          "Name": "MapChanged",
+          "Type": "MapChangedEventHandler<String,Object>"
+        }
+      ],
+      "Name": "Windows.Foundation.Collections.PropertySet"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "TraceOperationCompletion",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "traceLevel",
+              "Type": "CausalityTraceLevel"
+            },
+            {
+              "Name": "source",
+              "Type": "CausalitySource"
+            },
+            {
+              "Name": "platformId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "operationId",
+              "Type": "UInt64"
+            },
+            {
+              "Name": "status",
+              "Type": "AsyncStatus"
+            }
+          ]
+        },
+        {
+          "Name": "TraceOperationCreation",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "traceLevel",
+              "Type": "CausalityTraceLevel"
+            },
+            {
+              "Name": "source",
+              "Type": "CausalitySource"
+            },
+            {
+              "Name": "platformId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "operationId",
+              "Type": "UInt64"
+            },
+            {
+              "Name": "operationName",
+              "Type": "String"
+            },
+            {
+              "Name": "relatedContext",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "TraceOperationRelation",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "traceLevel",
+              "Type": "CausalityTraceLevel"
+            },
+            {
+              "Name": "source",
+              "Type": "CausalitySource"
+            },
+            {
+              "Name": "platformId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "operationId",
+              "Type": "UInt64"
+            },
+            {
+              "Name": "relation",
+              "Type": "CausalityRelation"
+            }
+          ]
+        },
+        {
+          "Name": "TraceSynchronousWorkCompletion",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "traceLevel",
+              "Type": "CausalityTraceLevel"
+            },
+            {
+              "Name": "source",
+              "Type": "CausalitySource"
+            },
+            {
+              "Name": "work",
+              "Type": "CausalitySynchronousWork"
+            }
+          ]
+        },
+        {
+          "Name": "TraceSynchronousWorkStart",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "traceLevel",
+              "Type": "CausalityTraceLevel"
+            },
+            {
+              "Name": "source",
+              "Type": "CausalitySource"
+            },
+            {
+              "Name": "platformId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "operationId",
+              "Type": "UInt64"
+            },
+            {
+              "Name": "work",
+              "Type": "CausalitySynchronousWork"
+            }
+          ]
+        }
+      ],
+      "Events": [
+        {
+          "Name": "TracingStatusChanged",
+          "Type": "EventHandler<TracingStatusChangedEventArgs>",
+          "IsStatic": true
+        }
+      ],
+      "Name": "Windows.Foundation.Diagnostics.AsyncCausalityTracer"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IDisposable",
+        "IFileLoggingSession"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "AddLoggingChannel",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "loggingChannel",
+              "Type": "ILoggingChannel"
+            }
+          ]
+        },
+        {
+          "Name": "AddLoggingChannel",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "loggingChannel",
+              "Type": "ILoggingChannel"
+            },
+            {
+              "Name": "maxLevel",
+              "Type": "LoggingLevel"
+            }
+          ]
+        },
+        {
+          "Name": "CloseAndSaveToFileAsync",
+          "ReturnType": "IAsyncOperation<StorageFile>"
+        },
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "RemoveLoggingChannel",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "loggingChannel",
+              "Type": "ILoggingChannel"
+            }
+          ]
+        }
+      ],
+      "Events": [
+        {
+          "Name": "LogFileGenerated",
+          "Type": "TypedEventHandler<IFileLoggingSession,LogFileGeneratedEventArgs>"
+        }
+      ],
+      "Name": "Windows.Foundation.Diagnostics.FileLoggingSession"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "File",
+          "Type": "StorageFile",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Diagnostics.LogFileGeneratedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IDisposable"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "activityName",
+              "Type": "String"
+            },
+            {
+              "Name": "loggingChannel",
+              "Type": "ILoggingChannel"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "activityName",
+              "Type": "String"
+            },
+            {
+              "Name": "loggingChannel",
+              "Type": "ILoggingChannel"
+            },
+            {
+              "Name": "level",
+              "Type": "LoggingLevel"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "Id",
+          "Type": "Guid",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Foundation.Diagnostics.LoggingActivity"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IDisposable",
+        "ILoggingChannel"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "Enabled",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Level",
+          "Type": "LoggingLevel",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "LogMessage",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "eventString",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "LogMessage",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "eventString",
+              "Type": "String"
+            },
+            {
+              "Name": "level",
+              "Type": "LoggingLevel"
+            }
+          ]
+        },
+        {
+          "Name": "LogValuePair",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value1",
+              "Type": "String"
+            },
+            {
+              "Name": "value2",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "LogValuePair",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value1",
+              "Type": "String"
+            },
+            {
+              "Name": "value2",
+              "Type": "Int32"
+            },
+            {
+              "Name": "level",
+              "Type": "LoggingLevel"
+            }
+          ]
+        }
+      ],
+      "Events": [
+        {
+          "Name": "LoggingEnabled",
+          "Type": "TypedEventHandler<ILoggingChannel,Object>"
+        }
+      ],
+      "Name": "Windows.Foundation.Diagnostics.LoggingChannel"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IDisposable",
+        "ILoggingSession"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "AddLoggingChannel",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "loggingChannel",
+              "Type": "ILoggingChannel"
+            }
+          ]
+        },
+        {
+          "Name": "AddLoggingChannel",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "loggingChannel",
+              "Type": "ILoggingChannel"
+            },
+            {
+              "Name": "maxLevel",
+              "Type": "LoggingLevel"
+            }
+          ]
+        },
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "RemoveLoggingChannel",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "loggingChannel",
+              "Type": "ILoggingChannel"
+            }
+          ]
+        },
+        {
+          "Name": "SaveToFileAsync",
+          "ReturnType": "IAsyncOperation<StorageFile>",
+          "Parameters": [
+            {
+              "Name": "folder",
+              "Type": "IStorageFolder"
+            },
+            {
+              "Name": "fileName",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Foundation.Diagnostics.LoggingSession"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IErrorReportingSettings"
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "GetErrorOptions",
+          "ReturnType": "ErrorOptions"
+        },
+        {
+          "Name": "SetErrorOptions",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "ErrorOptions"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Foundation.Diagnostics.RuntimeBrokerErrorSettings"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Enabled",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "TraceLevel",
+          "Type": "CausalityTraceLevel",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Diagnostics.TracingStatusChangedEventArgs"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "Type"
+            },
+            {
+              "Name": "version",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "Type"
+            },
+            {
+              "Name": "version",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "platform",
+              "Type": "Platform"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "version",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "version",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "platform",
+              "Type": "Platform"
+            }
+          ]
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.ActivatableAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.AllowMultipleAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "Type"
+            },
+            {
+              "Name": "compositionType",
+              "Type": "CompositionType"
+            },
+            {
+              "Name": "version",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "Type"
+            },
+            {
+              "Name": "compositionType",
+              "Type": "CompositionType"
+            },
+            {
+              "Name": "version",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "platform",
+              "Type": "Platform"
+            }
+          ]
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.ComposableAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.DefaultAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.DefaultOverloadAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "message",
+              "Type": "String"
+            },
+            {
+              "Name": "type",
+              "Type": "DeprecationType"
+            },
+            {
+              "Name": "version",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "message",
+              "Type": "String"
+            },
+            {
+              "Name": "type",
+              "Type": "DeprecationType"
+            },
+            {
+              "Name": "version",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "platform",
+              "Type": "Platform"
+            }
+          ]
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.DeprecatedAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [
+        {
+          "Name": "version",
+          "Type": "UInt32"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.DualApiPartitionAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "typeName",
+              "Type": "Type"
+            }
+          ]
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.ExclusiveToAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "a",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "b",
+              "Type": "UInt16"
+            },
+            {
+              "Name": "c",
+              "Type": "UInt16"
+            },
+            {
+              "Name": "d",
+              "Type": "Byte"
+            },
+            {
+              "Name": "e",
+              "Type": "Byte"
+            },
+            {
+              "Name": "f",
+              "Type": "Byte"
+            },
+            {
+              "Name": "g",
+              "Type": "Byte"
+            },
+            {
+              "Name": "h",
+              "Type": "Byte"
+            },
+            {
+              "Name": "i",
+              "Type": "Byte"
+            },
+            {
+              "Name": "j",
+              "Type": "Byte"
+            },
+            {
+              "Name": "k",
+              "Type": "Byte"
+            }
+          ]
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.GuidAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.HasVariantAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "indexLengthParameter",
+              "Type": "Int32"
+            }
+          ]
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.LengthIsAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "behavior",
+              "Type": "MarshalingType"
+            }
+          ]
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.MarshalingBehaviorAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [
+        {
+          "Name": "Version",
+          "Type": "UInt32"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.MuseAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "method",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.OverloadAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.OverridableAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "platform",
+              "Type": "Platform"
+            }
+          ]
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.PlatformAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.ProtectedAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "minValue",
+              "Type": "Int32"
+            },
+            {
+              "Name": "maxValue",
+              "Type": "Int32"
+            }
+          ]
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.RangeAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "Type"
+            },
+            {
+              "Name": "version",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "Type"
+            },
+            {
+              "Name": "version",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "platform",
+              "Type": "Platform"
+            }
+          ]
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.StaticAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "model",
+              "Type": "ThreadingModel"
+            }
+          ]
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.ThreadingAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.VariantAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "version",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "version",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "platform",
+              "Type": "Platform"
+            }
+          ]
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.VersionAttribute"
+    },
+    {
+      "IsSealed": true,
+      "BaseType": "Attribute",
+      "Interfaces": [
+        "_Attribute"
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Metadata.WebHostHiddenAttribute"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "CreateBoolean",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "CreateBooleanArray",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Boolean[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateDateTime",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "DateTimeOffset"
+            }
+          ]
+        },
+        {
+          "Name": "CreateDateTimeArray",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "DateTimeOffset[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateDouble",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "CreateDoubleArray",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Double[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateEmpty",
+          "IsStatic": true,
+          "ReturnType": "Object"
+        },
+        {
+          "Name": "CreateGuid",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Guid"
+            }
+          ]
+        },
+        {
+          "Name": "CreateGuidArray",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Guid[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateChar16",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Char"
+            }
+          ]
+        },
+        {
+          "Name": "CreateChar16Array",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Char[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateInspectable",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Object"
+            }
+          ]
+        },
+        {
+          "Name": "CreateInspectableArray",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Object[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateInt16",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int16"
+            }
+          ]
+        },
+        {
+          "Name": "CreateInt16Array",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int16[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateInt32",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "CreateInt32Array",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int32[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateInt64",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int64"
+            }
+          ]
+        },
+        {
+          "Name": "CreateInt64Array",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int64[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreatePoint",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Point"
+            }
+          ]
+        },
+        {
+          "Name": "CreatePointArray",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Point[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateRect",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Rect"
+            }
+          ]
+        },
+        {
+          "Name": "CreateRectArray",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Rect[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateSingle",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Single"
+            }
+          ]
+        },
+        {
+          "Name": "CreateSingleArray",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Single[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateSize",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Size"
+            }
+          ]
+        },
+        {
+          "Name": "CreateSizeArray",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Size[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateString",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "CreateStringArray",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "String[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateTimeSpan",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "TimeSpan"
+            }
+          ]
+        },
+        {
+          "Name": "CreateTimeSpanArray",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "TimeSpan[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateUInt16",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt16"
+            }
+          ]
+        },
+        {
+          "Name": "CreateUInt16Array",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt16[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateUInt32",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "CreateUInt32Array",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt32[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateUInt64",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "CreateUInt64Array",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt64[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateUInt8",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Byte"
+            }
+          ]
+        },
+        {
+          "Name": "CreateUInt8Array",
+          "IsStatic": true,
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Byte[]"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Foundation.PropertyValue"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IEnumerable",
+        "IEnumerable<IWwwFormUrlDecoderEntry>",
+        "IReadOnlyCollection<IWwwFormUrlDecoderEntry>",
+        "IReadOnlyList<IWwwFormUrlDecoderEntry>"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "query",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "GetFirstValueByName",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Foundation.WwwFormUrlDecoder"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IWwwFormUrlDecoderEntry"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Value",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.WwwFormUrlDecoderEntry"
+    }
+  ],
+  "Structs": [],
+  "Interfaces": [
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Name": "Current",
+          "Type": "T",
+          "IsGet": true
+        },
+        {
+          "Name": "HasCurrent",
+          "Type": "Boolean",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetMany",
+          "ReturnType": "UInt32",
+          "Parameters": [
+            {
+              "Name": "items",
+              "Type": "T[]",
+              "Out": true
+            }
+          ]
+        },
+        {
+          "Name": "MoveNext",
+          "ReturnType": "Boolean"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Foundation.Collections.IIterator<T>"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Name": "CollectionChange",
+          "Type": "CollectionChange",
+          "IsGet": true
+        },
+        {
+          "Name": "Key",
+          "Type": "K",
+          "IsGet": true
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Collections.IMapChangedEventArgs<K>"
+    },
+    {
+      "Interfaces": [
+        "ICollection<KeyValuePair<K,V>>",
+        "IDictionary<K,V>",
+        "IEnumerable",
+        "IEnumerable<KeyValuePair<K,V>>"
+      ],
+      "Properties": [],
+      "Methods": [],
+      "Events": [
+        {
+          "Name": "MapChanged",
+          "Type": "MapChangedEventHandler<K,V>"
+        }
+      ],
+      "Name": "Windows.Foundation.Collections.IObservableMap<K,V>"
+    },
+    {
+      "Interfaces": [
+        "ICollection<T>",
+        "IEnumerable",
+        "IEnumerable<T>",
+        "IList<T>"
+      ],
+      "Properties": [],
+      "Methods": [],
+      "Events": [
+        {
+          "Name": "VectorChanged",
+          "Type": "VectorChangedEventHandler<T>"
+        }
+      ],
+      "Name": "Windows.Foundation.Collections.IObservableVector<T>"
+    },
+    {
+      "Interfaces": [
+        "ICollection<KeyValuePair<String,Object>>",
+        "IDictionary<String,Object>",
+        "IEnumerable",
+        "IEnumerable<KeyValuePair<String,Object>>",
+        "IObservableMap<String,Object>"
+      ],
+      "Properties": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Collections.IPropertySet"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Name": "CollectionChange",
+          "Type": "CollectionChange",
+          "IsGet": true
+        },
+        {
+          "Name": "Index",
+          "Type": "UInt32",
+          "IsGet": true
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.Collections.IVectorChangedEventArgs"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [],
+      "Methods": [
+        {
+          "Name": "GetErrorOptions",
+          "ReturnType": "ErrorOptions"
+        },
+        {
+          "Name": "SetErrorOptions",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "ErrorOptions"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Foundation.Diagnostics.IErrorReportingSettings"
+    },
+    {
+      "Interfaces": [
+        "IDisposable"
+      ],
+      "Properties": [
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "AddLoggingChannel",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "loggingChannel",
+              "Type": "ILoggingChannel"
+            }
+          ]
+        },
+        {
+          "Name": "AddLoggingChannel",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "loggingChannel",
+              "Type": "ILoggingChannel"
+            },
+            {
+              "Name": "maxLevel",
+              "Type": "LoggingLevel"
+            }
+          ]
+        },
+        {
+          "Name": "CloseAndSaveToFileAsync",
+          "ReturnType": "IAsyncOperation<StorageFile>"
+        },
+        {
+          "Name": "RemoveLoggingChannel",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "loggingChannel",
+              "Type": "ILoggingChannel"
+            }
+          ]
+        }
+      ],
+      "Events": [
+        {
+          "Name": "LogFileGenerated",
+          "Type": "TypedEventHandler<IFileLoggingSession,LogFileGeneratedEventArgs>"
+        }
+      ],
+      "Name": "Windows.Foundation.Diagnostics.IFileLoggingSession"
+    },
+    {
+      "Interfaces": [
+        "IDisposable"
+      ],
+      "Properties": [
+        {
+          "Name": "Enabled",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Level",
+          "Type": "LoggingLevel",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "LogMessage",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "eventString",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "LogMessage",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "eventString",
+              "Type": "String"
+            },
+            {
+              "Name": "level",
+              "Type": "LoggingLevel"
+            }
+          ]
+        },
+        {
+          "Name": "LogValuePair",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value1",
+              "Type": "String"
+            },
+            {
+              "Name": "value2",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "LogValuePair",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value1",
+              "Type": "String"
+            },
+            {
+              "Name": "value2",
+              "Type": "Int32"
+            },
+            {
+              "Name": "level",
+              "Type": "LoggingLevel"
+            }
+          ]
+        }
+      ],
+      "Events": [
+        {
+          "Name": "LoggingEnabled",
+          "Type": "TypedEventHandler<ILoggingChannel,Object>"
+        }
+      ],
+      "Name": "Windows.Foundation.Diagnostics.ILoggingChannel"
+    },
+    {
+      "Interfaces": [
+        "IDisposable"
+      ],
+      "Properties": [
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "AddLoggingChannel",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "loggingChannel",
+              "Type": "ILoggingChannel"
+            }
+          ]
+        },
+        {
+          "Name": "AddLoggingChannel",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "loggingChannel",
+              "Type": "ILoggingChannel"
+            },
+            {
+              "Name": "maxLevel",
+              "Type": "LoggingLevel"
+            }
+          ]
+        },
+        {
+          "Name": "RemoveLoggingChannel",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "loggingChannel",
+              "Type": "ILoggingChannel"
+            }
+          ]
+        },
+        {
+          "Name": "SaveToFileAsync",
+          "ReturnType": "IAsyncOperation<StorageFile>",
+          "Parameters": [
+            {
+              "Name": "folder",
+              "Type": "IStorageFolder"
+            },
+            {
+              "Name": "fileName",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Foundation.Diagnostics.ILoggingSession"
+    },
+    {
+      "Interfaces": [
+        "IAsyncInfo"
+      ],
+      "Properties": [
+        {
+          "Name": "Completed",
+          "Type": "AsyncActionCompletedHandler",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetResults",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Foundation.IAsyncAction"
+    },
+    {
+      "Interfaces": [
+        "IAsyncInfo"
+      ],
+      "Properties": [
+        {
+          "Name": "Completed",
+          "Type": "AsyncActionWithProgressCompletedHandler<TProgress>",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Progress",
+          "Type": "AsyncActionProgressHandler<TProgress>",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetResults",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Foundation.IAsyncActionWithProgress<TProgress>"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Name": "ErrorCode",
+          "Type": "Exception",
+          "IsGet": true
+        },
+        {
+          "Name": "Id",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "Status",
+          "Type": "AsyncStatus",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Cancel",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Close",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Foundation.IAsyncInfo"
+    },
+    {
+      "Interfaces": [
+        "IAsyncInfo"
+      ],
+      "Properties": [
+        {
+          "Name": "Completed",
+          "Type": "AsyncOperationCompletedHandler<TResult>",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetResults",
+          "ReturnType": "TResult"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Foundation.IAsyncOperation<TResult>"
+    },
+    {
+      "Interfaces": [
+        "IAsyncInfo"
+      ],
+      "Properties": [
+        {
+          "Name": "Completed",
+          "Type": "AsyncOperationWithProgressCompletedHandler<TResult,TProgress>",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Progress",
+          "Type": "AsyncOperationProgressHandler<TResult,TProgress>",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetResults",
+          "ReturnType": "TResult"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Foundation.IAsyncOperationWithProgress<TResult,TProgress>"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [],
+      "Methods": [
+        {
+          "Name": "GetActivationFactory",
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "activatableClassId",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Foundation.IGetActivationFactory"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.IStringable"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Value",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Foundation.IWwwFormUrlDecoderEntry"
+    }
+  ],
+  "Enums": [
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Started",
+          "Value": "0"
+        },
+        {
+          "Name": "Completed",
+          "Value": "1"
+        },
+        {
+          "Name": "Canceled",
+          "Value": "2"
+        },
+        {
+          "Name": "Error",
+          "Value": "3"
+        }
+      ],
+      "Name": "Windows.Foundation.AsyncStatus"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Reset",
+          "Value": "0"
+        },
+        {
+          "Name": "ItemInserted",
+          "Value": "1"
+        },
+        {
+          "Name": "ItemRemoved",
+          "Value": "2"
+        },
+        {
+          "Name": "ItemChanged",
+          "Value": "3"
+        }
+      ],
+      "Name": "Windows.Foundation.Collections.CollectionChange"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "AssignDelegate",
+          "Value": "0"
+        },
+        {
+          "Name": "Join",
+          "Value": "1"
+        },
+        {
+          "Name": "Choice",
+          "Value": "2"
+        },
+        {
+          "Name": "Cancel",
+          "Value": "3"
+        },
+        {
+          "Name": "Error",
+          "Value": "4"
+        }
+      ],
+      "Name": "Windows.Foundation.Diagnostics.CausalityRelation"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Application",
+          "Value": "0"
+        },
+        {
+          "Name": "Library",
+          "Value": "1"
+        },
+        {
+          "Name": "System",
+          "Value": "2"
+        }
+      ],
+      "Name": "Windows.Foundation.Diagnostics.CausalitySource"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "CompletionNotification",
+          "Value": "0"
+        },
+        {
+          "Name": "ProgressNotification",
+          "Value": "1"
+        },
+        {
+          "Name": "Execution",
+          "Value": "2"
+        }
+      ],
+      "Name": "Windows.Foundation.Diagnostics.CausalitySynchronousWork"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Required",
+          "Value": "0"
+        },
+        {
+          "Name": "Important",
+          "Value": "1"
+        },
+        {
+          "Name": "Verbose",
+          "Value": "2"
+        }
+      ],
+      "Name": "Windows.Foundation.Diagnostics.CausalityTraceLevel"
+    },
+    {
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "SuppressExceptions",
+          "Value": "1"
+        },
+        {
+          "Name": "ForceExceptions",
+          "Value": "2"
+        },
+        {
+          "Name": "UseSetErrorInfo",
+          "Value": "4"
+        },
+        {
+          "Name": "SuppressSetErrorInfo",
+          "Value": "8"
+        }
+      ],
+      "Name": "Windows.Foundation.Diagnostics.ErrorOptions"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Verbose",
+          "Value": "0"
+        },
+        {
+          "Name": "Information",
+          "Value": "1"
+        },
+        {
+          "Name": "Warning",
+          "Value": "2"
+        },
+        {
+          "Name": "Error",
+          "Value": "3"
+        },
+        {
+          "Name": "Critical",
+          "Value": "4"
+        }
+      ],
+      "Name": "Windows.Foundation.Diagnostics.LoggingLevel"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Protected",
+          "Value": "1"
+        },
+        {
+          "Name": "Public",
+          "Value": "2"
+        }
+      ],
+      "Name": "Windows.Foundation.Metadata.CompositionType"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Deprecate",
+          "Value": "0"
+        },
+        {
+          "Name": "Remove",
+          "Value": "1"
+        }
+      ],
+      "Name": "Windows.Foundation.Metadata.DeprecationType"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "InvalidMarshaling",
+          "Value": "0"
+        },
+        {
+          "Name": "None",
+          "Value": "1"
+        },
+        {
+          "Name": "Agile",
+          "Value": "2"
+        },
+        {
+          "Name": "Standard",
+          "Value": "3"
+        }
+      ],
+      "Name": "Windows.Foundation.Metadata.MarshalingType"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Windows",
+          "Value": "0"
+        },
+        {
+          "Name": "WindowsPhone",
+          "Value": "1"
+        }
+      ],
+      "Name": "Windows.Foundation.Metadata.Platform"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "InvalidThreading",
+          "Value": "0"
+        },
+        {
+          "Name": "STA",
+          "Value": "1"
+        },
+        {
+          "Name": "MTA",
+          "Value": "2"
+        },
+        {
+          "Name": "Both",
+          "Value": "3"
+        }
+      ],
+      "Name": "Windows.Foundation.Metadata.ThreadingModel"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Empty",
+          "Value": "0"
+        },
+        {
+          "Name": "UInt8",
+          "Value": "1"
+        },
+        {
+          "Name": "Int16",
+          "Value": "2"
+        },
+        {
+          "Name": "UInt16",
+          "Value": "3"
+        },
+        {
+          "Name": "Int32",
+          "Value": "4"
+        },
+        {
+          "Name": "UInt32",
+          "Value": "5"
+        },
+        {
+          "Name": "Int64",
+          "Value": "6"
+        },
+        {
+          "Name": "UInt64",
+          "Value": "7"
+        },
+        {
+          "Name": "Single",
+          "Value": "8"
+        },
+        {
+          "Name": "Double",
+          "Value": "9"
+        },
+        {
+          "Name": "Char16",
+          "Value": "10"
+        },
+        {
+          "Name": "Boolean",
+          "Value": "11"
+        },
+        {
+          "Name": "String",
+          "Value": "12"
+        },
+        {
+          "Name": "Inspectable",
+          "Value": "13"
+        },
+        {
+          "Name": "DateTime",
+          "Value": "14"
+        },
+        {
+          "Name": "TimeSpan",
+          "Value": "15"
+        },
+        {
+          "Name": "Guid",
+          "Value": "16"
+        },
+        {
+          "Name": "Point",
+          "Value": "17"
+        },
+        {
+          "Name": "Size",
+          "Value": "18"
+        },
+        {
+          "Name": "Rect",
+          "Value": "19"
+        },
+        {
+          "Name": "OtherType",
+          "Value": "20"
+        },
+        {
+          "Name": "UInt8Array",
+          "Value": "1025"
+        },
+        {
+          "Name": "Int16Array",
+          "Value": "1026"
+        },
+        {
+          "Name": "UInt16Array",
+          "Value": "1027"
+        },
+        {
+          "Name": "Int32Array",
+          "Value": "1028"
+        },
+        {
+          "Name": "UInt32Array",
+          "Value": "1029"
+        },
+        {
+          "Name": "Int64Array",
+          "Value": "1030"
+        },
+        {
+          "Name": "UInt64Array",
+          "Value": "1031"
+        },
+        {
+          "Name": "SingleArray",
+          "Value": "1032"
+        },
+        {
+          "Name": "DoubleArray",
+          "Value": "1033"
+        },
+        {
+          "Name": "Char16Array",
+          "Value": "1034"
+        },
+        {
+          "Name": "BooleanArray",
+          "Value": "1035"
+        },
+        {
+          "Name": "StringArray",
+          "Value": "1036"
+        },
+        {
+          "Name": "InspectableArray",
+          "Value": "1037"
+        },
+        {
+          "Name": "DateTimeArray",
+          "Value": "1038"
+        },
+        {
+          "Name": "TimeSpanArray",
+          "Value": "1039"
+        },
+        {
+          "Name": "GuidArray",
+          "Value": "1040"
+        },
+        {
+          "Name": "PointArray",
+          "Value": "1041"
+        },
+        {
+          "Name": "SizeArray",
+          "Value": "1042"
+        },
+        {
+          "Name": "RectArray",
+          "Value": "1043"
+        },
+        {
+          "Name": "OtherTypeArray",
+          "Value": "1044"
+        }
+      ],
+      "Name": "Windows.Foundation.PropertyType"
+    }
+  ],
+  "Delegates": [
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "asyncInfo",
+          "Type": "IAsyncAction"
+        },
+        {
+          "Name": "asyncStatus",
+          "Type": "AsyncStatus"
+        }
+      ],
+      "Name": "Windows.Foundation.AsyncActionCompletedHandler"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "sender",
+          "Type": "IObservableVector<T>"
+        },
+        {
+          "Name": "event",
+          "Type": "IVectorChangedEventArgs"
+        }
+      ],
+      "Name": "Windows.Foundation.Collections.VectorChangedEventHandler<T>"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "sender",
+          "Type": "IObservableMap<K,V>"
+        },
+        {
+          "Name": "event",
+          "Type": "IMapChangedEventArgs<K>"
+        }
+      ],
+      "Name": "Windows.Foundation.Collections.MapChangedEventHandler<K,V>"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "asyncInfo",
+          "Type": "IAsyncOperationWithProgress<TResult,TProgress>"
+        },
+        {
+          "Name": "asyncStatus",
+          "Type": "AsyncStatus"
+        }
+      ],
+      "Name": "Windows.Foundation.AsyncOperationWithProgressCompletedHandler<TResult,TProgress>"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "asyncInfo",
+          "Type": "IAsyncOperation<TResult>"
+        },
+        {
+          "Name": "asyncStatus",
+          "Type": "AsyncStatus"
+        }
+      ],
+      "Name": "Windows.Foundation.AsyncOperationCompletedHandler<TResult>"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "asyncInfo",
+          "Type": "IAsyncActionWithProgress<TProgress>"
+        },
+        {
+          "Name": "asyncStatus",
+          "Type": "AsyncStatus"
+        }
+      ],
+      "Name": "Windows.Foundation.AsyncActionWithProgressCompletedHandler<TProgress>"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "asyncInfo",
+          "Type": "IAsyncOperationWithProgress<TResult,TProgress>"
+        },
+        {
+          "Name": "progressInfo",
+          "Type": "TProgress"
+        }
+      ],
+      "Name": "Windows.Foundation.AsyncOperationProgressHandler<TResult,TProgress>"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "asyncInfo",
+          "Type": "IAsyncActionWithProgress<TProgress>"
+        },
+        {
+          "Name": "progressInfo",
+          "Type": "TProgress"
+        }
+      ],
+      "Name": "Windows.Foundation.AsyncActionProgressHandler<TProgress>"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "sender",
+          "Type": "TSender"
+        },
+        {
+          "Name": "args",
+          "Type": "TResult"
+        }
+      ],
+      "Name": "Windows.Foundation.TypedEventHandler<TSender,TResult>"
+    }
+  ]
+}

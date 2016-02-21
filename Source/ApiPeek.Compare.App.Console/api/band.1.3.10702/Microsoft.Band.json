@@ -1,0 +1,2260 @@
+{
+  "Name": "Microsoft.Band, Version=1.3.10702.1, Culture=neutral, PublicKeyToken=608d7da3159f502b",
+  "Enums": [
+    {
+      "Name": "Microsoft.Band.Notifications.VibrationType",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "NotificationOneTone",
+          "Value": "0"
+        },
+        {
+          "Name": "NotificationTwoTone",
+          "Value": "1"
+        },
+        {
+          "Name": "NotificationAlarm",
+          "Value": "2"
+        },
+        {
+          "Name": "NotificationTimer",
+          "Value": "3"
+        },
+        {
+          "Name": "OneToneHigh",
+          "Value": "4"
+        },
+        {
+          "Name": "TwoToneHigh",
+          "Value": "5"
+        },
+        {
+          "Name": "ThreeToneHigh",
+          "Value": "6"
+        },
+        {
+          "Name": "RampUp",
+          "Value": "7"
+        },
+        {
+          "Name": "RampDown",
+          "Value": "8"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.BandContactState",
+      "BaseType": "Byte",
+      "Values": [
+        {
+          "Name": "NotWorn",
+          "Value": "0"
+        },
+        {
+          "Name": "Worn",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.ElementColorSource",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Custom",
+          "Value": "0"
+        },
+        {
+          "Name": "BandBase",
+          "Value": "33554432"
+        },
+        {
+          "Name": "BandHighlight",
+          "Value": "33554433"
+        },
+        {
+          "Name": "BandLowlight",
+          "Value": "33554434"
+        },
+        {
+          "Name": "BandSecondaryText",
+          "Value": "33554435"
+        },
+        {
+          "Name": "BandHighContrast",
+          "Value": "33554436"
+        },
+        {
+          "Name": "BandMuted",
+          "Value": "33554437"
+        },
+        {
+          "Name": "TileBase",
+          "Value": "50331648"
+        },
+        {
+          "Name": "TileHighlight",
+          "Value": "50331649"
+        },
+        {
+          "Name": "TileLowlight",
+          "Value": "50331650"
+        },
+        {
+          "Name": "TileSecondaryText",
+          "Value": "50331651"
+        },
+        {
+          "Name": "TileHighContrast",
+          "Value": "50331652"
+        },
+        {
+          "Name": "TileMuted",
+          "Value": "50331653"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.UserConsent",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "NotSpecified",
+          "Value": "0"
+        },
+        {
+          "Name": "Granted",
+          "Value": "1"
+        },
+        {
+          "Name": "Declined",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.BandConnectionType",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Usb",
+          "Value": "0"
+        },
+        {
+          "Name": "Bluetooth",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Notifications.MessageFlags",
+      "IsFlags": true,
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "ShowDialog",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.HeartRateQuality",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Acquiring",
+          "Value": "0"
+        },
+        {
+          "Name": "Locked",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.MotionType",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Unknown",
+          "Value": "0"
+        },
+        {
+          "Name": "Idle",
+          "Value": "1"
+        },
+        {
+          "Name": "Walking",
+          "Value": "2"
+        },
+        {
+          "Name": "Jogging",
+          "Value": "3"
+        },
+        {
+          "Name": "Running",
+          "Value": "4"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.UVIndexLevel",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Low",
+          "Value": "1"
+        },
+        {
+          "Name": "Medium",
+          "Value": "2"
+        },
+        {
+          "Name": "High",
+          "Value": "3"
+        },
+        {
+          "Name": "VeryHigh",
+          "Value": "4"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.BarcodeType",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Pdf417",
+          "Value": "0"
+        },
+        {
+          "Name": "Code39",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.FlowPanelOrientation",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Vertical",
+          "Value": "0"
+        },
+        {
+          "Name": "Horizontal",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.HorizontalAlignment",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Left",
+          "Value": "0"
+        },
+        {
+          "Name": "Right",
+          "Value": "1"
+        },
+        {
+          "Name": "Center",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.VerticalAlignment",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Top",
+          "Value": "0"
+        },
+        {
+          "Name": "Bottom",
+          "Value": "1"
+        },
+        {
+          "Name": "Center",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.PageVisibility",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Hidden",
+          "Value": "0"
+        },
+        {
+          "Name": "Visible",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.TextBlockFont",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Small",
+          "Value": "0"
+        },
+        {
+          "Name": "Medium",
+          "Value": "1"
+        },
+        {
+          "Name": "Large",
+          "Value": "2"
+        },
+        {
+          "Name": "ExtraLargeNumbers",
+          "Value": "3"
+        },
+        {
+          "Name": "ExtraLargeNumbersBold",
+          "Value": "4"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.TextBlockBaselineAlignment",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Automatic",
+          "Value": "0"
+        },
+        {
+          "Name": "Absolute",
+          "Value": "1"
+        },
+        {
+          "Name": "Relative",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.WrappedTextBlockFont",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Small",
+          "Value": "0"
+        },
+        {
+          "Name": "Medium",
+          "Value": "1"
+        }
+      ]
+    }
+  ],
+  "Interfaces": [
+    {
+      "Name": "Microsoft.Band.IBandClient",
+      "Interfaces": [
+        "IDisposable"
+      ],
+      "Properties": [
+        {
+          "Name": "NotificationManager",
+          "Type": "IBandNotificationManager",
+          "IsGet": true
+        },
+        {
+          "Name": "PersonalizationManager",
+          "Type": "IBandPersonalizationManager",
+          "IsGet": true
+        },
+        {
+          "Name": "TileManager",
+          "Type": "IBandTileManager",
+          "IsGet": true
+        },
+        {
+          "Name": "SensorManager",
+          "Type": "IBandSensorManager",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetFirmwareVersionAsync",
+          "ReturnType": "Task<String>"
+        },
+        {
+          "Name": "GetFirmwareVersionAsync",
+          "ReturnType": "Task<String>",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            }
+          ]
+        },
+        {
+          "Name": "GetHardwareVersionAsync",
+          "ReturnType": "Task<String>"
+        },
+        {
+          "Name": "GetHardwareVersionAsync",
+          "ReturnType": "Task<String>",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Notifications.IBandNotificationManager",
+      "Methods": [
+        {
+          "Name": "ShowDialogAsync",
+          "ReturnType": "Task",
+          "Parameters": [
+            {
+              "Name": "tileId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "title",
+              "Type": "String"
+            },
+            {
+              "Name": "body",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "ShowDialogAsync",
+          "ReturnType": "Task",
+          "Parameters": [
+            {
+              "Name": "tileId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "title",
+              "Type": "String"
+            },
+            {
+              "Name": "body",
+              "Type": "String"
+            },
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            }
+          ]
+        },
+        {
+          "Name": "SendMessageAsync",
+          "ReturnType": "Task",
+          "Parameters": [
+            {
+              "Name": "tileId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "title",
+              "Type": "String"
+            },
+            {
+              "Name": "body",
+              "Type": "String"
+            },
+            {
+              "Name": "timestamp",
+              "Type": "DateTimeOffset"
+            },
+            {
+              "Name": "flags",
+              "Type": "MessageFlags"
+            }
+          ]
+        },
+        {
+          "Name": "SendMessageAsync",
+          "ReturnType": "Task",
+          "Parameters": [
+            {
+              "Name": "tileId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "title",
+              "Type": "String"
+            },
+            {
+              "Name": "body",
+              "Type": "String"
+            },
+            {
+              "Name": "timestamp",
+              "Type": "DateTimeOffset"
+            },
+            {
+              "Name": "flags",
+              "Type": "MessageFlags"
+            },
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            }
+          ]
+        },
+        {
+          "Name": "VibrateAsync",
+          "ReturnType": "Task",
+          "Parameters": [
+            {
+              "Name": "vibrationType",
+              "Type": "VibrationType"
+            }
+          ]
+        },
+        {
+          "Name": "VibrateAsync",
+          "ReturnType": "Task",
+          "Parameters": [
+            {
+              "Name": "vibrationType",
+              "Type": "VibrationType"
+            },
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Personalization.IBandPersonalizationManager",
+      "Methods": [
+        {
+          "Name": "GetMeTileImageAsync",
+          "ReturnType": "Task<BandImage>"
+        },
+        {
+          "Name": "GetMeTileImageAsync",
+          "ReturnType": "Task<BandImage>",
+          "Parameters": [
+            {
+              "Name": "cancel",
+              "Type": "CancellationToken"
+            }
+          ]
+        },
+        {
+          "Name": "SetMeTileImageAsync",
+          "ReturnType": "Task",
+          "Parameters": [
+            {
+              "Name": "image",
+              "Type": "BandImage"
+            }
+          ]
+        },
+        {
+          "Name": "SetMeTileImageAsync",
+          "ReturnType": "Task",
+          "Parameters": [
+            {
+              "Name": "image",
+              "Type": "BandImage"
+            },
+            {
+              "Name": "cancel",
+              "Type": "CancellationToken"
+            }
+          ]
+        },
+        {
+          "Name": "GetThemeAsync",
+          "ReturnType": "Task<BandTheme>"
+        },
+        {
+          "Name": "GetThemeAsync",
+          "ReturnType": "Task<BandTheme>",
+          "Parameters": [
+            {
+              "Name": "cancel",
+              "Type": "CancellationToken"
+            }
+          ]
+        },
+        {
+          "Name": "SetThemeAsync",
+          "ReturnType": "Task",
+          "Parameters": [
+            {
+              "Name": "theme",
+              "Type": "BandTheme"
+            }
+          ]
+        },
+        {
+          "Name": "SetThemeAsync",
+          "ReturnType": "Task",
+          "Parameters": [
+            {
+              "Name": "theme",
+              "Type": "BandTheme"
+            },
+            {
+              "Name": "cancel",
+              "Type": "CancellationToken"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.IBandSensorManager",
+      "Properties": [
+        {
+          "Name": "Accelerometer",
+          "Type": "IBandSensor<IBandAccelerometerReading>",
+          "IsGet": true
+        },
+        {
+          "Name": "Gyroscope",
+          "Type": "IBandSensor<IBandGyroscopeReading>",
+          "IsGet": true
+        },
+        {
+          "Name": "Distance",
+          "Type": "IBandSensor<IBandDistanceReading>",
+          "IsGet": true
+        },
+        {
+          "Name": "HeartRate",
+          "Type": "IBandSensor<IBandHeartRateReading>",
+          "IsGet": true
+        },
+        {
+          "Name": "Contact",
+          "Type": "IBandContactSensor",
+          "IsGet": true
+        },
+        {
+          "Name": "SkinTemperature",
+          "Type": "IBandSensor<IBandSkinTemperatureReading>",
+          "IsGet": true
+        },
+        {
+          "Name": "UV",
+          "Type": "IBandSensor<IBandUVReading>",
+          "IsGet": true
+        },
+        {
+          "Name": "Pedometer",
+          "Type": "IBandSensor<IBandPedometerReading>",
+          "IsGet": true
+        },
+        {
+          "Name": "Calories",
+          "Type": "IBandSensor<IBandCaloriesReading>",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.IBandTileManager",
+      "Methods": [
+        {
+          "Name": "StartReadingsAsync",
+          "ReturnType": "Task"
+        },
+        {
+          "Name": "StartReadingsAsync",
+          "ReturnType": "Task",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            }
+          ]
+        },
+        {
+          "Name": "StopReadingsAsync",
+          "ReturnType": "Task"
+        },
+        {
+          "Name": "StopReadingsAsync",
+          "ReturnType": "Task",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            }
+          ]
+        },
+        {
+          "Name": "GetTilesAsync",
+          "ReturnType": "Task<IEnumerable<BandTile>>"
+        },
+        {
+          "Name": "GetTilesAsync",
+          "ReturnType": "Task<IEnumerable<BandTile>>",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            }
+          ]
+        },
+        {
+          "Name": "AddTileAsync",
+          "ReturnType": "Task<Boolean>",
+          "Parameters": [
+            {
+              "Name": "tile",
+              "Type": "BandTile"
+            }
+          ]
+        },
+        {
+          "Name": "AddTileAsync",
+          "ReturnType": "Task<Boolean>",
+          "Parameters": [
+            {
+              "Name": "tile",
+              "Type": "BandTile"
+            },
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            }
+          ]
+        },
+        {
+          "Name": "SetPagesAsync",
+          "ReturnType": "Task<Boolean>",
+          "Parameters": [
+            {
+              "Name": "tileId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "pages",
+              "Type": "PageData[]"
+            }
+          ]
+        },
+        {
+          "Name": "SetPagesAsync",
+          "ReturnType": "Task<Boolean>",
+          "Parameters": [
+            {
+              "Name": "tileId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            },
+            {
+              "Name": "pages",
+              "Type": "PageData[]"
+            }
+          ]
+        },
+        {
+          "Name": "SetPagesAsync",
+          "ReturnType": "Task<Boolean>",
+          "Parameters": [
+            {
+              "Name": "tileId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "pages",
+              "Type": "IEnumerable<PageData>"
+            }
+          ]
+        },
+        {
+          "Name": "SetPagesAsync",
+          "ReturnType": "Task<Boolean>",
+          "Parameters": [
+            {
+              "Name": "tileId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            },
+            {
+              "Name": "pages",
+              "Type": "IEnumerable<PageData>"
+            }
+          ]
+        },
+        {
+          "Name": "RemovePagesAsync",
+          "ReturnType": "Task<Boolean>",
+          "Parameters": [
+            {
+              "Name": "tileId",
+              "Type": "Guid"
+            }
+          ]
+        },
+        {
+          "Name": "RemovePagesAsync",
+          "ReturnType": "Task<Boolean>",
+          "Parameters": [
+            {
+              "Name": "tileId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            }
+          ]
+        },
+        {
+          "Name": "RemoveTileAsync",
+          "ReturnType": "Task<Boolean>",
+          "Parameters": [
+            {
+              "Name": "tile",
+              "Type": "BandTile"
+            }
+          ]
+        },
+        {
+          "Name": "RemoveTileAsync",
+          "ReturnType": "Task<Boolean>",
+          "Parameters": [
+            {
+              "Name": "tile",
+              "Type": "BandTile"
+            },
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            }
+          ]
+        },
+        {
+          "Name": "RemoveTileAsync",
+          "ReturnType": "Task<Boolean>",
+          "Parameters": [
+            {
+              "Name": "tileId",
+              "Type": "Guid"
+            }
+          ]
+        },
+        {
+          "Name": "RemoveTileAsync",
+          "ReturnType": "Task<Boolean>",
+          "Parameters": [
+            {
+              "Name": "tileId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            }
+          ]
+        },
+        {
+          "Name": "GetRemainingTileCapacityAsync",
+          "ReturnType": "Task<Int32>"
+        },
+        {
+          "Name": "GetRemainingTileCapacityAsync",
+          "ReturnType": "Task<Int32>",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            }
+          ]
+        }
+      ],
+      "Events": [
+        {
+          "Name": "TileOpened",
+          "Type": "EventHandler<BandTileEventArgs<IBandTileOpenedEvent>>"
+        },
+        {
+          "Name": "TileButtonPressed",
+          "Type": "EventHandler<BandTileEventArgs<IBandTileButtonPressedEvent>>"
+        },
+        {
+          "Name": "TileClosed",
+          "Type": "EventHandler<BandTileEventArgs<IBandTileClosedEvent>>"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.IBandSensorReading",
+      "Properties": [
+        {
+          "Name": "Timestamp",
+          "Type": "DateTimeOffset",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.IBandCaloriesReading",
+      "Interfaces": [
+        "IBandSensorReading"
+      ],
+      "Properties": [
+        {
+          "Name": "Calories",
+          "Type": "Int64",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.IBandSensor<T>",
+      "Properties": [
+        {
+          "Name": "IsSupported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "SupportedReportingIntervals",
+          "Type": "IEnumerable<TimeSpan>",
+          "IsGet": true
+        },
+        {
+          "Name": "ReportingInterval",
+          "Type": "TimeSpan",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetCurrentUserConsent",
+          "ReturnType": "UserConsent"
+        },
+        {
+          "Name": "RequestUserConsentAsync",
+          "ReturnType": "Task<Boolean>"
+        },
+        {
+          "Name": "RequestUserConsentAsync",
+          "ReturnType": "Task<Boolean>",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            }
+          ]
+        },
+        {
+          "Name": "StartReadingsAsync",
+          "ReturnType": "Task<Boolean>"
+        },
+        {
+          "Name": "StartReadingsAsync",
+          "ReturnType": "Task<Boolean>",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            }
+          ]
+        },
+        {
+          "Name": "StopReadingsAsync",
+          "ReturnType": "Task"
+        },
+        {
+          "Name": "StopReadingsAsync",
+          "ReturnType": "Task",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "CancellationToken"
+            }
+          ]
+        }
+      ],
+      "Events": [
+        {
+          "Name": "ReadingChanged",
+          "Type": "EventHandler<BandSensorReadingEventArgs<T>>"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.IBandAccelerometerReading",
+      "Interfaces": [
+        "IBandSensorReading"
+      ],
+      "Properties": [
+        {
+          "Name": "AccelerationX",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "AccelerationY",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "AccelerationZ",
+          "Type": "Double",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.IBandContactReading",
+      "Interfaces": [
+        "IBandSensorReading"
+      ],
+      "Properties": [
+        {
+          "Name": "State",
+          "Type": "BandContactState",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.IBandDistanceReading",
+      "Interfaces": [
+        "IBandSensorReading"
+      ],
+      "Properties": [
+        {
+          "Name": "TotalDistance",
+          "Type": "Int64",
+          "IsGet": true
+        },
+        {
+          "Name": "Speed",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "Pace",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "CurrentMotion",
+          "Type": "MotionType",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.IBandGyroscopeReading",
+      "Interfaces": [
+        "IBandAccelerometerReading",
+        "IBandSensorReading"
+      ],
+      "Properties": [
+        {
+          "Name": "AngularVelocityX",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "AngularVelocityY",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "AngularVelocityZ",
+          "Type": "Double",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.IBandHeartRateReading",
+      "Interfaces": [
+        "IBandSensorReading"
+      ],
+      "Properties": [
+        {
+          "Name": "HeartRate",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "Quality",
+          "Type": "HeartRateQuality",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.IBandPedometerReading",
+      "Interfaces": [
+        "IBandSensorReading"
+      ],
+      "Properties": [
+        {
+          "Name": "TotalSteps",
+          "Type": "Int64",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.IBandSkinTemperatureReading",
+      "Interfaces": [
+        "IBandSensorReading"
+      ],
+      "Properties": [
+        {
+          "Name": "Temperature",
+          "Type": "Double",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.IBandUVReading",
+      "Interfaces": [
+        "IBandSensorReading"
+      ],
+      "Properties": [
+        {
+          "Name": "IndexLevel",
+          "Type": "UVIndexLevel",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.IBandContactSensor",
+      "Interfaces": [
+        "IBandSensor<IBandContactReading>"
+      ],
+      "Methods": [
+        {
+          "Name": "GetCurrentStateAsync",
+          "ReturnType": "Task<IBandContactReading>"
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.IBandClientManager",
+      "Methods": [
+        {
+          "Name": "GetBandsAsync",
+          "ReturnType": "Task<IBandInfo[]>"
+        },
+        {
+          "Name": "ConnectAsync",
+          "ReturnType": "Task<IBandClient>",
+          "Parameters": [
+            {
+              "Name": "bandInfo",
+              "Type": "IBandInfo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.IBandInfo",
+      "Properties": [
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "ConnectionType",
+          "Type": "BandConnectionType",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.IBandTileEvent",
+      "Properties": [
+        {
+          "Name": "TileId",
+          "Type": "Guid",
+          "IsGet": true
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "DateTimeOffset",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.IBandTileButtonPressedEvent",
+      "Interfaces": [
+        "IBandTileEvent"
+      ],
+      "Properties": [
+        {
+          "Name": "PageId",
+          "Type": "Guid",
+          "IsGet": true
+        },
+        {
+          "Name": "ElementId",
+          "Type": "UInt16",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.IBandTileOpenedEvent",
+      "Interfaces": [
+        "IBandTileEvent"
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.IBandTileClosedEvent",
+      "Interfaces": [
+        "IBandTileEvent"
+      ]
+    }
+  ],
+  "Structs": [
+    {
+      "Name": "Microsoft.Band.BandColor",
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "red",
+              "Type": "Byte"
+            },
+            {
+              "Name": "green",
+              "Type": "Byte"
+            },
+            {
+              "Name": "blue",
+              "Type": "Byte"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "R",
+          "Type": "Byte",
+          "IsGet": true
+        },
+        {
+          "Name": "G",
+          "Type": "Byte",
+          "IsGet": true
+        },
+        {
+          "Name": "B",
+          "Type": "Byte",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.Margins",
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "left",
+              "Type": "Int16"
+            },
+            {
+              "Name": "top",
+              "Type": "Int16"
+            },
+            {
+              "Name": "right",
+              "Type": "Int16"
+            },
+            {
+              "Name": "bottom",
+              "Type": "Int16"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "Left",
+          "Type": "Int16",
+          "IsGet": true
+        },
+        {
+          "Name": "Top",
+          "Type": "Int16",
+          "IsGet": true
+        },
+        {
+          "Name": "Right",
+          "Type": "Int16",
+          "IsGet": true
+        },
+        {
+          "Name": "Bottom",
+          "Type": "Int16",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.PageRect",
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "Int16"
+            },
+            {
+              "Name": "y",
+              "Type": "Int16"
+            },
+            {
+              "Name": "width",
+              "Type": "Int16"
+            },
+            {
+              "Name": "height",
+              "Type": "Int16"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "X",
+          "Type": "Int16",
+          "IsGet": true
+        },
+        {
+          "Name": "Y",
+          "Type": "Int16",
+          "IsGet": true
+        },
+        {
+          "Name": "Width",
+          "Type": "Int16",
+          "IsGet": true
+        },
+        {
+          "Name": "Height",
+          "Type": "Int16",
+          "IsGet": true
+        }
+      ]
+    }
+  ],
+  "Classes": [
+    {
+      "Name": "Microsoft.Band.Personalization.BandImage",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Width",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Height",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "PixelData",
+          "Type": "Byte[]",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.BandIcon",
+      "Properties": [
+        {
+          "Name": "Height",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Width",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IconData",
+          "Type": "Byte[]",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.BandTheme",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Base",
+          "Type": "BandColor",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Highlight",
+          "Type": "BandColor",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Lowlight",
+          "Type": "BandColor",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "SecondaryText",
+          "Type": "BandColor",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "HighContrast",
+          "Type": "BandColor",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Muted",
+          "Type": "BandColor",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.BandTile",
+      "IsSealed": true,
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "tileId",
+              "Type": "Guid"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "TileId",
+          "Type": "Guid",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "TileIcon",
+          "Type": "BandIcon",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "TileIconUnsafe",
+          "Type": "BandIcon",
+          "IsSet": true
+        },
+        {
+          "Name": "SmallIcon",
+          "Type": "BandIcon",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Theme",
+          "Type": "BandTheme",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "PageLayouts",
+          "Type": "IList<PageLayout>",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsBadgingEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "AdditionalIcons",
+          "Type": "IList<BandIcon>",
+          "IsGet": true
+        },
+        {
+          "Name": "IsScreenTimeoutDisabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.BandException",
+      "BaseType": "Exception"
+    },
+    {
+      "Name": "Microsoft.Band.BandIOException",
+      "BaseType": "BandException"
+    },
+    {
+      "Name": "Microsoft.Band.BandOperationException",
+      "IsSealed": true,
+      "BaseType": "BandIOException",
+      "Properties": [
+        {
+          "Name": "HResult",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.BandTileEventArgs<T>",
+      "BaseType": "EventArgs",
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "tileEvent",
+              "Type": "T"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "TileEvent",
+          "Type": "T",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Sensors.BandSensorReadingEventArgs<T>",
+      "BaseType": "EventArgs",
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "reading",
+              "Type": "T"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "SensorReading",
+          "Type": "T",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.PageElementData",
+      "IsAbstract": true,
+      "Properties": [
+        {
+          "Name": "ElementId",
+          "Type": "Int16",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.BarcodeData",
+      "IsSealed": true,
+      "BaseType": "PageElementData",
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "barcodeType",
+              "Type": "BarcodeType"
+            },
+            {
+              "Name": "elementId",
+              "Type": "Int16"
+            },
+            {
+              "Name": "barcode",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "MaximumDataLength",
+          "Type": "Int32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "BarcodeType",
+          "Type": "BarcodeType",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Barcode",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.IconData",
+      "IsSealed": true,
+      "BaseType": "PageElementData",
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "elementId",
+              "Type": "Int16"
+            },
+            {
+              "Name": "iconIndex",
+              "Type": "UInt16"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "IconIndex",
+          "Type": "UInt16",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.PageData",
+      "IsSealed": true,
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "pageId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "pageLayoutIndex",
+              "Type": "Int32"
+            },
+            {
+              "Name": "values",
+              "Type": "PageElementData[]"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pageId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "pageLayoutIndex",
+              "Type": "Int32"
+            },
+            {
+              "Name": "values",
+              "Type": "IEnumerable<PageElementData>"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "PageId",
+          "Type": "Guid",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "PageLayoutIndex",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Values",
+          "Type": "IList<PageElementData>",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.FilledButtonData",
+      "IsSealed": true,
+      "BaseType": "PageElementData",
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "elementId",
+              "Type": "Int16"
+            },
+            {
+              "Name": "pressedColor",
+              "Type": "BandColor"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "PressedColor",
+          "Type": "BandColor",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.PageElement",
+      "IsAbstract": true,
+      "Properties": [
+        {
+          "Name": "Rect",
+          "Type": "PageRect",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "ElementId",
+          "Type": "Nullable<Int16>",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Margins",
+          "Type": "Margins",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "ColorSource",
+          "Type": "ElementColorSource",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Color",
+          "Type": "BandColor",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "HorizontalAlignment",
+          "Type": "HorizontalAlignment",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "VerticalAlignment",
+          "Type": "VerticalAlignment",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Visible",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "TypeId",
+          "Type": "PageElementType",
+          "IsGet": true
+        },
+        {
+          "Name": "SerializedCustomByteCount",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "ChildCount",
+          "Type": "UInt16",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.FilledButton",
+      "IsSealed": true,
+      "BaseType": "PageElement",
+      "Properties": [
+        {
+          "Name": "BackgroundColor",
+          "Type": "BandColor",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "TypeId",
+          "Type": "PageElementType",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.TextButton",
+      "IsSealed": true,
+      "BaseType": "PageElement",
+      "Properties": [
+        {
+          "Name": "PressedColor",
+          "Type": "BandColor",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "TypeId",
+          "Type": "PageElementType",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.TextData",
+      "IsAbstract": true,
+      "BaseType": "PageElementData",
+      "Properties": [
+        {
+          "Name": "Text",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.TextButtonData",
+      "IsSealed": true,
+      "BaseType": "TextData",
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "elementId",
+              "Type": "Int16"
+            },
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.TextBlockData",
+      "IsSealed": true,
+      "BaseType": "TextData",
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "elementId",
+              "Type": "Int16"
+            },
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.WrappedTextBlockData",
+      "IsSealed": true,
+      "BaseType": "TextData",
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "elementId",
+              "Type": "Int16"
+            },
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.Barcode",
+      "IsSealed": true,
+      "BaseType": "PageElement",
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "barcodeType",
+              "Type": "BarcodeType"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "BarcodeType",
+          "Type": "BarcodeType",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "TypeId",
+          "Type": "PageElementType",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.PagePanel",
+      "IsAbstract": true,
+      "BaseType": "PageElement",
+      "Properties": [
+        {
+          "Name": "Elements",
+          "Type": "IList<PageElement>",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "ChildCount",
+          "Type": "UInt16",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.FlowPanel",
+      "BaseType": "PagePanel",
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "elements",
+              "Type": "PageElement[]"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "elements",
+              "Type": "IEnumerable<PageElement>"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "Orientation",
+          "Type": "FlowPanelOrientation",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "TypeId",
+          "Type": "PageElementType",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.FilledPanel",
+      "IsSealed": true,
+      "BaseType": "PagePanel",
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "elements",
+              "Type": "PageElement[]"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "elements",
+              "Type": "IEnumerable<PageElement>"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "BackgroundColorSource",
+          "Type": "ElementColorSource",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "BackgroundColor",
+          "Type": "BandColor",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "TypeId",
+          "Type": "PageElementType",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.Icon",
+      "IsSealed": true,
+      "BaseType": "PageElement",
+      "Properties": [
+        {
+          "Name": "ColorSource",
+          "Type": "ElementColorSource",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Color",
+          "Type": "BandColor",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "TypeId",
+          "Type": "PageElementType",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.ScrollFlowPanel",
+      "IsSealed": true,
+      "BaseType": "FlowPanel",
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "elements",
+              "Type": "PageElement[]"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "elements",
+              "Type": "IEnumerable<PageElement>"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "ScrollBarColorSource",
+          "Type": "ElementColorSource",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "ScrollBarColor",
+          "Type": "BandColor",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "TypeId",
+          "Type": "PageElementType",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.TextBlock",
+      "IsSealed": true,
+      "BaseType": "PageElement",
+      "Properties": [
+        {
+          "Name": "Font",
+          "Type": "TextBlockFont",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Baseline",
+          "Type": "Int16",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "BaselineAlignment",
+          "Type": "TextBlockBaselineAlignment",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "AutoWidth",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "ColorSource",
+          "Type": "ElementColorSource",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Color",
+          "Type": "BandColor",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "TypeId",
+          "Type": "PageElementType",
+          "IsGet": true
+        },
+        {
+          "Name": "SerializedCustomByteCount",
+          "Type": "Int32",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.PageLayout",
+      "IsSealed": true,
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "root",
+              "Type": "PagePanel"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "Root",
+          "Type": "PagePanel",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Microsoft.Band.Tiles.Pages.WrappedTextBlock",
+      "IsSealed": true,
+      "BaseType": "PageElement",
+      "Properties": [
+        {
+          "Name": "Font",
+          "Type": "WrappedTextBlockFont",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "AutoHeight",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "ColorSource",
+          "Type": "ElementColorSource",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Color",
+          "Type": "BandColor",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "TypeId",
+          "Type": "PageElementType",
+          "IsGet": true
+        },
+        {
+          "Name": "SerializedCustomByteCount",
+          "Type": "Int32",
+          "IsGet": true
+        }
+      ]
+    }
+  ]
+}

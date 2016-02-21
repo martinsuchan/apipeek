@@ -1,0 +1,261 @@
+{
+  "Name": "Microsoft.Band.Store, Version=1.3.10219.1, Culture=neutral, PublicKeyToken=608d7da3159f502b",
+  "Classes": [
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "WriteableBitmap",
+          "Parameters": [
+            {
+              "Name": "icon",
+              "Type": "BandIcon"
+            }
+          ],
+          "Name": "ToWriteableBitmap"
+        }
+      ],
+      "Events": [],
+      "Name": "Microsoft.Band.BandIconExtensions"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "WriteableBitmap",
+          "Parameters": [
+            {
+              "Name": "image",
+              "Type": "BandImage"
+            }
+          ],
+          "Name": "ToWriteableBitmap"
+        }
+      ],
+      "Events": [],
+      "Name": "Microsoft.Band.BandImageExtensions"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "BandColor",
+          "Parameters": [
+            {
+              "Name": "color",
+              "Type": "Color"
+            }
+          ],
+          "Name": "ToBandColor"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "color",
+              "Type": "BandColor"
+            }
+          ],
+          "Name": "ToColor"
+        }
+      ],
+      "Events": [],
+      "Name": "Microsoft.Band.ColorExtensions"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IXamlMetadataProvider"
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IXamlType",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "Type"
+            }
+          ],
+          "Name": "GetXamlType"
+        },
+        {
+          "ReturnType": "IXamlType",
+          "Parameters": [
+            {
+              "Name": "fullName",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetXamlType"
+        },
+        {
+          "ReturnType": "XmlnsDefinition[]",
+          "Name": "GetXmlnsDefinitions"
+        }
+      ],
+      "Events": [],
+      "Name": "Microsoft.Band.Microsoft_Band_Store_XamlTypeInfo.XamlMetaDataProvider"
+    },
+    {
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "DeviceInfoNotBluetooth"
+        },
+        {
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "Name": "PushServiceNotFound"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Microsoft.Band.Store.StoreResources"
+    },
+    {
+      "BaseType": "Page",
+      "Interfaces": [
+        "IComponentConnector"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "AddTileViewModel",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ViewModel"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "connectionId",
+              "Type": "Int32"
+            },
+            {
+              "Name": "target",
+              "Type": "Object"
+            }
+          ],
+          "Name": "Connect"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "InitializeComponent"
+        }
+      ],
+      "Events": [],
+      "Name": "Microsoft.Band.Tiles.AddTilePage"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "tile",
+              "Type": "BandTile"
+            },
+            {
+              "Name": "consentTask",
+              "Type": "TaskCompletionSource<Boolean>"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Name"
+        },
+        {
+          "Type": "WriteableBitmap",
+          "IsGet": true,
+          "Name": "TileIcon"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "consent",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "TrySetConsent"
+        }
+      ],
+      "Events": [],
+      "Name": "Microsoft.Band.Tiles.AddTileViewModel"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "BandIcon",
+          "Parameters": [
+            {
+              "Name": "bitmap",
+              "Type": "WriteableBitmap"
+            }
+          ],
+          "Name": "ToBandIcon"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "BandImage",
+          "Parameters": [
+            {
+              "Name": "bitmap",
+              "Type": "WriteableBitmap"
+            }
+          ],
+          "Name": "ToBandImage"
+        }
+      ],
+      "Events": [],
+      "Name": "Microsoft.Band.WriteableBitmapExtensions"
+    }
+  ],
+  "Structs": [],
+  "Interfaces": [],
+  "Enums": [],
+  "Delegates": []
+}

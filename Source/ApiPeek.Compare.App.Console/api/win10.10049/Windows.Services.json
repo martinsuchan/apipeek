@@ -1,0 +1,2160 @@
+{
+  "Name": "Windows.Services, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime",
+  "Enums": [
+    {
+      "Name": "Windows.Services.Maps.Guidance.GuidanceMode",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Simulation",
+          "Value": "1"
+        },
+        {
+          "Name": "Navigation",
+          "Value": "2"
+        },
+        {
+          "Name": "Tracking",
+          "Value": "3"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Guidance.UnitSystem",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Metric",
+          "Value": "0"
+        },
+        {
+          "Name": "Imperial",
+          "Value": "1"
+        },
+        {
+          "Name": "ImperialUnitedStates",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Guidance.AudioEvents",
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Maneuver",
+          "Value": "1"
+        },
+        {
+          "Name": "Route",
+          "Value": "2"
+        },
+        {
+          "Name": "GPS",
+          "Value": "4"
+        },
+        {
+          "Name": "SpeedLimit",
+          "Value": "8"
+        },
+        {
+          "Name": "Traffic",
+          "Value": "16"
+        },
+        {
+          "Name": "SafetySpot",
+          "Value": "32"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Guidance.DrivingDirection",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Both",
+          "Value": "0"
+        },
+        {
+          "Name": "Forward",
+          "Value": "1"
+        },
+        {
+          "Name": "Backward",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Guidance.IconId",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Undefined",
+          "Value": "0"
+        },
+        {
+          "Name": "GoStraight",
+          "Value": "1"
+        },
+        {
+          "Name": "UturnRight",
+          "Value": "2"
+        },
+        {
+          "Name": "UturnLeft",
+          "Value": "3"
+        },
+        {
+          "Name": "KeepRight",
+          "Value": "4"
+        },
+        {
+          "Name": "LightRight",
+          "Value": "5"
+        },
+        {
+          "Name": "QuiteRight",
+          "Value": "6"
+        },
+        {
+          "Name": "HeavyRight",
+          "Value": "7"
+        },
+        {
+          "Name": "KeepMiddle",
+          "Value": "8"
+        },
+        {
+          "Name": "KeepLeft",
+          "Value": "9"
+        },
+        {
+          "Name": "LightLeft",
+          "Value": "10"
+        },
+        {
+          "Name": "QuiteLeft",
+          "Value": "11"
+        },
+        {
+          "Name": "HeavyLeft",
+          "Value": "12"
+        },
+        {
+          "Name": "EnterMotorwayRightLane",
+          "Value": "13"
+        },
+        {
+          "Name": "EnterMotorwayLeftLane",
+          "Value": "14"
+        },
+        {
+          "Name": "LeaveMotorwayRightLane",
+          "Value": "15"
+        },
+        {
+          "Name": "LeaveMotorwayLeftLane",
+          "Value": "16"
+        },
+        {
+          "Name": "MotorwayKeepRight",
+          "Value": "17"
+        },
+        {
+          "Name": "MotorwayKeepLeft",
+          "Value": "18"
+        },
+        {
+          "Name": "RoundaboutRightHand1",
+          "Value": "19"
+        },
+        {
+          "Name": "RoundaboutRightHand2",
+          "Value": "20"
+        },
+        {
+          "Name": "RoundaboutRightHand3",
+          "Value": "21"
+        },
+        {
+          "Name": "RoundaboutRightHand4",
+          "Value": "22"
+        },
+        {
+          "Name": "RoundaboutRightHand5",
+          "Value": "23"
+        },
+        {
+          "Name": "RoundaboutRightHand6",
+          "Value": "24"
+        },
+        {
+          "Name": "RoundaboutRightHand7",
+          "Value": "25"
+        },
+        {
+          "Name": "RoundaboutRightHand8",
+          "Value": "26"
+        },
+        {
+          "Name": "RoundaboutRightHand9",
+          "Value": "27"
+        },
+        {
+          "Name": "RoundaboutRightHand10",
+          "Value": "28"
+        },
+        {
+          "Name": "RoundaboutRightHand11",
+          "Value": "29"
+        },
+        {
+          "Name": "RoundaboutRightHand12",
+          "Value": "30"
+        },
+        {
+          "Name": "RoundaboutLeftHand1",
+          "Value": "31"
+        },
+        {
+          "Name": "RoundaboutLeftHand2",
+          "Value": "32"
+        },
+        {
+          "Name": "RoundaboutLeftHand3",
+          "Value": "33"
+        },
+        {
+          "Name": "RoundaboutLeftHand4",
+          "Value": "34"
+        },
+        {
+          "Name": "RoundaboutLeftHand5",
+          "Value": "35"
+        },
+        {
+          "Name": "RoundaboutLeftHand6",
+          "Value": "36"
+        },
+        {
+          "Name": "RoundaboutLeftHand7",
+          "Value": "37"
+        },
+        {
+          "Name": "RoundaboutLeftHand8",
+          "Value": "38"
+        },
+        {
+          "Name": "RoundaboutLeftHand9",
+          "Value": "39"
+        },
+        {
+          "Name": "RoundaboutLeftHand10",
+          "Value": "40"
+        },
+        {
+          "Name": "RoundaboutLeftHand11",
+          "Value": "41"
+        },
+        {
+          "Name": "RoundaboutLeftHand12",
+          "Value": "42"
+        },
+        {
+          "Name": "Start",
+          "Value": "43"
+        },
+        {
+          "Name": "End",
+          "Value": "44"
+        },
+        {
+          "Name": "Ferry",
+          "Value": "45"
+        },
+        {
+          "Name": "PassStation",
+          "Value": "46"
+        },
+        {
+          "Name": "HeadTo",
+          "Value": "47"
+        },
+        {
+          "Name": "BearLeftThenBearLeft",
+          "Value": "48"
+        },
+        {
+          "Name": "BearLeftThenBearRight",
+          "Value": "49"
+        },
+        {
+          "Name": "BearLeftThenTurnLeft",
+          "Value": "50"
+        },
+        {
+          "Name": "BearLeftThenTurnRight",
+          "Value": "51"
+        },
+        {
+          "Name": "BearRightThenBearLeft",
+          "Value": "52"
+        },
+        {
+          "Name": "BearRightThenBearRight",
+          "Value": "53"
+        },
+        {
+          "Name": "BearRightThenTurnLeft",
+          "Value": "54"
+        },
+        {
+          "Name": "BearRightThenTurnRight",
+          "Value": "55"
+        },
+        {
+          "Name": "BearThenKeep",
+          "Value": "56"
+        },
+        {
+          "Name": "BearThenMerge",
+          "Value": "57"
+        },
+        {
+          "Name": "Continue",
+          "Value": "58"
+        },
+        {
+          "Name": "DepartIntermediateStopReturning",
+          "Value": "59"
+        },
+        {
+          "Name": "EnterRoundabout",
+          "Value": "60"
+        },
+        {
+          "Name": "EnterThenExitRoundabout",
+          "Value": "61"
+        },
+        {
+          "Name": "ExitRoundabout",
+          "Value": "62"
+        },
+        {
+          "Name": "KeepOnRampLeft",
+          "Value": "63"
+        },
+        {
+          "Name": "KeepOnRampRight",
+          "Value": "64"
+        },
+        {
+          "Name": "KeepOnRampStraight",
+          "Value": "65"
+        },
+        {
+          "Name": "KeepToStayLeft",
+          "Value": "66"
+        },
+        {
+          "Name": "KeepToStayRight",
+          "Value": "67"
+        },
+        {
+          "Name": "Merge",
+          "Value": "68"
+        },
+        {
+          "Name": "RampToHighwayStraight",
+          "Value": "69"
+        },
+        {
+          "Name": "RoadNameChange",
+          "Value": "70"
+        },
+        {
+          "Name": "Take",
+          "Value": "71"
+        },
+        {
+          "Name": "TakeRampStraight",
+          "Value": "72"
+        },
+        {
+          "Name": "TakeTransit",
+          "Value": "73"
+        },
+        {
+          "Name": "Transfer",
+          "Value": "74"
+        },
+        {
+          "Name": "TransitArrive",
+          "Value": "75"
+        },
+        {
+          "Name": "TransitDepart",
+          "Value": "76"
+        },
+        {
+          "Name": "TurnBack",
+          "Value": "77"
+        },
+        {
+          "Name": "TurnLeftThenBearLeft",
+          "Value": "78"
+        },
+        {
+          "Name": "TurnLeftThenBearRight",
+          "Value": "79"
+        },
+        {
+          "Name": "TurnLeftThenTurnLeft",
+          "Value": "80"
+        },
+        {
+          "Name": "TurnLeftThenTurnRight",
+          "Value": "81"
+        },
+        {
+          "Name": "TurnRightThenBearLeft",
+          "Value": "82"
+        },
+        {
+          "Name": "TurnRightThenBearRight",
+          "Value": "83"
+        },
+        {
+          "Name": "TurnRightThenTurnLeft",
+          "Value": "84"
+        },
+        {
+          "Name": "TurnRightThenTurnRight",
+          "Value": "85"
+        },
+        {
+          "Name": "TurnThenMerge",
+          "Value": "86"
+        },
+        {
+          "Name": "TurnToStayLeft",
+          "Value": "87"
+        },
+        {
+          "Name": "TurnToStayRight",
+          "Value": "88"
+        },
+        {
+          "Name": "Unknown",
+          "Value": "89"
+        },
+        {
+          "Name": "Uturn",
+          "Value": "90"
+        },
+        {
+          "Name": "Wait",
+          "Value": "91"
+        },
+        {
+          "Name": "Walk",
+          "Value": "92"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Guidance.RequestState",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Error",
+          "Value": "0"
+        },
+        {
+          "Name": "Idle",
+          "Value": "1"
+        },
+        {
+          "Name": "Done",
+          "Value": "2"
+        },
+        {
+          "Name": "Busy",
+          "Value": "3"
+        },
+        {
+          "Name": "Decoding",
+          "Value": "4"
+        },
+        {
+          "Name": "Requesting",
+          "Value": "5"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Guidance.NetworkType",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "WiFi",
+          "Value": "0"
+        },
+        {
+          "Name": "Cellular",
+          "Value": "1"
+        },
+        {
+          "Name": "Other",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Local.LocalLocationFinderStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Success",
+          "Value": "0"
+        },
+        {
+          "Name": "UnknownError",
+          "Value": "1"
+        },
+        {
+          "Name": "InvalidCredentials",
+          "Value": "2"
+        },
+        {
+          "Name": "InvalidCategory",
+          "Value": "3"
+        },
+        {
+          "Name": "InvalidSearchTerm",
+          "Value": "4"
+        },
+        {
+          "Name": "InvalidSearchArea",
+          "Value": "5"
+        },
+        {
+          "Name": "NetworkFailure",
+          "Value": "6"
+        },
+        {
+          "Name": "NotSupported",
+          "Value": "7"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapRouteOptimization",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Time",
+          "Value": "0"
+        },
+        {
+          "Name": "Distance",
+          "Value": "1"
+        },
+        {
+          "Name": "TimeWithTraffic",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapRouteRestrictions",
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Highways",
+          "Value": "1"
+        },
+        {
+          "Name": "TollRoads",
+          "Value": "2"
+        },
+        {
+          "Name": "Ferries",
+          "Value": "4"
+        },
+        {
+          "Name": "Tunnels",
+          "Value": "8"
+        },
+        {
+          "Name": "DirtRoads",
+          "Value": "16"
+        },
+        {
+          "Name": "Motorail",
+          "Value": "32"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapRouteManeuverKind",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Start",
+          "Value": "1"
+        },
+        {
+          "Name": "Stopover",
+          "Value": "2"
+        },
+        {
+          "Name": "StopoverResume",
+          "Value": "3"
+        },
+        {
+          "Name": "End",
+          "Value": "4"
+        },
+        {
+          "Name": "GoStraight",
+          "Value": "5"
+        },
+        {
+          "Name": "UTurnLeft",
+          "Value": "6"
+        },
+        {
+          "Name": "UTurnRight",
+          "Value": "7"
+        },
+        {
+          "Name": "TurnKeepLeft",
+          "Value": "8"
+        },
+        {
+          "Name": "TurnKeepRight",
+          "Value": "9"
+        },
+        {
+          "Name": "TurnLightLeft",
+          "Value": "10"
+        },
+        {
+          "Name": "TurnLightRight",
+          "Value": "11"
+        },
+        {
+          "Name": "TurnLeft",
+          "Value": "12"
+        },
+        {
+          "Name": "TurnRight",
+          "Value": "13"
+        },
+        {
+          "Name": "TurnHardLeft",
+          "Value": "14"
+        },
+        {
+          "Name": "TurnHardRight",
+          "Value": "15"
+        },
+        {
+          "Name": "FreewayEnterLeft",
+          "Value": "16"
+        },
+        {
+          "Name": "FreewayEnterRight",
+          "Value": "17"
+        },
+        {
+          "Name": "FreewayLeaveLeft",
+          "Value": "18"
+        },
+        {
+          "Name": "FreewayLeaveRight",
+          "Value": "19"
+        },
+        {
+          "Name": "FreewayContinueLeft",
+          "Value": "20"
+        },
+        {
+          "Name": "FreewayContinueRight",
+          "Value": "21"
+        },
+        {
+          "Name": "TrafficCircleLeft",
+          "Value": "22"
+        },
+        {
+          "Name": "TrafficCircleRight",
+          "Value": "23"
+        },
+        {
+          "Name": "TakeFerry",
+          "Value": "24"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapManeuverNotices",
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Toll",
+          "Value": "1"
+        },
+        {
+          "Name": "Unpaved",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapLocationFinderStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Success",
+          "Value": "0"
+        },
+        {
+          "Name": "UnknownError",
+          "Value": "1"
+        },
+        {
+          "Name": "InvalidCredentials",
+          "Value": "2"
+        },
+        {
+          "Name": "BadLocation",
+          "Value": "3"
+        },
+        {
+          "Name": "IndexFailure",
+          "Value": "4"
+        },
+        {
+          "Name": "NetworkFailure",
+          "Value": "5"
+        },
+        {
+          "Name": "NotSupported",
+          "Value": "6"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapRouteFinderStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Success",
+          "Value": "0"
+        },
+        {
+          "Name": "UnknownError",
+          "Value": "1"
+        },
+        {
+          "Name": "InvalidCredentials",
+          "Value": "2"
+        },
+        {
+          "Name": "NoRouteFound",
+          "Value": "3"
+        },
+        {
+          "Name": "NoRouteFoundWithGivenOptions",
+          "Value": "4"
+        },
+        {
+          "Name": "StartPointNotFound",
+          "Value": "5"
+        },
+        {
+          "Name": "EndPointNotFound",
+          "Value": "6"
+        },
+        {
+          "Name": "NoPedestrianRouteFound",
+          "Value": "7"
+        },
+        {
+          "Name": "NetworkFailure",
+          "Value": "8"
+        },
+        {
+          "Name": "NotSupported",
+          "Value": "9"
+        }
+      ]
+    }
+  ],
+  "Classes": [
+    {
+      "Name": "Windows.Services.Maps.Guidance.MapSignpost",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "BackgroundColor",
+          "Type": "Color",
+          "IsGet": true
+        },
+        {
+          "Name": "ExitDirections",
+          "Type": "IList<String>",
+          "IsGet": true
+        },
+        {
+          "Name": "ExitNumber",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "ExitText",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "ForegroundColor",
+          "Type": "Color",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Guidance.Maneuver",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "DistanceFromPreviousManeuver",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "DistanceFromStart",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "EndAngle",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "IconId",
+          "Type": "IconId",
+          "IsGet": true
+        },
+        {
+          "Name": "InstructionText",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "NextRoadName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "NextRouteName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "RoadName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "RouteName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Signpost",
+          "Type": "MapSignpost",
+          "IsGet": true
+        },
+        {
+          "Name": "StartAngle",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "StartLocation",
+          "Type": "Geopoint",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Guidance.GuidanceRoute",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "BoundingBox",
+          "Type": "GeoboundingBox",
+          "IsGet": true
+        },
+        {
+          "Name": "Duration",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "Length",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "Maneuvers",
+          "Type": "IList<Maneuver>",
+          "IsGet": true
+        },
+        {
+          "Name": "Path",
+          "Type": "Geopath",
+          "IsGet": true
+        },
+        {
+          "Name": "RoadElements",
+          "Type": "IList<RoadElement>",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "ConvertToMapRoute",
+          "ReturnType": "MapRoute"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Guidance.MapMatchedLocation",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Heading",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "IsOnStreet",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Location",
+          "Type": "Geopoint",
+          "IsGet": true
+        },
+        {
+          "Name": "Road",
+          "Type": "RoadElement",
+          "IsGet": true
+        },
+        {
+          "Name": "Speed",
+          "Type": "Double",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Guidance.GuidanceEngine",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "DistanceUnit",
+          "Type": "UnitSystem",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "AudioOutputEvents",
+          "Type": "AudioEvents",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "AfterNextManeuver",
+          "Type": "Maneuver",
+          "IsGet": true
+        },
+        {
+          "Name": "AfterNextManeuverDistance",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "CurrentLocation",
+          "Type": "MapMatchedLocation",
+          "IsGet": true
+        },
+        {
+          "Name": "CurrentPosition",
+          "Type": "Geopoint",
+          "IsGet": true
+        },
+        {
+          "Name": "DestinationDistance",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "ElapsedDistance",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "ElapsedTime",
+          "Type": "TimeSpan",
+          "IsGet": true
+        },
+        {
+          "Name": "GuidanceMode",
+          "Type": "GuidanceMode",
+          "IsGet": true
+        },
+        {
+          "Name": "NextManeuver",
+          "Type": "Maneuver",
+          "IsGet": true
+        },
+        {
+          "Name": "NextManeuverDistance",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "RoadName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Route",
+          "Type": "GuidanceRoute",
+          "IsGet": true
+        },
+        {
+          "Name": "TimeToArrival",
+          "Type": "TimeSpan",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Navigate",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "MapRoute"
+            }
+          ]
+        },
+        {
+          "Name": "Simulate",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "MapRoute"
+            },
+            {
+              "Name": "speed",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "StartTracking",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Pause",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Resume",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Stop",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Clear",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Repeat",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "SetVoiceSkin",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "skinId",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "voicesDirectory",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "UserLocationUpdate",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "userLocation",
+              "Type": "Geocoordinate"
+            }
+          ]
+        },
+        {
+          "Name": "UserLocationUpdate",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "userLocation",
+              "Type": "Geocoordinate"
+            },
+            {
+              "Name": "positionOverride",
+              "Type": "BasicGeoposition"
+            }
+          ]
+        },
+        {
+          "Name": "UserLocationClear",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "GuidanceEngine"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "DestinationReachedEvent",
+          "Type": "EmptyEventHandler"
+        },
+        {
+          "Name": "GpsLostEvent",
+          "Type": "EmptyEventHandler"
+        },
+        {
+          "Name": "GpsRestoredEvent",
+          "Type": "EmptyEventHandler"
+        },
+        {
+          "Name": "GuidanceUpdatedEvent",
+          "Type": "EmptyEventHandler"
+        },
+        {
+          "Name": "ManeuverAvailableEvent",
+          "Type": "TypedEventHandler<GuidanceEngine,ManeuverAvailableArgs>"
+        },
+        {
+          "Name": "RerouteBeginEvent",
+          "Type": "EmptyEventHandler"
+        },
+        {
+          "Name": "RerouteEndEvent",
+          "Type": "EmptyEventHandler"
+        },
+        {
+          "Name": "RerouteFailedEvent",
+          "Type": "EmptyEventHandler"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Guidance.ManeuverAvailableArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Maneuver",
+          "Type": "Maneuver",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Guidance.RoadElement",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Id",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "IsHighway",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "IsTollroad",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "IsTunnel",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Path",
+          "Type": "Geopath",
+          "IsGet": true
+        },
+        {
+          "Name": "RoadName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "RouteName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "SpeedLimit",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "TravelTime",
+          "Type": "TimeSpan",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Guidance.TrafficEvent",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "EstimatedSpeedLimit",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "SpeedLimit",
+          "Type": "UInt32",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "IsOnRoute",
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "route",
+              "Type": "GuidanceRoute"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Guidance.Traffic",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "State",
+          "Type": "RequestState",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Init",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Clear",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Poll",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "RequestTraffic",
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "vicinities",
+              "Type": "IList<Geocircle>"
+            }
+          ]
+        },
+        {
+          "Name": "GetAvailability",
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "center",
+              "Type": "Geopoint"
+            }
+          ]
+        },
+        {
+          "Name": "RelevantTrafficEvents",
+          "ReturnType": "IList<TrafficEvent>",
+          "Parameters": [
+            {
+              "Name": "roadElement",
+              "Type": "RoadElement"
+            },
+            {
+              "Name": "direction",
+              "Type": "DrivingDirection"
+            }
+          ]
+        }
+      ],
+      "Events": [
+        {
+          "Name": "RequestStateEvent",
+          "Type": "TrafficEventHandler"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Guidance.MapSensor",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Enabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "SetConnectionType",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "NetworkType"
+            }
+          ]
+        },
+        {
+          "Name": "ClearLocalData",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "SetSpeedTrigger",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "speed",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "SetUploadFrequency",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "uploadFrequency",
+              "Type": "UInt16"
+            }
+          ]
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "MapSensor"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Local.LocalLocation",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Address",
+          "Type": "MapAddress",
+          "IsGet": true
+        },
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "DisplayName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Identifier",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "PhoneNumber",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Point",
+          "Type": "Geopoint",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Local.LocalLocationFinderResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "LocalLocations",
+          "Type": "IReadOnlyList<LocalLocation>",
+          "IsGet": true
+        },
+        {
+          "Name": "Status",
+          "Type": "LocalLocationFinderStatus",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Local.LocalLocationFinder",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "FindLocalLocationsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LocalLocationFinderResult>",
+          "Parameters": [
+            {
+              "Name": "searchTerm",
+              "Type": "String"
+            },
+            {
+              "Name": "searchArea",
+              "Type": "Geocircle"
+            },
+            {
+              "Name": "localCategory",
+              "Type": "String"
+            },
+            {
+              "Name": "maxResults",
+              "Type": "UInt32"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.Local.LocalCategories",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "BankAndCreditUnions",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "EatDrink",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Hospitals",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "HotelsAndMotels",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "None",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Parking",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SeeDo",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Shop",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapAddress",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "BuildingFloor",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "BuildingName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "BuildingRoom",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "BuildingWing",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Continent",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Country",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "CountryCode",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "District",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Neighborhood",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "PostCode",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Region",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "RegionCode",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Street",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "StreetNumber",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Town",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "FormattedAddress",
+          "Type": "String",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapLocation",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Address",
+          "Type": "MapAddress",
+          "IsGet": true
+        },
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "DisplayName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Point",
+          "Type": "Geopoint",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapRouteManeuver",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "ExitNumber",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "InstructionText",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Kind",
+          "Type": "MapRouteManeuverKind",
+          "IsGet": true
+        },
+        {
+          "Name": "LengthInMeters",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "ManeuverNotices",
+          "Type": "MapManeuverNotices",
+          "IsGet": true
+        },
+        {
+          "Name": "StartingPoint",
+          "Type": "Geopoint",
+          "IsGet": true
+        },
+        {
+          "Name": "EndHeading",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "StartHeading",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "StreetName",
+          "Type": "String",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapRouteLeg",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "BoundingBox",
+          "Type": "GeoboundingBox",
+          "IsGet": true
+        },
+        {
+          "Name": "EstimatedDuration",
+          "Type": "TimeSpan",
+          "IsGet": true
+        },
+        {
+          "Name": "LengthInMeters",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "Maneuvers",
+          "Type": "IReadOnlyList<MapRouteManeuver>",
+          "IsGet": true
+        },
+        {
+          "Name": "Path",
+          "Type": "Geopath",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapRoute",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "BoundingBox",
+          "Type": "GeoboundingBox",
+          "IsGet": true
+        },
+        {
+          "Name": "EstimatedDuration",
+          "Type": "TimeSpan",
+          "IsGet": true
+        },
+        {
+          "Name": "IsTrafficBased",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Legs",
+          "Type": "IReadOnlyList<MapRouteLeg>",
+          "IsGet": true
+        },
+        {
+          "Name": "LengthInMeters",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "Path",
+          "Type": "Geopath",
+          "IsGet": true
+        },
+        {
+          "Name": "HasBlockedRoads",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "IsGuidanceRoute",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "ViolatedRestrictions",
+          "Type": "MapRouteRestrictions",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapLocationFinderResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Locations",
+          "Type": "IReadOnlyList<MapLocation>",
+          "IsGet": true
+        },
+        {
+          "Name": "Status",
+          "Type": "MapLocationFinderStatus",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapRouteFinderResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Route",
+          "Type": "MapRoute",
+          "IsGet": true
+        },
+        {
+          "Name": "Status",
+          "Type": "MapRouteFinderStatus",
+          "IsGet": true
+        },
+        {
+          "Name": "AlternateRoutes",
+          "Type": "IReadOnlyList<MapRoute>",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapRouteDrivingOptions",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "RouteRestrictions",
+          "Type": "MapRouteRestrictions",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "RouteOptimization",
+          "Type": "MapRouteOptimization",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Heading",
+          "Type": "Double",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "AlternateRouteCount",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapLocationFinder",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "FindLocationsAtAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapLocationFinderResult>",
+          "Parameters": [
+            {
+              "Name": "queryPoint",
+              "Type": "Geopoint"
+            }
+          ]
+        },
+        {
+          "Name": "FindLocationsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapLocationFinderResult>",
+          "Parameters": [
+            {
+              "Name": "searchText",
+              "Type": "String"
+            },
+            {
+              "Name": "referencePoint",
+              "Type": "Geopoint"
+            }
+          ]
+        },
+        {
+          "Name": "FindLocationsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapLocationFinderResult>",
+          "Parameters": [
+            {
+              "Name": "searchText",
+              "Type": "String"
+            },
+            {
+              "Name": "referencePoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "maxCount",
+              "Type": "UInt32"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapRouteFinder",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "GetDrivingRouteAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "startPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "endPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "desiredOptions",
+              "Type": "MapRouteDrivingOptions"
+            }
+          ]
+        },
+        {
+          "Name": "GetDrivingRouteAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "startPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "endPoint",
+              "Type": "Geopoint"
+            }
+          ]
+        },
+        {
+          "Name": "GetDrivingRouteAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "startPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "endPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "optimization",
+              "Type": "MapRouteOptimization"
+            }
+          ]
+        },
+        {
+          "Name": "GetDrivingRouteAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "startPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "endPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "optimization",
+              "Type": "MapRouteOptimization"
+            },
+            {
+              "Name": "restrictions",
+              "Type": "MapRouteRestrictions"
+            }
+          ]
+        },
+        {
+          "Name": "GetDrivingRouteAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "startPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "endPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "optimization",
+              "Type": "MapRouteOptimization"
+            },
+            {
+              "Name": "restrictions",
+              "Type": "MapRouteRestrictions"
+            },
+            {
+              "Name": "headingInDegrees",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "GetDrivingRouteFromWaypointsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "wayPoints",
+              "Type": "IEnumerable<Geopoint>"
+            }
+          ]
+        },
+        {
+          "Name": "GetDrivingRouteFromWaypointsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "wayPoints",
+              "Type": "IEnumerable<Geopoint>"
+            },
+            {
+              "Name": "optimization",
+              "Type": "MapRouteOptimization"
+            }
+          ]
+        },
+        {
+          "Name": "GetDrivingRouteFromWaypointsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "wayPoints",
+              "Type": "IEnumerable<Geopoint>"
+            },
+            {
+              "Name": "optimization",
+              "Type": "MapRouteOptimization"
+            },
+            {
+              "Name": "restrictions",
+              "Type": "MapRouteRestrictions"
+            }
+          ]
+        },
+        {
+          "Name": "GetDrivingRouteFromWaypointsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "wayPoints",
+              "Type": "IEnumerable<Geopoint>"
+            },
+            {
+              "Name": "optimization",
+              "Type": "MapRouteOptimization"
+            },
+            {
+              "Name": "restrictions",
+              "Type": "MapRouteRestrictions"
+            },
+            {
+              "Name": "headingInDegrees",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "GetWalkingRouteAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "startPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "endPoint",
+              "Type": "Geopoint"
+            }
+          ]
+        },
+        {
+          "Name": "GetWalkingRouteFromWaypointsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "wayPoints",
+              "Type": "IEnumerable<Geopoint>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapService",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "ServiceToken",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Services.Maps.MapManager",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "ShowDownloadedMapsUI",
+          "IsStatic": true,
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "ShowMapsUpdateUI",
+          "IsStatic": true,
+          "ReturnType": "Void"
+        }
+      ]
+    }
+  ],
+  "Delegates": [
+    {
+      "Name": "Windows.Services.Maps.Guidance.EmptyEventHandler",
+      "ReturnType": "Void"
+    },
+    {
+      "Name": "Windows.Services.Maps.Guidance.TrafficEventHandler",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "sender",
+          "Type": "Traffic"
+        }
+      ]
+    }
+  ]
+}

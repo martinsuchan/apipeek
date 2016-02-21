@@ -1,0 +1,1072 @@
+{
+  "Name": "Windows.Management, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime",
+  "Classes": [
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "CreateForPackageFamily",
+          "IsStatic": true,
+          "ReturnType": "ApplicationData",
+          "Parameters": [
+            {
+              "Name": "packageFamilyName",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Management.Core.ApplicationDataManager"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "ActivityId",
+          "Type": "Guid",
+          "IsGet": true
+        },
+        {
+          "Name": "ErrorText",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "ExtendedErrorCode",
+          "Type": "Exception",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Management.Deployment.DeploymentResult"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "AddPackageAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "packageUri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "dependencyPackageUris",
+              "Type": "IEnumerable<Uri>"
+            },
+            {
+              "Name": "deploymentOptions",
+              "Type": "DeploymentOptions"
+            }
+          ]
+        },
+        {
+          "Name": "AddPackageAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "packageUri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "dependencyPackageUris",
+              "Type": "IEnumerable<Uri>"
+            },
+            {
+              "Name": "deploymentOptions",
+              "Type": "DeploymentOptions"
+            },
+            {
+              "Name": "targetVolume",
+              "Type": "PackageVolume"
+            }
+          ]
+        },
+        {
+          "Name": "AddPackageVolumeAsync",
+          "ReturnType": "IAsyncOperation<PackageVolume>",
+          "Parameters": [
+            {
+              "Name": "packageStorePath",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "CleanupPackageForUserAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "packageName",
+              "Type": "String"
+            },
+            {
+              "Name": "userSecurityId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "ClearPackageStatus",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "packageFullName",
+              "Type": "String"
+            },
+            {
+              "Name": "status",
+              "Type": "PackageStatus"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackage",
+          "ReturnType": "Package",
+          "Parameters": [
+            {
+              "Name": "packageFullName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackageForUser",
+          "ReturnType": "Package",
+          "Parameters": [
+            {
+              "Name": "userSecurityId",
+              "Type": "String"
+            },
+            {
+              "Name": "packageFullName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackages",
+          "ReturnType": "IEnumerable<Package>"
+        },
+        {
+          "Name": "FindPackages",
+          "ReturnType": "IEnumerable<Package>",
+          "Parameters": [
+            {
+              "Name": "packageName",
+              "Type": "String"
+            },
+            {
+              "Name": "packagePublisher",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackages",
+          "ReturnType": "IEnumerable<Package>",
+          "Parameters": [
+            {
+              "Name": "packageFamilyName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesForUser",
+          "ReturnType": "IEnumerable<Package>",
+          "Parameters": [
+            {
+              "Name": "userSecurityId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesForUser",
+          "ReturnType": "IEnumerable<Package>",
+          "Parameters": [
+            {
+              "Name": "userSecurityId",
+              "Type": "String"
+            },
+            {
+              "Name": "packageName",
+              "Type": "String"
+            },
+            {
+              "Name": "packagePublisher",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesForUser",
+          "ReturnType": "IEnumerable<Package>",
+          "Parameters": [
+            {
+              "Name": "userSecurityId",
+              "Type": "String"
+            },
+            {
+              "Name": "packageFamilyName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesForUserWithPackageTypes",
+          "ReturnType": "IEnumerable<Package>",
+          "Parameters": [
+            {
+              "Name": "userSecurityId",
+              "Type": "String"
+            },
+            {
+              "Name": "packageTypes",
+              "Type": "PackageTypes"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesForUserWithPackageTypes",
+          "ReturnType": "IEnumerable<Package>",
+          "Parameters": [
+            {
+              "Name": "userSecurityId",
+              "Type": "String"
+            },
+            {
+              "Name": "packageName",
+              "Type": "String"
+            },
+            {
+              "Name": "packagePublisher",
+              "Type": "String"
+            },
+            {
+              "Name": "packageTypes",
+              "Type": "PackageTypes"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesForUserWithPackageTypes",
+          "ReturnType": "IEnumerable<Package>",
+          "Parameters": [
+            {
+              "Name": "userSecurityId",
+              "Type": "String"
+            },
+            {
+              "Name": "packageFamilyName",
+              "Type": "String"
+            },
+            {
+              "Name": "packageTypes",
+              "Type": "PackageTypes"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesWithPackageTypes",
+          "ReturnType": "IEnumerable<Package>",
+          "Parameters": [
+            {
+              "Name": "packageTypes",
+              "Type": "PackageTypes"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesWithPackageTypes",
+          "ReturnType": "IEnumerable<Package>",
+          "Parameters": [
+            {
+              "Name": "packageName",
+              "Type": "String"
+            },
+            {
+              "Name": "packagePublisher",
+              "Type": "String"
+            },
+            {
+              "Name": "packageTypes",
+              "Type": "PackageTypes"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesWithPackageTypes",
+          "ReturnType": "IEnumerable<Package>",
+          "Parameters": [
+            {
+              "Name": "packageFamilyName",
+              "Type": "String"
+            },
+            {
+              "Name": "packageTypes",
+              "Type": "PackageTypes"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackageVolume",
+          "ReturnType": "PackageVolume",
+          "Parameters": [
+            {
+              "Name": "volumeName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackageVolumes",
+          "ReturnType": "IEnumerable<PackageVolume>"
+        },
+        {
+          "Name": "FindUsers",
+          "ReturnType": "IEnumerable<PackageUserInformation>",
+          "Parameters": [
+            {
+              "Name": "packageFullName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "GetDefaultPackageVolume",
+          "ReturnType": "PackageVolume"
+        },
+        {
+          "Name": "MovePackageToVolumeAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "packageFullName",
+              "Type": "String"
+            },
+            {
+              "Name": "deploymentOptions",
+              "Type": "DeploymentOptions"
+            },
+            {
+              "Name": "targetVolume",
+              "Type": "PackageVolume"
+            }
+          ]
+        },
+        {
+          "Name": "RegisterPackageAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "manifestUri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "dependencyPackageUris",
+              "Type": "IEnumerable<Uri>"
+            },
+            {
+              "Name": "deploymentOptions",
+              "Type": "DeploymentOptions"
+            }
+          ]
+        },
+        {
+          "Name": "RegisterPackageAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "manifestUri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "dependencyPackageUris",
+              "Type": "IEnumerable<Uri>"
+            },
+            {
+              "Name": "deploymentOptions",
+              "Type": "DeploymentOptions"
+            },
+            {
+              "Name": "appDataVolume",
+              "Type": "PackageVolume"
+            }
+          ]
+        },
+        {
+          "Name": "RegisterPackageByFullNameAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "mainPackageFullName",
+              "Type": "String"
+            },
+            {
+              "Name": "dependencyPackageFullNames",
+              "Type": "IEnumerable<String>"
+            },
+            {
+              "Name": "deploymentOptions",
+              "Type": "DeploymentOptions"
+            }
+          ]
+        },
+        {
+          "Name": "RemovePackageAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "packageFullName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "RemovePackageAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "packageFullName",
+              "Type": "String"
+            },
+            {
+              "Name": "removalOptions",
+              "Type": "RemovalOptions"
+            }
+          ]
+        },
+        {
+          "Name": "RemovePackageVolumeAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "volume",
+              "Type": "PackageVolume"
+            }
+          ]
+        },
+        {
+          "Name": "SetDefaultPackageVolume",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "volume",
+              "Type": "PackageVolume"
+            }
+          ]
+        },
+        {
+          "Name": "SetPackageState",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "packageFullName",
+              "Type": "String"
+            },
+            {
+              "Name": "packageState",
+              "Type": "PackageState"
+            }
+          ]
+        },
+        {
+          "Name": "SetPackageStatus",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "packageFullName",
+              "Type": "String"
+            },
+            {
+              "Name": "status",
+              "Type": "PackageStatus"
+            }
+          ]
+        },
+        {
+          "Name": "SetPackageVolumeOfflineAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "packageVolume",
+              "Type": "PackageVolume"
+            }
+          ]
+        },
+        {
+          "Name": "SetPackageVolumeOnlineAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "packageVolume",
+              "Type": "PackageVolume"
+            }
+          ]
+        },
+        {
+          "Name": "StagePackageAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "packageUri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "dependencyPackageUris",
+              "Type": "IEnumerable<Uri>"
+            }
+          ]
+        },
+        {
+          "Name": "StagePackageAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "packageUri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "dependencyPackageUris",
+              "Type": "IEnumerable<Uri>"
+            },
+            {
+              "Name": "deploymentOptions",
+              "Type": "DeploymentOptions"
+            }
+          ]
+        },
+        {
+          "Name": "StagePackageAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "packageUri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "dependencyPackageUris",
+              "Type": "IEnumerable<Uri>"
+            },
+            {
+              "Name": "deploymentOptions",
+              "Type": "DeploymentOptions"
+            },
+            {
+              "Name": "targetVolume",
+              "Type": "PackageVolume"
+            }
+          ]
+        },
+        {
+          "Name": "StageUserDataAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "packageFullName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "StageUserDataAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "packageFullName",
+              "Type": "String"
+            },
+            {
+              "Name": "deploymentOptions",
+              "Type": "DeploymentOptions"
+            }
+          ]
+        },
+        {
+          "Name": "UpdatePackageAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DeploymentResult,DeploymentProgress>",
+          "Parameters": [
+            {
+              "Name": "packageUri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "dependencyPackageUris",
+              "Type": "IEnumerable<Uri>"
+            },
+            {
+              "Name": "deploymentOptions",
+              "Type": "DeploymentOptions"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Management.Deployment.PackageManager"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "InstallState",
+          "Type": "PackageInstallState",
+          "IsGet": true
+        },
+        {
+          "Name": "UserSecurityId",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Management.Deployment.PackageUserInformation"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "IsOffline",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "IsSystemVolume",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "MountPoint",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "PackageStorePath",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "SupportsHardLinks",
+          "Type": "Boolean",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "FindPackage",
+          "ReturnType": "IList<Package>",
+          "Parameters": [
+            {
+              "Name": "packageFullName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackageForUser",
+          "ReturnType": "IList<Package>",
+          "Parameters": [
+            {
+              "Name": "userSecurityId",
+              "Type": "String"
+            },
+            {
+              "Name": "packageFullName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackages",
+          "ReturnType": "IList<Package>"
+        },
+        {
+          "Name": "FindPackages",
+          "ReturnType": "IList<Package>",
+          "Parameters": [
+            {
+              "Name": "packageName",
+              "Type": "String"
+            },
+            {
+              "Name": "packagePublisher",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackages",
+          "ReturnType": "IList<Package>",
+          "Parameters": [
+            {
+              "Name": "packageFamilyName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesForUser",
+          "ReturnType": "IList<Package>",
+          "Parameters": [
+            {
+              "Name": "userSecurityId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesForUser",
+          "ReturnType": "IList<Package>",
+          "Parameters": [
+            {
+              "Name": "userSecurityId",
+              "Type": "String"
+            },
+            {
+              "Name": "packageName",
+              "Type": "String"
+            },
+            {
+              "Name": "packagePublisher",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesForUser",
+          "ReturnType": "IList<Package>",
+          "Parameters": [
+            {
+              "Name": "userSecurityId",
+              "Type": "String"
+            },
+            {
+              "Name": "packageFamilyName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesForUserWithPackageTypes",
+          "ReturnType": "IList<Package>",
+          "Parameters": [
+            {
+              "Name": "userSecurityId",
+              "Type": "String"
+            },
+            {
+              "Name": "packageTypes",
+              "Type": "PackageTypes"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesForUserWithPackageTypes",
+          "ReturnType": "IList<Package>",
+          "Parameters": [
+            {
+              "Name": "userSecurityId",
+              "Type": "String"
+            },
+            {
+              "Name": "packageTypes",
+              "Type": "PackageTypes"
+            },
+            {
+              "Name": "packageName",
+              "Type": "String"
+            },
+            {
+              "Name": "packagePublisher",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesForUserWithPackageTypes",
+          "ReturnType": "IList<Package>",
+          "Parameters": [
+            {
+              "Name": "userSecurityId",
+              "Type": "String"
+            },
+            {
+              "Name": "packageTypes",
+              "Type": "PackageTypes"
+            },
+            {
+              "Name": "packageFamilyName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesWithPackageTypes",
+          "ReturnType": "IList<Package>",
+          "Parameters": [
+            {
+              "Name": "packageTypes",
+              "Type": "PackageTypes"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesWithPackageTypes",
+          "ReturnType": "IList<Package>",
+          "Parameters": [
+            {
+              "Name": "packageTypes",
+              "Type": "PackageTypes"
+            },
+            {
+              "Name": "packageName",
+              "Type": "String"
+            },
+            {
+              "Name": "packagePublisher",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindPackagesWithPackageTypes",
+          "ReturnType": "IList<Package>",
+          "Parameters": [
+            {
+              "Name": "packageTypes",
+              "Type": "PackageTypes"
+            },
+            {
+              "Name": "packageFamilyName",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Management.Deployment.PackageVolume"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "IsMicrosoftAccountOptional",
+          "Type": "Boolean",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Management.Workplace.WorkplaceSettings"
+    }
+  ],
+  "Structs": [
+    {
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [
+        {
+          "Name": "percentage",
+          "Type": "UInt32"
+        },
+        {
+          "Name": "state",
+          "Type": "DeploymentProgressState"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Management.Deployment.DeploymentProgress"
+    }
+  ],
+  "Interfaces": [],
+  "Enums": [
+    {
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "ForceApplicationShutdown",
+          "Value": "1"
+        },
+        {
+          "Name": "DevelopmentMode",
+          "Value": "2"
+        },
+        {
+          "Name": "InstallAllResources",
+          "Value": "32"
+        }
+      ],
+      "Name": "Windows.Management.Deployment.DeploymentOptions"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Queued",
+          "Value": "0"
+        },
+        {
+          "Name": "Processing",
+          "Value": "1"
+        }
+      ],
+      "Name": "Windows.Management.Deployment.DeploymentProgressState"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "NotInstalled",
+          "Value": "0"
+        },
+        {
+          "Name": "Staged",
+          "Value": "1"
+        },
+        {
+          "Name": "Installed",
+          "Value": "2"
+        }
+      ],
+      "Name": "Windows.Management.Deployment.PackageInstallState"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Normal",
+          "Value": "0"
+        },
+        {
+          "Name": "LicenseInvalid",
+          "Value": "1"
+        },
+        {
+          "Name": "Modified",
+          "Value": "2"
+        },
+        {
+          "Name": "Tampered",
+          "Value": "3"
+        }
+      ],
+      "Name": "Windows.Management.Deployment.PackageState"
+    },
+    {
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Name": "OK",
+          "Value": "0"
+        },
+        {
+          "Name": "LicenseIssue",
+          "Value": "1"
+        },
+        {
+          "Name": "Modified",
+          "Value": "2"
+        },
+        {
+          "Name": "Tampered",
+          "Value": "4"
+        },
+        {
+          "Name": "Disabled",
+          "Value": "8"
+        },
+        {
+          "Name": "PackageOffline",
+          "Value": "16"
+        },
+        {
+          "Name": "DataOffline",
+          "Value": "32"
+        }
+      ],
+      "Name": "Windows.Management.Deployment.PackageStatus"
+    },
+    {
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Main",
+          "Value": "1"
+        },
+        {
+          "Name": "Framework",
+          "Value": "2"
+        },
+        {
+          "Name": "Resource",
+          "Value": "4"
+        },
+        {
+          "Name": "Bundle",
+          "Value": "8"
+        }
+      ],
+      "Name": "Windows.Management.Deployment.PackageTypes"
+    },
+    {
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "PreserveApplicationData",
+          "Value": "4096"
+        }
+      ],
+      "Name": "Windows.Management.Deployment.RemovalOptions"
+    }
+  ],
+  "Delegates": []
+}

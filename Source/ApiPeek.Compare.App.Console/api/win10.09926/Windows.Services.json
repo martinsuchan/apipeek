@@ -1,0 +1,825 @@
+{
+  "Name": "Windows.Services, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime",
+  "Classes": [
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "BuildingFloor",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "BuildingName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "BuildingRoom",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "BuildingWing",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Continent",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Country",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "CountryCode",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "District",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Neighborhood",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "PostCode",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Region",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "RegionCode",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Street",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "StreetNumber",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Town",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Services.Maps.MapAddress"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Address",
+          "Type": "MapAddress",
+          "IsGet": true
+        },
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "DisplayName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Point",
+          "Type": "Geopoint",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Services.Maps.MapLocation"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "FindLocationsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapLocationFinderResult>",
+          "Parameters": [
+            {
+              "Name": "searchText",
+              "Type": "String"
+            },
+            {
+              "Name": "referencePoint",
+              "Type": "Geopoint"
+            }
+          ]
+        },
+        {
+          "Name": "FindLocationsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapLocationFinderResult>",
+          "Parameters": [
+            {
+              "Name": "searchText",
+              "Type": "String"
+            },
+            {
+              "Name": "referencePoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "maxCount",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "FindLocationsAtAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapLocationFinderResult>",
+          "Parameters": [
+            {
+              "Name": "queryPoint",
+              "Type": "Geopoint"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Services.Maps.MapLocationFinder"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Locations",
+          "Type": "IReadOnlyList<MapLocation>",
+          "IsGet": true
+        },
+        {
+          "Name": "Status",
+          "Type": "MapLocationFinderStatus",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Services.Maps.MapLocationFinderResult"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "ShowDownloadedMapsUI",
+          "IsStatic": true,
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "ShowMapsUpdateUI",
+          "IsStatic": true,
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Services.Maps.MapManager"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "BoundingBox",
+          "Type": "GeoboundingBox",
+          "IsGet": true
+        },
+        {
+          "Name": "EstimatedDuration",
+          "Type": "TimeSpan",
+          "IsGet": true
+        },
+        {
+          "Name": "IsTrafficBased",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Legs",
+          "Type": "IReadOnlyList<MapRouteLeg>",
+          "IsGet": true
+        },
+        {
+          "Name": "LengthInMeters",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "Path",
+          "Type": "Geopath",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Services.Maps.MapRoute"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "Name": "GetDrivingRouteAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "startPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "endPoint",
+              "Type": "Geopoint"
+            }
+          ]
+        },
+        {
+          "Name": "GetDrivingRouteAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "startPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "endPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "optimization",
+              "Type": "MapRouteOptimization"
+            }
+          ]
+        },
+        {
+          "Name": "GetDrivingRouteAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "startPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "endPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "optimization",
+              "Type": "MapRouteOptimization"
+            },
+            {
+              "Name": "restrictions",
+              "Type": "MapRouteRestrictions"
+            }
+          ]
+        },
+        {
+          "Name": "GetDrivingRouteAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "startPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "endPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "optimization",
+              "Type": "MapRouteOptimization"
+            },
+            {
+              "Name": "restrictions",
+              "Type": "MapRouteRestrictions"
+            },
+            {
+              "Name": "headingInDegrees",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "GetDrivingRouteFromWaypointsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "wayPoints",
+              "Type": "IEnumerable<Geopoint>"
+            }
+          ]
+        },
+        {
+          "Name": "GetDrivingRouteFromWaypointsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "wayPoints",
+              "Type": "IEnumerable<Geopoint>"
+            },
+            {
+              "Name": "optimization",
+              "Type": "MapRouteOptimization"
+            }
+          ]
+        },
+        {
+          "Name": "GetDrivingRouteFromWaypointsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "wayPoints",
+              "Type": "IEnumerable<Geopoint>"
+            },
+            {
+              "Name": "optimization",
+              "Type": "MapRouteOptimization"
+            },
+            {
+              "Name": "restrictions",
+              "Type": "MapRouteRestrictions"
+            }
+          ]
+        },
+        {
+          "Name": "GetDrivingRouteFromWaypointsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "wayPoints",
+              "Type": "IEnumerable<Geopoint>"
+            },
+            {
+              "Name": "optimization",
+              "Type": "MapRouteOptimization"
+            },
+            {
+              "Name": "restrictions",
+              "Type": "MapRouteRestrictions"
+            },
+            {
+              "Name": "headingInDegrees",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "GetWalkingRouteAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "startPoint",
+              "Type": "Geopoint"
+            },
+            {
+              "Name": "endPoint",
+              "Type": "Geopoint"
+            }
+          ]
+        },
+        {
+          "Name": "GetWalkingRouteFromWaypointsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<MapRouteFinderResult>",
+          "Parameters": [
+            {
+              "Name": "wayPoints",
+              "Type": "IEnumerable<Geopoint>"
+            }
+          ]
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Services.Maps.MapRouteFinder"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "Route",
+          "Type": "MapRoute",
+          "IsGet": true
+        },
+        {
+          "Name": "Status",
+          "Type": "MapRouteFinderStatus",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Services.Maps.MapRouteFinderResult"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "BoundingBox",
+          "Type": "GeoboundingBox",
+          "IsGet": true
+        },
+        {
+          "Name": "EstimatedDuration",
+          "Type": "TimeSpan",
+          "IsGet": true
+        },
+        {
+          "Name": "LengthInMeters",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "Maneuvers",
+          "Type": "IReadOnlyList<MapRouteManeuver>",
+          "IsGet": true
+        },
+        {
+          "Name": "Path",
+          "Type": "Geopath",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Services.Maps.MapRouteLeg"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "ExitNumber",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "InstructionText",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Kind",
+          "Type": "MapRouteManeuverKind",
+          "IsGet": true
+        },
+        {
+          "Name": "LengthInMeters",
+          "Type": "Double",
+          "IsGet": true
+        },
+        {
+          "Name": "ManeuverNotices",
+          "Type": "MapManeuverNotices",
+          "IsGet": true
+        },
+        {
+          "Name": "StartingPoint",
+          "Type": "Geopoint",
+          "IsGet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Services.Maps.MapRouteManeuver"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Name": "ServiceToken",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Services.Maps.MapService"
+    }
+  ],
+  "Structs": [],
+  "Interfaces": [],
+  "Enums": [
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Success",
+          "Value": "0"
+        },
+        {
+          "Name": "UnknownError",
+          "Value": "1"
+        },
+        {
+          "Name": "InvalidCredentials",
+          "Value": "2"
+        },
+        {
+          "Name": "BadLocation",
+          "Value": "3"
+        },
+        {
+          "Name": "IndexFailure",
+          "Value": "4"
+        },
+        {
+          "Name": "NetworkFailure",
+          "Value": "5"
+        },
+        {
+          "Name": "NotSupported",
+          "Value": "6"
+        }
+      ],
+      "Name": "Windows.Services.Maps.MapLocationFinderStatus"
+    },
+    {
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Toll",
+          "Value": "1"
+        },
+        {
+          "Name": "Unpaved",
+          "Value": "2"
+        }
+      ],
+      "Name": "Windows.Services.Maps.MapManeuverNotices"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Success",
+          "Value": "0"
+        },
+        {
+          "Name": "UnknownError",
+          "Value": "1"
+        },
+        {
+          "Name": "InvalidCredentials",
+          "Value": "2"
+        },
+        {
+          "Name": "NoRouteFound",
+          "Value": "3"
+        },
+        {
+          "Name": "NoRouteFoundWithGivenOptions",
+          "Value": "4"
+        },
+        {
+          "Name": "StartPointNotFound",
+          "Value": "5"
+        },
+        {
+          "Name": "EndPointNotFound",
+          "Value": "6"
+        },
+        {
+          "Name": "NoPedestrianRouteFound",
+          "Value": "7"
+        },
+        {
+          "Name": "NetworkFailure",
+          "Value": "8"
+        },
+        {
+          "Name": "NotSupported",
+          "Value": "9"
+        }
+      ],
+      "Name": "Windows.Services.Maps.MapRouteFinderStatus"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Start",
+          "Value": "1"
+        },
+        {
+          "Name": "Stopover",
+          "Value": "2"
+        },
+        {
+          "Name": "StopoverResume",
+          "Value": "3"
+        },
+        {
+          "Name": "End",
+          "Value": "4"
+        },
+        {
+          "Name": "GoStraight",
+          "Value": "5"
+        },
+        {
+          "Name": "UTurnLeft",
+          "Value": "6"
+        },
+        {
+          "Name": "UTurnRight",
+          "Value": "7"
+        },
+        {
+          "Name": "TurnKeepLeft",
+          "Value": "8"
+        },
+        {
+          "Name": "TurnKeepRight",
+          "Value": "9"
+        },
+        {
+          "Name": "TurnLightLeft",
+          "Value": "10"
+        },
+        {
+          "Name": "TurnLightRight",
+          "Value": "11"
+        },
+        {
+          "Name": "TurnLeft",
+          "Value": "12"
+        },
+        {
+          "Name": "TurnRight",
+          "Value": "13"
+        },
+        {
+          "Name": "TurnHardLeft",
+          "Value": "14"
+        },
+        {
+          "Name": "TurnHardRight",
+          "Value": "15"
+        },
+        {
+          "Name": "FreewayEnterLeft",
+          "Value": "16"
+        },
+        {
+          "Name": "FreewayEnterRight",
+          "Value": "17"
+        },
+        {
+          "Name": "FreewayLeaveLeft",
+          "Value": "18"
+        },
+        {
+          "Name": "FreewayLeaveRight",
+          "Value": "19"
+        },
+        {
+          "Name": "FreewayContinueLeft",
+          "Value": "20"
+        },
+        {
+          "Name": "FreewayContinueRight",
+          "Value": "21"
+        },
+        {
+          "Name": "TrafficCircleLeft",
+          "Value": "22"
+        },
+        {
+          "Name": "TrafficCircleRight",
+          "Value": "23"
+        },
+        {
+          "Name": "TakeFerry",
+          "Value": "24"
+        }
+      ],
+      "Name": "Windows.Services.Maps.MapRouteManeuverKind"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Time",
+          "Value": "0"
+        },
+        {
+          "Name": "Distance",
+          "Value": "1"
+        },
+        {
+          "Name": "TimeWithTraffic",
+          "Value": "2"
+        }
+      ],
+      "Name": "Windows.Services.Maps.MapRouteOptimization"
+    },
+    {
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Highways",
+          "Value": "1"
+        },
+        {
+          "Name": "TollRoads",
+          "Value": "2"
+        },
+        {
+          "Name": "Ferries",
+          "Value": "4"
+        },
+        {
+          "Name": "Tunnels",
+          "Value": "8"
+        },
+        {
+          "Name": "DirtRoads",
+          "Value": "16"
+        }
+      ],
+      "Name": "Windows.Services.Maps.MapRouteRestrictions"
+    }
+  ],
+  "Delegates": []
+}

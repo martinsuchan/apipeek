@@ -1,0 +1,5693 @@
+{
+  "Name": "Windows.Data, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime",
+  "Classes": [
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "html",
+              "Type": "String"
+            }
+          ],
+          "Name": "ConvertToText"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Html.HtmlUtilities"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "ICollection<IJsonValue>",
+        "IEnumerable",
+        "IEnumerable<IJsonValue>",
+        "IJsonValue",
+        "IList<IJsonValue>",
+        "IStringable"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "Size"
+        },
+        {
+          "Type": "JsonValueType",
+          "IsGet": true,
+          "Name": "ValueType"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "JsonArray",
+          "Name": "GetArray"
+        },
+        {
+          "ReturnType": "JsonArray",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GetArrayAt"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Name": "GetBoolean"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GetBooleanAt"
+        },
+        {
+          "ReturnType": "Double",
+          "Name": "GetNumber"
+        },
+        {
+          "ReturnType": "Double",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GetNumberAt"
+        },
+        {
+          "ReturnType": "JsonObject",
+          "Name": "GetObject"
+        },
+        {
+          "ReturnType": "JsonObject",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GetObjectAt"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "GetString"
+        },
+        {
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GetStringAt"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "JsonArray",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "String"
+            }
+          ],
+          "Name": "Parse"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "Stringify"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "String"
+            },
+            {
+              "Name": "result",
+              "Type": "JsonArray&",
+              "Out": true
+            }
+          ],
+          "Name": "TryParse"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Json.JsonArray"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "JsonErrorStatus",
+          "Parameters": [
+            {
+              "Name": "hresult",
+              "Type": "Int32"
+            }
+          ],
+          "Name": "GetJsonStatus"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "JsonErrorStatus",
+          "Parameters": [
+            {
+              "Name": "hresult",
+              "Type": "Int32"
+            }
+          ],
+          "Name": "GetStatus"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Json.JsonError"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "ICollection<KeyValuePair<String,IJsonValue>>",
+        "IDictionary<String,IJsonValue>",
+        "IEnumerable",
+        "IEnumerable<KeyValuePair<String,IJsonValue>>",
+        "IJsonValue",
+        "IStringable"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "Size"
+        },
+        {
+          "Type": "JsonValueType",
+          "IsGet": true,
+          "Name": "ValueType"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "JsonArray",
+          "Name": "GetArray"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Name": "GetBoolean"
+        },
+        {
+          "ReturnType": "JsonArray",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetNamedArray"
+        },
+        {
+          "ReturnType": "JsonArray",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "defaultValue",
+              "Type": "JsonArray"
+            }
+          ],
+          "Name": "GetNamedArray"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetNamedBoolean"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "defaultValue",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "GetNamedBoolean"
+        },
+        {
+          "ReturnType": "Double",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetNamedNumber"
+        },
+        {
+          "ReturnType": "Double",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "defaultValue",
+              "Type": "Double"
+            }
+          ],
+          "Name": "GetNamedNumber"
+        },
+        {
+          "ReturnType": "JsonObject",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetNamedObject"
+        },
+        {
+          "ReturnType": "JsonObject",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "defaultValue",
+              "Type": "JsonObject"
+            }
+          ],
+          "Name": "GetNamedObject"
+        },
+        {
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetNamedString"
+        },
+        {
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "defaultValue",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetNamedString"
+        },
+        {
+          "ReturnType": "JsonValue",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetNamedValue"
+        },
+        {
+          "ReturnType": "JsonValue",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "defaultValue",
+              "Type": "JsonValue"
+            }
+          ],
+          "Name": "GetNamedValue"
+        },
+        {
+          "ReturnType": "Double",
+          "Name": "GetNumber"
+        },
+        {
+          "ReturnType": "JsonObject",
+          "Name": "GetObject"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "GetString"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "JsonObject",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "String"
+            }
+          ],
+          "Name": "Parse"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "IJsonValue"
+            }
+          ],
+          "Name": "SetNamedValue"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "Stringify"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "String"
+            },
+            {
+              "Name": "result",
+              "Type": "JsonObject&",
+              "Out": true
+            }
+          ],
+          "Name": "TryParse"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Json.JsonObject"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IJsonValue",
+        "IStringable"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "JsonValueType",
+          "IsGet": true,
+          "Name": "ValueType"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "JsonValue",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "CreateBooleanValue"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "JsonValue",
+          "Name": "CreateNullValue"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "JsonValue",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "Double"
+            }
+          ],
+          "Name": "CreateNumberValue"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "JsonValue",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "String"
+            }
+          ],
+          "Name": "CreateStringValue"
+        },
+        {
+          "ReturnType": "JsonArray",
+          "Name": "GetArray"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Name": "GetBoolean"
+        },
+        {
+          "ReturnType": "Double",
+          "Name": "GetNumber"
+        },
+        {
+          "ReturnType": "JsonObject",
+          "Name": "GetObject"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "GetString"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "JsonValue",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "String"
+            }
+          ],
+          "Name": "Parse"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "Stringify"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "String"
+            },
+            {
+              "Name": "result",
+              "Type": "JsonValue&",
+              "Out": true
+            }
+          ],
+          "Name": "TryParse"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Json.JsonValue"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "IsPasswordProtected"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "PageCount"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "PdfPage",
+          "Parameters": [
+            {
+              "Name": "pageIndex",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GetPage"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<PdfDocument>",
+          "Parameters": [
+            {
+              "Name": "file",
+              "Type": "IStorageFile"
+            }
+          ],
+          "Name": "LoadFromFileAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<PdfDocument>",
+          "Parameters": [
+            {
+              "Name": "file",
+              "Type": "IStorageFile"
+            },
+            {
+              "Name": "password",
+              "Type": "String"
+            }
+          ],
+          "Name": "LoadFromFileAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<PdfDocument>",
+          "Parameters": [
+            {
+              "Name": "inputStream",
+              "Type": "IRandomAccessStream"
+            }
+          ],
+          "Name": "LoadFromStreamAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<PdfDocument>",
+          "Parameters": [
+            {
+              "Name": "inputStream",
+              "Type": "IRandomAccessStream"
+            },
+            {
+              "Name": "password",
+              "Type": "String"
+            }
+          ],
+          "Name": "LoadFromStreamAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Pdf.PdfDocument"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IDisposable"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "PdfPageDimensions",
+          "IsGet": true,
+          "Name": "Dimensions"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "Index"
+        },
+        {
+          "Type": "Single",
+          "IsGet": true,
+          "Name": "PreferredZoom"
+        },
+        {
+          "Type": "PdfPageRotation",
+          "IsGet": true,
+          "Name": "Rotation"
+        },
+        {
+          "Type": "Size",
+          "IsGet": true,
+          "Name": "Size"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Name": "Dispose"
+        },
+        {
+          "ReturnType": "IAsyncAction",
+          "Name": "PreparePageAsync"
+        },
+        {
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "outputStream",
+              "Type": "IRandomAccessStream"
+            }
+          ],
+          "Name": "RenderToStreamAsync"
+        },
+        {
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "outputStream",
+              "Type": "IRandomAccessStream"
+            },
+            {
+              "Name": "options",
+              "Type": "PdfPageRenderOptions"
+            }
+          ],
+          "Name": "RenderToStreamAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Pdf.PdfPage"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Rect",
+          "IsGet": true,
+          "Name": "ArtBox"
+        },
+        {
+          "Type": "Rect",
+          "IsGet": true,
+          "Name": "BleedBox"
+        },
+        {
+          "Type": "Rect",
+          "IsGet": true,
+          "Name": "CropBox"
+        },
+        {
+          "Type": "Rect",
+          "IsGet": true,
+          "Name": "MediaBox"
+        },
+        {
+          "Type": "Rect",
+          "IsGet": true,
+          "Name": "TrimBox"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Data.Pdf.PdfPageDimensions"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Color",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "BackgroundColor"
+        },
+        {
+          "Type": "Guid",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "BitmapEncoderId"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "DestinationHeight"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "DestinationWidth"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "IsIgnoringHighContrast"
+        },
+        {
+          "Type": "Rect",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "SourceRect"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Data.Pdf.PdfPageRenderOptions"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "AlternateText"
+        },
+        {
+          "Type": "AlternateNormalizationFormat",
+          "IsGet": true,
+          "Name": "NormalizationFormat"
+        },
+        {
+          "Type": "TextSegment",
+          "IsGet": true,
+          "Name": "SourceTextSegment"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Data.Text.AlternateWordForm"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "TextSegment",
+          "IsGet": true,
+          "Name": "SourceTextSegment"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Text"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Data.Text.SelectableWordSegment"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "language",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "ResolvedLanguage"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "SelectableWordSegment",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            },
+            {
+              "Name": "startIndex",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GetTokenAt"
+        },
+        {
+          "ReturnType": "IReadOnlyList<SelectableWordSegment>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetTokens"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            },
+            {
+              "Name": "startIndex",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "handler",
+              "Type": "SelectableWordSegmentsTokenizingHandler"
+            }
+          ],
+          "Name": "Tokenize"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Text.SelectableWordsSegmenter"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "aqsFilter",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "aqsFilter",
+              "Type": "String"
+            },
+            {
+              "Name": "filterLanguage",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IReadOnlyList<TextSegment>",
+          "Parameters": [
+            {
+              "Name": "content",
+              "Type": "String"
+            }
+          ],
+          "Name": "Find"
+        },
+        {
+          "ReturnType": "IReadOnlyList<TextSegment>",
+          "Parameters": [
+            {
+              "Name": "propertyContent",
+              "Type": "String"
+            },
+            {
+              "Name": "propertyName",
+              "Type": "String"
+            }
+          ],
+          "Name": "FindInProperty"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Text.SemanticTextQuery"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "languageTag",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "LanguageAvailableButNotInstalled"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "ResolvedLanguage"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncOperation<IReadOnlyList<String>>",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetCandidatesAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<IReadOnlyList<String>>",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "String"
+            },
+            {
+              "Name": "maxCandidates",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GetCandidatesAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Text.TextConversionGenerator"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "languageTag",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "LanguageAvailableButNotInstalled"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "ResolvedLanguage"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncOperation<IReadOnlyList<String>>",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetCandidatesAsync"
+        },
+        {
+          "ReturnType": "IAsyncOperation<IReadOnlyList<String>>",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "String"
+            },
+            {
+              "Name": "maxCandidates",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GetCandidatesAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Text.TextPredictionGenerator"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "languageTag",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "LanguageAvailableButNotInstalled"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "ResolvedLanguage"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IAsyncOperation<String>",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "String"
+            }
+          ],
+          "Name": "ConvertBackAsync"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Text.TextReverseConversionGenerator"
+    },
+    {
+      "IsStatic": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "IsStatic": true,
+          "ReturnType": "UInt32",
+          "Parameters": [
+            {
+              "Name": "highSurrogate",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "lowSurrogate",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GetCodepointFromSurrogatePair"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "UnicodeGeneralCategory",
+          "Parameters": [
+            {
+              "Name": "codepoint",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GetGeneralCategory"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "UnicodeNumericType",
+          "Parameters": [
+            {
+              "Name": "codepoint",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GetNumericType"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "codepoint",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "highSurrogate",
+              "Type": "Char&",
+              "Out": true
+            },
+            {
+              "Name": "lowSurrogate",
+              "Type": "Char&",
+              "Out": true
+            }
+          ],
+          "Name": "GetSurrogatePairFromCodepoint"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "codepoint",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "IsAlphabetic"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "codepoint",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "IsCased"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "codepoint",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "IsGraphemeBase"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "codepoint",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "IsGraphemeExtend"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "codepoint",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "IsHighSurrogate"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "codepoint",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "IsIdContinue"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "codepoint",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "IsIdStart"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "codepoint",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "IsLowercase"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "codepoint",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "IsLowSurrogate"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "codepoint",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "IsNoncharacter"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "codepoint",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "IsSupplementary"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "codepoint",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "IsUppercase"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "codepoint",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "IsWhitespace"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Text.UnicodeCharacters"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "IReadOnlyList<AlternateWordForm>",
+          "IsGet": true,
+          "Name": "AlternateForms"
+        },
+        {
+          "Type": "TextSegment",
+          "IsGet": true,
+          "Name": "SourceTextSegment"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Text"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Data.Text.WordSegment"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "language",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "ResolvedLanguage"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "WordSegment",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            },
+            {
+              "Name": "startIndex",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "GetTokenAt"
+        },
+        {
+          "ReturnType": "IReadOnlyList<WordSegment>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetTokens"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            },
+            {
+              "Name": "startIndex",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "handler",
+              "Type": "WordSegmentsTokenizingHandler"
+            }
+          ],
+          "Name": "Tokenize"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Text.WordsSegmenter"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IXmlNode",
+        "IXmlNodeSelector",
+        "IXmlNodeSerializer"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "XmlNamedNodeMap",
+          "IsGet": true,
+          "Name": "Attributes"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "FirstChild"
+        },
+        {
+          "Type": "XmlNodeList",
+          "IsGet": true,
+          "Name": "ChildNodes"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "InnerText"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "LastChild"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "LocalName"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "NamespaceUri"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "NextSibling"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "NodeName"
+        },
+        {
+          "Type": "NodeType",
+          "IsGet": true,
+          "Name": "NodeType"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NodeValue"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "NotationName"
+        },
+        {
+          "Type": "XmlDocument",
+          "IsGet": true,
+          "Name": "OwnerDocument"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "ParentNode"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Prefix"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "PreviousSibling"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "PublicId"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "SystemId"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "AppendChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "deep",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "CloneNode"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "GetXml"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Name": "HasChildNodes"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "InsertBefore"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Normalize"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "childNode",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "RemoveChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "ReplaceChild"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectNodes"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectNodesNS"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectSingleNode"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectSingleNodeNS"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.DtdEntity"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IXmlNode",
+        "IXmlNodeSelector",
+        "IXmlNodeSerializer"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "XmlNamedNodeMap",
+          "IsGet": true,
+          "Name": "Attributes"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "FirstChild"
+        },
+        {
+          "Type": "XmlNodeList",
+          "IsGet": true,
+          "Name": "ChildNodes"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "InnerText"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "LastChild"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "LocalName"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "NamespaceUri"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "NextSibling"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "NodeName"
+        },
+        {
+          "Type": "NodeType",
+          "IsGet": true,
+          "Name": "NodeType"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NodeValue"
+        },
+        {
+          "Type": "XmlDocument",
+          "IsGet": true,
+          "Name": "OwnerDocument"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "ParentNode"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Prefix"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "PreviousSibling"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "PublicId"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "SystemId"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "AppendChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "deep",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "CloneNode"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "GetXml"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Name": "HasChildNodes"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "InsertBefore"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Normalize"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "childNode",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "RemoveChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "ReplaceChild"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectNodes"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectNodesNS"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectSingleNode"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectSingleNodeNS"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.DtdNotation"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IXmlNode",
+        "IXmlNodeSelector",
+        "IXmlNodeSerializer"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "XmlNamedNodeMap",
+          "IsGet": true,
+          "Name": "Attributes"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "FirstChild"
+        },
+        {
+          "Type": "XmlNodeList",
+          "IsGet": true,
+          "Name": "ChildNodes"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "InnerText"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "LastChild"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "LocalName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Name"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "NamespaceUri"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "NextSibling"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "NodeName"
+        },
+        {
+          "Type": "NodeType",
+          "IsGet": true,
+          "Name": "NodeType"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NodeValue"
+        },
+        {
+          "Type": "XmlDocument",
+          "IsGet": true,
+          "Name": "OwnerDocument"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "ParentNode"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Prefix"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "PreviousSibling"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "Name": "Specified"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Value"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "AppendChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "deep",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "CloneNode"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "GetXml"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Name": "HasChildNodes"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "InsertBefore"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Normalize"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "childNode",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "RemoveChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "ReplaceChild"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectNodes"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectNodesNS"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectSingleNode"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectSingleNodeNS"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.XmlAttribute"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IXmlCharacterData",
+        "IXmlNode",
+        "IXmlNodeSelector",
+        "IXmlNodeSerializer",
+        "IXmlText"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "XmlNamedNodeMap",
+          "IsGet": true,
+          "Name": "Attributes"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Data"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "FirstChild"
+        },
+        {
+          "Type": "XmlNodeList",
+          "IsGet": true,
+          "Name": "ChildNodes"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "InnerText"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "LastChild"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "Length"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "LocalName"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "NamespaceUri"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "NextSibling"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "NodeName"
+        },
+        {
+          "Type": "NodeType",
+          "IsGet": true,
+          "Name": "NodeType"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NodeValue"
+        },
+        {
+          "Type": "XmlDocument",
+          "IsGet": true,
+          "Name": "OwnerDocument"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "ParentNode"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Prefix"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "PreviousSibling"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "String"
+            }
+          ],
+          "Name": "AppendData"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "AppendChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "deep",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "CloneNode"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "count",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "DeleteData"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "GetXml"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Name": "HasChildNodes"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "InsertBefore"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "data",
+              "Type": "String"
+            }
+          ],
+          "Name": "InsertData"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Normalize"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "childNode",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "RemoveChild"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "count",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "data",
+              "Type": "String"
+            }
+          ],
+          "Name": "ReplaceData"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "ReplaceChild"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectNodes"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectNodesNS"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectSingleNode"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectSingleNodeNS"
+        },
+        {
+          "ReturnType": "IXmlText",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "SplitText"
+        },
+        {
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "count",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "SubstringData"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.XmlCDataSection"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IXmlCharacterData",
+        "IXmlNode",
+        "IXmlNodeSelector",
+        "IXmlNodeSerializer"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "XmlNamedNodeMap",
+          "IsGet": true,
+          "Name": "Attributes"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Data"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "FirstChild"
+        },
+        {
+          "Type": "XmlNodeList",
+          "IsGet": true,
+          "Name": "ChildNodes"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "InnerText"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "LastChild"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "Length"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "LocalName"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "NamespaceUri"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "NextSibling"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "NodeName"
+        },
+        {
+          "Type": "NodeType",
+          "IsGet": true,
+          "Name": "NodeType"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NodeValue"
+        },
+        {
+          "Type": "XmlDocument",
+          "IsGet": true,
+          "Name": "OwnerDocument"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "ParentNode"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Prefix"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "PreviousSibling"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "String"
+            }
+          ],
+          "Name": "AppendData"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "AppendChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "deep",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "CloneNode"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "count",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "DeleteData"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "GetXml"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Name": "HasChildNodes"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "InsertBefore"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "data",
+              "Type": "String"
+            }
+          ],
+          "Name": "InsertData"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Normalize"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "childNode",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "RemoveChild"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "count",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "data",
+              "Type": "String"
+            }
+          ],
+          "Name": "ReplaceData"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "ReplaceChild"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectNodes"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectNodesNS"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectSingleNode"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectSingleNodeNS"
+        },
+        {
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "count",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "SubstringData"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.XmlComment"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IXmlNode",
+        "IXmlNodeSelector",
+        "IXmlNodeSerializer"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "XmlNamedNodeMap",
+          "IsGet": true,
+          "Name": "Attributes"
+        },
+        {
+          "Type": "XmlDocumentType",
+          "IsGet": true,
+          "Name": "Doctype"
+        },
+        {
+          "Type": "XmlElement",
+          "IsGet": true,
+          "Name": "DocumentElement"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "DocumentUri"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "FirstChild"
+        },
+        {
+          "Type": "XmlNodeList",
+          "IsGet": true,
+          "Name": "ChildNodes"
+        },
+        {
+          "Type": "XmlDomImplementation",
+          "IsGet": true,
+          "Name": "Implementation"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "InnerText"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "LastChild"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "LocalName"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "NamespaceUri"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "NextSibling"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "NodeName"
+        },
+        {
+          "Type": "NodeType",
+          "IsGet": true,
+          "Name": "NodeType"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NodeValue"
+        },
+        {
+          "Type": "XmlDocument",
+          "IsGet": true,
+          "Name": "OwnerDocument"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "ParentNode"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Prefix"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "PreviousSibling"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "AppendChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "deep",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "CloneNode"
+        },
+        {
+          "ReturnType": "XmlAttribute",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ],
+          "Name": "CreateAttribute"
+        },
+        {
+          "ReturnType": "XmlAttribute",
+          "Parameters": [
+            {
+              "Name": "namespaceUri",
+              "Type": "Object"
+            },
+            {
+              "Name": "qualifiedName",
+              "Type": "String"
+            }
+          ],
+          "Name": "CreateAttributeNS"
+        },
+        {
+          "ReturnType": "XmlCDataSection",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "String"
+            }
+          ],
+          "Name": "CreateCDataSection"
+        },
+        {
+          "ReturnType": "XmlComment",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "String"
+            }
+          ],
+          "Name": "CreateComment"
+        },
+        {
+          "ReturnType": "XmlDocumentFragment",
+          "Name": "CreateDocumentFragment"
+        },
+        {
+          "ReturnType": "XmlElement",
+          "Parameters": [
+            {
+              "Name": "tagName",
+              "Type": "String"
+            }
+          ],
+          "Name": "CreateElement"
+        },
+        {
+          "ReturnType": "XmlElement",
+          "Parameters": [
+            {
+              "Name": "namespaceUri",
+              "Type": "Object"
+            },
+            {
+              "Name": "qualifiedName",
+              "Type": "String"
+            }
+          ],
+          "Name": "CreateElementNS"
+        },
+        {
+          "ReturnType": "XmlEntityReference",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ],
+          "Name": "CreateEntityReference"
+        },
+        {
+          "ReturnType": "XmlProcessingInstruction",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "String"
+            },
+            {
+              "Name": "data",
+              "Type": "String"
+            }
+          ],
+          "Name": "CreateProcessingInstruction"
+        },
+        {
+          "ReturnType": "XmlText",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "String"
+            }
+          ],
+          "Name": "CreateTextNode"
+        },
+        {
+          "ReturnType": "XmlElement",
+          "Parameters": [
+            {
+              "Name": "elementId",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetElementById"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "tagName",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetElementsByTagName"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "GetXml"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Name": "HasChildNodes"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "node",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "deep",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "ImportNode"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "InsertBefore"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<XmlDocument>",
+          "Parameters": [
+            {
+              "Name": "file",
+              "Type": "IStorageFile"
+            }
+          ],
+          "Name": "LoadFromFileAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<XmlDocument>",
+          "Parameters": [
+            {
+              "Name": "file",
+              "Type": "IStorageFile"
+            },
+            {
+              "Name": "loadSettings",
+              "Type": "XmlLoadSettings"
+            }
+          ],
+          "Name": "LoadFromFileAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<XmlDocument>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            }
+          ],
+          "Name": "LoadFromUriAsync"
+        },
+        {
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<XmlDocument>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "loadSettings",
+              "Type": "XmlLoadSettings"
+            }
+          ],
+          "Name": "LoadFromUriAsync"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "xml",
+              "Type": "String"
+            }
+          ],
+          "Name": "LoadXml"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "xml",
+              "Type": "String"
+            },
+            {
+              "Name": "loadSettings",
+              "Type": "XmlLoadSettings"
+            }
+          ],
+          "Name": "LoadXml"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "IBuffer"
+            }
+          ],
+          "Name": "LoadXmlFromBuffer"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "IBuffer"
+            },
+            {
+              "Name": "loadSettings",
+              "Type": "XmlLoadSettings"
+            }
+          ],
+          "Name": "LoadXmlFromBuffer"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Normalize"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "childNode",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "RemoveChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "ReplaceChild"
+        },
+        {
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "file",
+              "Type": "IStorageFile"
+            }
+          ],
+          "Name": "SaveToFileAsync"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectNodes"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectNodesNS"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectSingleNode"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectSingleNodeNS"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.XmlDocument"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IXmlNode",
+        "IXmlNodeSelector",
+        "IXmlNodeSerializer"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "XmlNamedNodeMap",
+          "IsGet": true,
+          "Name": "Attributes"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "FirstChild"
+        },
+        {
+          "Type": "XmlNodeList",
+          "IsGet": true,
+          "Name": "ChildNodes"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "InnerText"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "LastChild"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "LocalName"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "NamespaceUri"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "NextSibling"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "NodeName"
+        },
+        {
+          "Type": "NodeType",
+          "IsGet": true,
+          "Name": "NodeType"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NodeValue"
+        },
+        {
+          "Type": "XmlDocument",
+          "IsGet": true,
+          "Name": "OwnerDocument"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "ParentNode"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Prefix"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "PreviousSibling"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "AppendChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "deep",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "CloneNode"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "GetXml"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Name": "HasChildNodes"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "InsertBefore"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Normalize"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "childNode",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "RemoveChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "ReplaceChild"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectNodes"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectNodesNS"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectSingleNode"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectSingleNodeNS"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.XmlDocumentFragment"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IXmlNode",
+        "IXmlNodeSelector",
+        "IXmlNodeSerializer"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "XmlNamedNodeMap",
+          "IsGet": true,
+          "Name": "Attributes"
+        },
+        {
+          "Type": "XmlNamedNodeMap",
+          "IsGet": true,
+          "Name": "Entities"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "FirstChild"
+        },
+        {
+          "Type": "XmlNodeList",
+          "IsGet": true,
+          "Name": "ChildNodes"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "InnerText"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "LastChild"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "LocalName"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Name"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "NamespaceUri"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "NextSibling"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "NodeName"
+        },
+        {
+          "Type": "NodeType",
+          "IsGet": true,
+          "Name": "NodeType"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NodeValue"
+        },
+        {
+          "Type": "XmlNamedNodeMap",
+          "IsGet": true,
+          "Name": "Notations"
+        },
+        {
+          "Type": "XmlDocument",
+          "IsGet": true,
+          "Name": "OwnerDocument"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "ParentNode"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Prefix"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "PreviousSibling"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "AppendChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "deep",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "CloneNode"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "GetXml"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Name": "HasChildNodes"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "InsertBefore"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Normalize"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "childNode",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "RemoveChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "ReplaceChild"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectNodes"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectNodesNS"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectSingleNode"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectSingleNodeNS"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.XmlDocumentType"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "feature",
+              "Type": "String"
+            },
+            {
+              "Name": "version",
+              "Type": "Object"
+            }
+          ],
+          "Name": "HasFeature"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.XmlDomImplementation"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IXmlNode",
+        "IXmlNodeSelector",
+        "IXmlNodeSerializer"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "XmlNamedNodeMap",
+          "IsGet": true,
+          "Name": "Attributes"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "FirstChild"
+        },
+        {
+          "Type": "XmlNodeList",
+          "IsGet": true,
+          "Name": "ChildNodes"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "InnerText"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "LastChild"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "LocalName"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "NamespaceUri"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "NextSibling"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "NodeName"
+        },
+        {
+          "Type": "NodeType",
+          "IsGet": true,
+          "Name": "NodeType"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NodeValue"
+        },
+        {
+          "Type": "XmlDocument",
+          "IsGet": true,
+          "Name": "OwnerDocument"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "ParentNode"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Prefix"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "PreviousSibling"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "TagName"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "AppendChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "deep",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "CloneNode"
+        },
+        {
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "attributeName",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetAttribute"
+        },
+        {
+          "ReturnType": "XmlAttribute",
+          "Parameters": [
+            {
+              "Name": "attributeName",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetAttributeNode"
+        },
+        {
+          "ReturnType": "XmlAttribute",
+          "Parameters": [
+            {
+              "Name": "namespaceUri",
+              "Type": "Object"
+            },
+            {
+              "Name": "localName",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetAttributeNodeNS"
+        },
+        {
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "namespaceUri",
+              "Type": "Object"
+            },
+            {
+              "Name": "localName",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetAttributeNS"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "tagName",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetElementsByTagName"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "GetXml"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Name": "HasChildNodes"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "InsertBefore"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Normalize"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "attributeName",
+              "Type": "String"
+            }
+          ],
+          "Name": "RemoveAttribute"
+        },
+        {
+          "ReturnType": "XmlAttribute",
+          "Parameters": [
+            {
+              "Name": "attributeNode",
+              "Type": "XmlAttribute"
+            }
+          ],
+          "Name": "RemoveAttributeNode"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "namespaceUri",
+              "Type": "Object"
+            },
+            {
+              "Name": "localName",
+              "Type": "String"
+            }
+          ],
+          "Name": "RemoveAttributeNS"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "childNode",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "RemoveChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "ReplaceChild"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectNodes"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectNodesNS"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectSingleNode"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectSingleNodeNS"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "attributeName",
+              "Type": "String"
+            },
+            {
+              "Name": "attributeValue",
+              "Type": "String"
+            }
+          ],
+          "Name": "SetAttribute"
+        },
+        {
+          "ReturnType": "XmlAttribute",
+          "Parameters": [
+            {
+              "Name": "newAttribute",
+              "Type": "XmlAttribute"
+            }
+          ],
+          "Name": "SetAttributeNode"
+        },
+        {
+          "ReturnType": "XmlAttribute",
+          "Parameters": [
+            {
+              "Name": "newAttribute",
+              "Type": "XmlAttribute"
+            }
+          ],
+          "Name": "SetAttributeNodeNS"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "namespaceUri",
+              "Type": "Object"
+            },
+            {
+              "Name": "qualifiedName",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "String"
+            }
+          ],
+          "Name": "SetAttributeNS"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.XmlElement"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IXmlNode",
+        "IXmlNodeSelector",
+        "IXmlNodeSerializer"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "XmlNamedNodeMap",
+          "IsGet": true,
+          "Name": "Attributes"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "FirstChild"
+        },
+        {
+          "Type": "XmlNodeList",
+          "IsGet": true,
+          "Name": "ChildNodes"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "InnerText"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "LastChild"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "LocalName"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "NamespaceUri"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "NextSibling"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "NodeName"
+        },
+        {
+          "Type": "NodeType",
+          "IsGet": true,
+          "Name": "NodeType"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NodeValue"
+        },
+        {
+          "Type": "XmlDocument",
+          "IsGet": true,
+          "Name": "OwnerDocument"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "ParentNode"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Prefix"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "PreviousSibling"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "AppendChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "deep",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "CloneNode"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "GetXml"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Name": "HasChildNodes"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "InsertBefore"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Normalize"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "childNode",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "RemoveChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "ReplaceChild"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectNodes"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectNodesNS"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectSingleNode"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectSingleNodeNS"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.XmlEntityReference"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ElementContentWhiteSpace"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "MaxElementDepth"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ProhibitDtd"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ResolveExternals"
+        },
+        {
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "ValidateOnParse"
+        }
+      ],
+      "Fields": [],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.XmlLoadSettings"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IEnumerable",
+        "IEnumerable<IXmlNode>",
+        "IReadOnlyCollection<IXmlNode>",
+        "IReadOnlyList<IXmlNode>"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "Length"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "Size"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetNamedItem"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "namespaceUri",
+              "Type": "Object"
+            },
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ],
+          "Name": "GetNamedItemNS"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "Item"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ],
+          "Name": "RemoveNamedItem"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "namespaceUri",
+              "Type": "Object"
+            },
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ],
+          "Name": "RemoveNamedItemNS"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "node",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "SetNamedItem"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "node",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "SetNamedItemNS"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.XmlNamedNodeMap"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IEnumerable",
+        "IEnumerable<IXmlNode>",
+        "IReadOnlyCollection<IXmlNode>",
+        "IReadOnlyList<IXmlNode>"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "Length"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "Size"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "Item"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.XmlNodeList"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IXmlNode",
+        "IXmlNodeSelector",
+        "IXmlNodeSerializer"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "XmlNamedNodeMap",
+          "IsGet": true,
+          "Name": "Attributes"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Data"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "FirstChild"
+        },
+        {
+          "Type": "XmlNodeList",
+          "IsGet": true,
+          "Name": "ChildNodes"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "InnerText"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "LastChild"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "LocalName"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "NamespaceUri"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "NextSibling"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "NodeName"
+        },
+        {
+          "Type": "NodeType",
+          "IsGet": true,
+          "Name": "NodeType"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NodeValue"
+        },
+        {
+          "Type": "XmlDocument",
+          "IsGet": true,
+          "Name": "OwnerDocument"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "ParentNode"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Prefix"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "PreviousSibling"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "Target"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "AppendChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "deep",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "CloneNode"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "GetXml"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Name": "HasChildNodes"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "InsertBefore"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Normalize"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "childNode",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "RemoveChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "ReplaceChild"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectNodes"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectNodesNS"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectSingleNode"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectSingleNodeNS"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.XmlProcessingInstruction"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [
+        "IXmlCharacterData",
+        "IXmlNode",
+        "IXmlNodeSelector",
+        "IXmlNodeSerializer",
+        "IXmlText"
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "Type": "XmlNamedNodeMap",
+          "IsGet": true,
+          "Name": "Attributes"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Data"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "FirstChild"
+        },
+        {
+          "Type": "XmlNodeList",
+          "IsGet": true,
+          "Name": "ChildNodes"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "InnerText"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "LastChild"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "Length"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "LocalName"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "NamespaceUri"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "NextSibling"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "NodeName"
+        },
+        {
+          "Type": "NodeType",
+          "IsGet": true,
+          "Name": "NodeType"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NodeValue"
+        },
+        {
+          "Type": "XmlDocument",
+          "IsGet": true,
+          "Name": "OwnerDocument"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "ParentNode"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Prefix"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "PreviousSibling"
+        }
+      ],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "String"
+            }
+          ],
+          "Name": "AppendData"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "AppendChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "deep",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "CloneNode"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "count",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "DeleteData"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "GetXml"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Name": "HasChildNodes"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "InsertBefore"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "data",
+              "Type": "String"
+            }
+          ],
+          "Name": "InsertData"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Normalize"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "childNode",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "RemoveChild"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "count",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "data",
+              "Type": "String"
+            }
+          ],
+          "Name": "ReplaceData"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "ReplaceChild"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectNodes"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectNodesNS"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectSingleNode"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectSingleNodeNS"
+        },
+        {
+          "ReturnType": "IXmlText",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "SplitText"
+        },
+        {
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "count",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "SubstringData"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.XmlText"
+    },
+    {
+      "IsSealed": true,
+      "Interfaces": [],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "document",
+              "Type": "XmlDocument"
+            }
+          ]
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "Methods": [
+        {
+          "ReturnType": "XmlDocument",
+          "Parameters": [
+            {
+              "Name": "inputNode",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "TransformToDocument"
+        },
+        {
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "inputNode",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "TransformToString"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Xsl.XsltProcessor"
+    }
+  ],
+  "Structs": [
+    {
+      "Interfaces": [],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [
+        {
+          "Type": "UInt32",
+          "Name": "Length"
+        },
+        {
+          "Type": "UInt32",
+          "Name": "StartPosition"
+        }
+      ],
+      "Methods": [],
+      "Events": [],
+      "Name": "Windows.Data.Text.TextSegment"
+    }
+  ],
+  "Interfaces": [
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Type": "JsonValueType",
+          "IsGet": true,
+          "Name": "ValueType"
+        }
+      ],
+      "Methods": [
+        {
+          "ReturnType": "JsonArray",
+          "Name": "GetArray"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Name": "GetBoolean"
+        },
+        {
+          "ReturnType": "Double",
+          "Name": "GetNumber"
+        },
+        {
+          "ReturnType": "JsonObject",
+          "Name": "GetObject"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "GetString"
+        },
+        {
+          "ReturnType": "String",
+          "Name": "Stringify"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Json.IJsonValue"
+    },
+    {
+      "Interfaces": [
+        "IXmlNode",
+        "IXmlNodeSelector",
+        "IXmlNodeSerializer"
+      ],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Data"
+        },
+        {
+          "Type": "UInt32",
+          "IsGet": true,
+          "Name": "Length"
+        }
+      ],
+      "Methods": [
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "String"
+            }
+          ],
+          "Name": "AppendData"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "count",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "DeleteData"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "data",
+              "Type": "String"
+            }
+          ],
+          "Name": "InsertData"
+        },
+        {
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "count",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "data",
+              "Type": "String"
+            }
+          ],
+          "Name": "ReplaceData"
+        },
+        {
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "count",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "SubstringData"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.IXmlCharacterData"
+    },
+    {
+      "Interfaces": [
+        "IXmlNodeSelector",
+        "IXmlNodeSerializer"
+      ],
+      "Properties": [
+        {
+          "Type": "XmlNamedNodeMap",
+          "IsGet": true,
+          "Name": "Attributes"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "FirstChild"
+        },
+        {
+          "Type": "XmlNodeList",
+          "IsGet": true,
+          "Name": "ChildNodes"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "LastChild"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "LocalName"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "Name": "NamespaceUri"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "NextSibling"
+        },
+        {
+          "Type": "String",
+          "IsGet": true,
+          "Name": "NodeName"
+        },
+        {
+          "Type": "NodeType",
+          "IsGet": true,
+          "Name": "NodeType"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "NodeValue"
+        },
+        {
+          "Type": "XmlDocument",
+          "IsGet": true,
+          "Name": "OwnerDocument"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "ParentNode"
+        },
+        {
+          "Type": "Object",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "Prefix"
+        },
+        {
+          "Type": "IXmlNode",
+          "IsGet": true,
+          "Name": "PreviousSibling"
+        }
+      ],
+      "Methods": [
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "AppendChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "deep",
+              "Type": "Boolean"
+            }
+          ],
+          "Name": "CloneNode"
+        },
+        {
+          "ReturnType": "Boolean",
+          "Name": "HasChildNodes"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "InsertBefore"
+        },
+        {
+          "ReturnType": "Void",
+          "Name": "Normalize"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "childNode",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "RemoveChild"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "newChild",
+              "Type": "IXmlNode"
+            },
+            {
+              "Name": "referenceChild",
+              "Type": "IXmlNode"
+            }
+          ],
+          "Name": "ReplaceChild"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.IXmlNode"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [],
+      "Methods": [
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectNodes"
+        },
+        {
+          "ReturnType": "XmlNodeList",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectNodesNS"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            }
+          ],
+          "Name": "SelectSingleNode"
+        },
+        {
+          "ReturnType": "IXmlNode",
+          "Parameters": [
+            {
+              "Name": "xpath",
+              "Type": "String"
+            },
+            {
+              "Name": "namespaces",
+              "Type": "Object"
+            }
+          ],
+          "Name": "SelectSingleNodeNS"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.IXmlNodeSelector"
+    },
+    {
+      "Interfaces": [],
+      "Properties": [
+        {
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true,
+          "Name": "InnerText"
+        }
+      ],
+      "Methods": [
+        {
+          "ReturnType": "String",
+          "Name": "GetXml"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.IXmlNodeSerializer"
+    },
+    {
+      "Interfaces": [
+        "IXmlCharacterData",
+        "IXmlNode",
+        "IXmlNodeSelector",
+        "IXmlNodeSerializer"
+      ],
+      "Properties": [],
+      "Methods": [
+        {
+          "ReturnType": "IXmlText",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "UInt32"
+            }
+          ],
+          "Name": "SplitText"
+        }
+      ],
+      "Events": [],
+      "Name": "Windows.Data.Xml.Dom.IXmlText"
+    }
+  ],
+  "Enums": [
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Unknown"
+        },
+        {
+          "Value": "1",
+          "Name": "InvalidJsonString"
+        },
+        {
+          "Value": "2",
+          "Name": "InvalidJsonNumber"
+        },
+        {
+          "Value": "3",
+          "Name": "JsonValueNotFound"
+        },
+        {
+          "Value": "4",
+          "Name": "ImplementationLimit"
+        }
+      ],
+      "Name": "Windows.Data.Json.JsonErrorStatus"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Null"
+        },
+        {
+          "Value": "1",
+          "Name": "Boolean"
+        },
+        {
+          "Value": "2",
+          "Name": "Number"
+        },
+        {
+          "Value": "3",
+          "Name": "String"
+        },
+        {
+          "Value": "4",
+          "Name": "Array"
+        },
+        {
+          "Value": "5",
+          "Name": "Object"
+        }
+      ],
+      "Name": "Windows.Data.Json.JsonValueType"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Normal"
+        },
+        {
+          "Value": "1",
+          "Name": "Rotate90"
+        },
+        {
+          "Value": "2",
+          "Name": "Rotate180"
+        },
+        {
+          "Value": "3",
+          "Name": "Rotate270"
+        }
+      ],
+      "Name": "Windows.Data.Pdf.PdfPageRotation"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "NotNormalized"
+        },
+        {
+          "Value": "1",
+          "Name": "Number"
+        },
+        {
+          "Value": "3",
+          "Name": "Currency"
+        },
+        {
+          "Value": "4",
+          "Name": "Date"
+        },
+        {
+          "Value": "5",
+          "Name": "Time"
+        }
+      ],
+      "Name": "Windows.Data.Text.AlternateNormalizationFormat"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "UppercaseLetter"
+        },
+        {
+          "Value": "1",
+          "Name": "LowercaseLetter"
+        },
+        {
+          "Value": "2",
+          "Name": "TitlecaseLetter"
+        },
+        {
+          "Value": "3",
+          "Name": "ModifierLetter"
+        },
+        {
+          "Value": "4",
+          "Name": "OtherLetter"
+        },
+        {
+          "Value": "5",
+          "Name": "NonspacingMark"
+        },
+        {
+          "Value": "6",
+          "Name": "SpacingCombiningMark"
+        },
+        {
+          "Value": "7",
+          "Name": "EnclosingMark"
+        },
+        {
+          "Value": "8",
+          "Name": "DecimalDigitNumber"
+        },
+        {
+          "Value": "9",
+          "Name": "LetterNumber"
+        },
+        {
+          "Value": "10",
+          "Name": "OtherNumber"
+        },
+        {
+          "Value": "11",
+          "Name": "SpaceSeparator"
+        },
+        {
+          "Value": "12",
+          "Name": "LineSeparator"
+        },
+        {
+          "Value": "13",
+          "Name": "ParagraphSeparator"
+        },
+        {
+          "Value": "14",
+          "Name": "Control"
+        },
+        {
+          "Value": "15",
+          "Name": "Format"
+        },
+        {
+          "Value": "16",
+          "Name": "Surrogate"
+        },
+        {
+          "Value": "17",
+          "Name": "PrivateUse"
+        },
+        {
+          "Value": "18",
+          "Name": "ConnectorPunctuation"
+        },
+        {
+          "Value": "19",
+          "Name": "DashPunctuation"
+        },
+        {
+          "Value": "20",
+          "Name": "OpenPunctuation"
+        },
+        {
+          "Value": "21",
+          "Name": "ClosePunctuation"
+        },
+        {
+          "Value": "22",
+          "Name": "InitialQuotePunctuation"
+        },
+        {
+          "Value": "23",
+          "Name": "FinalQuotePunctuation"
+        },
+        {
+          "Value": "24",
+          "Name": "OtherPunctuation"
+        },
+        {
+          "Value": "25",
+          "Name": "MathSymbol"
+        },
+        {
+          "Value": "26",
+          "Name": "CurrencySymbol"
+        },
+        {
+          "Value": "27",
+          "Name": "ModifierSymbol"
+        },
+        {
+          "Value": "28",
+          "Name": "OtherSymbol"
+        },
+        {
+          "Value": "29",
+          "Name": "NotAssigned"
+        }
+      ],
+      "Name": "Windows.Data.Text.UnicodeGeneralCategory"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "None"
+        },
+        {
+          "Value": "1",
+          "Name": "Decimal"
+        },
+        {
+          "Value": "2",
+          "Name": "Digit"
+        },
+        {
+          "Value": "3",
+          "Name": "Numeric"
+        }
+      ],
+      "Name": "Windows.Data.Text.UnicodeNumericType"
+    },
+    {
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Value": "0",
+          "Name": "Invalid"
+        },
+        {
+          "Value": "1",
+          "Name": "ElementNode"
+        },
+        {
+          "Value": "2",
+          "Name": "AttributeNode"
+        },
+        {
+          "Value": "3",
+          "Name": "TextNode"
+        },
+        {
+          "Value": "4",
+          "Name": "DataSectionNode"
+        },
+        {
+          "Value": "5",
+          "Name": "EntityReferenceNode"
+        },
+        {
+          "Value": "6",
+          "Name": "EntityNode"
+        },
+        {
+          "Value": "7",
+          "Name": "ProcessingInstructionNode"
+        },
+        {
+          "Value": "8",
+          "Name": "CommentNode"
+        },
+        {
+          "Value": "9",
+          "Name": "DocumentNode"
+        },
+        {
+          "Value": "10",
+          "Name": "DocumentTypeNode"
+        },
+        {
+          "Value": "11",
+          "Name": "DocumentFragmentNode"
+        },
+        {
+          "Value": "12",
+          "Name": "NotationNode"
+        }
+      ],
+      "Name": "Windows.Data.Xml.Dom.NodeType"
+    }
+  ],
+  "Delegates": [
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "precedingWords",
+          "Type": "IEnumerable<WordSegment>"
+        },
+        {
+          "Name": "words",
+          "Type": "IEnumerable<WordSegment>"
+        }
+      ],
+      "Name": "Windows.Data.Text.WordSegmentsTokenizingHandler"
+    },
+    {
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "precedingWords",
+          "Type": "IEnumerable<SelectableWordSegment>"
+        },
+        {
+          "Name": "words",
+          "Type": "IEnumerable<SelectableWordSegment>"
+        }
+      ],
+      "Name": "Windows.Data.Text.SelectableWordSegmentsTokenizingHandler"
+    }
+  ]
+}
