@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="3dc7d128-4168-407d-a5a4-1dfa5177ab4a" Publisher="CN=marti" Version="1.0.0.0" />
+  <Identity Name="3dc7d128-4168-407d-a5a4-1dfa5177ab4a" Publisher="CN=martin.suchan" Version="1.0.0.0" />
   <Properties>
     <DisplayName>ApiPeek.App</DisplayName>
     <PublisherDisplayName>marti</PublisherDisplayName>
