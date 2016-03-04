@@ -1,0 +1,4158 @@
+{
+  "Name": "Windows.Globalization, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime",
+  "Enums": [
+    {
+      "Name": "Windows.Globalization.DayOfWeek",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Sunday",
+          "Value": "0"
+        },
+        {
+          "Name": "Monday",
+          "Value": "1"
+        },
+        {
+          "Name": "Tuesday",
+          "Value": "2"
+        },
+        {
+          "Name": "Wednesday",
+          "Value": "3"
+        },
+        {
+          "Name": "Thursday",
+          "Value": "4"
+        },
+        {
+          "Name": "Friday",
+          "Value": "5"
+        },
+        {
+          "Name": "Saturday",
+          "Value": "6"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.DateTimeFormatting.YearFormat",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Default",
+          "Value": "1"
+        },
+        {
+          "Name": "Abbreviated",
+          "Value": "2"
+        },
+        {
+          "Name": "Full",
+          "Value": "3"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.DateTimeFormatting.MonthFormat",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Default",
+          "Value": "1"
+        },
+        {
+          "Name": "Abbreviated",
+          "Value": "2"
+        },
+        {
+          "Name": "Full",
+          "Value": "3"
+        },
+        {
+          "Name": "Numeric",
+          "Value": "4"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.DateTimeFormatting.DayOfWeekFormat",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Default",
+          "Value": "1"
+        },
+        {
+          "Name": "Abbreviated",
+          "Value": "2"
+        },
+        {
+          "Name": "Full",
+          "Value": "3"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.DateTimeFormatting.DayFormat",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Default",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.DateTimeFormatting.HourFormat",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Default",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.DateTimeFormatting.MinuteFormat",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Default",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.DateTimeFormatting.SecondFormat",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Default",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.NumberFormatting.RoundingAlgorithm",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "RoundDown",
+          "Value": "1"
+        },
+        {
+          "Name": "RoundUp",
+          "Value": "2"
+        },
+        {
+          "Name": "RoundTowardsZero",
+          "Value": "3"
+        },
+        {
+          "Name": "RoundAwayFromZero",
+          "Value": "4"
+        },
+        {
+          "Name": "RoundHalfDown",
+          "Value": "5"
+        },
+        {
+          "Name": "RoundHalfUp",
+          "Value": "6"
+        },
+        {
+          "Name": "RoundHalfTowardsZero",
+          "Value": "7"
+        },
+        {
+          "Name": "RoundHalfAwayFromZero",
+          "Value": "8"
+        },
+        {
+          "Name": "RoundHalfToEven",
+          "Value": "9"
+        },
+        {
+          "Name": "RoundHalfToOdd",
+          "Value": "10"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.NumberFormatting.CurrencyFormatterMode",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "UseSymbol",
+          "Value": "0"
+        },
+        {
+          "Name": "UseCurrencyCode",
+          "Value": "1"
+        }
+      ]
+    }
+  ],
+  "Interfaces": [
+    {
+      "Name": "Windows.Globalization.NumberFormatting.INumberRounder",
+      "Methods": [
+        {
+          "Name": "RoundInt32",
+          "ReturnType": "Int32",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "RoundUInt32",
+          "ReturnType": "UInt32",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "RoundInt64",
+          "ReturnType": "Int64",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int64"
+            }
+          ]
+        },
+        {
+          "Name": "RoundUInt64",
+          "ReturnType": "UInt64",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "RoundSingle",
+          "ReturnType": "Single",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Single"
+            }
+          ]
+        },
+        {
+          "Name": "RoundDouble",
+          "ReturnType": "Double",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Double"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.NumberFormatting.INumberFormatter",
+      "Methods": [
+        {
+          "Name": "Format",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int64"
+            }
+          ]
+        },
+        {
+          "Name": "Format",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "Format",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Double"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.NumberFormatting.INumberFormatter2",
+      "Methods": [
+        {
+          "Name": "FormatInt",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int64"
+            }
+          ]
+        },
+        {
+          "Name": "FormatUInt",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "FormatDouble",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Double"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.NumberFormatting.INumberParser",
+      "Methods": [
+        {
+          "Name": "ParseInt",
+          "ReturnType": "Nullable<Int64>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "ParseUInt",
+          "ReturnType": "Nullable<UInt64>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "ParseDouble",
+          "ReturnType": "Nullable<Double>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.NumberFormatting.INumberFormatterOptions",
+      "Properties": [
+        {
+          "Name": "FractionDigits",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "GeographicRegion",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "IntegerDigits",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsDecimalPointAlwaysDisplayed",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsGrouped",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Languages",
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true
+        },
+        {
+          "Name": "NumeralSystem",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "ResolvedGeographicRegion",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "ResolvedLanguage",
+          "Type": "String",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.NumberFormatting.ISignificantDigitsOption",
+      "Properties": [
+        {
+          "Name": "SignificantDigits",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.NumberFormatting.INumberRounderOption",
+      "Properties": [
+        {
+          "Name": "NumberRounder",
+          "Type": "INumberRounder",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.NumberFormatting.ISignedZeroOption",
+      "Properties": [
+        {
+          "Name": "IsZeroSigned",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    }
+  ],
+  "Structs": [
+    {
+      "Name": "Windows.Globalization.GlobalizationJapanesePhoneticAnalyzerContract"
+    }
+  ],
+  "Classes": [
+    {
+      "Name": "Windows.Globalization.Fonts.LanguageFont",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "FontFamily",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "FontStretch",
+          "Type": "FontStretch",
+          "IsGet": true
+        },
+        {
+          "Name": "FontStyle",
+          "Type": "FontStyle",
+          "IsGet": true
+        },
+        {
+          "Name": "FontWeight",
+          "Type": "FontWeight",
+          "IsGet": true
+        },
+        {
+          "Name": "ScaleFactor",
+          "Type": "Double",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.Fonts.LanguageFontGroup",
+      "IsSealed": true,
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "languageTag",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "DocumentAlternate1Font",
+          "Type": "LanguageFont",
+          "IsGet": true
+        },
+        {
+          "Name": "DocumentAlternate2Font",
+          "Type": "LanguageFont",
+          "IsGet": true
+        },
+        {
+          "Name": "DocumentHeadingFont",
+          "Type": "LanguageFont",
+          "IsGet": true
+        },
+        {
+          "Name": "FixedWidthTextFont",
+          "Type": "LanguageFont",
+          "IsGet": true
+        },
+        {
+          "Name": "ModernDocumentFont",
+          "Type": "LanguageFont",
+          "IsGet": true
+        },
+        {
+          "Name": "TraditionalDocumentFont",
+          "Type": "LanguageFont",
+          "IsGet": true
+        },
+        {
+          "Name": "UICaptionFont",
+          "Type": "LanguageFont",
+          "IsGet": true
+        },
+        {
+          "Name": "UIHeadingFont",
+          "Type": "LanguageFont",
+          "IsGet": true
+        },
+        {
+          "Name": "UINotificationHeadingFont",
+          "Type": "LanguageFont",
+          "IsGet": true
+        },
+        {
+          "Name": "UITextFont",
+          "Type": "LanguageFont",
+          "IsGet": true
+        },
+        {
+          "Name": "UITitleFont",
+          "Type": "LanguageFont",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.CalendarIdentifiers",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "Gregorian",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Hebrew",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Hijri",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Japanese",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Julian",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Korean",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Taiwan",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Thai",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "UmAlQura",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Persian",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.ClockIdentifiers",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "TwelveHour",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "TwentyFourHour",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.NumeralSystemIdentifiers",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "FullWide",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Arab",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ArabExt",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Bali",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Beng",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Cham",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Deva",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MymrShan",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Gujr",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Guru",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "HaniDec",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Java",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Kali",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Khmr",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Knda",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Lana",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "LanaTham",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Laoo",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Latn",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Lepc",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Limb",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Mlym",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Mong",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Mtei",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Mymr",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Nkoo",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Olck",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Orya",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Saur",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Sund",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Talu",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "TamlDec",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Telu",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Thai",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Tibt",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Vaii",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MathBold",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MathDbl",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MathMono",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MathSanb",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MathSans",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Osma",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ZmthBold",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ZmthDbl",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ZmthMono",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ZmthSanb",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ZmthSans",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Brah",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.CurrencyIdentifiers",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "AED",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "AFN",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ALL",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "AMD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ANG",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "AOA",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ARS",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "AUD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "AWG",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "AZN",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "BAM",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "BBD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "BDT",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "BGN",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "BHD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "BIF",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "BMD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "BND",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "BOB",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "BRL",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "BSD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "BTN",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "BWP",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "BYR",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "BZD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "CAD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "CDF",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "CHF",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "CLP",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "CNY",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "COP",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "CRC",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "CUP",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "CVE",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "CZK",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "DJF",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "DKK",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "DOP",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "DZD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "EGP",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ERN",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ETB",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "EUR",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "FJD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "FKP",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "GBP",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "GEL",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "GHS",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "GIP",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "GMD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "GNF",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "GTQ",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "GYD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "HKD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "HNL",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "HRK",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "HTG",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "HUF",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "IDR",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ILS",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "INR",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "IQD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "IRR",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ISK",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "JMD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "JOD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "JPY",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "KES",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "KGS",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "KHR",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "KMF",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "KPW",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "KRW",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "KWD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "KYD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "KZT",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "LAK",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "LBP",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "LKR",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "LRD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "LSL",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "LTL",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "LVL",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "LYD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MAD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MDL",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MGA",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MKD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MMK",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MNT",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MOP",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MRO",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MUR",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MVR",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MWK",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MXN",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MYR",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MZN",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "NAD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "NGN",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "NIO",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "NOK",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "NPR",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "NZD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "OMR",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "PAB",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "PEN",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "PGK",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "PHP",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "PKR",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "PLN",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "PYG",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "QAR",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "RON",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "RSD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "RUB",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "RWF",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SAR",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SBD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SCR",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SDG",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SEK",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SGD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SHP",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SLL",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SOS",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SRD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "STD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SYP",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SZL",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "THB",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "TJS",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "TMT",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "TND",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "TOP",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "TRY",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "TTD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "TWD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "TZS",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "UAH",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "UGX",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "USD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "UYU",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "UZS",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "VEF",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "VND",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "VUV",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "WST",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "XAF",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "XCD",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "XOF",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "XPF",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "XXX",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "YER",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ZAR",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ZMW",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ZWL",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.GeographicRegion",
+      "IsSealed": true,
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "geographicRegionCode",
+              "Type": "String"
+            }
+          ]
+        },
+        {}
+      ],
+      "Properties": [
+        {
+          "Name": "Code",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "CodeThreeDigit",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "CodeThreeLetter",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "CodeTwoLetter",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "CurrenciesInUse",
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true
+        },
+        {
+          "Name": "DisplayName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "NativeName",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "IsSupported",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "geographicRegionCode",
+              "Type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.Language",
+      "IsSealed": true,
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "languageTag",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "DisplayName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "LanguageTag",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "NativeName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Script",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "CurrentInputMethodLanguageTag",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetExtensionSubtags",
+          "ReturnType": "IReadOnlyList<String>",
+          "Parameters": [
+            {
+              "Name": "singleton",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "TrySetInputMethodLanguageTag",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "languageTag",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "IsWellFormed",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "languageTag",
+              "Type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.DateTimeFormatting.DateTimeFormatter",
+      "IsSealed": true,
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "formatTemplate",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "formatTemplate",
+              "Type": "String"
+            },
+            {
+              "Name": "languages",
+              "Type": "IEnumerable<String>"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "formatTemplate",
+              "Type": "String"
+            },
+            {
+              "Name": "languages",
+              "Type": "IEnumerable<String>"
+            },
+            {
+              "Name": "geographicRegion",
+              "Type": "String"
+            },
+            {
+              "Name": "calendar",
+              "Type": "String"
+            },
+            {
+              "Name": "clock",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "yearFormat",
+              "Type": "YearFormat"
+            },
+            {
+              "Name": "monthFormat",
+              "Type": "MonthFormat"
+            },
+            {
+              "Name": "dayFormat",
+              "Type": "DayFormat"
+            },
+            {
+              "Name": "dayOfWeekFormat",
+              "Type": "DayOfWeekFormat"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "hourFormat",
+              "Type": "HourFormat"
+            },
+            {
+              "Name": "minuteFormat",
+              "Type": "MinuteFormat"
+            },
+            {
+              "Name": "secondFormat",
+              "Type": "SecondFormat"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "yearFormat",
+              "Type": "YearFormat"
+            },
+            {
+              "Name": "monthFormat",
+              "Type": "MonthFormat"
+            },
+            {
+              "Name": "dayFormat",
+              "Type": "DayFormat"
+            },
+            {
+              "Name": "dayOfWeekFormat",
+              "Type": "DayOfWeekFormat"
+            },
+            {
+              "Name": "hourFormat",
+              "Type": "HourFormat"
+            },
+            {
+              "Name": "minuteFormat",
+              "Type": "MinuteFormat"
+            },
+            {
+              "Name": "secondFormat",
+              "Type": "SecondFormat"
+            },
+            {
+              "Name": "languages",
+              "Type": "IEnumerable<String>"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "yearFormat",
+              "Type": "YearFormat"
+            },
+            {
+              "Name": "monthFormat",
+              "Type": "MonthFormat"
+            },
+            {
+              "Name": "dayFormat",
+              "Type": "DayFormat"
+            },
+            {
+              "Name": "dayOfWeekFormat",
+              "Type": "DayOfWeekFormat"
+            },
+            {
+              "Name": "hourFormat",
+              "Type": "HourFormat"
+            },
+            {
+              "Name": "minuteFormat",
+              "Type": "MinuteFormat"
+            },
+            {
+              "Name": "secondFormat",
+              "Type": "SecondFormat"
+            },
+            {
+              "Name": "languages",
+              "Type": "IEnumerable<String>"
+            },
+            {
+              "Name": "geographicRegion",
+              "Type": "String"
+            },
+            {
+              "Name": "calendar",
+              "Type": "String"
+            },
+            {
+              "Name": "clock",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "NumeralSystem",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Clock",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "GeographicRegion",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "IncludeDay",
+          "Type": "DayFormat",
+          "IsGet": true
+        },
+        {
+          "Name": "IncludeDayOfWeek",
+          "Type": "DayOfWeekFormat",
+          "IsGet": true
+        },
+        {
+          "Name": "IncludeHour",
+          "Type": "HourFormat",
+          "IsGet": true
+        },
+        {
+          "Name": "IncludeMinute",
+          "Type": "MinuteFormat",
+          "IsGet": true
+        },
+        {
+          "Name": "IncludeMonth",
+          "Type": "MonthFormat",
+          "IsGet": true
+        },
+        {
+          "Name": "IncludeSecond",
+          "Type": "SecondFormat",
+          "IsGet": true
+        },
+        {
+          "Name": "IncludeYear",
+          "Type": "YearFormat",
+          "IsGet": true
+        },
+        {
+          "Name": "Languages",
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true
+        },
+        {
+          "Name": "Calendar",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Patterns",
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true
+        },
+        {
+          "Name": "ResolvedGeographicRegion",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "ResolvedLanguage",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Template",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "LongDate",
+          "Type": "DateTimeFormatter",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "LongTime",
+          "Type": "DateTimeFormatter",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ShortDate",
+          "Type": "DateTimeFormatter",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ShortTime",
+          "Type": "DateTimeFormatter",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Format",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "DateTimeOffset"
+            }
+          ]
+        },
+        {
+          "Name": "Format",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "datetime",
+              "Type": "DateTimeOffset"
+            },
+            {
+              "Name": "timeZoneId",
+              "Type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.Calendar",
+      "IsSealed": true,
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "languages",
+              "Type": "IEnumerable<String>"
+            },
+            {
+              "Name": "calendar",
+              "Type": "String"
+            },
+            {
+              "Name": "clock",
+              "Type": "String"
+            },
+            {
+              "Name": "timeZoneId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "languages",
+              "Type": "IEnumerable<String>"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "languages",
+              "Type": "IEnumerable<String>"
+            },
+            {
+              "Name": "calendar",
+              "Type": "String"
+            },
+            {
+              "Name": "clock",
+              "Type": "String"
+            }
+          ]
+        },
+        {}
+      ],
+      "Properties": [
+        {
+          "Name": "Year",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Second",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Period",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Nanosecond",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Month",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Minute",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "NumeralSystem",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Era",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Hour",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Day",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "FirstSecondInThisMinute",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "FirstYearInThisEra",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "IsDaylightSavingTime",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Languages",
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true
+        },
+        {
+          "Name": "LastDayInThisMonth",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "LastEra",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "LastHourInThisPeriod",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "LastMinuteInThisHour",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "LastMonthInThisYear",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "LastSecondInThisMinute",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "LastYearInThisEra",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "DayOfWeek",
+          "Type": "DayOfWeek",
+          "IsGet": true
+        },
+        {
+          "Name": "FirstDayInThisMonth",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "LastPeriodInThisDay",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "FirstEra",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "NumberOfDaysInThisMonth",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "NumberOfEras",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "NumberOfHoursInThisPeriod",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "NumberOfMinutesInThisHour",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "FirstHourInThisPeriod",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "NumberOfMonthsInThisYear",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "NumberOfPeriodsInThisDay",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "NumberOfSecondsInThisMinute",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "NumberOfYearsInThisEra",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "FirstMinuteInThisHour",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "ResolvedLanguage",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "FirstMonthInThisYear",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "FirstPeriodInThisDay",
+          "Type": "Int32",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Clone",
+          "ReturnType": "Calendar"
+        },
+        {
+          "Name": "SetToMin",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "SetToMax",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "GetCalendarSystem",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "ChangeCalendarSystem",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "GetClock",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "ChangeClock",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "GetDateTime",
+          "ReturnType": "DateTimeOffset"
+        },
+        {
+          "Name": "SetDateTime",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "DateTimeOffset"
+            }
+          ]
+        },
+        {
+          "Name": "SetToNow",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "AddEras",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "eras",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "EraAsString",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "EraAsString",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "idealLength",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddYears",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "years",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "YearAsString",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "YearAsTruncatedString",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "remainingDigits",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "YearAsPaddedString",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "minDigits",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddMonths",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "months",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "MonthAsString",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "MonthAsString",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "idealLength",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "MonthAsSoloString",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "MonthAsSoloString",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "idealLength",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "MonthAsNumericString",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "MonthAsPaddedNumericString",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "minDigits",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddWeeks",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "weeks",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddDays",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "days",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "DayAsString",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "DayAsPaddedString",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "minDigits",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "DayOfWeekAsString",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "DayOfWeekAsString",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "idealLength",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "DayOfWeekAsSoloString",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "DayOfWeekAsSoloString",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "idealLength",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddPeriods",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "periods",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "PeriodAsString",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "PeriodAsString",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "idealLength",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddHours",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "hours",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "HourAsString",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "HourAsPaddedString",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "minDigits",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddMinutes",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "minutes",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "MinuteAsString",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "MinuteAsPaddedString",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "minDigits",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddSeconds",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "seconds",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "SecondAsString",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "SecondAsPaddedString",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "minDigits",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddNanoseconds",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "nanoseconds",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "NanosecondAsString",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "NanosecondAsPaddedString",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "minDigits",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "Compare",
+          "ReturnType": "Int32",
+          "Parameters": [
+            {
+              "Name": "other",
+              "Type": "Calendar"
+            }
+          ]
+        },
+        {
+          "Name": "CompareDateTime",
+          "ReturnType": "Int32",
+          "Parameters": [
+            {
+              "Name": "other",
+              "Type": "DateTimeOffset"
+            }
+          ]
+        },
+        {
+          "Name": "CopyTo",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "other",
+              "Type": "Calendar"
+            }
+          ]
+        },
+        {
+          "Name": "GetTimeZone",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "ChangeTimeZone",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "timeZoneId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "TimeZoneAsString",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "TimeZoneAsString",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "idealLength",
+              "Type": "Int32"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.NumberFormatting.SignificantDigitsNumberRounder",
+      "IsSealed": true,
+      "Interfaces": [
+        "INumberRounder"
+      ],
+      "Properties": [
+        {
+          "Name": "SignificantDigits",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "RoundingAlgorithm",
+          "Type": "RoundingAlgorithm",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "RoundInt32",
+          "ReturnType": "Int32",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "RoundUInt32",
+          "ReturnType": "UInt32",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "RoundInt64",
+          "ReturnType": "Int64",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int64"
+            }
+          ]
+        },
+        {
+          "Name": "RoundUInt64",
+          "ReturnType": "UInt64",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "RoundSingle",
+          "ReturnType": "Single",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Single"
+            }
+          ]
+        },
+        {
+          "Name": "RoundDouble",
+          "ReturnType": "Double",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Double"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.NumberFormatting.IncrementNumberRounder",
+      "IsSealed": true,
+      "Interfaces": [
+        "INumberRounder"
+      ],
+      "Properties": [
+        {
+          "Name": "RoundingAlgorithm",
+          "Type": "RoundingAlgorithm",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Increment",
+          "Type": "Double",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "RoundInt32",
+          "ReturnType": "Int32",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "RoundUInt32",
+          "ReturnType": "UInt32",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "RoundInt64",
+          "ReturnType": "Int64",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int64"
+            }
+          ]
+        },
+        {
+          "Name": "RoundUInt64",
+          "ReturnType": "UInt64",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "RoundSingle",
+          "ReturnType": "Single",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Single"
+            }
+          ]
+        },
+        {
+          "Name": "RoundDouble",
+          "ReturnType": "Double",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Double"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.NumberFormatting.DecimalFormatter",
+      "IsSealed": true,
+      "Interfaces": [
+        "INumberFormatterOptions",
+        "INumberFormatter",
+        "INumberFormatter2",
+        "INumberParser",
+        "ISignificantDigitsOption",
+        "INumberRounderOption",
+        "ISignedZeroOption"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "languages",
+              "Type": "IEnumerable<String>"
+            },
+            {
+              "Name": "geographicRegion",
+              "Type": "String"
+            }
+          ]
+        },
+        {}
+      ],
+      "Properties": [
+        {
+          "Name": "IsDecimalPointAlwaysDisplayed",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IntegerDigits",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsGrouped",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "NumeralSystem",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "FractionDigits",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "GeographicRegion",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Languages",
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true
+        },
+        {
+          "Name": "ResolvedGeographicRegion",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "ResolvedLanguage",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "NumberRounder",
+          "Type": "INumberRounder",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsZeroSigned",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "SignificantDigits",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Format",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int64"
+            }
+          ]
+        },
+        {
+          "Name": "Format",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "Format",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "FormatInt",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int64"
+            }
+          ]
+        },
+        {
+          "Name": "FormatUInt",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "FormatDouble",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "ParseInt",
+          "ReturnType": "Nullable<Int64>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "ParseUInt",
+          "ReturnType": "Nullable<UInt64>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "ParseDouble",
+          "ReturnType": "Nullable<Double>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.NumberFormatting.PercentFormatter",
+      "IsSealed": true,
+      "Interfaces": [
+        "INumberFormatterOptions",
+        "INumberFormatter",
+        "INumberFormatter2",
+        "INumberParser",
+        "ISignificantDigitsOption",
+        "INumberRounderOption",
+        "ISignedZeroOption"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "languages",
+              "Type": "IEnumerable<String>"
+            },
+            {
+              "Name": "geographicRegion",
+              "Type": "String"
+            }
+          ]
+        },
+        {}
+      ],
+      "Properties": [
+        {
+          "Name": "IsDecimalPointAlwaysDisplayed",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IntegerDigits",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsGrouped",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "NumeralSystem",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "FractionDigits",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "GeographicRegion",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Languages",
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true
+        },
+        {
+          "Name": "ResolvedGeographicRegion",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "ResolvedLanguage",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "NumberRounder",
+          "Type": "INumberRounder",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsZeroSigned",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "SignificantDigits",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Format",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int64"
+            }
+          ]
+        },
+        {
+          "Name": "Format",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "Format",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "FormatInt",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int64"
+            }
+          ]
+        },
+        {
+          "Name": "FormatUInt",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "FormatDouble",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "ParseInt",
+          "ReturnType": "Nullable<Int64>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "ParseUInt",
+          "ReturnType": "Nullable<UInt64>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "ParseDouble",
+          "ReturnType": "Nullable<Double>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.NumberFormatting.PermilleFormatter",
+      "IsSealed": true,
+      "Interfaces": [
+        "INumberFormatterOptions",
+        "INumberFormatter",
+        "INumberFormatter2",
+        "INumberParser",
+        "ISignificantDigitsOption",
+        "INumberRounderOption",
+        "ISignedZeroOption"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "languages",
+              "Type": "IEnumerable<String>"
+            },
+            {
+              "Name": "geographicRegion",
+              "Type": "String"
+            }
+          ]
+        },
+        {}
+      ],
+      "Properties": [
+        {
+          "Name": "IsDecimalPointAlwaysDisplayed",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IntegerDigits",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsGrouped",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "NumeralSystem",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "FractionDigits",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "GeographicRegion",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Languages",
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true
+        },
+        {
+          "Name": "ResolvedGeographicRegion",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "ResolvedLanguage",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "NumberRounder",
+          "Type": "INumberRounder",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsZeroSigned",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "SignificantDigits",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Format",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int64"
+            }
+          ]
+        },
+        {
+          "Name": "Format",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "Format",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "FormatInt",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int64"
+            }
+          ]
+        },
+        {
+          "Name": "FormatUInt",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "FormatDouble",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "ParseInt",
+          "ReturnType": "Nullable<Int64>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "ParseUInt",
+          "ReturnType": "Nullable<UInt64>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "ParseDouble",
+          "ReturnType": "Nullable<Double>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.NumberFormatting.CurrencyFormatter",
+      "IsSealed": true,
+      "Interfaces": [
+        "INumberFormatterOptions",
+        "INumberFormatter",
+        "INumberFormatter2",
+        "INumberParser",
+        "ISignificantDigitsOption",
+        "INumberRounderOption",
+        "ISignedZeroOption"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "currencyCode",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "currencyCode",
+              "Type": "String"
+            },
+            {
+              "Name": "languages",
+              "Type": "IEnumerable<String>"
+            },
+            {
+              "Name": "geographicRegion",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "Currency",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Mode",
+          "Type": "CurrencyFormatterMode",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "NumeralSystem",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsGrouped",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsDecimalPointAlwaysDisplayed",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IntegerDigits",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "FractionDigits",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "GeographicRegion",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "ResolvedGeographicRegion",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "ResolvedLanguage",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Languages",
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true
+        },
+        {
+          "Name": "NumberRounder",
+          "Type": "INumberRounder",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsZeroSigned",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "SignificantDigits",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Format",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int64"
+            }
+          ]
+        },
+        {
+          "Name": "Format",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "Format",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "FormatInt",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Int64"
+            }
+          ]
+        },
+        {
+          "Name": "FormatUInt",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "FormatDouble",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "ParseInt",
+          "ReturnType": "Nullable<Int64>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "ParseUInt",
+          "ReturnType": "Nullable<UInt64>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "ParseDouble",
+          "ReturnType": "Nullable<Double>",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "ApplyRoundingForCurrency",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "roundingAlgorithm",
+              "Type": "RoundingAlgorithm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.NumberFormatting.NumeralSystemTranslator",
+      "IsSealed": true,
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "languages",
+              "Type": "IEnumerable<String>"
+            }
+          ]
+        },
+        {}
+      ],
+      "Properties": [
+        {
+          "Name": "NumeralSystem",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Languages",
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true
+        },
+        {
+          "Name": "ResolvedLanguage",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "TranslateNumerals",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.Collation.CharacterGrouping",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "First",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Label",
+          "Type": "String",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.Collation.CharacterGroupings",
+      "IsSealed": true,
+      "Interfaces": [
+        "IReadOnlyList<CharacterGrouping>",
+        "IReadOnlyCollection<CharacterGrouping>",
+        "IEnumerable<CharacterGrouping>",
+        "IEnumerable"
+      ],
+      "Properties": [
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Lookup",
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.ApplicationLanguages",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "PrimaryLanguageOverride",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Languages",
+          "Type": "IReadOnlyList<String>",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ManifestLanguages",
+          "Type": "IReadOnlyList<String>",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.JapanesePhoneme",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "DisplayText",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "IsPhraseStart",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "YomiText",
+          "Type": "String",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Globalization.JapanesePhoneticAnalyzer",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "GetWords",
+          "IsStatic": true,
+          "ReturnType": "IReadOnlyList<JapanesePhoneme>",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "GetWords",
+          "IsStatic": true,
+          "ReturnType": "IReadOnlyList<JapanesePhoneme>",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "String"
+            },
+            {
+              "Name": "monoRuby",
+              "Type": "Boolean"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
