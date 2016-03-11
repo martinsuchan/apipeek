@@ -161,6 +161,9 @@
     <None Include="api\win10.14271\Windows.Web.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="api\wp10.14283\Windows.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="api\wp10.14267\Windows.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
