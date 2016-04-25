@@ -10,11 +10,11 @@ namespace ApiPeek.Compare.App
             //string path1 = "band.1.3.10929";
             //string path2 = "band.1.3.11121";
 
-            string path1 = "win10.14291";
-            string path2 = "win10.14291";
+            string path1 = "win10.14328";
+            string path2 = "win10.14328";
 
-            //string path1 = "wp10.14291";
-            //string path2 = "wp10.14291";
+            //string path1 = "wp10.14328";
+            //string path2 = "wp10.14328";
 
             MergeAndCompare(false, path1, path2);
             MergeAndCompare(true, path1, path2);
