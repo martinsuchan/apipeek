@@ -389,6 +389,9 @@
     <None Include="api\wp10.14267\Windows.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="api\wp10.14342\Windows.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="App.config" />
     <None Include="api\band.1.3.10219\Microsoft.Band.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
