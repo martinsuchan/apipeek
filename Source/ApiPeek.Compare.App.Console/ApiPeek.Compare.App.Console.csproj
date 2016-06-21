@@ -560,6 +560,9 @@
     <None Include="api\wp10.14267\Windows.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="api\wp10.14367\Windows.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="api\wp10.14361\Windows.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
