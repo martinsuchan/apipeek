@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiPeek.App", "ApiPeek.App", "{516EFA5D-A6DF-4BA8-A02F-74D715E64E4D}"
 EndProject
@@ -17,10 +17,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiPeek.Service", "ApiPeek.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiPeek.Compare.App.Console", "ApiPeek.Compare.App.Console\ApiPeek.Compare.App.Console.csproj", "{96FBACC4-27BD-43C8-910D-1D8CF687C90A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiPeek.App.UWP", "ApiPeek.App.UWP\ApiPeek.App.UWP.csproj", "{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		ApiPeek.App.Shared\ApiPeek.App.Shared.projitems*{7d21e59c-d29d-439c-8b98-71f221e18c56}*SharedItemsImports = 4
 		ApiPeek.App.Shared\ApiPeek.App.Shared.projitems*{3bcb4884-a108-44b0-8317-fa9814185296}*SharedItemsImports = 13
+		ApiPeek.App.Shared\ApiPeek.App.Shared.projitems*{7cefdfa1-49aa-48c8-99e6-7f21a0fd1f4c}*SharedItemsImports = 4
+		ApiPeek.App.Shared\ApiPeek.App.Shared.projitems*{7d21e59c-d29d-439c-8b98-71f221e18c56}*SharedItemsImports = 4
 		ApiPeek.App.Shared\ApiPeek.App.Shared.projitems*{c464fa47-7bf6-45d7-970f-cef4ec1d9832}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -130,6 +133,26 @@ Global
 		{96FBACC4-27BD-43C8-910D-1D8CF687C90A}.Release|x64.Build.0 = Release|Any CPU
 		{96FBACC4-27BD-43C8-910D-1D8CF687C90A}.Release|x86.ActiveCfg = Release|Any CPU
 		{96FBACC4-27BD-43C8-910D-1D8CF687C90A}.Release|x86.Build.0 = Release|Any CPU
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Debug|ARM.ActiveCfg = Debug|ARM
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Debug|ARM.Build.0 = Debug|ARM
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Debug|ARM.Deploy.0 = Debug|ARM
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Debug|x64.ActiveCfg = Debug|x64
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Debug|x64.Build.0 = Debug|x64
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Debug|x64.Deploy.0 = Debug|x64
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Debug|x86.ActiveCfg = Debug|x86
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Debug|x86.Build.0 = Debug|x86
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Debug|x86.Deploy.0 = Debug|x86
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Release|Any CPU.ActiveCfg = Release|x86
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Release|ARM.ActiveCfg = Release|ARM
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Release|ARM.Build.0 = Release|ARM
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Release|ARM.Deploy.0 = Release|ARM
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Release|x64.ActiveCfg = Release|x64
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Release|x64.Build.0 = Release|x64
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Release|x64.Deploy.0 = Release|x64
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Release|x86.ActiveCfg = Release|x86
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Release|x86.Build.0 = Release|x86
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -138,5 +161,6 @@ Global
 		{3BCB4884-A108-44B0-8317-FA9814185296} = {516EFA5D-A6DF-4BA8-A02F-74D715E64E4D}
 		{C464FA47-7BF6-45D7-970F-CEF4EC1D9832} = {516EFA5D-A6DF-4BA8-A02F-74D715E64E4D}
 		{7D21E59C-D29D-439C-8B98-71F221E18C56} = {516EFA5D-A6DF-4BA8-A02F-74D715E64E4D}
+		{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C} = {516EFA5D-A6DF-4BA8-A02F-74D715E64E4D}
 	EndGlobalSection
 EndGlobal
