@@ -7958,18 +7958,7 @@
       ],
       "Methods": [
         {
-          "Name": "GetAnnotationAlternates",
-          "IsStatic": true,
-          "ReturnType": "Int32",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetAnnotationAlternates",
+          "Name": "SetVariants",
           "IsStatic": true,
           "ReturnType": "Void",
           "Parameters": [
@@ -7979,527 +7968,7 @@
             },
             {
               "Name": "value",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "GetEastAsianExpertForms",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetEastAsianExpertForms",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
-          "Name": "GetEastAsianLanguage",
-          "IsStatic": true,
-          "ReturnType": "FontEastAsianLanguage",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetEastAsianLanguage",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "FontEastAsianLanguage"
-            }
-          ]
-        },
-        {
-          "Name": "GetEastAsianWidths",
-          "IsStatic": true,
-          "ReturnType": "FontEastAsianWidths",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetEastAsianWidths",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "FontEastAsianWidths"
-            }
-          ]
-        },
-        {
-          "Name": "GetStandardLigatures",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetStandardLigatures",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
-          "Name": "GetContextualLigatures",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetContextualLigatures",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
-          "Name": "GetDiscretionaryLigatures",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetDiscretionaryLigatures",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
-          "Name": "GetHistoricalLigatures",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetHistoricalLigatures",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
-          "Name": "GetStandardSwashes",
-          "IsStatic": true,
-          "ReturnType": "Int32",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetStandardSwashes",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "GetContextualSwashes",
-          "IsStatic": true,
-          "ReturnType": "Int32",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetContextualSwashes",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "GetContextualAlternates",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetContextualAlternates",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
-          "Name": "GetStylisticAlternates",
-          "IsStatic": true,
-          "ReturnType": "Int32",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetStylisticAlternates",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "GetStylisticSet1",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetStylisticSet1",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
-          "Name": "GetStylisticSet2",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetStylisticSet2",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
-          "Name": "GetStylisticSet3",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetStylisticSet3",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
-          "Name": "GetStylisticSet4",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetStylisticSet4",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
-          "Name": "GetStylisticSet5",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetStylisticSet5",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
-          "Name": "GetStylisticSet6",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetStylisticSet6",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
-          "Name": "GetStylisticSet7",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetStylisticSet7",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
-          "Name": "GetStylisticSet8",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetStylisticSet8",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
-          "Name": "GetStylisticSet9",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetStylisticSet9",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
+              "Type": "FontVariants"
             }
           ]
         },
@@ -9061,7 +8530,18 @@
           ]
         },
         {
-          "Name": "SetVariants",
+          "Name": "GetAnnotationAlternates",
+          "IsStatic": true,
+          "ReturnType": "Int32",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetAnnotationAlternates",
           "IsStatic": true,
           "ReturnType": "Void",
           "Parameters": [
@@ -9071,7 +8551,527 @@
             },
             {
               "Name": "value",
-              "Type": "FontVariants"
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "GetEastAsianExpertForms",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetEastAsianExpertForms",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetEastAsianLanguage",
+          "IsStatic": true,
+          "ReturnType": "FontEastAsianLanguage",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetEastAsianLanguage",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "FontEastAsianLanguage"
+            }
+          ]
+        },
+        {
+          "Name": "GetEastAsianWidths",
+          "IsStatic": true,
+          "ReturnType": "FontEastAsianWidths",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetEastAsianWidths",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "FontEastAsianWidths"
+            }
+          ]
+        },
+        {
+          "Name": "GetStandardLigatures",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetStandardLigatures",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetContextualLigatures",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetContextualLigatures",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetDiscretionaryLigatures",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetDiscretionaryLigatures",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetHistoricalLigatures",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetHistoricalLigatures",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetStandardSwashes",
+          "IsStatic": true,
+          "ReturnType": "Int32",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetStandardSwashes",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "GetContextualSwashes",
+          "IsStatic": true,
+          "ReturnType": "Int32",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetContextualSwashes",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "GetContextualAlternates",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetContextualAlternates",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetStylisticAlternates",
+          "IsStatic": true,
+          "ReturnType": "Int32",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetStylisticAlternates",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "GetStylisticSet1",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetStylisticSet1",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetStylisticSet2",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetStylisticSet2",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetStylisticSet3",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetStylisticSet3",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetStylisticSet4",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetStylisticSet4",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetStylisticSet5",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetStylisticSet5",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetStylisticSet6",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetStylisticSet6",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetStylisticSet7",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetStylisticSet7",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetStylisticSet8",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetStylisticSet8",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetStylisticSet9",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetStylisticSet9",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
             }
           ]
         }
@@ -13707,6 +13707,27 @@
       ],
       "Methods": [
         {
+          "Name": "StartDragAsync",
+          "ReturnType": "IAsyncOperation<DataPackageOperation>",
+          "Parameters": [
+            {
+              "Name": "pointerPoint",
+              "Type": "PointerPoint"
+            }
+          ]
+        },
+        {
+          "Name": "TryStartDirectManipulation",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Pointer"
+            }
+          ]
+        },
+        {
           "Name": "Measure",
           "ReturnType": "Void",
           "Parameters": [
@@ -13807,27 +13828,6 @@
         {
           "Name": "CancelDirectManipulations",
           "ReturnType": "Boolean"
-        },
-        {
-          "Name": "StartDragAsync",
-          "ReturnType": "IAsyncOperation<DataPackageOperation>",
-          "Parameters": [
-            {
-              "Name": "pointerPoint",
-              "Type": "PointerPoint"
-            }
-          ]
-        },
-        {
-          "Name": "TryStartDirectManipulation",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "value",
-              "Type": "Pointer"
-            }
-          ]
         }
       ],
       "Events": [
@@ -14533,6 +14533,16 @@
       ],
       "Methods": [
         {
+          "Name": "GetBindingExpression",
+          "ReturnType": "BindingExpression",
+          "Parameters": [
+            {
+              "Name": "dp",
+              "Type": "DependencyProperty"
+            }
+          ]
+        },
+        {
           "Name": "FindName",
           "ReturnType": "Object",
           "Parameters": [
@@ -14553,16 +14563,6 @@
             {
               "Name": "binding",
               "Type": "BindingBase"
-            }
-          ]
-        },
-        {
-          "Name": "GetBindingExpression",
-          "ReturnType": "BindingExpression",
-          "Parameters": [
-            {
-              "Name": "dp",
-              "Type": "DependencyProperty"
             }
           ]
         }
@@ -16180,6 +16180,10 @@
       ],
       "Methods": [
         {
+          "Name": "GetAlphaMask",
+          "ReturnType": "CompositionBrush"
+        },
+        {
           "Name": "SelectAll",
           "ReturnType": "Void"
         },
@@ -16206,10 +16210,6 @@
               "Type": "FocusState"
             }
           ]
-        },
-        {
-          "Name": "GetAlphaMask",
-          "ReturnType": "CompositionBrush"
         }
       ],
       "Events": [
@@ -18946,6 +18946,55 @@
       ],
       "Methods": [
         {
+          "Name": "NavigateWithHttpRequestMessage",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "requestMessage",
+              "Type": "HttpRequestMessage"
+            }
+          ]
+        },
+        {
+          "Name": "Focus",
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "FocusState"
+            }
+          ]
+        },
+        {
+          "Name": "AddWebAllowedObject",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "pObject",
+              "Type": "Object"
+            }
+          ]
+        },
+        {
+          "Name": "DeferredPermissionRequestById",
+          "ReturnType": "WebViewDeferredPermissionRequest",
+          "Parameters": [
+            {
+              "Name": "id",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "ClearTemporaryWebDataAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction"
+        },
+        {
           "Name": "InvokeScript",
           "ReturnType": "String",
           "Parameters": [
@@ -19050,55 +19099,6 @@
               "Type": "String"
             }
           ]
-        },
-        {
-          "Name": "NavigateWithHttpRequestMessage",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "requestMessage",
-              "Type": "HttpRequestMessage"
-            }
-          ]
-        },
-        {
-          "Name": "Focus",
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "value",
-              "Type": "FocusState"
-            }
-          ]
-        },
-        {
-          "Name": "AddWebAllowedObject",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "pObject",
-              "Type": "Object"
-            }
-          ]
-        },
-        {
-          "Name": "DeferredPermissionRequestById",
-          "ReturnType": "WebViewDeferredPermissionRequest",
-          "Parameters": [
-            {
-              "Name": "id",
-              "Type": "UInt32"
-            }
-          ]
-        },
-        {
-          "Name": "ClearTemporaryWebDataAsync",
-          "IsStatic": true,
-          "ReturnType": "IAsyncAction"
         }
       ],
       "Events": [
@@ -24859,24 +24859,6 @@
       ],
       "Methods": [
         {
-          "Name": "ApplyTemplate",
-          "ReturnType": "Boolean"
-        },
-        {
-          "Name": "Focus",
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "value",
-              "Type": "FocusState"
-            }
-          ]
-        },
-        {
-          "Name": "RemoveFocusEngagement",
-          "ReturnType": "Void"
-        },
-        {
           "Name": "GetIsTemplateFocusTarget",
           "IsStatic": true,
           "ReturnType": "Boolean",
@@ -24899,6 +24881,24 @@
             {
               "Name": "value",
               "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "RemoveFocusEngagement",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "ApplyTemplate",
+          "ReturnType": "Boolean"
+        },
+        {
+          "Name": "Focus",
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "FocusState"
             }
           ]
         }
@@ -26275,6 +26275,10 @@
       ],
       "Methods": [
         {
+          "Name": "GetLinguisticAlternativesAsync",
+          "ReturnType": "IAsyncOperation<IReadOnlyList<String>>"
+        },
+        {
           "Name": "Select",
           "ReturnType": "Void",
           "Parameters": [
@@ -26305,10 +26309,6 @@
               "Type": "Boolean"
             }
           ]
-        },
-        {
-          "Name": "GetLinguisticAlternativesAsync",
-          "ReturnType": "IAsyncOperation<IReadOnlyList<String>>"
         }
       ],
       "Events": [
@@ -27457,6 +27457,30 @@
       ],
       "Methods": [
         {
+          "Name": "SelectRange",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "itemIndexRange",
+              "Type": "ItemIndexRange"
+            }
+          ]
+        },
+        {
+          "Name": "DeselectRange",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "itemIndexRange",
+              "Type": "ItemIndexRange"
+            }
+          ]
+        },
+        {
+          "Name": "IsDragSource",
+          "ReturnType": "Boolean"
+        },
+        {
           "Name": "ScrollIntoView",
           "ReturnType": "Void",
           "Parameters": [
@@ -27571,30 +27595,6 @@
               "Type": "TimeSpan"
             }
           ]
-        },
-        {
-          "Name": "SelectRange",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "itemIndexRange",
-              "Type": "ItemIndexRange"
-            }
-          ]
-        },
-        {
-          "Name": "DeselectRange",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "itemIndexRange",
-              "Type": "ItemIndexRange"
-            }
-          ]
-        },
-        {
-          "Name": "IsDragSource",
-          "ReturnType": "Boolean"
         }
       ],
       "Events": [
@@ -30968,184 +30968,6 @@
       ],
       "Methods": [
         {
-          "Name": "ScrollToHorizontalOffset",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "offset",
-              "Type": "Double"
-            }
-          ]
-        },
-        {
-          "Name": "ScrollToVerticalOffset",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "offset",
-              "Type": "Double"
-            }
-          ]
-        },
-        {
-          "Name": "ZoomToFactor",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "factor",
-              "Type": "Single"
-            }
-          ]
-        },
-        {
-          "Name": "InvalidateScrollInfo",
-          "ReturnType": "Void"
-        },
-        {
-          "Name": "ChangeView",
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "horizontalOffset",
-              "Type": "Nullable<Double>"
-            },
-            {
-              "Name": "verticalOffset",
-              "Type": "Nullable<Double>"
-            },
-            {
-              "Name": "zoomFactor",
-              "Type": "Nullable<Single>"
-            }
-          ]
-        },
-        {
-          "Name": "ChangeView",
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "horizontalOffset",
-              "Type": "Nullable<Double>"
-            },
-            {
-              "Name": "verticalOffset",
-              "Type": "Nullable<Double>"
-            },
-            {
-              "Name": "zoomFactor",
-              "Type": "Nullable<Single>"
-            },
-            {
-              "Name": "disableAnimation",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
-          "Name": "GetHorizontalScrollBarVisibility",
-          "IsStatic": true,
-          "ReturnType": "ScrollBarVisibility",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetHorizontalScrollBarVisibility",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "horizontalScrollBarVisibility",
-              "Type": "ScrollBarVisibility"
-            }
-          ]
-        },
-        {
-          "Name": "GetVerticalScrollBarVisibility",
-          "IsStatic": true,
-          "ReturnType": "ScrollBarVisibility",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetVerticalScrollBarVisibility",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "verticalScrollBarVisibility",
-              "Type": "ScrollBarVisibility"
-            }
-          ]
-        },
-        {
-          "Name": "GetIsHorizontalRailEnabled",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetIsHorizontalRailEnabled",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "isHorizontalRailEnabled",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
-          "Name": "GetIsVerticalRailEnabled",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetIsVerticalRailEnabled",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "isVerticalRailEnabled",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
           "Name": "GetIsHorizontalScrollChainingEnabled",
           "IsStatic": true,
           "ReturnType": "Boolean",
@@ -31401,6 +31223,184 @@
             },
             {
               "Name": "bringIntoViewOnFocusChange",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "ScrollToHorizontalOffset",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "ScrollToVerticalOffset",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "offset",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "ZoomToFactor",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "factor",
+              "Type": "Single"
+            }
+          ]
+        },
+        {
+          "Name": "InvalidateScrollInfo",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "ChangeView",
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "horizontalOffset",
+              "Type": "Nullable<Double>"
+            },
+            {
+              "Name": "verticalOffset",
+              "Type": "Nullable<Double>"
+            },
+            {
+              "Name": "zoomFactor",
+              "Type": "Nullable<Single>"
+            }
+          ]
+        },
+        {
+          "Name": "ChangeView",
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "horizontalOffset",
+              "Type": "Nullable<Double>"
+            },
+            {
+              "Name": "verticalOffset",
+              "Type": "Nullable<Double>"
+            },
+            {
+              "Name": "zoomFactor",
+              "Type": "Nullable<Single>"
+            },
+            {
+              "Name": "disableAnimation",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetHorizontalScrollBarVisibility",
+          "IsStatic": true,
+          "ReturnType": "ScrollBarVisibility",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetHorizontalScrollBarVisibility",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "horizontalScrollBarVisibility",
+              "Type": "ScrollBarVisibility"
+            }
+          ]
+        },
+        {
+          "Name": "GetVerticalScrollBarVisibility",
+          "IsStatic": true,
+          "ReturnType": "ScrollBarVisibility",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetVerticalScrollBarVisibility",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "verticalScrollBarVisibility",
+              "Type": "ScrollBarVisibility"
+            }
+          ]
+        },
+        {
+          "Name": "GetIsHorizontalRailEnabled",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetIsHorizontalRailEnabled",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "isHorizontalRailEnabled",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetIsVerticalRailEnabled",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetIsVerticalRailEnabled",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "isVerticalRailEnabled",
               "Type": "Boolean"
             }
           ]
@@ -32736,6 +32736,58 @@
       ],
       "Methods": [
         {
+          "Name": "GetName",
+          "IsStatic": true,
+          "ReturnType": "String",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetName",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "GetLiveSetting",
+          "IsStatic": true,
+          "ReturnType": "AutomationLiveSetting",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetLiveSetting",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "AutomationLiveSetting"
+            }
+          ]
+        },
+        {
           "Name": "GetIsPeripheral",
           "IsStatic": true,
           "ReturnType": "Boolean",
@@ -33255,58 +33307,6 @@
             {
               "Name": "value",
               "Type": "UIElement"
-            }
-          ]
-        },
-        {
-          "Name": "GetName",
-          "IsStatic": true,
-          "ReturnType": "String",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetName",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "String"
-            }
-          ]
-        },
-        {
-          "Name": "GetLiveSetting",
-          "IsStatic": true,
-          "ReturnType": "AutomationLiveSetting",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetLiveSetting",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "AutomationLiveSetting"
             }
           ]
         }
@@ -33883,6 +33883,128 @@
       ],
       "Methods": [
         {
+          "Name": "Navigate",
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "direction",
+              "Type": "AutomationNavigationDirection"
+            }
+          ]
+        },
+        {
+          "Name": "GetElementFromPoint",
+          "ReturnType": "Object",
+          "Parameters": [
+            {
+              "Name": "pointInWindowCoordinates",
+              "Type": "Point"
+            }
+          ]
+        },
+        {
+          "Name": "GetFocusedElement",
+          "ReturnType": "Object"
+        },
+        {
+          "Name": "ShowContextMenu",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "GetControlledPeers",
+          "ReturnType": "IReadOnlyList<AutomationPeer>"
+        },
+        {
+          "Name": "GetAnnotations",
+          "ReturnType": "IList<AutomationPeerAnnotation>"
+        },
+        {
+          "Name": "SetParent",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "peer",
+              "Type": "AutomationPeer"
+            }
+          ]
+        },
+        {
+          "Name": "RaiseTextEditTextChangedEvent",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "automationTextEditChangeType",
+              "Type": "AutomationTextEditChangeType"
+            },
+            {
+              "Name": "changedData",
+              "Type": "IReadOnlyList<String>"
+            }
+          ]
+        },
+        {
+          "Name": "GetPositionInSet",
+          "ReturnType": "Int32"
+        },
+        {
+          "Name": "GetSizeOfSet",
+          "ReturnType": "Int32"
+        },
+        {
+          "Name": "GetLevel",
+          "ReturnType": "Int32"
+        },
+        {
+          "Name": "RaiseStructureChangedEvent",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "structureChangeType",
+              "Type": "AutomationStructureChangeType"
+            },
+            {
+              "Name": "child",
+              "Type": "AutomationPeer"
+            }
+          ]
+        },
+        {
+          "Name": "GetLandmarkType",
+          "ReturnType": "AutomationLandmarkType"
+        },
+        {
+          "Name": "GetLocalizedLandmarkType",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "IsPeripheral",
+          "ReturnType": "Boolean"
+        },
+        {
+          "Name": "IsDataValidForForm",
+          "ReturnType": "Boolean"
+        },
+        {
+          "Name": "GetFullDescription",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "GenerateRawElementProviderRuntimeId",
+          "IsStatic": true,
+          "ReturnType": "RawElementProviderRuntimeId"
+        },
+        {
+          "Name": "ListenerExists",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "eventId",
+              "Type": "AutomationEvents"
+            }
+          ]
+        },
+        {
           "Name": "GetPattern",
           "ReturnType": "Object",
           "Parameters": [
@@ -34037,128 +34159,6 @@
         {
           "Name": "GetLiveSetting",
           "ReturnType": "AutomationLiveSetting"
-        },
-        {
-          "Name": "Navigate",
-          "ReturnType": "Object",
-          "Parameters": [
-            {
-              "Name": "direction",
-              "Type": "AutomationNavigationDirection"
-            }
-          ]
-        },
-        {
-          "Name": "GetElementFromPoint",
-          "ReturnType": "Object",
-          "Parameters": [
-            {
-              "Name": "pointInWindowCoordinates",
-              "Type": "Point"
-            }
-          ]
-        },
-        {
-          "Name": "GetFocusedElement",
-          "ReturnType": "Object"
-        },
-        {
-          "Name": "ShowContextMenu",
-          "ReturnType": "Void"
-        },
-        {
-          "Name": "GetControlledPeers",
-          "ReturnType": "IReadOnlyList<AutomationPeer>"
-        },
-        {
-          "Name": "GetAnnotations",
-          "ReturnType": "IList<AutomationPeerAnnotation>"
-        },
-        {
-          "Name": "SetParent",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "peer",
-              "Type": "AutomationPeer"
-            }
-          ]
-        },
-        {
-          "Name": "RaiseTextEditTextChangedEvent",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "automationTextEditChangeType",
-              "Type": "AutomationTextEditChangeType"
-            },
-            {
-              "Name": "changedData",
-              "Type": "IReadOnlyList<String>"
-            }
-          ]
-        },
-        {
-          "Name": "GetPositionInSet",
-          "ReturnType": "Int32"
-        },
-        {
-          "Name": "GetSizeOfSet",
-          "ReturnType": "Int32"
-        },
-        {
-          "Name": "GetLevel",
-          "ReturnType": "Int32"
-        },
-        {
-          "Name": "RaiseStructureChangedEvent",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "structureChangeType",
-              "Type": "AutomationStructureChangeType"
-            },
-            {
-              "Name": "child",
-              "Type": "AutomationPeer"
-            }
-          ]
-        },
-        {
-          "Name": "GetLandmarkType",
-          "ReturnType": "AutomationLandmarkType"
-        },
-        {
-          "Name": "GetLocalizedLandmarkType",
-          "ReturnType": "String"
-        },
-        {
-          "Name": "IsPeripheral",
-          "ReturnType": "Boolean"
-        },
-        {
-          "Name": "IsDataValidForForm",
-          "ReturnType": "Boolean"
-        },
-        {
-          "Name": "GetFullDescription",
-          "ReturnType": "String"
-        },
-        {
-          "Name": "GenerateRawElementProviderRuntimeId",
-          "IsStatic": true,
-          "ReturnType": "RawElementProviderRuntimeId"
-        },
-        {
-          "Name": "ListenerExists",
-          "IsStatic": true,
-          "ReturnType": "Boolean",
-          "Parameters": [
-            {
-              "Name": "eventId",
-              "Type": "AutomationEvents"
-            }
-          ]
         }
       ]
     },
@@ -39964,6 +39964,130 @@
       ],
       "Methods": [
         {
+          "Name": "TryTiltAsync",
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "degrees",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "TryTiltToAsync",
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "angleInDegrees",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "TryZoomInAsync",
+          "ReturnType": "IAsyncOperation<Boolean>"
+        },
+        {
+          "Name": "TryZoomOutAsync",
+          "ReturnType": "IAsyncOperation<Boolean>"
+        },
+        {
+          "Name": "TryZoomToAsync",
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "zoomLevel",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "TrySetSceneAsync",
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "Type": "MapScene"
+            }
+          ]
+        },
+        {
+          "Name": "TrySetSceneAsync",
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "Type": "MapScene"
+            },
+            {
+              "Name": "animationKind",
+              "Type": "MapAnimationKind"
+            }
+          ]
+        },
+        {
+          "Name": "GetVisibleRegion",
+          "ReturnType": "Geopath",
+          "Parameters": [
+            {
+              "Name": "region",
+              "Type": "MapVisibleRegionKind"
+            }
+          ]
+        },
+        {
+          "Name": "GetLocation",
+          "IsStatic": true,
+          "ReturnType": "Geopoint",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetLocation",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Geopoint"
+            }
+          ]
+        },
+        {
+          "Name": "GetNormalizedAnchorPoint",
+          "IsStatic": true,
+          "ReturnType": "Point",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            }
+          ]
+        },
+        {
+          "Name": "SetNormalizedAnchorPoint",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "element",
+              "Type": "DependencyObject"
+            },
+            {
+              "Name": "value",
+              "Type": "Point"
+            }
+          ]
+        },
+        {
           "Name": "FindMapElementsAtOffset",
           "ReturnType": "IReadOnlyList<MapElement>",
           "Parameters": [
@@ -40167,130 +40291,6 @@
             {
               "Name": "angleInDegrees",
               "Type": "Double"
-            }
-          ]
-        },
-        {
-          "Name": "TryTiltAsync",
-          "ReturnType": "IAsyncOperation<Boolean>",
-          "Parameters": [
-            {
-              "Name": "degrees",
-              "Type": "Double"
-            }
-          ]
-        },
-        {
-          "Name": "TryTiltToAsync",
-          "ReturnType": "IAsyncOperation<Boolean>",
-          "Parameters": [
-            {
-              "Name": "angleInDegrees",
-              "Type": "Double"
-            }
-          ]
-        },
-        {
-          "Name": "TryZoomInAsync",
-          "ReturnType": "IAsyncOperation<Boolean>"
-        },
-        {
-          "Name": "TryZoomOutAsync",
-          "ReturnType": "IAsyncOperation<Boolean>"
-        },
-        {
-          "Name": "TryZoomToAsync",
-          "ReturnType": "IAsyncOperation<Boolean>",
-          "Parameters": [
-            {
-              "Name": "zoomLevel",
-              "Type": "Double"
-            }
-          ]
-        },
-        {
-          "Name": "TrySetSceneAsync",
-          "ReturnType": "IAsyncOperation<Boolean>",
-          "Parameters": [
-            {
-              "Name": "scene",
-              "Type": "MapScene"
-            }
-          ]
-        },
-        {
-          "Name": "TrySetSceneAsync",
-          "ReturnType": "IAsyncOperation<Boolean>",
-          "Parameters": [
-            {
-              "Name": "scene",
-              "Type": "MapScene"
-            },
-            {
-              "Name": "animationKind",
-              "Type": "MapAnimationKind"
-            }
-          ]
-        },
-        {
-          "Name": "GetVisibleRegion",
-          "ReturnType": "Geopath",
-          "Parameters": [
-            {
-              "Name": "region",
-              "Type": "MapVisibleRegionKind"
-            }
-          ]
-        },
-        {
-          "Name": "GetLocation",
-          "IsStatic": true,
-          "ReturnType": "Geopoint",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetLocation",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Geopoint"
-            }
-          ]
-        },
-        {
-          "Name": "GetNormalizedAnchorPoint",
-          "IsStatic": true,
-          "ReturnType": "Point",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            }
-          ]
-        },
-        {
-          "Name": "SetNormalizedAnchorPoint",
-          "IsStatic": true,
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "element",
-              "Type": "DependencyObject"
-            },
-            {
-              "Name": "value",
-              "Type": "Point"
             }
           ]
         }

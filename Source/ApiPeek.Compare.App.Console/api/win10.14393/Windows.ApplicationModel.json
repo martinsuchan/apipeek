@@ -8027,6 +8027,10 @@
       ],
       "Methods": [
         {
+          "Name": "RegisterSyncManagerAsync",
+          "ReturnType": "IAsyncAction"
+        },
+        {
           "Name": "FindAppointmentsAsync",
           "ReturnType": "IAsyncOperation<IReadOnlyList<Appointment>>",
           "Parameters": [
@@ -8301,10 +8305,6 @@
               "Type": "Boolean"
             }
           ]
-        },
-        {
-          "Name": "RegisterSyncManagerAsync",
-          "ReturnType": "IAsyncAction"
         }
       ]
     },
@@ -15143,6 +15143,64 @@
       ],
       "Methods": [
         {
+          "Name": "ResolveRecipientsAsync",
+          "ReturnType": "IAsyncOperation<IReadOnlyList<EmailRecipientResolutionResult>>",
+          "Parameters": [
+            {
+              "Name": "recipients",
+              "Type": "IEnumerable<String>"
+            }
+          ]
+        },
+        {
+          "Name": "ValidateCertificatesAsync",
+          "ReturnType": "IAsyncOperation<IReadOnlyList<EmailCertificateValidationStatus>>",
+          "Parameters": [
+            {
+              "Name": "certificates",
+              "Type": "IEnumerable<Certificate>"
+            }
+          ]
+        },
+        {
+          "Name": "TryEmptyFolderAsync",
+          "ReturnType": "IAsyncOperation<EmailMailboxEmptyFolderStatus>",
+          "Parameters": [
+            {
+              "Name": "folderId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "TryCreateFolderAsync",
+          "ReturnType": "IAsyncOperation<EmailMailboxCreateFolderResult>",
+          "Parameters": [
+            {
+              "Name": "parentFolderId",
+              "Type": "String"
+            },
+            {
+              "Name": "name",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "TryDeleteFolderAsync",
+          "ReturnType": "IAsyncOperation<EmailMailboxDeleteFolderStatus>",
+          "Parameters": [
+            {
+              "Name": "folderId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "RegisterSyncManagerAsync",
+          "ReturnType": "IAsyncAction"
+        },
+        {
           "Name": "GetConversationReader",
           "ReturnType": "EmailConversationReader"
         },
@@ -15517,64 +15575,6 @@
               "Type": "EmailMailboxAutoReplyMessageResponseKind"
             }
           ]
-        },
-        {
-          "Name": "ResolveRecipientsAsync",
-          "ReturnType": "IAsyncOperation<IReadOnlyList<EmailRecipientResolutionResult>>",
-          "Parameters": [
-            {
-              "Name": "recipients",
-              "Type": "IEnumerable<String>"
-            }
-          ]
-        },
-        {
-          "Name": "ValidateCertificatesAsync",
-          "ReturnType": "IAsyncOperation<IReadOnlyList<EmailCertificateValidationStatus>>",
-          "Parameters": [
-            {
-              "Name": "certificates",
-              "Type": "IEnumerable<Certificate>"
-            }
-          ]
-        },
-        {
-          "Name": "TryEmptyFolderAsync",
-          "ReturnType": "IAsyncOperation<EmailMailboxEmptyFolderStatus>",
-          "Parameters": [
-            {
-              "Name": "folderId",
-              "Type": "String"
-            }
-          ]
-        },
-        {
-          "Name": "TryCreateFolderAsync",
-          "ReturnType": "IAsyncOperation<EmailMailboxCreateFolderResult>",
-          "Parameters": [
-            {
-              "Name": "parentFolderId",
-              "Type": "String"
-            },
-            {
-              "Name": "name",
-              "Type": "String"
-            }
-          ]
-        },
-        {
-          "Name": "TryDeleteFolderAsync",
-          "ReturnType": "IAsyncOperation<EmailMailboxDeleteFolderStatus>",
-          "Parameters": [
-            {
-              "Name": "folderId",
-              "Type": "String"
-            }
-          ]
-        },
-        {
-          "Name": "RegisterSyncManagerAsync",
-          "ReturnType": "IAsyncAction"
         }
       ],
       "Events": [

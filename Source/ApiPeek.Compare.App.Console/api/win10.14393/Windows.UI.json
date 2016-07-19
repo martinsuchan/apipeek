@@ -12722,6 +12722,15 @@
       ],
       "Methods": [
         {
+          "Name": "GetCurrentKeyEventDeviceId",
+          "ReturnType": "String"
+        },
+        {
+          "Name": "GetForCurrentThread",
+          "IsStatic": true,
+          "ReturnType": "CoreWindow"
+        },
+        {
           "Name": "Activate",
           "ReturnType": "Void"
         },
@@ -12756,15 +12765,6 @@
         {
           "Name": "SetPointerCapture",
           "ReturnType": "Void"
-        },
-        {
-          "Name": "GetCurrentKeyEventDeviceId",
-          "ReturnType": "String"
-        },
-        {
-          "Name": "GetForCurrentThread",
-          "IsStatic": true,
-          "ReturnType": "CoreWindow"
         }
       ],
       "Events": [

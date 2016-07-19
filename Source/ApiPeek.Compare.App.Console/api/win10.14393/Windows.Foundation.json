@@ -3045,6 +3045,1180 @@
       "IsSealed": true,
       "Methods": [
         {
+          "Name": "AddPointArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Point[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddPointArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Point[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddSize",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Size"
+            }
+          ]
+        },
+        {
+          "Name": "AddSize",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Size"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddSize",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Size"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddSizeArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Size[]"
+            }
+          ]
+        },
+        {
+          "Name": "AddSizeArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Size[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddSizeArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Size[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddRect",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Rect"
+            }
+          ]
+        },
+        {
+          "Name": "AddRect",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Rect"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddRect",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Rect"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddRectArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Rect[]"
+            }
+          ]
+        },
+        {
+          "Name": "AddRectArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Rect[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddRectArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Rect[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddSingle",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Single"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddSingle",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Single"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddSingleArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Single[]"
+            }
+          ]
+        },
+        {
+          "Name": "AddSingleArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Single[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddSingleArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Single[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddDouble",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Double"
+            }
+          ]
+        },
+        {
+          "Name": "AddDouble",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Double"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddDouble",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Double"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddDoubleArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Double[]"
+            }
+          ]
+        },
+        {
+          "Name": "AddDoubleArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Double[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddDoubleArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Double[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddChar16",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Char"
+            }
+          ]
+        },
+        {
+          "Name": "AddChar16",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Char"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddChar16",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Char"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddChar16Array",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Char[]"
+            }
+          ]
+        },
+        {
+          "Name": "AddChar16Array",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Char[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddChar16Array",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Char[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddBoolean",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "AddBoolean",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddBoolean",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddBooleanArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean[]"
+            }
+          ]
+        },
+        {
+          "Name": "AddBooleanArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddBooleanArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Boolean[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddString",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "AddString",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "String"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddString",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "String"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddStringArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "String[]"
+            }
+          ]
+        },
+        {
+          "Name": "AddStringArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "String[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddStringArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "String[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddGuid",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Guid"
+            }
+          ]
+        },
+        {
+          "Name": "AddGuid",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Guid"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddGuid",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Guid"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddGuidArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Guid[]"
+            }
+          ]
+        },
+        {
+          "Name": "AddGuidArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Guid[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddGuidArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Guid[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddDateTime",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "DateTimeOffset"
+            }
+          ]
+        },
+        {
+          "Name": "AddDateTime",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "DateTimeOffset"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddDateTime",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "DateTimeOffset"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddDateTimeArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "DateTimeOffset[]"
+            }
+          ]
+        },
+        {
+          "Name": "AddDateTimeArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "DateTimeOffset[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddDateTimeArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "DateTimeOffset[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddTimeSpan",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "TimeSpan"
+            }
+          ]
+        },
+        {
+          "Name": "AddTimeSpan",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "TimeSpan"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddTimeSpan",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "TimeSpan"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddTimeSpanArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "TimeSpan[]"
+            }
+          ]
+        },
+        {
+          "Name": "AddTimeSpanArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "TimeSpan[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddTimeSpanArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "TimeSpan[]"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddPoint",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Point"
+            }
+          ]
+        },
+        {
+          "Name": "AddPoint",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Point"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            }
+          ]
+        },
+        {
+          "Name": "AddPoint",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Point"
+            },
+            {
+              "Name": "format",
+              "Type": "LoggingFieldFormat"
+            },
+            {
+              "Name": "tags",
+              "Type": "Int32"
+            }
+          ]
+        },
+        {
+          "Name": "AddPointArray",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Point[]"
+            }
+          ]
+        },
+        {
           "Name": "Clear",
           "ReturnType": "Void"
         },
@@ -3885,1180 +5059,6 @@
             {
               "Name": "value",
               "Type": "Single"
-            }
-          ]
-        },
-        {
-          "Name": "AddSingle",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Single"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddSingle",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Single"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddSingleArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Single[]"
-            }
-          ]
-        },
-        {
-          "Name": "AddSingleArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Single[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddSingleArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Single[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddDouble",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Double"
-            }
-          ]
-        },
-        {
-          "Name": "AddDouble",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Double"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddDouble",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Double"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddDoubleArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Double[]"
-            }
-          ]
-        },
-        {
-          "Name": "AddDoubleArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Double[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddDoubleArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Double[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddChar16",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Char"
-            }
-          ]
-        },
-        {
-          "Name": "AddChar16",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Char"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddChar16",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Char"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddChar16Array",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Char[]"
-            }
-          ]
-        },
-        {
-          "Name": "AddChar16Array",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Char[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddChar16Array",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Char[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddBoolean",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
-            }
-          ]
-        },
-        {
-          "Name": "AddBoolean",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddBoolean",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddBooleanArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean[]"
-            }
-          ]
-        },
-        {
-          "Name": "AddBooleanArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddBooleanArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Boolean[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddString",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "String"
-            }
-          ]
-        },
-        {
-          "Name": "AddString",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "String"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddString",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "String"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddStringArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "String[]"
-            }
-          ]
-        },
-        {
-          "Name": "AddStringArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "String[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddStringArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "String[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddGuid",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Guid"
-            }
-          ]
-        },
-        {
-          "Name": "AddGuid",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Guid"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddGuid",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Guid"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddGuidArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Guid[]"
-            }
-          ]
-        },
-        {
-          "Name": "AddGuidArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Guid[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddGuidArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Guid[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddDateTime",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "DateTimeOffset"
-            }
-          ]
-        },
-        {
-          "Name": "AddDateTime",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "DateTimeOffset"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddDateTime",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "DateTimeOffset"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddDateTimeArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "DateTimeOffset[]"
-            }
-          ]
-        },
-        {
-          "Name": "AddDateTimeArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "DateTimeOffset[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddDateTimeArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "DateTimeOffset[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddTimeSpan",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "TimeSpan"
-            }
-          ]
-        },
-        {
-          "Name": "AddTimeSpan",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "TimeSpan"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddTimeSpan",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "TimeSpan"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddTimeSpanArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "TimeSpan[]"
-            }
-          ]
-        },
-        {
-          "Name": "AddTimeSpanArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "TimeSpan[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddTimeSpanArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "TimeSpan[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddPoint",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Point"
-            }
-          ]
-        },
-        {
-          "Name": "AddPoint",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Point"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddPoint",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Point"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddPointArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Point[]"
-            }
-          ]
-        },
-        {
-          "Name": "AddPointArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Point[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddPointArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Point[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddSize",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Size"
-            }
-          ]
-        },
-        {
-          "Name": "AddSize",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Size"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddSize",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Size"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddSizeArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Size[]"
-            }
-          ]
-        },
-        {
-          "Name": "AddSizeArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Size[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddSizeArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Size[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddRect",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Rect"
-            }
-          ]
-        },
-        {
-          "Name": "AddRect",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Rect"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddRect",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Rect"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
-            }
-          ]
-        },
-        {
-          "Name": "AddRectArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Rect[]"
-            }
-          ]
-        },
-        {
-          "Name": "AddRectArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Rect[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            }
-          ]
-        },
-        {
-          "Name": "AddRectArray",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "name",
-              "Type": "String"
-            },
-            {
-              "Name": "value",
-              "Type": "Rect[]"
-            },
-            {
-              "Name": "format",
-              "Type": "LoggingFieldFormat"
-            },
-            {
-              "Name": "tags",
-              "Type": "Int32"
             }
           ]
         }
