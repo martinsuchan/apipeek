@@ -296,7 +296,7 @@ namespace ApiPeek.Compare.App
             if (Expandable)
             {
                 string id = "id" + Guid.NewGuid().ToString("N");
-                return string.Format("<li class=\"file\"><img class=\"type\" src=\"{0}.png\"/><img src=\"{1}.gif\"/<label for=\"{3}\">{2}</label> <input checked type=\"checkbox\" id=\"{3}\" /><ol>", changeImg, typeImg, safeShortName, id);
+                return string.Format("<li class=\"file\"><img class=\"type\" src=\"{0}.png\"/><img src=\"{1}.gif\"/><label for=\"{3}\">{2}</label> <input checked type=\"checkbox\" id=\"{3}\" /><ol>", changeImg, typeImg, safeShortName, id);
             }
             else
             {
