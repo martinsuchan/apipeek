@@ -1,0 +1,13 @@
+﻿{
+  "dependencies": {
+  },
+  "frameworks": {
+    ".NETCore,Version=v4.5.1": {}
+  },
+  "runtimes": {
+    "win": {},
+    "win-arm": {},
+    "win-x86": {},
+    "win-x64": {}
+  }
+}

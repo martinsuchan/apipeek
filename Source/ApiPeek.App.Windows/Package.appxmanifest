@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="3dc7d128-4168-407d-a5a4-1dfa5177ab4a" Publisher="CN=martin.suchan" Version="1.0.0.0" />
+  <Identity Name="ApiPeek" Publisher="CN=martin.suchan" Version="1.0.0.0" />
   <Properties>
-    <DisplayName>ApiPeek.App</DisplayName>
+    <DisplayName>ApiPeek</DisplayName>
     <PublisherDisplayName>marti</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -14,8 +14,8 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="ApiPeek.App.Windows.App">
-      <m2:VisualElements DisplayName="ApiPeek.App" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="ApiPeek.App" ForegroundText="light" BackgroundColor="#464646">
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="ApiPeek.App">
+      <m2:VisualElements DisplayName="ApiPeek" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="ApiPeek.App" ForegroundText="light" BackgroundColor="#464646">
         <m2:SplashScreen Image="Assets\SplashScreen.png" />
       </m2:VisualElements>
     </Application>

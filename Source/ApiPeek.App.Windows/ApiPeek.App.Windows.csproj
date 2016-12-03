@@ -123,6 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ApiPeek.App.Windows_TemporaryKey.pfx" />
+    <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\ApiPeek.App.UWP\Properties\AssemblyInfo.cs">

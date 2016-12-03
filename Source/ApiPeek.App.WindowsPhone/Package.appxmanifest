@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="306c335b-22c5-4414-864f-a41b106378f0" Publisher="CN=marti" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="306c335b-22c5-4414-864f-a41b106378f0" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="ApiPeek" Publisher="CN=marti" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="192d28d0-aee0-4f16-999d-fde3636fd33d" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>ApiPeek.App</DisplayName>
+    <DisplayName>ApiPeek</DisplayName>
     <PublisherDisplayName>marti</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -15,8 +15,8 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="ApiPeek.App.WindowsPhone.App">
-      <m3:VisualElements DisplayName="ApiPeek.App" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="ApiPeek.App" ForegroundText="light" BackgroundColor="transparent">
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="ApiPeek.App">
+      <m3:VisualElements DisplayName="ApiPeek" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="ApiPeek.App" ForegroundText="light" BackgroundColor="transparent">
         <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png">
         </m3:DefaultTile>
         <m3:SplashScreen Image="Assets\SplashScreen.png" />

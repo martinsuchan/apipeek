@@ -1,0 +1,12 @@
+﻿{
+  "dependencies": {
+  },
+  "frameworks": {
+    "WindowsPhoneApp,Version=v8.1": {}
+  },
+  "runtimes": {
+    "win": {},
+    "win-arm": {},
+    "win-x86": {}
+  }
+}
