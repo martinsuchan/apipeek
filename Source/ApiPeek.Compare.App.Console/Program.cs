@@ -7,14 +7,11 @@ namespace ApiPeek.Compare.App
     {
         static void Main(string[] args)
         {
-            //string path1 = "band.1.3.10929";
-            //string path2 = "band.1.3.11121";
+            //string path1 = "win10.15007";
+            //string path2 = "win10.15007";
 
-            string path1 = "win10.14965";
-            string path2 = "win10.14965";
-
-            //string path1 = "wp10.14965";
-            //string path2 = "wp10.14965";
+            string path1 = "wp10.15007";
+            string path2 = "wp10.15007";
 
             MergeAndCompare(false, path1, path2);
             MergeAndCompare(true, path1, path2);
