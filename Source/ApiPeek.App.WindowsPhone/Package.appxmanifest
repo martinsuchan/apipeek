@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="ApiPeek" Publisher="CN=marti" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="192d28d0-aee0-4f16-999d-fde3636fd33d" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="54490MartinSuchan.ApiPeek.Beta" Publisher="CN=2681AC8F-97BF-42CE-88E8-CDCCEF67CC63" Version="1.2.0.0" />
+  <mp:PhoneIdentity PhoneProductId="1e23914e-151d-4633-98da-2de4da987727" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>ApiPeek</DisplayName>
-    <PublisherDisplayName>marti</PublisherDisplayName>
+    <PublisherDisplayName>Martin Suchan</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -16,13 +16,13 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="ApiPeek.App">
-      <m3:VisualElements DisplayName="ApiPeek" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="ApiPeek.App" ForegroundText="light" BackgroundColor="transparent">
-        <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png">
+      <m3:VisualElements DisplayName="ApiPeek" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="ApiPeek.App" ForegroundText="light" BackgroundColor="transparent" ToastCapable="false">
+        <m3:DefaultTile Square71x71Logo="Assets\Square71x71Logo.png">
           <m3:ShowNameOnTiles>
             <m3:ShowOn Tile="square150x150Logo" />
           </m3:ShowNameOnTiles>
         </m3:DefaultTile>
-        <m3:SplashScreen Image="Assets\SplashScreen.png" />
+        <m3:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="transparent" />
       </m3:VisualElements>
     </Application>
   </Applications>
