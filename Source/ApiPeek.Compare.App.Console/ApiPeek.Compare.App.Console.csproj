@@ -1591,9 +1591,6 @@
     <None Include="api.desktop\win10.16176\Windows.Graphics.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="api.desktop\win10.16176\Windows.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="api.desktop\win10.16176\Windows.Management.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
