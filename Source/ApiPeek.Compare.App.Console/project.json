@@ -1,6 +1,6 @@
 ﻿{
   "dependencies": {
-    "Newtonsoft.Json": "9.0.1"
+    "Newtonsoft.Json": "10.0.2"
   },
   "frameworks": {
     ".NETFramework,Version=v4.6.1": {}
