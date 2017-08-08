@@ -2119,6 +2119,9 @@
     <None Include="api.mobile\wp10.15043\Windows.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="api.mobile\wp10.15235\Windows.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="api.mobile\wp10.15063.UWP\Windows.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
