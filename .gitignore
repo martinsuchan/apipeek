@@ -168,6 +168,7 @@ ApplicationInsights.config
 # Windows Store app package directory
 AppPackages/
 BundleArtifacts/
+_pkginfo.txt
 
 # Visual Studio cache files
 # files ending in .cache can be ignored
