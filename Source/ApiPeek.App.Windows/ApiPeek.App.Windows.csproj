@@ -15,8 +15,8 @@
     <FileAlignment>512</FileAlignment>
     <SynthesizeLinkMetadata>true</SynthesizeLinkMetadata>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>ApiPeek.App.Windows_StoreKey.pfx</PackageCertificateKeyFile>
-    <PackageCertificateThumbprint>358D4F7CDF46765F8FF6DFAB7E1F0712B50D2030</PackageCertificateThumbprint>
+    <PackageCertificateKeyFile>ApiPeek.App.Windows_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>E8D61940A52F3E3C415CBB02F4CE27D9C554E5BB</PackageCertificateThumbprint>
     <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
     <AppxBundle>Never</AppxBundle>
   </PropertyGroup>
@@ -106,13 +106,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <ProjectReference Include="..\ApiPeek.Service\ApiPeek.Service.csproj">
-      <Project>{fce01da8-fd18-4ac7-a49a-1955edb75d58}</Project>
-      <Name>ApiPeek.Service</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
@@ -122,13 +115,18 @@
     <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
-    <None Include="ApiPeek.App.Windows_StoreKey.pfx" />
-    <None Include="Package.StoreAssociation.xml" />
+    <None Include="ApiPeek.App.Windows_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\ApiPeek.App.UWP\ApiPeekService.cs">
+      <Link>ApiPeekService.cs</Link>
+    </Compile>
+    <Compile Include="..\ApiPeek.App.UWP\AssemblyLoader.cs">
+      <Link>AssemblyLoader.cs</Link>
+    </Compile>
     <Compile Include="..\ApiPeek.App.UWP\Properties\AssemblyInfo.cs">
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>

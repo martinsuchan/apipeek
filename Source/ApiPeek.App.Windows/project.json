@@ -1,5 +1,6 @@
 ﻿{
   "dependencies": {
+    "Newtonsoft.Json": "10.0.3"
   },
   "frameworks": {
     ".NETCore,Version=v4.5.1": {}
