@@ -1,0 +1,81 @@
+﻿{
+  "Assemblies": [
+    {
+      "Name": "Windows.AI",
+      "Type": "MachineLearningContract"
+    },
+    {
+      "Name": "Windows.ApplicationModel",
+      "Type": "Package"
+    },
+    {
+      "Name": "Windows.Data",
+      "Type": "Json.JsonArray"
+    },
+    {
+      "Name": "Windows.Devices",
+      "Type": "Gpio.GpioPin"
+    },
+    {
+      "Name": "Windows.Foundation",
+      "Type": "Uri"
+    },
+    {
+      "Name": "Windows.Gaming",
+      "Type": "Input.Gamepad"
+    },
+    {
+      "Name": "Windows.Globalization",
+      "Type": "Language"
+    },
+    {
+      "Name": "Windows.Graphics",
+      "Type": "Display.DisplayOrientations"
+    },
+    {
+      "Name": "Windows.Management",
+      "Type": "Deployment.PackageManager"
+    },
+    {
+      "Name": "Windows.Media",
+      "Type": "AudioFrame"
+    },
+    {
+      "Name": "Windows.Networking",
+      "Type": "HostName"
+    },
+    {
+      "Name": "Windows.Perception",
+      "Type": "PerceptionTimestamp"
+    },
+    {
+      "Name": "Windows.Security",
+      "Type": "Credentials.KeyCredential"
+    },
+    {
+      "Name": "Windows.Services",
+      "Type": "Maps.MapAddress"
+    },
+    {
+      "Name": "Windows.Storage",
+      "Type": "StorageFile"
+    },
+    {
+      "Name": "Windows.System",
+      "Type": "LauncherOptions"
+    },
+    {
+      "Name": "Windows.UI",
+      "Type": "Colors"
+    },
+    {
+      "Name": "Windows.UI.Xaml",
+      "Type": "Application"
+    },
+    {
+      "Name": "Windows.Web",
+      "Type": "WebError"
+    }
+  ],
+  "Version": 1
+}

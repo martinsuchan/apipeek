@@ -54,9 +54,9 @@ namespace ApiPeek.Compare.App
         private static void ComparePackages(ApiAssembly olda, ApiAssembly newa)
         {
             List<ApiBaseItem> allOld = GetAllItems(olda);
-            ApiNamespace[] oldNss = GetNamespaces(allOld, 0);
+            ApiNamespace[] oldNss = GetNamespaces(allOld, 1);
             List<ApiBaseItem> allNew = GetAllItems(newa);
-            ApiNamespace[] newNss = GetNamespaces(allNew, 0);
+            ApiNamespace[] newNss = GetNamespaces(allNew, 1);
             List<DiffItem> diffs = CompareItems(oldNss, newNss).ToList();
             DiffItem parentDiff = new DiffItem {DiffType = DiffType.Changed, Children = diffs, Item = new ApiRoot()};
             LogDiffs(parentDiff, "");
@@ -174,25 +174,25 @@ namespace ApiPeek.Compare.App
                 .ToList();
         }
 
-        private static ApiNamespace GetNamespace(string groupName, IEnumerable<ApiBaseItem> items, int p)
+        private static ApiNamespace GetNamespace(string name, IEnumerable<ApiBaseItem> items, int p)
         {
-            IGrouping<bool, ApiBaseItem>[] split = items.GroupBy(i => i.NameSegments.Length-1 == p).ToArray();
+            IGrouping<bool, ApiBaseItem>[] split = items.GroupBy(i => i.NameSegments.Length == p+1).ToArray();
             // true - end type
             IGrouping<bool, ApiBaseItem> endTypes = split.FirstOrDefault(g => g.Key);
             // false, more segments - with nested namespace
             IGrouping<bool, ApiBaseItem> withNestedNs = split.FirstOrDefault(g => !g.Key);
 
-            ApiNamespace ns = new ApiNamespace { Name = groupName };
+            ApiNamespace ns = new ApiNamespace(name);
             if (endTypes != null) ns.ApiItems = endTypes.ToArray();
-            if (withNestedNs != null) ns.Namespaces = GetNamespaces(withNestedNs.ToArray(), p);
+            if (withNestedNs != null) ns.Namespaces = GetNamespaces(withNestedNs.ToArray(), p+1);
             return ns;
         }
 
         private static ApiNamespace[] GetNamespaces(ICollection<ApiBaseItem> items, int p)
         {
             ApiNamespace[] namespaces = items
-                .GroupBy(i => i.NameSegments[p])
-                .Select(g => GetNamespace(g.Key, g, p+1))
+                .GroupBy(i => string.Join(".", i.NameSegments.Take(p)))
+                .Select(g => GetNamespace(g.Key, g, p))
                 .ToArray();
             return namespaces;
         }
@@ -250,22 +250,22 @@ namespace ApiPeek.Compare.App
 
     public class ApiNamespaceWriter : IWriter
     {
-        private readonly ApiNamespace api;
+        private readonly ApiNamespace ns;
         private readonly DiffItem item;
 
         public ApiNamespaceWriter(DiffItem item)
         {
             this.item = item;
-            this.api = item.Item as ApiNamespace;
+            ns = item.Item as ApiNamespace;
         }
 
         public bool Expandable => true;
 
         public string GetPrefix()
         {
-            string id = "id" + Guid.NewGuid().ToString("N");
+            string id = ns.Name.ToHash();
             string typeImg = item.DiffType == DiffType.Added ? "added" : item.DiffType == DiffType.Removed ? "removed" : "changed";
-            return string.Format("<li><img class=\"type\" src=\"{2}.png\"/><img src=\"namespace.gif\"/><label for=\"{0}\">{1}</label> <input checked type=\"checkbox\" id=\"{0}\" /><ol>", id, api.ShortString, typeImg);
+            return string.Format("<li><img class=\"type\" src=\"{2}.png\" alt=\"{2}\"/><img src=\"namespace.gif\" alt=\"namespace\"/><label for=\"{0}\">{1}</label> <input checked type=\"checkbox\" id=\"{0}\" /><ol>", id, ns.ShortName, typeImg);
         }
 
         public string GetSuffix()
@@ -283,7 +283,7 @@ namespace ApiPeek.Compare.App
         {
             this.item = item;
             Expandable = expandable;
-            this.api = item.Item as IApiType;
+            api = item.Item as IApiType;
         }
 
         public bool Expandable { get; }
@@ -295,13 +295,13 @@ namespace ApiPeek.Compare.App
             string safeShortName = api.ShortName.Esc();
             if (Expandable)
             {
-                string id = "id" + Guid.NewGuid().ToString("N");
-                return string.Format("<li class=\"file\"><img class=\"type\" src=\"{0}.png\"/><img src=\"{1}.gif\"/><label for=\"{3}\">{2}</label> <input checked type=\"checkbox\" id=\"{3}\" /><ol>", changeImg, typeImg, safeShortName, id);
+                string id = api.Name.ToHash();
+                return string.Format("<li class=\"file\"><img class=\"type\" src=\"{0}.png\" alt=\"{0}\" /><img src=\"{1}.gif\" alt=\"{1}\"/><label for=\"{3}\">{2}</label> <input checked type=\"checkbox\" id=\"{3}\" /><ol>", changeImg, typeImg, safeShortName, id);
             }
             else
             {
                 return
-                    $"<li class=\"file\"><img class=\"type\" src=\"{changeImg}.png\"/><img src=\"{typeImg}.gif\"/><p>{safeShortName}</p>";
+                    $"<li class=\"file\"><img class=\"type\" src=\"{changeImg}.png\" alt=\"{changeImg}\"/><img src=\"{typeImg}.gif\" alt=\"{typeImg}\"/><p>{safeShortName}</p>";
             }
         }
 
@@ -339,7 +339,7 @@ namespace ApiPeek.Compare.App
             string changeImg = item.DiffType == DiffType.Added ? "added" : item.DiffType == DiffType.Removed ? "removed" : "changed";
             string typeImg = GetMemberImg();
             string safeShortString = detail.ShortString.Esc();
-            return string.Format("<li class=\"file\"><img class=\"type\" src=\"{1}.png\"/><img src=\"{2}.gif\"/><p>{0}</p>", safeShortString, changeImg, typeImg);
+            return string.Format("<li class=\"file\"><img class=\"type\" src=\"{1}.png\" alt=\"{1}\"/><img src=\"{2}.gif\" alt=\"{2}\"/><p>{0}</p>", safeShortString, changeImg, typeImg);
         }
 
         private string GetMemberImg()

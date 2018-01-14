@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ApiComparerTxt.cs" />
     <Compile Include="ApiComparerHtml.cs" />
+    <Compile Include="HashUtils.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

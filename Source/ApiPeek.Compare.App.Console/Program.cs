@@ -8,7 +8,7 @@ namespace ApiPeek.Compare.App
         static void Main(string[] args)
         {
             string folder = "api.desktop";
-            string path1 = "win10.17074";
+            string path1 = "win10.17063";
             string path2 = "win10.17074";
 
             //string folder = "api.mobile";

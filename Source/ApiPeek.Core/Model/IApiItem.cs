@@ -39,8 +39,9 @@ namespace ApiPeek.Core.Model
         public ApiBaseItem[] ApiItems { get; set; }
         public ApiNamespace[] Namespaces { get; set; }
 
-        public ApiNamespace()
+        public ApiNamespace(string name)
         {
+            Name = name;
             ApiItems = new ApiBaseItem[0];
             Namespaces = new ApiNamespace[0];
         }

@@ -24,9 +24,10 @@ namespace ApiPeek.Service
             try
             {
                 AssemblyLoader loader = new AssemblyLoader();
-                Assembly[] assemblies = loader.GetAssemblies().Where(a => a != null).Distinct().ToArray();
+                Assembly[] assemblies = await loader.GetAssembliesAsync();
+                assemblies = assemblies.Where(a => a != null).Distinct().ToArray();
 
-                string fileName = $"peek{DateTime.Now:yyyyMMddHHmmss}";
+                string fileName = $"peek-{PlatformService.SystemVersion}-{DateTime.Now:yyyyMMddHHmmss}";
 
                 // save it to json -> ZIP file
                 StorageFile file = await ApplicationData.Current.LocalFolder
@@ -516,6 +517,43 @@ namespace ApiPeek.Service
             if (genArgs == "") genArgs = string.Join(",", ti.GenericTypeArguments.Select(GetTypeName));
             if (genArgs == "") Debugger.Break();
             return genTypeName + "<" + genArgs + ">";
+        }
+    }
+
+    public static class PlatformService
+    {
+        public static Version SystemVersion { get; }
+
+        private const string AiTypeName = "Windows.System.Profile.AnalyticsInfo, Windows.System, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime";
+        private const string AviTypeName = "Windows.System.Profile.AnalyticsVersionInfo, Windows.System, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime";
+
+        static PlatformService()
+        {
+            bool osSet = false;
+            try
+            {
+                Type aiType = Type.GetType(AiTypeName);
+                // if the type exists, the app is running on Windows 10
+                if (aiType != null)
+                {
+                    Type aviType = Type.GetType(AviTypeName);
+                    var avi = aiType.GetRuntimeProperty("VersionInfo").GetValue(null);
+                    string sv = aviType.GetRuntimeProperty("DeviceFamilyVersion").GetValue(avi) as string;
+                    ulong v = ulong.Parse(sv);
+                    ulong v1 = (v & 0xFFFF000000000000L) >> 48;
+                    ulong v2 = (v & 0x0000FFFF00000000L) >> 32;
+                    ulong v3 = (v & 0x00000000FFFF0000L) >> 16;
+                    ulong v4 = (v & 0x000000000000FFFFL);
+                    SystemVersion = new Version((int)v1, (int)v2, (int)v3, (int)v4);
+                    osSet = true;
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e);
+            }
+            if (osSet) return;
+            SystemVersion = new Version(8, 1);
         }
     }
 }

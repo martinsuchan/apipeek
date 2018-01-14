@@ -185,25 +185,25 @@ namespace ApiPeek.Compare.App
                 .ToList();
         }
 
-        private static ApiNamespace GetNamespace(string groupName, IEnumerable<ApiBaseItem> items, int p)
+        private static ApiNamespace GetNamespace(string name, IEnumerable<ApiBaseItem> items, int p)
         {
-            IGrouping<bool, ApiBaseItem>[] split = items.GroupBy(i => i.NameSegments.Length-1 == p).ToArray();
+            IGrouping<bool, ApiBaseItem>[] split = items.GroupBy(i => i.NameSegments.Length == p+1).ToArray();
             // true - end type
             IGrouping<bool, ApiBaseItem> endTypes = split.FirstOrDefault(g => g.Key);
             // false, more segments - with nested namespace
             IGrouping<bool, ApiBaseItem> withNestedNs = split.FirstOrDefault(g => !g.Key);
-
-            ApiNamespace ns = new ApiNamespace { Name = groupName };
+            
+            ApiNamespace ns = new ApiNamespace(name);
             if (endTypes != null) ns.ApiItems = endTypes.ToArray();
-            if (withNestedNs != null) ns.Namespaces = GetNamespaces(withNestedNs.ToArray(), p);
+            if (withNestedNs != null) ns.Namespaces = GetNamespaces(withNestedNs.ToArray(), p+1);
             return ns;
         }
 
         private static ApiNamespace[] GetNamespaces(ICollection<ApiBaseItem> items, int p)
         {
             ApiNamespace[] namespaces = items
-                .GroupBy(i => i.NameSegments[p])
-                .Select(g => GetNamespace(g.Key, g, p+1))
+                .GroupBy(i => string.Join(".", i.NameSegments.Take(p)))
+                .Select(g => GetNamespace(g.Key, g, p))
                 .ToArray();
             return namespaces;
         }

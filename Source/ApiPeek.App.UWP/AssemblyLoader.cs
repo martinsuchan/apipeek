@@ -1,55 +1,29 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+using Windows.Web.Http;
 
 namespace ApiPeek.Service
 {
     internal class AssemblyLoader
     {
-        public virtual Assembly[] GetAssemblies()
+        public async Task<Assembly[]> GetAssembliesAsync()
         {
-            Assembly[] assemblies =
-            {
-                GetAssembly("Windows.AI.MachineLearning.Preview.IInferencingOptionsPreview, Windows.AI, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime"), // not available in 8.1 frameworks
-                GetAssembly<Windows.ApplicationModel.Package>(),
-                GetAssembly<Windows.Data.Json.JsonArray>(),
-                GetAssembly<Windows.Devices.Geolocation.Geocoordinate>(),
-                GetAssembly<Windows.Foundation.PropertyType>(),
-                GetAssembly("Windows.Gaming.Input.Gamepad, Windows.Gaming, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime"), // not available in 8.1 frameworks
-                GetAssembly<Windows.Globalization.Language>(),
-                GetAssembly<Windows.Graphics.Display.DisplayOrientations>(),
-                GetAssembly<Windows.Management.Deployment.DeploymentProgress>(),
-                GetAssembly<Windows.Media.AudioProcessing>(),
-                GetAssembly<Windows.Networking.HostName>(),
-                GetAssembly("Windows.Perception.PerceptionTimestamp, Windows.Perception, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime"), // not available in 8.1 frameworks
-                GetAssembly<Windows.Security.Cryptography.Core.CryptographicHash>(),
-                GetAssembly("Windows.Services.Maps.MapAddress, Windows.Services, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime"), // not available in 8.1 frameworks
-                GetAssembly<Windows.Storage.StorageFile>(),
-                GetAssembly<Windows.System.LauncherOptions>(),
-                GetAssembly<Windows.UI.Colors>(),
-                GetAssembly("Windows.UI.Xaml.PointHelper, Windows.UI.Xaml, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime"), // not available in 8.1 frameworks
-                GetAssembly<Windows.Web.Http.HttpClient>(),
-            };
+            AssemblyInfoModel assemblyModel = await GetOnlineAssemblies();
+            if (assemblyModel == null) return new Assembly[0];
+
+            Assembly[] assemblies = assemblyModel.Assemblies.Select(GetAssembly).ToArray();
             return assemblies;
         }
 
-        protected static Assembly GetAssembly<T>()
+        protected static Assembly GetAssembly(AssemblyInfo ai)
         {
             try
             {
-                return typeof(T).GetTypeInfo().Assembly;
-            }
-            catch (Exception e)
-            {
-                Debug.WriteLine(e);
-                return null;
-            }
-        }
-
-        protected static Assembly GetAssembly(string typeQualifiedName)
-        {
-            try
-            {
+                string typeQualifiedName = $"{ai.Name}.{ai.Type}, {ai.Name}, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime";
                 return Type.GetType(typeQualifiedName).GetTypeInfo().Assembly;
             }
             catch (Exception e)
@@ -59,17 +33,52 @@ namespace ApiPeek.Service
             }
         }
 
-        protected static Assembly GetAssemblyByName(string assemblyName)
+        public async Task<AssemblyInfoModel> GetOnlineAssemblies()
         {
             try
             {
-                return Assembly.Load(new AssemblyName(assemblyName));
+                using (HttpClient client = new HttpClient())
+                {
+                    Uri addr = new Uri("https://winconfig.azurewebsites.net/apipeek/config.json");
+
+                    HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, addr);
+                    HttpResponseMessage response = await client.SendRequestAsync(request);
+                    if (!response.IsSuccessStatusCode) return null;
+
+                    string result = await response.Content.ReadAsStringAsync();
+                    AssemblyInfoModel model = JsonConvert.DeserializeObject<AssemblyInfoModel>(result);
+                    return model.IsValid() ? model : null;
+                }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                Debug.WriteLine(e);
+                Debug.WriteLine($"Error loading online config.json: {ex}");
                 return null;
             }
+        }
+    }
+
+    public class AssemblyInfoModel
+    {
+        public AssemblyInfo[] Assemblies { get; set; }
+        public int Version { get; set; }
+
+        public bool IsValid()
+        {
+            return Assemblies != null && Assemblies.Length > 0
+                && Assemblies.All(a => !string.IsNullOrWhiteSpace(a.Name) && !string.IsNullOrWhiteSpace(a.Type));
+        }
+    }
+
+    public class AssemblyInfo
+    {
+        public string Name { get; set; }
+        public string Type { get; set; }
+
+        public AssemblyInfo(string name, string type)
+        {
+            Name = name;
+            Type = type;
         }
     }
 }
