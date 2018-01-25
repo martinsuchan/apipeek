@@ -301,7 +301,7 @@ namespace ApiPeek.Compare.App
             else
             {
                 return
-                    $"<li class=\"file\"><img class=\"type\" src=\"{changeImg}.png\" alt=\"{changeImg}\"/><img src=\"{typeImg}.gif\" alt=\"{typeImg}\"/><p>{safeShortName}</p>";
+                    $"<li class=\"file\"><img class=\"type\" src=\"{changeImg}.png\" alt=\"{changeImg}\"/><img src=\"{typeImg}.gif\" alt=\"{typeImg}\"/><p>{safeShortName}</p><input/>";
             }
         }
 
@@ -339,7 +339,7 @@ namespace ApiPeek.Compare.App
             string changeImg = item.DiffType == DiffType.Added ? "added" : item.DiffType == DiffType.Removed ? "removed" : "changed";
             string typeImg = GetMemberImg();
             string safeShortString = detail.ShortString.Esc();
-            return string.Format("<li class=\"file\"><img class=\"type\" src=\"{1}.png\" alt=\"{1}\"/><img src=\"{2}.gif\" alt=\"{2}\"/><p>{0}</p>", safeShortString, changeImg, typeImg);
+            return string.Format("<li class=\"file\"><img class=\"type\" src=\"{1}.png\" alt=\"{1}\"/><img src=\"{2}.gif\" alt=\"{2}\"/><p>{0}</p><input/>", safeShortString, changeImg, typeImg);
         }
 
         private string GetMemberImg()
