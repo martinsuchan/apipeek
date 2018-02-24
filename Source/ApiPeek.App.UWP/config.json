@@ -2,7 +2,7 @@
   "Assemblies": [
     {
       "Name": "Windows.AI",
-      "Type": "MachineLearningContract"
+      "Type": "MachineLearning.Preview.MachineLearningPreviewContract"
     },
     {
       "Name": "Windows.ApplicationModel",
