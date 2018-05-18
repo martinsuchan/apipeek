@@ -1,0 +1,6773 @@
+{
+  "Name": "Windows.System, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime",
+  "Enums": [
+    {
+      "Name": "Windows.System.AppDiagnosticInfoWatcherStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Created",
+          "Value": "0"
+        },
+        {
+          "Name": "Started",
+          "Value": "1"
+        },
+        {
+          "Name": "EnumerationCompleted",
+          "Value": "2"
+        },
+        {
+          "Name": "Stopping",
+          "Value": "3"
+        },
+        {
+          "Name": "Stopped",
+          "Value": "4"
+        },
+        {
+          "Name": "Aborted",
+          "Value": "5"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AppMemoryUsageLevel",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Low",
+          "Value": "0"
+        },
+        {
+          "Name": "Medium",
+          "Value": "1"
+        },
+        {
+          "Name": "High",
+          "Value": "2"
+        },
+        {
+          "Name": "OverLimit",
+          "Value": "3"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AppResourceGroupEnergyQuotaState",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Unknown",
+          "Value": "0"
+        },
+        {
+          "Name": "Over",
+          "Value": "1"
+        },
+        {
+          "Name": "Under",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AppResourceGroupExecutionState",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Unknown",
+          "Value": "0"
+        },
+        {
+          "Name": "Running",
+          "Value": "1"
+        },
+        {
+          "Name": "Suspending",
+          "Value": "2"
+        },
+        {
+          "Name": "Suspended",
+          "Value": "3"
+        },
+        {
+          "Name": "NotRunning",
+          "Value": "4"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AppResourceGroupInfoWatcherStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Created",
+          "Value": "0"
+        },
+        {
+          "Name": "Started",
+          "Value": "1"
+        },
+        {
+          "Name": "EnumerationCompleted",
+          "Value": "2"
+        },
+        {
+          "Name": "Stopping",
+          "Value": "3"
+        },
+        {
+          "Name": "Stopped",
+          "Value": "4"
+        },
+        {
+          "Name": "Aborted",
+          "Value": "5"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AutoUpdateTimeZoneStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Attempted",
+          "Value": "0"
+        },
+        {
+          "Name": "TimedOut",
+          "Value": "1"
+        },
+        {
+          "Name": "Failed",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.DiagnosticAccessStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Unspecified",
+          "Value": "0"
+        },
+        {
+          "Name": "Denied",
+          "Value": "1"
+        },
+        {
+          "Name": "Limited",
+          "Value": "2"
+        },
+        {
+          "Name": "Allowed",
+          "Value": "3"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.DevicePortal.DevicePortalConnectionClosedReason",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Unknown",
+          "Value": "0"
+        },
+        {
+          "Name": "ResourceLimitsExceeded",
+          "Value": "1"
+        },
+        {
+          "Name": "ProtocolError",
+          "Value": "2"
+        },
+        {
+          "Name": "NotAuthorized",
+          "Value": "3"
+        },
+        {
+          "Name": "UserNotPresent",
+          "Value": "4"
+        },
+        {
+          "Name": "ServiceTerminated",
+          "Value": "5"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.DiagnosticActionState",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Initializing",
+          "Value": "0"
+        },
+        {
+          "Name": "Downloading",
+          "Value": "1"
+        },
+        {
+          "Name": "VerifyingTrust",
+          "Value": "2"
+        },
+        {
+          "Name": "Detecting",
+          "Value": "3"
+        },
+        {
+          "Name": "Resolving",
+          "Value": "4"
+        },
+        {
+          "Name": "VerifyingResolution",
+          "Value": "5"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.Telemetry.PlatformTelemetryRegistrationStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Success",
+          "Value": "0"
+        },
+        {
+          "Name": "SettingsOutOfRange",
+          "Value": "1"
+        },
+        {
+          "Name": "UnknownFailure",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.TraceReporting.PlatformDiagnosticActionState",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Success",
+          "Value": "0"
+        },
+        {
+          "Name": "FreeNetworkNotAvailable",
+          "Value": "1"
+        },
+        {
+          "Name": "ACPowerNotAvailable",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.TraceReporting.PlatformDiagnosticEscalationType",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "OnCompletion",
+          "Value": "0"
+        },
+        {
+          "Name": "OnFailure",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.TraceReporting.PlatformDiagnosticEventBufferLatencies",
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Name": "Normal",
+          "Value": "1"
+        },
+        {
+          "Name": "CostDeferred",
+          "Value": "2"
+        },
+        {
+          "Name": "Realtime",
+          "Value": "4"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.TraceReporting.PlatformDiagnosticTracePriority",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Normal",
+          "Value": "0"
+        },
+        {
+          "Name": "UserElevated",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.TraceReporting.PlatformDiagnosticTraceSlotState",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "NotRunning",
+          "Value": "0"
+        },
+        {
+          "Name": "Running",
+          "Value": "1"
+        },
+        {
+          "Name": "Throttled",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.TraceReporting.PlatformDiagnosticTraceSlotType",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Alternative",
+          "Value": "0"
+        },
+        {
+          "Name": "AlwaysOn",
+          "Value": "1"
+        },
+        {
+          "Name": "Mini",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.DispatcherQueuePriority",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Low",
+          "Value": "-10"
+        },
+        {
+          "Name": "Normal",
+          "Value": "0"
+        },
+        {
+          "Name": "High",
+          "Value": "10"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.LaunchFileStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Success",
+          "Value": "0"
+        },
+        {
+          "Name": "AppUnavailable",
+          "Value": "1"
+        },
+        {
+          "Name": "DeniedByPolicy",
+          "Value": "2"
+        },
+        {
+          "Name": "FileTypeNotSupported",
+          "Value": "3"
+        },
+        {
+          "Name": "Unknown",
+          "Value": "4"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.LaunchQuerySupportStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Available",
+          "Value": "0"
+        },
+        {
+          "Name": "AppNotInstalled",
+          "Value": "1"
+        },
+        {
+          "Name": "AppUnavailable",
+          "Value": "2"
+        },
+        {
+          "Name": "NotSupported",
+          "Value": "3"
+        },
+        {
+          "Name": "Unknown",
+          "Value": "4"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.LaunchQuerySupportType",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Uri",
+          "Value": "0"
+        },
+        {
+          "Name": "UriForResults",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.LaunchUriStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Success",
+          "Value": "0"
+        },
+        {
+          "Name": "AppUnavailable",
+          "Value": "1"
+        },
+        {
+          "Name": "ProtocolUnavailable",
+          "Value": "2"
+        },
+        {
+          "Name": "Unknown",
+          "Value": "3"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Power.BatteryStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "NotPresent",
+          "Value": "0"
+        },
+        {
+          "Name": "Discharging",
+          "Value": "1"
+        },
+        {
+          "Name": "Idle",
+          "Value": "2"
+        },
+        {
+          "Name": "Charging",
+          "Value": "3"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Power.EnergySaverStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Disabled",
+          "Value": "0"
+        },
+        {
+          "Name": "Off",
+          "Value": "1"
+        },
+        {
+          "Name": "On",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Power.PowerSupplyStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "NotPresent",
+          "Value": "0"
+        },
+        {
+          "Name": "Inadequate",
+          "Value": "1"
+        },
+        {
+          "Name": "Adequate",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.PowerState",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "ConnectedStandby",
+          "Value": "0"
+        },
+        {
+          "Name": "SleepS3",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.ProcessorArchitecture",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "X86",
+          "Value": "0"
+        },
+        {
+          "Name": "Arm",
+          "Value": "5"
+        },
+        {
+          "Name": "X64",
+          "Value": "9"
+        },
+        {
+          "Name": "Neutral",
+          "Value": "11"
+        },
+        {
+          "Name": "Unknown",
+          "Value": "65535"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Profile.PlatformDataCollectionLevel",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Security",
+          "Value": "0"
+        },
+        {
+          "Name": "Basic",
+          "Value": "1"
+        },
+        {
+          "Name": "Enhanced",
+          "Value": "2"
+        },
+        {
+          "Name": "Full",
+          "Value": "3"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Profile.SystemIdentificationSource",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Tpm",
+          "Value": "1"
+        },
+        {
+          "Name": "Uefi",
+          "Value": "2"
+        },
+        {
+          "Name": "Registry",
+          "Value": "3"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteLaunchUriStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Unknown",
+          "Value": "0"
+        },
+        {
+          "Name": "Success",
+          "Value": "1"
+        },
+        {
+          "Name": "AppUnavailable",
+          "Value": "2"
+        },
+        {
+          "Name": "ProtocolUnavailable",
+          "Value": "3"
+        },
+        {
+          "Name": "RemoteSystemUnavailable",
+          "Value": "4"
+        },
+        {
+          "Name": "ValueSetTooLarge",
+          "Value": "5"
+        },
+        {
+          "Name": "DeniedByLocalSystem",
+          "Value": "6"
+        },
+        {
+          "Name": "DeniedByRemoteSystem",
+          "Value": "7"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemAccessStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Unspecified",
+          "Value": "0"
+        },
+        {
+          "Name": "Allowed",
+          "Value": "1"
+        },
+        {
+          "Name": "DeniedByUser",
+          "Value": "2"
+        },
+        {
+          "Name": "DeniedBySystem",
+          "Value": "3"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemAuthorizationKind",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "SameUser",
+          "Value": "0"
+        },
+        {
+          "Name": "Anonymous",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemDiscoveryType",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Any",
+          "Value": "0"
+        },
+        {
+          "Name": "Proximal",
+          "Value": "1"
+        },
+        {
+          "Name": "Cloud",
+          "Value": "2"
+        },
+        {
+          "Name": "SpatiallyProximal",
+          "Value": "3"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemPlatform",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Unknown",
+          "Value": "0"
+        },
+        {
+          "Name": "Windows",
+          "Value": "1"
+        },
+        {
+          "Name": "Android",
+          "Value": "2"
+        },
+        {
+          "Name": "Ios",
+          "Value": "3"
+        },
+        {
+          "Name": "Linux",
+          "Value": "4"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionCreationStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Success",
+          "Value": "0"
+        },
+        {
+          "Name": "SessionLimitsExceeded",
+          "Value": "1"
+        },
+        {
+          "Name": "OperationAborted",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionDisconnectedReason",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "SessionUnavailable",
+          "Value": "0"
+        },
+        {
+          "Name": "RemovedByController",
+          "Value": "1"
+        },
+        {
+          "Name": "SessionClosed",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionJoinStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Success",
+          "Value": "0"
+        },
+        {
+          "Name": "SessionLimitsExceeded",
+          "Value": "1"
+        },
+        {
+          "Name": "OperationAborted",
+          "Value": "2"
+        },
+        {
+          "Name": "SessionUnavailable",
+          "Value": "3"
+        },
+        {
+          "Name": "RejectedByController",
+          "Value": "4"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionMessageChannelReliability",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Reliable",
+          "Value": "0"
+        },
+        {
+          "Name": "Unreliable",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionParticipantWatcherStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Created",
+          "Value": "0"
+        },
+        {
+          "Name": "Started",
+          "Value": "1"
+        },
+        {
+          "Name": "EnumerationCompleted",
+          "Value": "2"
+        },
+        {
+          "Name": "Stopping",
+          "Value": "3"
+        },
+        {
+          "Name": "Stopped",
+          "Value": "4"
+        },
+        {
+          "Name": "Aborted",
+          "Value": "5"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionWatcherStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Created",
+          "Value": "0"
+        },
+        {
+          "Name": "Started",
+          "Value": "1"
+        },
+        {
+          "Name": "EnumerationCompleted",
+          "Value": "2"
+        },
+        {
+          "Name": "Stopping",
+          "Value": "3"
+        },
+        {
+          "Name": "Stopped",
+          "Value": "4"
+        },
+        {
+          "Name": "Aborted",
+          "Value": "5"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Unavailable",
+          "Value": "0"
+        },
+        {
+          "Name": "DiscoveringAvailability",
+          "Value": "1"
+        },
+        {
+          "Name": "Available",
+          "Value": "2"
+        },
+        {
+          "Name": "Unknown",
+          "Value": "3"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemStatusType",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Any",
+          "Value": "0"
+        },
+        {
+          "Name": "Available",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemWatcherError",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Unknown",
+          "Value": "0"
+        },
+        {
+          "Name": "InternetNotAvailable",
+          "Value": "1"
+        },
+        {
+          "Name": "AuthenticationError",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.ShutdownKind",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Shutdown",
+          "Value": "0"
+        },
+        {
+          "Name": "Restart",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Threading.WorkItemOptions",
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "TimeSliced",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Threading.WorkItemPriority",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Low",
+          "Value": "-1"
+        },
+        {
+          "Name": "Normal",
+          "Value": "0"
+        },
+        {
+          "Name": "High",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserAuthenticationStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Unauthenticated",
+          "Value": "0"
+        },
+        {
+          "Name": "LocallyAuthenticated",
+          "Value": "1"
+        },
+        {
+          "Name": "RemotelyAuthenticated",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserPictureSize",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Size64x64",
+          "Value": "0"
+        },
+        {
+          "Name": "Size208x208",
+          "Value": "1"
+        },
+        {
+          "Name": "Size424x424",
+          "Value": "2"
+        },
+        {
+          "Name": "Size1080x1080",
+          "Value": "3"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserProfile.AccountPictureKind",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "SmallImage",
+          "Value": "0"
+        },
+        {
+          "Name": "LargeImage",
+          "Value": "1"
+        },
+        {
+          "Name": "Video",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserProfile.SetAccountPictureResult",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Success",
+          "Value": "0"
+        },
+        {
+          "Name": "ChangeDisabled",
+          "Value": "1"
+        },
+        {
+          "Name": "LargeOrDynamicError",
+          "Value": "2"
+        },
+        {
+          "Name": "VideoFrameSizeError",
+          "Value": "3"
+        },
+        {
+          "Name": "FileSizeError",
+          "Value": "4"
+        },
+        {
+          "Name": "Failure",
+          "Value": "5"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserProfile.SetImageFeedResult",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Success",
+          "Value": "0"
+        },
+        {
+          "Name": "ChangeDisabled",
+          "Value": "1"
+        },
+        {
+          "Name": "UserCanceled",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserType",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "LocalUser",
+          "Value": "0"
+        },
+        {
+          "Name": "RemoteUser",
+          "Value": "1"
+        },
+        {
+          "Name": "LocalGuest",
+          "Value": "2"
+        },
+        {
+          "Name": "RemoteGuest",
+          "Value": "3"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserWatcherStatus",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Created",
+          "Value": "0"
+        },
+        {
+          "Name": "Started",
+          "Value": "1"
+        },
+        {
+          "Name": "EnumerationCompleted",
+          "Value": "2"
+        },
+        {
+          "Name": "Stopping",
+          "Value": "3"
+        },
+        {
+          "Name": "Stopped",
+          "Value": "4"
+        },
+        {
+          "Name": "Aborted",
+          "Value": "5"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.VirtualKey",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "LeftButton",
+          "Value": "1"
+        },
+        {
+          "Name": "RightButton",
+          "Value": "2"
+        },
+        {
+          "Name": "Cancel",
+          "Value": "3"
+        },
+        {
+          "Name": "MiddleButton",
+          "Value": "4"
+        },
+        {
+          "Name": "XButton1",
+          "Value": "5"
+        },
+        {
+          "Name": "XButton2",
+          "Value": "6"
+        },
+        {
+          "Name": "Back",
+          "Value": "8"
+        },
+        {
+          "Name": "Tab",
+          "Value": "9"
+        },
+        {
+          "Name": "Clear",
+          "Value": "12"
+        },
+        {
+          "Name": "Enter",
+          "Value": "13"
+        },
+        {
+          "Name": "Shift",
+          "Value": "16"
+        },
+        {
+          "Name": "Control",
+          "Value": "17"
+        },
+        {
+          "Name": "Menu",
+          "Value": "18"
+        },
+        {
+          "Name": "Pause",
+          "Value": "19"
+        },
+        {
+          "Name": "CapitalLock",
+          "Value": "20"
+        },
+        {
+          "Name": "Kana",
+          "Value": "21"
+        },
+        {
+          "Name": "Hangul",
+          "Value": "21"
+        },
+        {
+          "Name": "Junja",
+          "Value": "23"
+        },
+        {
+          "Name": "Final",
+          "Value": "24"
+        },
+        {
+          "Name": "Hanja",
+          "Value": "25"
+        },
+        {
+          "Name": "Kanji",
+          "Value": "25"
+        },
+        {
+          "Name": "Escape",
+          "Value": "27"
+        },
+        {
+          "Name": "Convert",
+          "Value": "28"
+        },
+        {
+          "Name": "NonConvert",
+          "Value": "29"
+        },
+        {
+          "Name": "Accept",
+          "Value": "30"
+        },
+        {
+          "Name": "ModeChange",
+          "Value": "31"
+        },
+        {
+          "Name": "Space",
+          "Value": "32"
+        },
+        {
+          "Name": "PageUp",
+          "Value": "33"
+        },
+        {
+          "Name": "PageDown",
+          "Value": "34"
+        },
+        {
+          "Name": "End",
+          "Value": "35"
+        },
+        {
+          "Name": "Home",
+          "Value": "36"
+        },
+        {
+          "Name": "Left",
+          "Value": "37"
+        },
+        {
+          "Name": "Up",
+          "Value": "38"
+        },
+        {
+          "Name": "Right",
+          "Value": "39"
+        },
+        {
+          "Name": "Down",
+          "Value": "40"
+        },
+        {
+          "Name": "Select",
+          "Value": "41"
+        },
+        {
+          "Name": "Print",
+          "Value": "42"
+        },
+        {
+          "Name": "Execute",
+          "Value": "43"
+        },
+        {
+          "Name": "Snapshot",
+          "Value": "44"
+        },
+        {
+          "Name": "Insert",
+          "Value": "45"
+        },
+        {
+          "Name": "Delete",
+          "Value": "46"
+        },
+        {
+          "Name": "Help",
+          "Value": "47"
+        },
+        {
+          "Name": "Number0",
+          "Value": "48"
+        },
+        {
+          "Name": "Number1",
+          "Value": "49"
+        },
+        {
+          "Name": "Number2",
+          "Value": "50"
+        },
+        {
+          "Name": "Number3",
+          "Value": "51"
+        },
+        {
+          "Name": "Number4",
+          "Value": "52"
+        },
+        {
+          "Name": "Number5",
+          "Value": "53"
+        },
+        {
+          "Name": "Number6",
+          "Value": "54"
+        },
+        {
+          "Name": "Number7",
+          "Value": "55"
+        },
+        {
+          "Name": "Number8",
+          "Value": "56"
+        },
+        {
+          "Name": "Number9",
+          "Value": "57"
+        },
+        {
+          "Name": "A",
+          "Value": "65"
+        },
+        {
+          "Name": "B",
+          "Value": "66"
+        },
+        {
+          "Name": "C",
+          "Value": "67"
+        },
+        {
+          "Name": "D",
+          "Value": "68"
+        },
+        {
+          "Name": "E",
+          "Value": "69"
+        },
+        {
+          "Name": "F",
+          "Value": "70"
+        },
+        {
+          "Name": "G",
+          "Value": "71"
+        },
+        {
+          "Name": "H",
+          "Value": "72"
+        },
+        {
+          "Name": "I",
+          "Value": "73"
+        },
+        {
+          "Name": "J",
+          "Value": "74"
+        },
+        {
+          "Name": "K",
+          "Value": "75"
+        },
+        {
+          "Name": "L",
+          "Value": "76"
+        },
+        {
+          "Name": "M",
+          "Value": "77"
+        },
+        {
+          "Name": "N",
+          "Value": "78"
+        },
+        {
+          "Name": "O",
+          "Value": "79"
+        },
+        {
+          "Name": "P",
+          "Value": "80"
+        },
+        {
+          "Name": "Q",
+          "Value": "81"
+        },
+        {
+          "Name": "R",
+          "Value": "82"
+        },
+        {
+          "Name": "S",
+          "Value": "83"
+        },
+        {
+          "Name": "T",
+          "Value": "84"
+        },
+        {
+          "Name": "U",
+          "Value": "85"
+        },
+        {
+          "Name": "V",
+          "Value": "86"
+        },
+        {
+          "Name": "W",
+          "Value": "87"
+        },
+        {
+          "Name": "X",
+          "Value": "88"
+        },
+        {
+          "Name": "Y",
+          "Value": "89"
+        },
+        {
+          "Name": "Z",
+          "Value": "90"
+        },
+        {
+          "Name": "LeftWindows",
+          "Value": "91"
+        },
+        {
+          "Name": "RightWindows",
+          "Value": "92"
+        },
+        {
+          "Name": "Application",
+          "Value": "93"
+        },
+        {
+          "Name": "Sleep",
+          "Value": "95"
+        },
+        {
+          "Name": "NumberPad0",
+          "Value": "96"
+        },
+        {
+          "Name": "NumberPad1",
+          "Value": "97"
+        },
+        {
+          "Name": "NumberPad2",
+          "Value": "98"
+        },
+        {
+          "Name": "NumberPad3",
+          "Value": "99"
+        },
+        {
+          "Name": "NumberPad4",
+          "Value": "100"
+        },
+        {
+          "Name": "NumberPad5",
+          "Value": "101"
+        },
+        {
+          "Name": "NumberPad6",
+          "Value": "102"
+        },
+        {
+          "Name": "NumberPad7",
+          "Value": "103"
+        },
+        {
+          "Name": "NumberPad8",
+          "Value": "104"
+        },
+        {
+          "Name": "NumberPad9",
+          "Value": "105"
+        },
+        {
+          "Name": "Multiply",
+          "Value": "106"
+        },
+        {
+          "Name": "Add",
+          "Value": "107"
+        },
+        {
+          "Name": "Separator",
+          "Value": "108"
+        },
+        {
+          "Name": "Subtract",
+          "Value": "109"
+        },
+        {
+          "Name": "Decimal",
+          "Value": "110"
+        },
+        {
+          "Name": "Divide",
+          "Value": "111"
+        },
+        {
+          "Name": "F1",
+          "Value": "112"
+        },
+        {
+          "Name": "F2",
+          "Value": "113"
+        },
+        {
+          "Name": "F3",
+          "Value": "114"
+        },
+        {
+          "Name": "F4",
+          "Value": "115"
+        },
+        {
+          "Name": "F5",
+          "Value": "116"
+        },
+        {
+          "Name": "F6",
+          "Value": "117"
+        },
+        {
+          "Name": "F7",
+          "Value": "118"
+        },
+        {
+          "Name": "F8",
+          "Value": "119"
+        },
+        {
+          "Name": "F9",
+          "Value": "120"
+        },
+        {
+          "Name": "F10",
+          "Value": "121"
+        },
+        {
+          "Name": "F11",
+          "Value": "122"
+        },
+        {
+          "Name": "F12",
+          "Value": "123"
+        },
+        {
+          "Name": "F13",
+          "Value": "124"
+        },
+        {
+          "Name": "F14",
+          "Value": "125"
+        },
+        {
+          "Name": "F15",
+          "Value": "126"
+        },
+        {
+          "Name": "F16",
+          "Value": "127"
+        },
+        {
+          "Name": "F17",
+          "Value": "128"
+        },
+        {
+          "Name": "F18",
+          "Value": "129"
+        },
+        {
+          "Name": "F19",
+          "Value": "130"
+        },
+        {
+          "Name": "F20",
+          "Value": "131"
+        },
+        {
+          "Name": "F21",
+          "Value": "132"
+        },
+        {
+          "Name": "F22",
+          "Value": "133"
+        },
+        {
+          "Name": "F23",
+          "Value": "134"
+        },
+        {
+          "Name": "F24",
+          "Value": "135"
+        },
+        {
+          "Name": "NavigationView",
+          "Value": "136"
+        },
+        {
+          "Name": "NavigationMenu",
+          "Value": "137"
+        },
+        {
+          "Name": "NavigationUp",
+          "Value": "138"
+        },
+        {
+          "Name": "NavigationDown",
+          "Value": "139"
+        },
+        {
+          "Name": "NavigationLeft",
+          "Value": "140"
+        },
+        {
+          "Name": "NavigationRight",
+          "Value": "141"
+        },
+        {
+          "Name": "NavigationAccept",
+          "Value": "142"
+        },
+        {
+          "Name": "NavigationCancel",
+          "Value": "143"
+        },
+        {
+          "Name": "NumberKeyLock",
+          "Value": "144"
+        },
+        {
+          "Name": "Scroll",
+          "Value": "145"
+        },
+        {
+          "Name": "LeftShift",
+          "Value": "160"
+        },
+        {
+          "Name": "RightShift",
+          "Value": "161"
+        },
+        {
+          "Name": "LeftControl",
+          "Value": "162"
+        },
+        {
+          "Name": "RightControl",
+          "Value": "163"
+        },
+        {
+          "Name": "LeftMenu",
+          "Value": "164"
+        },
+        {
+          "Name": "RightMenu",
+          "Value": "165"
+        },
+        {
+          "Name": "GoBack",
+          "Value": "166"
+        },
+        {
+          "Name": "GoForward",
+          "Value": "167"
+        },
+        {
+          "Name": "Refresh",
+          "Value": "168"
+        },
+        {
+          "Name": "Stop",
+          "Value": "169"
+        },
+        {
+          "Name": "Search",
+          "Value": "170"
+        },
+        {
+          "Name": "Favorites",
+          "Value": "171"
+        },
+        {
+          "Name": "GoHome",
+          "Value": "172"
+        },
+        {
+          "Name": "GamepadA",
+          "Value": "195"
+        },
+        {
+          "Name": "GamepadB",
+          "Value": "196"
+        },
+        {
+          "Name": "GamepadX",
+          "Value": "197"
+        },
+        {
+          "Name": "GamepadY",
+          "Value": "198"
+        },
+        {
+          "Name": "GamepadRightShoulder",
+          "Value": "199"
+        },
+        {
+          "Name": "GamepadLeftShoulder",
+          "Value": "200"
+        },
+        {
+          "Name": "GamepadLeftTrigger",
+          "Value": "201"
+        },
+        {
+          "Name": "GamepadRightTrigger",
+          "Value": "202"
+        },
+        {
+          "Name": "GamepadDPadUp",
+          "Value": "203"
+        },
+        {
+          "Name": "GamepadDPadDown",
+          "Value": "204"
+        },
+        {
+          "Name": "GamepadDPadLeft",
+          "Value": "205"
+        },
+        {
+          "Name": "GamepadDPadRight",
+          "Value": "206"
+        },
+        {
+          "Name": "GamepadMenu",
+          "Value": "207"
+        },
+        {
+          "Name": "GamepadView",
+          "Value": "208"
+        },
+        {
+          "Name": "GamepadLeftThumbstickButton",
+          "Value": "209"
+        },
+        {
+          "Name": "GamepadRightThumbstickButton",
+          "Value": "210"
+        },
+        {
+          "Name": "GamepadLeftThumbstickUp",
+          "Value": "211"
+        },
+        {
+          "Name": "GamepadLeftThumbstickDown",
+          "Value": "212"
+        },
+        {
+          "Name": "GamepadLeftThumbstickRight",
+          "Value": "213"
+        },
+        {
+          "Name": "GamepadLeftThumbstickLeft",
+          "Value": "214"
+        },
+        {
+          "Name": "GamepadRightThumbstickUp",
+          "Value": "215"
+        },
+        {
+          "Name": "GamepadRightThumbstickDown",
+          "Value": "216"
+        },
+        {
+          "Name": "GamepadRightThumbstickRight",
+          "Value": "217"
+        },
+        {
+          "Name": "GamepadRightThumbstickLeft",
+          "Value": "218"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.VirtualKeyModifiers",
+      "IsFlags": true,
+      "BaseType": "UInt32",
+      "Values": [
+        {
+          "Name": "None",
+          "Value": "0"
+        },
+        {
+          "Name": "Control",
+          "Value": "1"
+        },
+        {
+          "Name": "Menu",
+          "Value": "2"
+        },
+        {
+          "Name": "Shift",
+          "Value": "4"
+        },
+        {
+          "Name": "Windows",
+          "Value": "8"
+        }
+      ]
+    }
+  ],
+  "Interfaces": [
+    {
+      "Name": "Windows.System.ILauncherViewOptions",
+      "Properties": [
+        {
+          "Name": "DesiredRemainingView",
+          "Type": "ViewSizePreference",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.IRemoteSystemFilter"
+    }
+  ],
+  "Structs": [
+    {
+      "Name": "Windows.System.Profile.ProfileHardwareTokenContract"
+    },
+    {
+      "Name": "Windows.System.Profile.ProfileRetailInfoContract"
+    },
+    {
+      "Name": "Windows.System.Profile.ProfileSharedModeContract"
+    },
+    {
+      "Name": "Windows.System.Profile.SystemManufacturers.SystemManufacturersContract"
+    },
+    {
+      "Name": "Windows.System.SystemManagementContract"
+    },
+    {
+      "Name": "Windows.System.UserProfile.UserProfileContract"
+    },
+    {
+      "Name": "Windows.System.UserProfile.UserProfileLockScreenContract"
+    }
+  ],
+  "Classes": [
+    {
+      "Name": "Windows.System.AppActivationResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "AppResourceGroupInfo",
+          "Type": "AppResourceGroupInfo",
+          "IsGet": true
+        },
+        {
+          "Name": "ExtendedError",
+          "Type": "Exception",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AppDiagnosticInfo",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "AppInfo",
+          "Type": "AppInfo",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetResourceGroups",
+          "ReturnType": "IList<AppResourceGroupInfo>"
+        },
+        {
+          "Name": "CreateResourceGroupWatcher",
+          "ReturnType": "AppResourceGroupInfoWatcher"
+        },
+        {
+          "Name": "LaunchAsync",
+          "ReturnType": "IAsyncOperation<AppActivationResult>"
+        },
+        {
+          "Name": "CreateWatcher",
+          "IsStatic": true,
+          "ReturnType": "AppDiagnosticInfoWatcher"
+        },
+        {
+          "Name": "RequestAccessAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<DiagnosticAccessStatus>"
+        },
+        {
+          "Name": "RequestInfoForPackageAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IList<AppDiagnosticInfo>>",
+          "Parameters": [
+            {
+              "Name": "packageFamilyName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "RequestInfoForAppAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IList<AppDiagnosticInfo>>"
+        },
+        {
+          "Name": "RequestInfoForAppAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IList<AppDiagnosticInfo>>",
+          "Parameters": [
+            {
+              "Name": "appUserModelId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "RequestInfoAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IList<AppDiagnosticInfo>>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AppDiagnosticInfoWatcher",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Status",
+          "Type": "AppDiagnosticInfoWatcherStatus",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Start",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Stop",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "Added",
+          "Type": "TypedEventHandler<AppDiagnosticInfoWatcher,AppDiagnosticInfoWatcherEventArgs>"
+        },
+        {
+          "Name": "EnumerationCompleted",
+          "Type": "TypedEventHandler<AppDiagnosticInfoWatcher,Object>"
+        },
+        {
+          "Name": "Removed",
+          "Type": "TypedEventHandler<AppDiagnosticInfoWatcher,AppDiagnosticInfoWatcherEventArgs>"
+        },
+        {
+          "Name": "Stopped",
+          "Type": "TypedEventHandler<AppDiagnosticInfoWatcher,Object>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AppDiagnosticInfoWatcherEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "AppDiagnosticInfo",
+          "Type": "AppDiagnosticInfo",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AppExecutionStateChangeResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "ExtendedError",
+          "Type": "Exception",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AppMemoryReport",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "PeakPrivateCommitUsage",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "PrivateCommitUsage",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "TotalCommitLimit",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "TotalCommitUsage",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "ExpectedTotalCommitLimit",
+          "Type": "UInt64",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AppMemoryUsageLimitChangingEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "NewLimit",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "OldLimit",
+          "Type": "UInt64",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AppResourceGroupBackgroundTaskReport",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "EntryPoint",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "TaskId",
+          "Type": "Guid",
+          "IsGet": true
+        },
+        {
+          "Name": "Trigger",
+          "Type": "String",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AppResourceGroupInfo",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "InstanceId",
+          "Type": "Guid",
+          "IsGet": true
+        },
+        {
+          "Name": "IsShared",
+          "Type": "Boolean",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetBackgroundTaskReports",
+          "ReturnType": "IList<AppResourceGroupBackgroundTaskReport>"
+        },
+        {
+          "Name": "GetMemoryReport",
+          "ReturnType": "AppResourceGroupMemoryReport"
+        },
+        {
+          "Name": "GetProcessDiagnosticInfos",
+          "ReturnType": "IList<ProcessDiagnosticInfo>"
+        },
+        {
+          "Name": "GetStateReport",
+          "ReturnType": "AppResourceGroupStateReport"
+        },
+        {
+          "Name": "StartSuspendAsync",
+          "ReturnType": "IAsyncOperation<AppExecutionStateChangeResult>"
+        },
+        {
+          "Name": "StartResumeAsync",
+          "ReturnType": "IAsyncOperation<AppExecutionStateChangeResult>"
+        },
+        {
+          "Name": "StartTerminateAsync",
+          "ReturnType": "IAsyncOperation<AppExecutionStateChangeResult>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AppResourceGroupInfoWatcher",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Status",
+          "Type": "AppResourceGroupInfoWatcherStatus",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Start",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Stop",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "Added",
+          "Type": "TypedEventHandler<AppResourceGroupInfoWatcher,AppResourceGroupInfoWatcherEventArgs>"
+        },
+        {
+          "Name": "EnumerationCompleted",
+          "Type": "TypedEventHandler<AppResourceGroupInfoWatcher,Object>"
+        },
+        {
+          "Name": "ExecutionStateChanged",
+          "Type": "TypedEventHandler<AppResourceGroupInfoWatcher,AppResourceGroupInfoWatcherExecutionStateChangedEventArgs>"
+        },
+        {
+          "Name": "Removed",
+          "Type": "TypedEventHandler<AppResourceGroupInfoWatcher,AppResourceGroupInfoWatcherEventArgs>"
+        },
+        {
+          "Name": "Stopped",
+          "Type": "TypedEventHandler<AppResourceGroupInfoWatcher,Object>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AppResourceGroupInfoWatcherEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "AppDiagnosticInfos",
+          "Type": "IReadOnlyList<AppDiagnosticInfo>",
+          "IsGet": true
+        },
+        {
+          "Name": "AppResourceGroupInfo",
+          "Type": "AppResourceGroupInfo",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AppResourceGroupInfoWatcherExecutionStateChangedEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "AppDiagnosticInfos",
+          "Type": "IReadOnlyList<AppDiagnosticInfo>",
+          "IsGet": true
+        },
+        {
+          "Name": "AppResourceGroupInfo",
+          "Type": "AppResourceGroupInfo",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AppResourceGroupMemoryReport",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "CommitUsageLevel",
+          "Type": "AppMemoryUsageLevel",
+          "IsGet": true
+        },
+        {
+          "Name": "CommitUsageLimit",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "PrivateCommitUsage",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "TotalCommitUsage",
+          "Type": "UInt64",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.AppResourceGroupStateReport",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "EnergyQuotaState",
+          "Type": "AppResourceGroupEnergyQuotaState",
+          "IsGet": true
+        },
+        {
+          "Name": "ExecutionState",
+          "Type": "AppResourceGroupExecutionState",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.DateTimeSettings",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "SetSystemDateTime",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "utcDateTime",
+              "Type": "DateTimeOffset"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.DevicePortal.DevicePortalConnection",
+      "IsSealed": true,
+      "Methods": [
+        {
+          "Name": "GetServerMessageWebSocketForRequest",
+          "ReturnType": "ServerMessageWebSocket",
+          "Parameters": [
+            {
+              "Name": "request",
+              "Type": "HttpRequestMessage"
+            }
+          ]
+        },
+        {
+          "Name": "GetServerMessageWebSocketForRequest",
+          "ReturnType": "ServerMessageWebSocket",
+          "Parameters": [
+            {
+              "Name": "request",
+              "Type": "HttpRequestMessage"
+            },
+            {
+              "Name": "messageType",
+              "Type": "SocketMessageType"
+            },
+            {
+              "Name": "protocol",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "GetServerMessageWebSocketForRequest",
+          "ReturnType": "ServerMessageWebSocket",
+          "Parameters": [
+            {
+              "Name": "request",
+              "Type": "HttpRequestMessage"
+            },
+            {
+              "Name": "messageType",
+              "Type": "SocketMessageType"
+            },
+            {
+              "Name": "protocol",
+              "Type": "String"
+            },
+            {
+              "Name": "outboundBufferSizeInBytes",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "maxMessageSize",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "receiveMode",
+              "Type": "MessageWebSocketReceiveMode"
+            }
+          ]
+        },
+        {
+          "Name": "GetServerStreamWebSocketForRequest",
+          "ReturnType": "ServerStreamWebSocket",
+          "Parameters": [
+            {
+              "Name": "request",
+              "Type": "HttpRequestMessage"
+            }
+          ]
+        },
+        {
+          "Name": "GetServerStreamWebSocketForRequest",
+          "ReturnType": "ServerStreamWebSocket",
+          "Parameters": [
+            {
+              "Name": "request",
+              "Type": "HttpRequestMessage"
+            },
+            {
+              "Name": "protocol",
+              "Type": "String"
+            },
+            {
+              "Name": "outboundBufferSizeInBytes",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "noDelay",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetForAppServiceConnection",
+          "IsStatic": true,
+          "ReturnType": "DevicePortalConnection",
+          "Parameters": [
+            {
+              "Name": "appServiceConnection",
+              "Type": "AppServiceConnection"
+            }
+          ]
+        }
+      ],
+      "Events": [
+        {
+          "Name": "Closed",
+          "Type": "TypedEventHandler<DevicePortalConnection,DevicePortalConnectionClosedEventArgs>"
+        },
+        {
+          "Name": "RequestReceived",
+          "Type": "TypedEventHandler<DevicePortalConnection,DevicePortalConnectionRequestReceivedEventArgs>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.DevicePortal.DevicePortalConnectionClosedEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Reason",
+          "Type": "DevicePortalConnectionClosedReason",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.DevicePortal.DevicePortalConnectionRequestReceivedEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "RequestMessage",
+          "Type": "HttpRequestMessage",
+          "IsGet": true
+        },
+        {
+          "Name": "ResponseMessage",
+          "Type": "HttpResponseMessage",
+          "IsGet": true
+        },
+        {
+          "Name": "IsWebSocketUpgradeRequest",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "WebSocketProtocolsRequested",
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetDeferral",
+          "ReturnType": "Deferral"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.DiagnosticActionResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "ExtendedError",
+          "Type": "Exception",
+          "IsGet": true
+        },
+        {
+          "Name": "Results",
+          "Type": "ValueSet",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.DiagnosticInvoker",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "IsSupported",
+          "Type": "Boolean",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "RunDiagnosticActionAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DiagnosticActionResult,DiagnosticActionState>",
+          "Parameters": [
+            {
+              "Name": "context",
+              "Type": "JsonObject"
+            }
+          ]
+        },
+        {
+          "Name": "RunDiagnosticActionFromStringAsync",
+          "ReturnType": "IAsyncOperationWithProgress<DiagnosticActionResult,DiagnosticActionState>",
+          "Parameters": [
+            {
+              "Name": "context",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "GetDefault",
+          "IsStatic": true,
+          "ReturnType": "DiagnosticInvoker"
+        },
+        {
+          "Name": "GetForUser",
+          "IsStatic": true,
+          "ReturnType": "DiagnosticInvoker",
+          "Parameters": [
+            {
+              "Name": "user",
+              "Type": "User"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.ProcessCpuUsage",
+      "IsSealed": true,
+      "Methods": [
+        {
+          "Name": "GetReport",
+          "ReturnType": "ProcessCpuUsageReport"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.ProcessCpuUsageReport",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "KernelTime",
+          "Type": "TimeSpan",
+          "IsGet": true
+        },
+        {
+          "Name": "UserTime",
+          "Type": "TimeSpan",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.ProcessDiagnosticInfo",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "CpuUsage",
+          "Type": "ProcessCpuUsage",
+          "IsGet": true
+        },
+        {
+          "Name": "DiskUsage",
+          "Type": "ProcessDiskUsage",
+          "IsGet": true
+        },
+        {
+          "Name": "ExecutableFileName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "MemoryUsage",
+          "Type": "ProcessMemoryUsage",
+          "IsGet": true
+        },
+        {
+          "Name": "Parent",
+          "Type": "ProcessDiagnosticInfo",
+          "IsGet": true
+        },
+        {
+          "Name": "ProcessId",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "ProcessStartTime",
+          "Type": "DateTimeOffset",
+          "IsGet": true
+        },
+        {
+          "Name": "IsPackaged",
+          "Type": "Boolean",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetAppDiagnosticInfos",
+          "ReturnType": "IList<AppDiagnosticInfo>"
+        },
+        {
+          "Name": "TryGetForProcessId",
+          "IsStatic": true,
+          "ReturnType": "ProcessDiagnosticInfo",
+          "Parameters": [
+            {
+              "Name": "processId",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "GetForProcesses",
+          "IsStatic": true,
+          "ReturnType": "IReadOnlyList<ProcessDiagnosticInfo>"
+        },
+        {
+          "Name": "GetForCurrentProcess",
+          "IsStatic": true,
+          "ReturnType": "ProcessDiagnosticInfo"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.ProcessDiskUsage",
+      "IsSealed": true,
+      "Methods": [
+        {
+          "Name": "GetReport",
+          "ReturnType": "ProcessDiskUsageReport"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.ProcessDiskUsageReport",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "BytesReadCount",
+          "Type": "Int64",
+          "IsGet": true
+        },
+        {
+          "Name": "BytesWrittenCount",
+          "Type": "Int64",
+          "IsGet": true
+        },
+        {
+          "Name": "OtherBytesCount",
+          "Type": "Int64",
+          "IsGet": true
+        },
+        {
+          "Name": "OtherOperationCount",
+          "Type": "Int64",
+          "IsGet": true
+        },
+        {
+          "Name": "ReadOperationCount",
+          "Type": "Int64",
+          "IsGet": true
+        },
+        {
+          "Name": "WriteOperationCount",
+          "Type": "Int64",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.ProcessMemoryUsage",
+      "IsSealed": true,
+      "Methods": [
+        {
+          "Name": "GetReport",
+          "ReturnType": "ProcessMemoryUsageReport"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.ProcessMemoryUsageReport",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "NonPagedPoolSizeInBytes",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "PageFaultCount",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "PageFileSizeInBytes",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "PagedPoolSizeInBytes",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "PeakNonPagedPoolSizeInBytes",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "PeakPageFileSizeInBytes",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "PeakPagedPoolSizeInBytes",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "PeakVirtualMemorySizeInBytes",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "PeakWorkingSetSizeInBytes",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "PrivatePageCount",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "VirtualMemorySizeInBytes",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "WorkingSetSizeInBytes",
+          "Type": "UInt64",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.SystemCpuUsage",
+      "IsSealed": true,
+      "Methods": [
+        {
+          "Name": "GetReport",
+          "ReturnType": "SystemCpuUsageReport"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.SystemCpuUsageReport",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "IdleTime",
+          "Type": "TimeSpan",
+          "IsGet": true
+        },
+        {
+          "Name": "KernelTime",
+          "Type": "TimeSpan",
+          "IsGet": true
+        },
+        {
+          "Name": "UserTime",
+          "Type": "TimeSpan",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.SystemDiagnosticInfo",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "CpuUsage",
+          "Type": "SystemCpuUsage",
+          "IsGet": true
+        },
+        {
+          "Name": "MemoryUsage",
+          "Type": "SystemMemoryUsage",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetForCurrentSystem",
+          "IsStatic": true,
+          "ReturnType": "SystemDiagnosticInfo"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.SystemMemoryUsage",
+      "IsSealed": true,
+      "Methods": [
+        {
+          "Name": "GetReport",
+          "ReturnType": "SystemMemoryUsageReport"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.SystemMemoryUsageReport",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "AvailableSizeInBytes",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "CommittedSizeInBytes",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "TotalPhysicalSizeInBytes",
+          "Type": "UInt64",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.Telemetry.PlatformTelemetryClient",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "Register",
+          "IsStatic": true,
+          "ReturnType": "PlatformTelemetryRegistrationResult",
+          "Parameters": [
+            {
+              "Name": "id",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "Register",
+          "IsStatic": true,
+          "ReturnType": "PlatformTelemetryRegistrationResult",
+          "Parameters": [
+            {
+              "Name": "id",
+              "Type": "String"
+            },
+            {
+              "Name": "settings",
+              "Type": "PlatformTelemetryRegistrationSettings"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.Telemetry.PlatformTelemetryRegistrationResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Status",
+          "Type": "PlatformTelemetryRegistrationStatus",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.Telemetry.PlatformTelemetryRegistrationSettings",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "UploadQuotaSize",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "StorageSize",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.TraceReporting.PlatformDiagnosticActions",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "IsScenarioEnabled",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "scenarioId",
+              "Type": "Guid"
+            }
+          ]
+        },
+        {
+          "Name": "TryEscalateScenario",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "scenarioId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "escalationType",
+              "Type": "PlatformDiagnosticEscalationType"
+            },
+            {
+              "Name": "outputDirectory",
+              "Type": "String"
+            },
+            {
+              "Name": "timestampOutputDirectory",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "forceEscalationUpload",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "triggers",
+              "Type": "IReadOnlyDictionary<String,String>"
+            }
+          ]
+        },
+        {
+          "Name": "DownloadLatestSettingsForNamespace",
+          "IsStatic": true,
+          "ReturnType": "PlatformDiagnosticActionState",
+          "Parameters": [
+            {
+              "Name": "partner",
+              "Type": "String"
+            },
+            {
+              "Name": "feature",
+              "Type": "String"
+            },
+            {
+              "Name": "isScenarioNamespace",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "downloadOverCostedNetwork",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "downloadOverBattery",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "GetActiveScenarioList",
+          "IsStatic": true,
+          "ReturnType": "IReadOnlyList<Guid>"
+        },
+        {
+          "Name": "ForceUpload",
+          "IsStatic": true,
+          "ReturnType": "PlatformDiagnosticActionState",
+          "Parameters": [
+            {
+              "Name": "latency",
+              "Type": "PlatformDiagnosticEventBufferLatencies"
+            },
+            {
+              "Name": "uploadOverCostedNetwork",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "uploadOverBattery",
+              "Type": "Boolean"
+            }
+          ]
+        },
+        {
+          "Name": "IsTraceRunning",
+          "IsStatic": true,
+          "ReturnType": "PlatformDiagnosticTraceSlotState",
+          "Parameters": [
+            {
+              "Name": "slotType",
+              "Type": "PlatformDiagnosticTraceSlotType"
+            },
+            {
+              "Name": "scenarioId",
+              "Type": "Guid"
+            },
+            {
+              "Name": "traceProfileHash",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "GetActiveTraceRuntime",
+          "IsStatic": true,
+          "ReturnType": "PlatformDiagnosticTraceRuntimeInfo",
+          "Parameters": [
+            {
+              "Name": "slotType",
+              "Type": "PlatformDiagnosticTraceSlotType"
+            }
+          ]
+        },
+        {
+          "Name": "GetKnownTraceList",
+          "IsStatic": true,
+          "ReturnType": "IReadOnlyList<PlatformDiagnosticTraceInfo>",
+          "Parameters": [
+            {
+              "Name": "slotType",
+              "Type": "PlatformDiagnosticTraceSlotType"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.TraceReporting.PlatformDiagnosticTraceInfo",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "IsAutoLogger",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "IsExclusive",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "MaxTraceDurationFileTime",
+          "Type": "Int64",
+          "IsGet": true
+        },
+        {
+          "Name": "Priority",
+          "Type": "PlatformDiagnosticTracePriority",
+          "IsGet": true
+        },
+        {
+          "Name": "ProfileHash",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "ScenarioId",
+          "Type": "Guid",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Diagnostics.TraceReporting.PlatformDiagnosticTraceRuntimeInfo",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "EtwRuntimeFileTime",
+          "Type": "Int64",
+          "IsGet": true
+        },
+        {
+          "Name": "RuntimeFileTime",
+          "Type": "Int64",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.DispatcherQueue",
+      "IsSealed": true,
+      "Methods": [
+        {
+          "Name": "CreateTimer",
+          "ReturnType": "DispatcherQueueTimer"
+        },
+        {
+          "Name": "TryEnqueue",
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "callback",
+              "Type": "DispatcherQueueHandler"
+            }
+          ]
+        },
+        {
+          "Name": "TryEnqueue",
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "priority",
+              "Type": "DispatcherQueuePriority"
+            },
+            {
+              "Name": "callback",
+              "Type": "DispatcherQueueHandler"
+            }
+          ]
+        },
+        {
+          "Name": "GetForCurrentThread",
+          "IsStatic": true,
+          "ReturnType": "DispatcherQueue"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "ShutdownCompleted",
+          "Type": "TypedEventHandler<DispatcherQueue,Object>"
+        },
+        {
+          "Name": "ShutdownStarting",
+          "Type": "TypedEventHandler<DispatcherQueue,DispatcherQueueShutdownStartingEventArgs>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.DispatcherQueueController",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "DispatcherQueue",
+          "Type": "DispatcherQueue",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "ShutdownQueueAsync",
+          "ReturnType": "IAsyncAction"
+        },
+        {
+          "Name": "CreateOnDedicatedThread",
+          "IsStatic": true,
+          "ReturnType": "DispatcherQueueController"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.DispatcherQueueShutdownStartingEventArgs",
+      "IsSealed": true,
+      "Methods": [
+        {
+          "Name": "GetDeferral",
+          "ReturnType": "Deferral"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.DispatcherQueueTimer",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "IsRepeating",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Interval",
+          "Type": "TimeSpan",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsRunning",
+          "Type": "Boolean",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Start",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Stop",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "Tick",
+          "Type": "TypedEventHandler<DispatcherQueueTimer,Object>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Display.DisplayRequest",
+      "IsSealed": true,
+      "Methods": [
+        {
+          "Name": "RequestActive",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "RequestRelease",
+          "ReturnType": "Void"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.FolderLauncherOptions",
+      "IsSealed": true,
+      "Interfaces": [
+        "ILauncherViewOptions"
+      ],
+      "Properties": [
+        {
+          "Name": "ItemsToSelect",
+          "Type": "IList<IStorageItem>",
+          "IsGet": true
+        },
+        {
+          "Name": "GroupingPreference",
+          "Type": "ViewGrouping",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "DesiredRemainingView",
+          "Type": "ViewSizePreference",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Inventory.InstalledDesktopApp",
+      "IsSealed": true,
+      "Interfaces": [
+        "IStringable"
+      ],
+      "Properties": [
+        {
+          "Name": "DisplayName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "DisplayVersion",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Id",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Publisher",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetInventoryAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IReadOnlyList<InstalledDesktopApp>>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.KnownUserProperties",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "AccountName",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "DisplayName",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "DomainName",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "FirstName",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "GuestHost",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "LastName",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "PrincipalName",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ProviderName",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SessionInitiationProtocolUri",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.LaunchUriResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Result",
+          "Type": "ValueSet",
+          "IsGet": true
+        },
+        {
+          "Name": "Status",
+          "Type": "LaunchUriStatus",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Launcher",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "QueryAppUriSupportAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LaunchQuerySupportStatus>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            }
+          ]
+        },
+        {
+          "Name": "QueryAppUriSupportAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LaunchQuerySupportStatus>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "packageFamilyName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindAppUriHandlersAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IReadOnlyList<AppInfo>>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            }
+          ]
+        },
+        {
+          "Name": "LaunchUriForUserAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LaunchUriStatus>",
+          "Parameters": [
+            {
+              "Name": "user",
+              "Type": "User"
+            },
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            }
+          ]
+        },
+        {
+          "Name": "LaunchUriForUserAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LaunchUriStatus>",
+          "Parameters": [
+            {
+              "Name": "user",
+              "Type": "User"
+            },
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "options",
+              "Type": "LauncherOptions"
+            }
+          ]
+        },
+        {
+          "Name": "LaunchUriForUserAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LaunchUriStatus>",
+          "Parameters": [
+            {
+              "Name": "user",
+              "Type": "User"
+            },
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "options",
+              "Type": "LauncherOptions"
+            },
+            {
+              "Name": "inputData",
+              "Type": "ValueSet"
+            }
+          ]
+        },
+        {
+          "Name": "LaunchUriForResultsForUserAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LaunchUriResult>",
+          "Parameters": [
+            {
+              "Name": "user",
+              "Type": "User"
+            },
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "options",
+              "Type": "LauncherOptions"
+            }
+          ]
+        },
+        {
+          "Name": "LaunchUriForResultsForUserAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LaunchUriResult>",
+          "Parameters": [
+            {
+              "Name": "user",
+              "Type": "User"
+            },
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "options",
+              "Type": "LauncherOptions"
+            },
+            {
+              "Name": "inputData",
+              "Type": "ValueSet"
+            }
+          ]
+        },
+        {
+          "Name": "LaunchFolderAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "folder",
+              "Type": "IStorageFolder"
+            }
+          ]
+        },
+        {
+          "Name": "LaunchFolderAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "folder",
+              "Type": "IStorageFolder"
+            },
+            {
+              "Name": "options",
+              "Type": "FolderLauncherOptions"
+            }
+          ]
+        },
+        {
+          "Name": "LaunchUriForResultsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LaunchUriResult>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "options",
+              "Type": "LauncherOptions"
+            }
+          ]
+        },
+        {
+          "Name": "LaunchUriForResultsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LaunchUriResult>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "options",
+              "Type": "LauncherOptions"
+            },
+            {
+              "Name": "inputData",
+              "Type": "ValueSet"
+            }
+          ]
+        },
+        {
+          "Name": "LaunchUriAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "options",
+              "Type": "LauncherOptions"
+            },
+            {
+              "Name": "inputData",
+              "Type": "ValueSet"
+            }
+          ]
+        },
+        {
+          "Name": "QueryUriSupportAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LaunchQuerySupportStatus>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "launchQuerySupportType",
+              "Type": "LaunchQuerySupportType"
+            }
+          ]
+        },
+        {
+          "Name": "QueryUriSupportAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LaunchQuerySupportStatus>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "launchQuerySupportType",
+              "Type": "LaunchQuerySupportType"
+            },
+            {
+              "Name": "packageFamilyName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "QueryFileSupportAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LaunchQuerySupportStatus>",
+          "Parameters": [
+            {
+              "Name": "file",
+              "Type": "StorageFile"
+            }
+          ]
+        },
+        {
+          "Name": "QueryFileSupportAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LaunchQuerySupportStatus>",
+          "Parameters": [
+            {
+              "Name": "file",
+              "Type": "StorageFile"
+            },
+            {
+              "Name": "packageFamilyName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindUriSchemeHandlersAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IReadOnlyList<AppInfo>>",
+          "Parameters": [
+            {
+              "Name": "scheme",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "FindUriSchemeHandlersAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IReadOnlyList<AppInfo>>",
+          "Parameters": [
+            {
+              "Name": "scheme",
+              "Type": "String"
+            },
+            {
+              "Name": "launchQuerySupportType",
+              "Type": "LaunchQuerySupportType"
+            }
+          ]
+        },
+        {
+          "Name": "FindFileHandlersAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IReadOnlyList<AppInfo>>",
+          "Parameters": [
+            {
+              "Name": "extension",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "LaunchFileAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "file",
+              "Type": "IStorageFile"
+            }
+          ]
+        },
+        {
+          "Name": "LaunchFileAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "file",
+              "Type": "IStorageFile"
+            },
+            {
+              "Name": "options",
+              "Type": "LauncherOptions"
+            }
+          ]
+        },
+        {
+          "Name": "LaunchUriAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            }
+          ]
+        },
+        {
+          "Name": "LaunchUriAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "options",
+              "Type": "LauncherOptions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.LauncherOptions",
+      "IsSealed": true,
+      "Interfaces": [
+        "ILauncherViewOptions"
+      ],
+      "Properties": [
+        {
+          "Name": "TreatAsUntrusted",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "PreferredApplicationPackageFamilyName",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "PreferredApplicationDisplayName",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "FallbackUri",
+          "Type": "Uri",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "DisplayApplicationPicker",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "ContentType",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "UI",
+          "Type": "LauncherUIOptions",
+          "IsGet": true
+        },
+        {
+          "Name": "TargetApplicationPackageFamilyName",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "NeighboringFilesQuery",
+          "Type": "StorageFileQueryResult",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IgnoreAppUriHandlers",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "LimitPickerToCurrentAppAndAppUriHandlers",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "GroupingPreference",
+          "Type": "ViewGrouping",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "DesiredRemainingView",
+          "Type": "ViewSizePreference",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.LauncherUIOptions",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "SelectionRect",
+          "Type": "Nullable<Rect>",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "PreferredPlacement",
+          "Type": "Placement",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "InvocationPoint",
+          "Type": "Nullable<Point>",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.MemoryManager",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "AppMemoryUsage",
+          "Type": "UInt64",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "AppMemoryUsageLevel",
+          "Type": "AppMemoryUsageLevel",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "AppMemoryUsageLimit",
+          "Type": "UInt64",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ExpectedAppMemoryUsageLimit",
+          "Type": "UInt64",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "TrySetAppMemoryUsageLimit",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "UInt64"
+            }
+          ]
+        },
+        {
+          "Name": "GetAppMemoryReport",
+          "IsStatic": true,
+          "ReturnType": "AppMemoryReport"
+        },
+        {
+          "Name": "GetProcessMemoryReport",
+          "IsStatic": true,
+          "ReturnType": "ProcessMemoryReport"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "AppMemoryUsageDecreased",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "AppMemoryUsageIncreased",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "AppMemoryUsageLimitChanging",
+          "Type": "EventHandler<AppMemoryUsageLimitChangingEventArgs>",
+          "IsStatic": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Power.BackgroundEnergyManager",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "ExcessiveUsageLevel",
+          "Type": "UInt32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "LowUsageLevel",
+          "Type": "UInt32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MaxAcceptableUsageLevel",
+          "Type": "UInt32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "NearMaxAcceptableUsageLevel",
+          "Type": "UInt32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "NearTerminationUsageLevel",
+          "Type": "UInt32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "RecentEnergyUsage",
+          "Type": "UInt32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "RecentEnergyUsageLevel",
+          "Type": "UInt32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "TerminationUsageLevel",
+          "Type": "UInt32",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Events": [
+        {
+          "Name": "RecentEnergyUsageIncreased",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "RecentEnergyUsageReturnedToLow",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Power.Diagnostics.BackgroundEnergyDiagnostics",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "DeviceSpecificConversionFactor",
+          "Type": "Double",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "ComputeTotalEnergyUsage",
+          "IsStatic": true,
+          "ReturnType": "UInt64"
+        },
+        {
+          "Name": "ResetTotalEnergyUsage",
+          "IsStatic": true,
+          "ReturnType": "Void"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Power.Diagnostics.ForegroundEnergyDiagnostics",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "DeviceSpecificConversionFactor",
+          "Type": "Double",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "ComputeTotalEnergyUsage",
+          "IsStatic": true,
+          "ReturnType": "UInt64"
+        },
+        {
+          "Name": "ResetTotalEnergyUsage",
+          "IsStatic": true,
+          "ReturnType": "Void"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Power.ForegroundEnergyManager",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "ExcessiveUsageLevel",
+          "Type": "UInt32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "LowUsageLevel",
+          "Type": "UInt32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "MaxAcceptableUsageLevel",
+          "Type": "UInt32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "NearMaxAcceptableUsageLevel",
+          "Type": "UInt32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "RecentEnergyUsage",
+          "Type": "UInt32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "RecentEnergyUsageLevel",
+          "Type": "UInt32",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Events": [
+        {
+          "Name": "RecentEnergyUsageIncreased",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "RecentEnergyUsageReturnedToLow",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Power.PowerManager",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "BatteryStatus",
+          "Type": "BatteryStatus",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "EnergySaverStatus",
+          "Type": "EnergySaverStatus",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "PowerSupplyStatus",
+          "Type": "PowerSupplyStatus",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "RemainingChargePercent",
+          "Type": "Int32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "RemainingDischargeTime",
+          "Type": "TimeSpan",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Events": [
+        {
+          "Name": "BatteryStatusChanged",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "EnergySaverStatusChanged",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "PowerSupplyStatusChanged",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "RemainingChargePercentChanged",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        },
+        {
+          "Name": "RemainingDischargeTimeChanged",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.ProcessLauncher",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "RunToCompletionAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<ProcessLauncherResult>",
+          "Parameters": [
+            {
+              "Name": "fileName",
+              "Type": "String"
+            },
+            {
+              "Name": "args",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "RunToCompletionAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<ProcessLauncherResult>",
+          "Parameters": [
+            {
+              "Name": "fileName",
+              "Type": "String"
+            },
+            {
+              "Name": "args",
+              "Type": "String"
+            },
+            {
+              "Name": "options",
+              "Type": "ProcessLauncherOptions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.ProcessLauncherOptions",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "WorkingDirectory",
+          "Type": "String",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "StandardOutput",
+          "Type": "IOutputStream",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "StandardInput",
+          "Type": "IInputStream",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "StandardError",
+          "Type": "IOutputStream",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.ProcessLauncherResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "ExitCode",
+          "Type": "UInt32",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.ProcessMemoryReport",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "PrivateWorkingSetUsage",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "TotalWorkingSetUsage",
+          "Type": "UInt64",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Profile.AnalyticsInfo",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "DeviceForm",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "VersionInfo",
+          "Type": "AnalyticsVersionInfo",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetSystemPropertiesAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IReadOnlyDictionary<String,String>>",
+          "Parameters": [
+            {
+              "Name": "attributeNames",
+              "Type": "IEnumerable<String>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Profile.AnalyticsVersionInfo",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "DeviceFamily",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "DeviceFamilyVersion",
+          "Type": "String",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Profile.EducationSettings",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "IsEducationEnvironment",
+          "Type": "Boolean",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Profile.HardwareIdentification",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "GetPackageSpecificToken",
+          "IsStatic": true,
+          "ReturnType": "HardwareToken",
+          "Parameters": [
+            {
+              "Name": "nonce",
+              "Type": "IBuffer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Profile.HardwareToken",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Certificate",
+          "Type": "IBuffer",
+          "IsGet": true
+        },
+        {
+          "Name": "Id",
+          "Type": "IBuffer",
+          "IsGet": true
+        },
+        {
+          "Name": "Signature",
+          "Type": "IBuffer",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Profile.KnownRetailInfoProperties",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "BatteryLifeDescription",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "DisplayDescription",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "DisplayModelName",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "FormFactor",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "FrontCameraDescription",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "GraphicsDescription",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "HasNfc",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "HasOpticalDrive",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "HasSdSlot",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "IsFeatured",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "IsOfficeInstalled",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ManufacturerName",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Memory",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ModelName",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Price",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ProcessorDescription",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "RearCameraDescription",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "RetailAccessCode",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ScreenSize",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "StorageDescription",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Weight",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "WindowsEdition",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "CollectionLevel",
+          "Type": "PlatformDataCollectionLevel",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "CanCollectDiagnostics",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "level",
+              "Type": "PlatformDataCollectionLevel"
+            }
+          ]
+        }
+      ],
+      "Events": [
+        {
+          "Name": "CollectionLevelChanged",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Profile.RetailInfo",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "IsDemoModeEnabled",
+          "Type": "Boolean",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Properties",
+          "Type": "IReadOnlyDictionary<String,Object>",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Profile.SharedModeSettings",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "IsEnabled",
+          "Type": "Boolean",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ShouldAvoidLocalStorage",
+          "Type": "Boolean",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Profile.SystemIdentification",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "GetSystemIdForPublisher",
+          "IsStatic": true,
+          "ReturnType": "SystemIdentificationInfo"
+        },
+        {
+          "Name": "GetSystemIdForUser",
+          "IsStatic": true,
+          "ReturnType": "SystemIdentificationInfo",
+          "Parameters": [
+            {
+              "Name": "user",
+              "Type": "User"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Profile.SystemIdentificationInfo",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Id",
+          "Type": "IBuffer",
+          "IsGet": true
+        },
+        {
+          "Name": "Source",
+          "Type": "SystemIdentificationSource",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Profile.SystemManufacturers.OemSupportInfo",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "SupportAppLink",
+          "Type": "Uri",
+          "IsGet": true
+        },
+        {
+          "Name": "SupportLink",
+          "Type": "Uri",
+          "IsGet": true
+        },
+        {
+          "Name": "SupportProvider",
+          "Type": "String",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Profile.SystemManufacturers.SmbiosInformation",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "SerialNumber",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Profile.SystemManufacturers.SystemSupportInfo",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "LocalSystemEdition",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "OemSupportInfo",
+          "Type": "OemSupportInfo",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.ProtocolForResultsOperation",
+      "IsSealed": true,
+      "Methods": [
+        {
+          "Name": "ReportCompleted",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "ValueSet"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteDesktop.InteractiveSession",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "IsRemote",
+          "Type": "Boolean",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteLauncher",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "LaunchUriAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<RemoteLaunchUriStatus>",
+          "Parameters": [
+            {
+              "Name": "remoteSystemConnectionRequest",
+              "Type": "RemoteSystemConnectionRequest"
+            },
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            }
+          ]
+        },
+        {
+          "Name": "LaunchUriAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<RemoteLaunchUriStatus>",
+          "Parameters": [
+            {
+              "Name": "remoteSystemConnectionRequest",
+              "Type": "RemoteSystemConnectionRequest"
+            },
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "options",
+              "Type": "RemoteLauncherOptions"
+            }
+          ]
+        },
+        {
+          "Name": "LaunchUriAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<RemoteLaunchUriStatus>",
+          "Parameters": [
+            {
+              "Name": "remoteSystemConnectionRequest",
+              "Type": "RemoteSystemConnectionRequest"
+            },
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "options",
+              "Type": "RemoteLauncherOptions"
+            },
+            {
+              "Name": "inputData",
+              "Type": "ValueSet"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteLauncherOptions",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "FallbackUri",
+          "Type": "Uri",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "PreferredAppIds",
+          "Type": "IList<String>",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.KnownRemoteSystemCapabilities",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "AppService",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "LaunchUri",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "RemoteSession",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SpatialEntity",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystem",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "DisplayName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Id",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "IsAvailableByProximity",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Kind",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Status",
+          "Type": "RemoteSystemStatus",
+          "IsGet": true
+        },
+        {
+          "Name": "IsAvailableBySpatialProximity",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "ManufacturerDisplayName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "ModelDisplayName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Platform",
+          "Type": "RemoteSystemPlatform",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetCapabilitySupportedAsync",
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "capabilityName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "IsAuthorizationKindEnabled",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "kind",
+              "Type": "RemoteSystemAuthorizationKind"
+            }
+          ]
+        },
+        {
+          "Name": "FindByHostNameAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<RemoteSystem>",
+          "Parameters": [
+            {
+              "Name": "hostName",
+              "Type": "HostName"
+            }
+          ]
+        },
+        {
+          "Name": "CreateWatcher",
+          "IsStatic": true,
+          "ReturnType": "RemoteSystemWatcher"
+        },
+        {
+          "Name": "CreateWatcher",
+          "IsStatic": true,
+          "ReturnType": "RemoteSystemWatcher",
+          "Parameters": [
+            {
+              "Name": "filters",
+              "Type": "IEnumerable<IRemoteSystemFilter>"
+            }
+          ]
+        },
+        {
+          "Name": "RequestAccessAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<RemoteSystemAccessStatus>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemAddedEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "RemoteSystem",
+          "Type": "RemoteSystem",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemAuthorizationKindFilter",
+      "IsSealed": true,
+      "Interfaces": [
+        "IRemoteSystemFilter"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "remoteSystemAuthorizationKind",
+              "Type": "RemoteSystemAuthorizationKind"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "RemoteSystemAuthorizationKind",
+          "Type": "RemoteSystemAuthorizationKind",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemConnectionRequest",
+      "IsSealed": true,
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "remoteSystem",
+              "Type": "RemoteSystem"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "RemoteSystem",
+          "Type": "RemoteSystem",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemDiscoveryTypeFilter",
+      "IsSealed": true,
+      "Interfaces": [
+        "IRemoteSystemFilter"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "discoveryType",
+              "Type": "RemoteSystemDiscoveryType"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "RemoteSystemDiscoveryType",
+          "Type": "RemoteSystemDiscoveryType",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemEnumerationCompletedEventArgs",
+      "IsSealed": true
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemKindFilter",
+      "IsSealed": true,
+      "Interfaces": [
+        "IRemoteSystemFilter"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "remoteSystemKinds",
+              "Type": "IEnumerable<String>"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "RemoteSystemKinds",
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemKinds",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "Desktop",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Holographic",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Hub",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Phone",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Xbox",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Iot",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Laptop",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Tablet",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemRemovedEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "RemoteSystemId",
+          "Type": "String",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSession",
+      "IsSealed": true,
+      "Interfaces": [
+        "IDisposable"
+      ],
+      "Properties": [
+        {
+          "Name": "ControllerDisplayName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "DisplayName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Id",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "CreateParticipantWatcher",
+          "ReturnType": "RemoteSystemSessionParticipantWatcher"
+        },
+        {
+          "Name": "SendInvitationAsync",
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "invitee",
+              "Type": "RemoteSystem"
+            }
+          ]
+        },
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "CreateWatcher",
+          "IsStatic": true,
+          "ReturnType": "RemoteSystemSessionWatcher"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "Disconnected",
+          "Type": "TypedEventHandler<RemoteSystemSession,RemoteSystemSessionDisconnectedEventArgs>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionAddedEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "SessionInfo",
+          "Type": "RemoteSystemSessionInfo",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionController",
+      "IsSealed": true,
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "displayName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "displayName",
+              "Type": "String"
+            },
+            {
+              "Name": "options",
+              "Type": "RemoteSystemSessionOptions"
+            }
+          ]
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "RemoveParticipantAsync",
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "pParticipant",
+              "Type": "RemoteSystemSessionParticipant"
+            }
+          ]
+        },
+        {
+          "Name": "CreateSessionAsync",
+          "ReturnType": "IAsyncOperation<RemoteSystemSessionCreationResult>"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "JoinRequested",
+          "Type": "TypedEventHandler<RemoteSystemSessionController,RemoteSystemSessionJoinRequestedEventArgs>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionCreationResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Session",
+          "Type": "RemoteSystemSession",
+          "IsGet": true
+        },
+        {
+          "Name": "Status",
+          "Type": "RemoteSystemSessionCreationStatus",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionDisconnectedEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Reason",
+          "Type": "RemoteSystemSessionDisconnectedReason",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionInfo",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "ControllerDisplayName",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "DisplayName",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "JoinAsync",
+          "ReturnType": "IAsyncOperation<RemoteSystemSessionJoinResult>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionInvitation",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Sender",
+          "Type": "RemoteSystem",
+          "IsGet": true
+        },
+        {
+          "Name": "SessionInfo",
+          "Type": "RemoteSystemSessionInfo",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionInvitationListener",
+      "IsSealed": true,
+      "Events": [
+        {
+          "Name": "InvitationReceived",
+          "Type": "TypedEventHandler<RemoteSystemSessionInvitationListener,RemoteSystemSessionInvitationReceivedEventArgs>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionInvitationReceivedEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Invitation",
+          "Type": "RemoteSystemSessionInvitation",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionJoinRequest",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Participant",
+          "Type": "RemoteSystemSessionParticipant",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Accept",
+          "ReturnType": "Void"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionJoinRequestedEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "JoinRequest",
+          "Type": "RemoteSystemSessionJoinRequest",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetDeferral",
+          "ReturnType": "Deferral"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionJoinResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Session",
+          "Type": "RemoteSystemSession",
+          "IsGet": true
+        },
+        {
+          "Name": "Status",
+          "Type": "RemoteSystemSessionJoinStatus",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionMessageChannel",
+      "IsSealed": true,
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "session",
+              "Type": "RemoteSystemSession"
+            },
+            {
+              "Name": "channelName",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "session",
+              "Type": "RemoteSystemSession"
+            },
+            {
+              "Name": "channelName",
+              "Type": "String"
+            },
+            {
+              "Name": "reliability",
+              "Type": "RemoteSystemSessionMessageChannelReliability"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "Session",
+          "Type": "RemoteSystemSession",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "BroadcastValueSetAsync",
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "messageData",
+              "Type": "ValueSet"
+            }
+          ]
+        },
+        {
+          "Name": "SendValueSetAsync",
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "messageData",
+              "Type": "ValueSet"
+            },
+            {
+              "Name": "participant",
+              "Type": "RemoteSystemSessionParticipant"
+            }
+          ]
+        },
+        {
+          "Name": "SendValueSetToParticipantsAsync",
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "messageData",
+              "Type": "ValueSet"
+            },
+            {
+              "Name": "participants",
+              "Type": "IEnumerable<RemoteSystemSessionParticipant>"
+            }
+          ]
+        }
+      ],
+      "Events": [
+        {
+          "Name": "ValueSetReceived",
+          "Type": "TypedEventHandler<RemoteSystemSessionMessageChannel,RemoteSystemSessionValueSetReceivedEventArgs>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionOptions",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "IsInviteOnly",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionParticipant",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "RemoteSystem",
+          "Type": "RemoteSystem",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetHostNames",
+          "ReturnType": "IReadOnlyList<HostName>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionParticipantAddedEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Participant",
+          "Type": "RemoteSystemSessionParticipant",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionParticipantRemovedEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Participant",
+          "Type": "RemoteSystemSessionParticipant",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionParticipantWatcher",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Status",
+          "Type": "RemoteSystemSessionParticipantWatcherStatus",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Start",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Stop",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "Added",
+          "Type": "TypedEventHandler<RemoteSystemSessionParticipantWatcher,RemoteSystemSessionParticipantAddedEventArgs>"
+        },
+        {
+          "Name": "EnumerationCompleted",
+          "Type": "TypedEventHandler<RemoteSystemSessionParticipantWatcher,Object>"
+        },
+        {
+          "Name": "Removed",
+          "Type": "TypedEventHandler<RemoteSystemSessionParticipantWatcher,RemoteSystemSessionParticipantRemovedEventArgs>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionRemovedEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "SessionInfo",
+          "Type": "RemoteSystemSessionInfo",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionUpdatedEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "SessionInfo",
+          "Type": "RemoteSystemSessionInfo",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionValueSetReceivedEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Message",
+          "Type": "ValueSet",
+          "IsGet": true
+        },
+        {
+          "Name": "Sender",
+          "Type": "RemoteSystemSessionParticipant",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemSessionWatcher",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Status",
+          "Type": "RemoteSystemSessionWatcherStatus",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Start",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Stop",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "Added",
+          "Type": "TypedEventHandler<RemoteSystemSessionWatcher,RemoteSystemSessionAddedEventArgs>"
+        },
+        {
+          "Name": "Removed",
+          "Type": "TypedEventHandler<RemoteSystemSessionWatcher,RemoteSystemSessionRemovedEventArgs>"
+        },
+        {
+          "Name": "Updated",
+          "Type": "TypedEventHandler<RemoteSystemSessionWatcher,RemoteSystemSessionUpdatedEventArgs>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemStatusTypeFilter",
+      "IsSealed": true,
+      "Interfaces": [
+        "IRemoteSystemFilter"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "remoteSystemStatusType",
+              "Type": "RemoteSystemStatusType"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "RemoteSystemStatusType",
+          "Type": "RemoteSystemStatusType",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemUpdatedEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "RemoteSystem",
+          "Type": "RemoteSystem",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemWatcher",
+      "IsSealed": true,
+      "Methods": [
+        {
+          "Name": "Start",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Stop",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "RemoteSystemAdded",
+          "Type": "TypedEventHandler<RemoteSystemWatcher,RemoteSystemAddedEventArgs>"
+        },
+        {
+          "Name": "RemoteSystemRemoved",
+          "Type": "TypedEventHandler<RemoteSystemWatcher,RemoteSystemRemovedEventArgs>"
+        },
+        {
+          "Name": "RemoteSystemUpdated",
+          "Type": "TypedEventHandler<RemoteSystemWatcher,RemoteSystemUpdatedEventArgs>"
+        },
+        {
+          "Name": "EnumerationCompleted",
+          "Type": "TypedEventHandler<RemoteSystemWatcher,RemoteSystemEnumerationCompletedEventArgs>"
+        },
+        {
+          "Name": "ErrorOccurred",
+          "Type": "TypedEventHandler<RemoteSystemWatcher,RemoteSystemWatcherErrorOccurredEventArgs>"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.RemoteSystems.RemoteSystemWatcherErrorOccurredEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Error",
+          "Type": "RemoteSystemWatcherError",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.ShutdownManager",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "IsPowerStateSupported",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "powerState",
+              "Type": "PowerState"
+            }
+          ]
+        },
+        {
+          "Name": "EnterPowerState",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "powerState",
+              "Type": "PowerState"
+            }
+          ]
+        },
+        {
+          "Name": "EnterPowerState",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "powerState",
+              "Type": "PowerState"
+            },
+            {
+              "Name": "wakeUpAfter",
+              "Type": "TimeSpan"
+            }
+          ]
+        },
+        {
+          "Name": "BeginShutdown",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "shutdownKind",
+              "Type": "ShutdownKind"
+            },
+            {
+              "Name": "timeout",
+              "Type": "TimeSpan"
+            }
+          ]
+        },
+        {
+          "Name": "CancelShutdown",
+          "IsStatic": true,
+          "ReturnType": "Void"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Threading.Core.PreallocatedWorkItem",
+      "IsSealed": true,
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "handler",
+              "Type": "WorkItemHandler"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "handler",
+              "Type": "WorkItemHandler"
+            },
+            {
+              "Name": "priority",
+              "Type": "WorkItemPriority"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "handler",
+              "Type": "WorkItemHandler"
+            },
+            {
+              "Name": "priority",
+              "Type": "WorkItemPriority"
+            },
+            {
+              "Name": "options",
+              "Type": "WorkItemOptions"
+            }
+          ]
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "RunAsync",
+          "ReturnType": "IAsyncAction"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Threading.Core.SignalNotifier",
+      "IsSealed": true,
+      "Methods": [
+        {
+          "Name": "Enable",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Terminate",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "AttachToEvent",
+          "IsStatic": true,
+          "ReturnType": "SignalNotifier",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "handler",
+              "Type": "SignalHandler"
+            }
+          ]
+        },
+        {
+          "Name": "AttachToEvent",
+          "IsStatic": true,
+          "ReturnType": "SignalNotifier",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "handler",
+              "Type": "SignalHandler"
+            },
+            {
+              "Name": "timeout",
+              "Type": "TimeSpan"
+            }
+          ]
+        },
+        {
+          "Name": "AttachToSemaphore",
+          "IsStatic": true,
+          "ReturnType": "SignalNotifier",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "handler",
+              "Type": "SignalHandler"
+            }
+          ]
+        },
+        {
+          "Name": "AttachToSemaphore",
+          "IsStatic": true,
+          "ReturnType": "SignalNotifier",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "handler",
+              "Type": "SignalHandler"
+            },
+            {
+              "Name": "timeout",
+              "Type": "TimeSpan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Threading.ThreadPool",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "RunAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "handler",
+              "Type": "WorkItemHandler"
+            }
+          ]
+        },
+        {
+          "Name": "RunAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "handler",
+              "Type": "WorkItemHandler"
+            },
+            {
+              "Name": "priority",
+              "Type": "WorkItemPriority"
+            }
+          ]
+        },
+        {
+          "Name": "RunAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "handler",
+              "Type": "WorkItemHandler"
+            },
+            {
+              "Name": "priority",
+              "Type": "WorkItemPriority"
+            },
+            {
+              "Name": "options",
+              "Type": "WorkItemOptions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Threading.ThreadPoolTimer",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Delay",
+          "Type": "TimeSpan",
+          "IsGet": true
+        },
+        {
+          "Name": "Period",
+          "Type": "TimeSpan",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Cancel",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "CreatePeriodicTimer",
+          "IsStatic": true,
+          "ReturnType": "ThreadPoolTimer",
+          "Parameters": [
+            {
+              "Name": "handler",
+              "Type": "TimerElapsedHandler"
+            },
+            {
+              "Name": "period",
+              "Type": "TimeSpan"
+            }
+          ]
+        },
+        {
+          "Name": "CreateTimer",
+          "IsStatic": true,
+          "ReturnType": "ThreadPoolTimer",
+          "Parameters": [
+            {
+              "Name": "handler",
+              "Type": "TimerElapsedHandler"
+            },
+            {
+              "Name": "delay",
+              "Type": "TimeSpan"
+            }
+          ]
+        },
+        {
+          "Name": "CreatePeriodicTimer",
+          "IsStatic": true,
+          "ReturnType": "ThreadPoolTimer",
+          "Parameters": [
+            {
+              "Name": "handler",
+              "Type": "TimerElapsedHandler"
+            },
+            {
+              "Name": "period",
+              "Type": "TimeSpan"
+            },
+            {
+              "Name": "destroyed",
+              "Type": "TimerDestroyedHandler"
+            }
+          ]
+        },
+        {
+          "Name": "CreateTimer",
+          "IsStatic": true,
+          "ReturnType": "ThreadPoolTimer",
+          "Parameters": [
+            {
+              "Name": "handler",
+              "Type": "TimerElapsedHandler"
+            },
+            {
+              "Name": "delay",
+              "Type": "TimeSpan"
+            },
+            {
+              "Name": "destroyed",
+              "Type": "TimerDestroyedHandler"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.TimeZoneSettings",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "CanChangeTimeZone",
+          "Type": "Boolean",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "CurrentTimeZoneDisplayName",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "SupportedTimeZoneDisplayNames",
+          "Type": "IReadOnlyList<String>",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "AutoUpdateTimeZoneAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<AutoUpdateTimeZoneStatus>",
+          "Parameters": [
+            {
+              "Name": "timeout",
+              "Type": "TimeSpan"
+            }
+          ]
+        },
+        {
+          "Name": "ChangeTimeZoneByDisplayName",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "timeZoneDisplayName",
+              "Type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.User",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "AuthenticationStatus",
+          "Type": "UserAuthenticationStatus",
+          "IsGet": true
+        },
+        {
+          "Name": "NonRoamableId",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Type",
+          "Type": "UserType",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetPropertyAsync",
+          "ReturnType": "IAsyncOperation<Object>",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "GetPropertiesAsync",
+          "ReturnType": "IAsyncOperation<IPropertySet>",
+          "Parameters": [
+            {
+              "Name": "values",
+              "Type": "IReadOnlyList<String>"
+            }
+          ]
+        },
+        {
+          "Name": "GetPictureAsync",
+          "ReturnType": "IAsyncOperation<IRandomAccessStreamReference>",
+          "Parameters": [
+            {
+              "Name": "desiredSize",
+              "Type": "UserPictureSize"
+            }
+          ]
+        },
+        {
+          "Name": "CreateWatcher",
+          "IsStatic": true,
+          "ReturnType": "UserWatcher"
+        },
+        {
+          "Name": "FindAllAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IReadOnlyList<User>>"
+        },
+        {
+          "Name": "FindAllAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IReadOnlyList<User>>",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "UserType"
+            }
+          ]
+        },
+        {
+          "Name": "FindAllAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<IReadOnlyList<User>>",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "UserType"
+            },
+            {
+              "Name": "status",
+              "Type": "UserAuthenticationStatus"
+            }
+          ]
+        },
+        {
+          "Name": "GetFromId",
+          "IsStatic": true,
+          "ReturnType": "User",
+          "Parameters": [
+            {
+              "Name": "nonRoamableId",
+              "Type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserAuthenticationStatusChangeDeferral",
+      "IsSealed": true,
+      "Methods": [
+        {
+          "Name": "Complete",
+          "ReturnType": "Void"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserAuthenticationStatusChangingEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "CurrentStatus",
+          "Type": "UserAuthenticationStatus",
+          "IsGet": true
+        },
+        {
+          "Name": "NewStatus",
+          "Type": "UserAuthenticationStatus",
+          "IsGet": true
+        },
+        {
+          "Name": "User",
+          "Type": "User",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetDeferral",
+          "ReturnType": "UserAuthenticationStatusChangeDeferral"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserChangedEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "User",
+          "Type": "User",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserDeviceAssociation",
+      "IsStatic": true,
+      "Methods": [
+        {
+          "Name": "FindUserFromDeviceId",
+          "IsStatic": true,
+          "ReturnType": "User",
+          "Parameters": [
+            {
+              "Name": "deviceId",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Events": [
+        {
+          "Name": "UserDeviceAssociationChanged",
+          "Type": "EventHandler<UserDeviceAssociationChangedEventArgs>",
+          "IsStatic": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserDeviceAssociationChangedEventArgs",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "DeviceId",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "NewUser",
+          "Type": "User",
+          "IsGet": true
+        },
+        {
+          "Name": "OldUser",
+          "Type": "User",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserPicker",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "SuggestedSelectedUser",
+          "Type": "User",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "AllowGuestAccounts",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "PickSingleUserAsync",
+          "ReturnType": "IAsyncOperation<User>"
+        },
+        {
+          "Name": "IsSupported",
+          "IsStatic": true,
+          "ReturnType": "Boolean"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserProfile.AdvertisingManager",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "AdvertisingId",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetForUser",
+          "IsStatic": true,
+          "ReturnType": "AdvertisingManagerForUser",
+          "Parameters": [
+            {
+              "Name": "user",
+              "Type": "User"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserProfile.AdvertisingManagerForUser",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "AdvertisingId",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "User",
+          "Type": "User",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserProfile.AssignedAccessSettings",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "IsEnabled",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "IsSingleAppKioskMode",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "User",
+          "Type": "User",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetDefault",
+          "IsStatic": true,
+          "ReturnType": "AssignedAccessSettings"
+        },
+        {
+          "Name": "GetForUser",
+          "IsStatic": true,
+          "ReturnType": "AssignedAccessSettings",
+          "Parameters": [
+            {
+              "Name": "user",
+              "Type": "User"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserProfile.DiagnosticsSettings",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "CanUseDiagnosticsToTailorExperiences",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "User",
+          "Type": "User",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetDefault",
+          "IsStatic": true,
+          "ReturnType": "DiagnosticsSettings"
+        },
+        {
+          "Name": "GetForUser",
+          "IsStatic": true,
+          "ReturnType": "DiagnosticsSettings",
+          "Parameters": [
+            {
+              "Name": "user",
+              "Type": "User"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserProfile.FirstSignInSettings",
+      "IsSealed": true,
+      "Interfaces": [
+        "IReadOnlyDictionary<String,Object>",
+        "IReadOnlyCollection<KeyValuePair<String,Object>>",
+        "IEnumerable<KeyValuePair<String,Object>>",
+        "IEnumerable"
+      ],
+      "Properties": [
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetDefault",
+          "IsStatic": true,
+          "ReturnType": "FirstSignInSettings"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserProfile.GlobalizationPreferences",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "Calendars",
+          "Type": "IReadOnlyList<String>",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Clocks",
+          "Type": "IReadOnlyList<String>",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Currencies",
+          "Type": "IReadOnlyList<String>",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "HomeGeographicRegion",
+          "Type": "String",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "Languages",
+          "Type": "IReadOnlyList<String>",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "WeekStartsOn",
+          "Type": "DayOfWeek",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetForUser",
+          "IsStatic": true,
+          "ReturnType": "GlobalizationPreferencesForUser",
+          "Parameters": [
+            {
+              "Name": "user",
+              "Type": "User"
+            }
+          ]
+        },
+        {
+          "Name": "TrySetHomeGeographicRegion",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "region",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "TrySetLanguages",
+          "IsStatic": true,
+          "ReturnType": "Boolean",
+          "Parameters": [
+            {
+              "Name": "languageTags",
+              "Type": "IEnumerable<String>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserProfile.GlobalizationPreferencesForUser",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Calendars",
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true
+        },
+        {
+          "Name": "Clocks",
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true
+        },
+        {
+          "Name": "Currencies",
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true
+        },
+        {
+          "Name": "HomeGeographicRegion",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Languages",
+          "Type": "IReadOnlyList<String>",
+          "IsGet": true
+        },
+        {
+          "Name": "User",
+          "Type": "User",
+          "IsGet": true
+        },
+        {
+          "Name": "WeekStartsOn",
+          "Type": "DayOfWeek",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserProfile.LockScreen",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "OriginalImageFile",
+          "Type": "Uri",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "RequestSetImageFeedAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<SetImageFeedResult>",
+          "Parameters": [
+            {
+              "Name": "syndicationFeedUri",
+              "Type": "Uri"
+            }
+          ]
+        },
+        {
+          "Name": "TryRemoveImageFeed",
+          "IsStatic": true,
+          "ReturnType": "Boolean"
+        },
+        {
+          "Name": "GetImageStream",
+          "IsStatic": true,
+          "ReturnType": "IRandomAccessStream"
+        },
+        {
+          "Name": "SetImageFileAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "IStorageFile"
+            }
+          ]
+        },
+        {
+          "Name": "SetImageStreamAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncAction",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "IRandomAccessStream"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserProfile.UserInformation",
+      "IsStatic": true,
+      "Properties": [
+        {
+          "Name": "AccountPictureChangeEnabled",
+          "Type": "Boolean",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "NameAccessAllowed",
+          "Type": "Boolean",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetAccountPicture",
+          "IsStatic": true,
+          "ReturnType": "IStorageFile",
+          "Parameters": [
+            {
+              "Name": "kind",
+              "Type": "AccountPictureKind"
+            }
+          ]
+        },
+        {
+          "Name": "SetAccountPictureAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<SetAccountPictureResult>",
+          "Parameters": [
+            {
+              "Name": "image",
+              "Type": "IStorageFile"
+            }
+          ]
+        },
+        {
+          "Name": "SetAccountPicturesAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<SetAccountPictureResult>",
+          "Parameters": [
+            {
+              "Name": "smallImage",
+              "Type": "IStorageFile"
+            },
+            {
+              "Name": "largeImage",
+              "Type": "IStorageFile"
+            },
+            {
+              "Name": "video",
+              "Type": "IStorageFile"
+            }
+          ]
+        },
+        {
+          "Name": "SetAccountPictureFromStreamAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<SetAccountPictureResult>",
+          "Parameters": [
+            {
+              "Name": "image",
+              "Type": "IRandomAccessStream"
+            }
+          ]
+        },
+        {
+          "Name": "SetAccountPicturesFromStreamsAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<SetAccountPictureResult>",
+          "Parameters": [
+            {
+              "Name": "smallImage",
+              "Type": "IRandomAccessStream"
+            },
+            {
+              "Name": "largeImage",
+              "Type": "IRandomAccessStream"
+            },
+            {
+              "Name": "video",
+              "Type": "IRandomAccessStream"
+            }
+          ]
+        },
+        {
+          "Name": "GetDisplayNameAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<String>"
+        },
+        {
+          "Name": "GetFirstNameAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<String>"
+        },
+        {
+          "Name": "GetLastNameAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<String>"
+        },
+        {
+          "Name": "GetPrincipalNameAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<String>"
+        },
+        {
+          "Name": "GetSessionInitiationProtocolUriAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<Uri>"
+        },
+        {
+          "Name": "GetDomainNameAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<String>"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "AccountPictureChanged",
+          "Type": "EventHandler<Object>",
+          "IsStatic": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserProfile.UserProfilePersonalizationSettings",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Current",
+          "Type": "UserProfilePersonalizationSettings",
+          "IsStatic": true,
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "TrySetLockScreenImageAsync",
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "imageFile",
+              "Type": "StorageFile"
+            }
+          ]
+        },
+        {
+          "Name": "TrySetWallpaperImageAsync",
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "imageFile",
+              "Type": "StorageFile"
+            }
+          ]
+        },
+        {
+          "Name": "IsSupported",
+          "IsStatic": true,
+          "ReturnType": "Boolean"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.UserWatcher",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Status",
+          "Type": "UserWatcherStatus",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Start",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Stop",
+          "ReturnType": "Void"
+        }
+      ],
+      "Events": [
+        {
+          "Name": "Added",
+          "Type": "TypedEventHandler<UserWatcher,UserChangedEventArgs>"
+        },
+        {
+          "Name": "AuthenticationStatusChanged",
+          "Type": "TypedEventHandler<UserWatcher,UserChangedEventArgs>"
+        },
+        {
+          "Name": "AuthenticationStatusChanging",
+          "Type": "TypedEventHandler<UserWatcher,UserAuthenticationStatusChangingEventArgs>"
+        },
+        {
+          "Name": "EnumerationCompleted",
+          "Type": "TypedEventHandler<UserWatcher,Object>"
+        },
+        {
+          "Name": "Removed",
+          "Type": "TypedEventHandler<UserWatcher,UserChangedEventArgs>"
+        },
+        {
+          "Name": "Stopped",
+          "Type": "TypedEventHandler<UserWatcher,Object>"
+        },
+        {
+          "Name": "Updated",
+          "Type": "TypedEventHandler<UserWatcher,UserChangedEventArgs>"
+        }
+      ]
+    }
+  ],
+  "Delegates": [
+    {
+      "Name": "Windows.System.DispatcherQueueHandler",
+      "ReturnType": "Void"
+    },
+    {
+      "Name": "Windows.System.Threading.Core.SignalHandler",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "signalNotifier",
+          "Type": "SignalNotifier"
+        },
+        {
+          "Name": "timedOut",
+          "Type": "Boolean"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Threading.TimerDestroyedHandler",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "timer",
+          "Type": "ThreadPoolTimer"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Threading.TimerElapsedHandler",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "timer",
+          "Type": "ThreadPoolTimer"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.System.Threading.WorkItemHandler",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "operation",
+          "Type": "IAsyncAction"
+        }
+      ]
+    }
+  ]
+}
