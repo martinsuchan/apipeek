@@ -1,0 +1,2325 @@
+{
+  "Name": "Windows.AI, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime",
+  "Enums": [
+    {
+      "Name": "Windows.AI.MachineLearning.LearningModelDeviceKind",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Default",
+          "Value": "0"
+        },
+        {
+          "Name": "Cpu",
+          "Value": "1"
+        },
+        {
+          "Name": "DirectX",
+          "Value": "2"
+        },
+        {
+          "Name": "DirectXHighPerformance",
+          "Value": "3"
+        },
+        {
+          "Name": "DirectXMinPower",
+          "Value": "4"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.LearningModelFeatureKind",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Tensor",
+          "Value": "0"
+        },
+        {
+          "Name": "Sequence",
+          "Value": "1"
+        },
+        {
+          "Name": "Map",
+          "Value": "2"
+        },
+        {
+          "Name": "Image",
+          "Value": "3"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.Preview.FeatureElementKindPreview",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Undefined",
+          "Value": "0"
+        },
+        {
+          "Name": "Float",
+          "Value": "1"
+        },
+        {
+          "Name": "UInt8",
+          "Value": "2"
+        },
+        {
+          "Name": "Int8",
+          "Value": "3"
+        },
+        {
+          "Name": "UInt16",
+          "Value": "4"
+        },
+        {
+          "Name": "Int16",
+          "Value": "5"
+        },
+        {
+          "Name": "Int32",
+          "Value": "6"
+        },
+        {
+          "Name": "Int64",
+          "Value": "7"
+        },
+        {
+          "Name": "String",
+          "Value": "8"
+        },
+        {
+          "Name": "Boolean",
+          "Value": "9"
+        },
+        {
+          "Name": "Float16",
+          "Value": "10"
+        },
+        {
+          "Name": "Double",
+          "Value": "11"
+        },
+        {
+          "Name": "UInt32",
+          "Value": "12"
+        },
+        {
+          "Name": "UInt64",
+          "Value": "13"
+        },
+        {
+          "Name": "Complex64",
+          "Value": "14"
+        },
+        {
+          "Name": "Complex128",
+          "Value": "15"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "LearningDeviceAny",
+          "Value": "0"
+        },
+        {
+          "Name": "LearningDeviceCpu",
+          "Value": "1"
+        },
+        {
+          "Name": "LearningDeviceGpu",
+          "Value": "2"
+        },
+        {
+          "Name": "LearningDeviceNpu",
+          "Value": "3"
+        },
+        {
+          "Name": "LearningDeviceDsp",
+          "Value": "4"
+        },
+        {
+          "Name": "LearningDeviceFpga",
+          "Value": "5"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Undefined",
+          "Value": "0"
+        },
+        {
+          "Name": "Tensor",
+          "Value": "1"
+        },
+        {
+          "Name": "Sequence",
+          "Value": "2"
+        },
+        {
+          "Name": "Map",
+          "Value": "3"
+        },
+        {
+          "Name": "Image",
+          "Value": "4"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.TensorKind",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "Undefined",
+          "Value": "0"
+        },
+        {
+          "Name": "Float",
+          "Value": "1"
+        },
+        {
+          "Name": "UInt8",
+          "Value": "2"
+        },
+        {
+          "Name": "Int8",
+          "Value": "3"
+        },
+        {
+          "Name": "UInt16",
+          "Value": "4"
+        },
+        {
+          "Name": "Int16",
+          "Value": "5"
+        },
+        {
+          "Name": "Int32",
+          "Value": "6"
+        },
+        {
+          "Name": "Int64",
+          "Value": "7"
+        },
+        {
+          "Name": "String",
+          "Value": "8"
+        },
+        {
+          "Name": "Boolean",
+          "Value": "9"
+        },
+        {
+          "Name": "Float16",
+          "Value": "10"
+        },
+        {
+          "Name": "Double",
+          "Value": "11"
+        },
+        {
+          "Name": "UInt32",
+          "Value": "12"
+        },
+        {
+          "Name": "UInt64",
+          "Value": "13"
+        },
+        {
+          "Name": "Complex64",
+          "Value": "14"
+        },
+        {
+          "Name": "Complex128",
+          "Value": "15"
+        }
+      ]
+    }
+  ],
+  "Interfaces": [
+    {
+      "Name": "Windows.AI.MachineLearning.ILearningModelFeatureDescriptor",
+      "Properties": [
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "IsRequired",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.ILearningModelFeatureValue",
+      "Properties": [
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.ILearningModelOperatorProvider"
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.ITensor",
+      "Interfaces": [
+        "ILearningModelFeatureValue"
+      ],
+      "Properties": [
+        {
+          "Name": "Shape",
+          "Type": "IReadOnlyList<Int64>",
+          "IsGet": true
+        },
+        {
+          "Name": "TensorKind",
+          "Type": "TensorKind",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.Preview.DummyInterfaceToFixBuildBreak",
+      "Methods": [
+        {
+          "Name": "DummyMethodToMakeEcma335Happy",
+          "ReturnType": "Void"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview",
+      "Properties": [
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "IsRequired",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "ModelFeatureKind",
+          "Type": "LearningModelFeatureKindPreview",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        }
+      ]
+    }
+  ],
+  "Structs": [
+    {
+      "Name": "Windows.AI.MachineLearning.MachineLearningContract"
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.Preview.MachineLearningPreviewContract"
+    }
+  ],
+  "Classes": [
+    {
+      "Name": "Windows.AI.MachineLearning.ImageFeatureDescriptor",
+      "IsSealed": true,
+      "Interfaces": [
+        "ILearningModelFeatureDescriptor"
+      ],
+      "Properties": [
+        {
+          "Name": "BitmapAlphaMode",
+          "Type": "BitmapAlphaMode",
+          "IsGet": true
+        },
+        {
+          "Name": "BitmapPixelFormat",
+          "Type": "BitmapPixelFormat",
+          "IsGet": true
+        },
+        {
+          "Name": "Height",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "Width",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "IsRequired",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.ImageFeatureValue",
+      "IsSealed": true,
+      "Interfaces": [
+        "ILearningModelFeatureValue"
+      ],
+      "Properties": [
+        {
+          "Name": "VideoFrame",
+          "Type": "VideoFrame",
+          "IsGet": true
+        },
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "CreateFromVideoFrame",
+          "IsStatic": true,
+          "ReturnType": "ImageFeatureValue",
+          "Parameters": [
+            {
+              "Name": "image",
+              "Type": "VideoFrame"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.LearningModel",
+      "IsSealed": true,
+      "Interfaces": [
+        "IDisposable"
+      ],
+      "Properties": [
+        {
+          "Name": "Author",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Domain",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "InputFeatures",
+          "Type": "IReadOnlyList<ILearningModelFeatureDescriptor>",
+          "IsGet": true
+        },
+        {
+          "Name": "Metadata",
+          "Type": "IReadOnlyDictionary<String,String>",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "OutputFeatures",
+          "Type": "IReadOnlyList<ILearningModelFeatureDescriptor>",
+          "IsGet": true
+        },
+        {
+          "Name": "Version",
+          "Type": "Int64",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "LoadFromStorageFileAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LearningModel>",
+          "Parameters": [
+            {
+              "Name": "modelFile",
+              "Type": "IStorageFile"
+            }
+          ]
+        },
+        {
+          "Name": "LoadFromStreamAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LearningModel>",
+          "Parameters": [
+            {
+              "Name": "modelStream",
+              "Type": "IRandomAccessStreamReference"
+            }
+          ]
+        },
+        {
+          "Name": "LoadFromFilePath",
+          "IsStatic": true,
+          "ReturnType": "LearningModel",
+          "Parameters": [
+            {
+              "Name": "filePath",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "LoadFromStream",
+          "IsStatic": true,
+          "ReturnType": "LearningModel",
+          "Parameters": [
+            {
+              "Name": "modelStream",
+              "Type": "IRandomAccessStreamReference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.LearningModelBinding",
+      "IsSealed": true,
+      "Interfaces": [
+        "IReadOnlyDictionary<String,Object>",
+        "IReadOnlyCollection<KeyValuePair<String,Object>>",
+        "IEnumerable<KeyValuePair<String,Object>>",
+        "IEnumerable"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "session",
+              "Type": "LearningModelSession"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Bind",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Object"
+            }
+          ]
+        },
+        {
+          "Name": "Bind",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Object"
+            },
+            {
+              "Name": "props",
+              "Type": "IPropertySet"
+            }
+          ]
+        },
+        {
+          "Name": "Clear",
+          "ReturnType": "Void"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.LearningModelDevice",
+      "IsSealed": true,
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "deviceKind",
+              "Type": "LearningModelDeviceKind"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "AdapterId",
+          "Type": "UInt64",
+          "IsGet": true
+        },
+        {
+          "Name": "Direct3D11Device",
+          "Type": "IDirect3DDevice",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "CreateFromDirect3D11Device",
+          "IsStatic": true,
+          "ReturnType": "LearningModelDevice",
+          "Parameters": [
+            {
+              "Name": "device",
+              "Type": "IDirect3DDevice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.LearningModelEvaluationResult",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "CorrelationId",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "ErrorStatus",
+          "Type": "Int32",
+          "IsGet": true
+        },
+        {
+          "Name": "Outputs",
+          "Type": "IReadOnlyDictionary<String,Object>",
+          "IsGet": true
+        },
+        {
+          "Name": "Succeeded",
+          "Type": "Boolean",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.LearningModelSession",
+      "IsSealed": true,
+      "Interfaces": [
+        "IDisposable"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "model",
+              "Type": "LearningModel"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "model",
+              "Type": "LearningModel"
+            },
+            {
+              "Name": "deviceToRunOn",
+              "Type": "LearningModelDevice"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "model",
+              "Type": "LearningModel"
+            },
+            {
+              "Name": "deviceToRunOn",
+              "Type": "LearningModelDevice"
+            },
+            {
+              "Name": "learningModelOperatorProvider",
+              "Type": "ILearningModelOperatorProvider"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "Device",
+          "Type": "LearningModelDevice",
+          "IsGet": true
+        },
+        {
+          "Name": "EvaluationProperties",
+          "Type": "IPropertySet",
+          "IsGet": true
+        },
+        {
+          "Name": "Model",
+          "Type": "LearningModel",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "EvaluateAsync",
+          "ReturnType": "IAsyncOperation<LearningModelEvaluationResult>",
+          "Parameters": [
+            {
+              "Name": "bindings",
+              "Type": "LearningModelBinding"
+            },
+            {
+              "Name": "correlationId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "EvaluateFeaturesAsync",
+          "ReturnType": "IAsyncOperation<LearningModelEvaluationResult>",
+          "Parameters": [
+            {
+              "Name": "features",
+              "Type": "IDictionary<String,Object>"
+            },
+            {
+              "Name": "correlationId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "Evaluate",
+          "ReturnType": "LearningModelEvaluationResult",
+          "Parameters": [
+            {
+              "Name": "bindings",
+              "Type": "LearningModelBinding"
+            },
+            {
+              "Name": "correlationId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "EvaluateFeatures",
+          "ReturnType": "LearningModelEvaluationResult",
+          "Parameters": [
+            {
+              "Name": "features",
+              "Type": "IDictionary<String,Object>"
+            },
+            {
+              "Name": "correlationId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.MapFeatureDescriptor",
+      "IsSealed": true,
+      "Interfaces": [
+        "ILearningModelFeatureDescriptor"
+      ],
+      "Properties": [
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "IsRequired",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "KeyKind",
+          "Type": "TensorKind",
+          "IsGet": true
+        },
+        {
+          "Name": "ValueDescriptor",
+          "Type": "ILearningModelFeatureDescriptor",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview",
+      "IsSealed": true,
+      "Interfaces": [
+        "ILearningModelVariableDescriptorPreview"
+      ],
+      "Properties": [
+        {
+          "Name": "BitmapPixelFormat",
+          "Type": "BitmapPixelFormat",
+          "IsGet": true
+        },
+        {
+          "Name": "Height",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "Width",
+          "Type": "UInt32",
+          "IsGet": true
+        },
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "IsRequired",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "ModelFeatureKind",
+          "Type": "LearningModelFeatureKindPreview",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.Preview.InferencingOptionsPreview",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "ReclaimMemoryAfterEvaluation",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "PreferredDeviceKind",
+          "Type": "LearningModelDeviceKindPreview",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "MinimizeMemoryAllocation",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "MaxBatchSize",
+          "Type": "Int32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "IsTracingEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.Preview.LearningModelBindingPreview",
+      "IsSealed": true,
+      "Interfaces": [
+        "IReadOnlyDictionary<String,Object>",
+        "IReadOnlyCollection<KeyValuePair<String,Object>>",
+        "IEnumerable<KeyValuePair<String,Object>>",
+        "IEnumerable"
+      ],
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "model",
+              "Type": "LearningModelPreview"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Bind",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Object"
+            }
+          ]
+        },
+        {
+          "Name": "Bind",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "String"
+            },
+            {
+              "Name": "value",
+              "Type": "Object"
+            },
+            {
+              "Name": "metadata",
+              "Type": "IPropertySet"
+            }
+          ]
+        },
+        {
+          "Name": "Clear",
+          "ReturnType": "Void"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "Author",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Domain",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "InputFeatures",
+          "Type": "IEnumerable<ILearningModelVariableDescriptorPreview>",
+          "IsGet": true
+        },
+        {
+          "Name": "Metadata",
+          "Type": "IReadOnlyDictionary<String,String>",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "OutputFeatures",
+          "Type": "IEnumerable<ILearningModelVariableDescriptorPreview>",
+          "IsGet": true
+        },
+        {
+          "Name": "Version",
+          "Type": "Int64",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.Preview.LearningModelEvaluationResultPreview",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "CorrelationId",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Outputs",
+          "Type": "IReadOnlyDictionary<String,Object>",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.Preview.LearningModelPreview",
+      "IsSealed": true,
+      "Properties": [
+        {
+          "Name": "InferencingOptions",
+          "Type": "InferencingOptionsPreview",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "Description",
+          "Type": "LearningModelDescriptionPreview",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "EvaluateAsync",
+          "ReturnType": "IAsyncOperation<LearningModelEvaluationResultPreview>",
+          "Parameters": [
+            {
+              "Name": "binding",
+              "Type": "LearningModelBindingPreview"
+            },
+            {
+              "Name": "correlationId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "EvaluateFeaturesAsync",
+          "ReturnType": "IAsyncOperation<LearningModelEvaluationResultPreview>",
+          "Parameters": [
+            {
+              "Name": "features",
+              "Type": "IDictionary<String,Object>"
+            },
+            {
+              "Name": "correlationId",
+              "Type": "String"
+            }
+          ]
+        },
+        {
+          "Name": "LoadModelFromStorageFileAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LearningModelPreview>",
+          "Parameters": [
+            {
+              "Name": "modelFile",
+              "Type": "IStorageFile"
+            }
+          ]
+        },
+        {
+          "Name": "LoadModelFromStreamAsync",
+          "IsStatic": true,
+          "ReturnType": "IAsyncOperation<LearningModelPreview>",
+          "Parameters": [
+            {
+              "Name": "modelStream",
+              "Type": "IRandomAccessStreamReference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview",
+      "IsSealed": true,
+      "Interfaces": [
+        "ILearningModelVariableDescriptorPreview"
+      ],
+      "Properties": [
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "IsRequired",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "ModelFeatureKind",
+          "Type": "LearningModelFeatureKindPreview",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview",
+      "IsSealed": true,
+      "Interfaces": [
+        "ILearningModelVariableDescriptorPreview"
+      ],
+      "Properties": [
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "IsRequired",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "ModelFeatureKind",
+          "Type": "LearningModelFeatureKindPreview",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Fields",
+          "Type": "ILearningModelVariableDescriptorPreview",
+          "IsGet": true
+        },
+        {
+          "Name": "KeyKind",
+          "Type": "FeatureElementKindPreview",
+          "IsGet": true
+        },
+        {
+          "Name": "ValidIntegerKeys",
+          "Type": "IEnumerable<Int64>",
+          "IsGet": true
+        },
+        {
+          "Name": "ValidStringKeys",
+          "Type": "IEnumerable<String>",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview",
+      "IsSealed": true,
+      "Interfaces": [
+        "ILearningModelVariableDescriptorPreview"
+      ],
+      "Properties": [
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "IsRequired",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "ModelFeatureKind",
+          "Type": "LearningModelFeatureKindPreview",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "ElementType",
+          "Type": "ILearningModelVariableDescriptorPreview",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview",
+      "IsSealed": true,
+      "Interfaces": [
+        "ILearningModelVariableDescriptorPreview"
+      ],
+      "Properties": [
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "IsRequired",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "ModelFeatureKind",
+          "Type": "LearningModelFeatureKindPreview",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "DataType",
+          "Type": "FeatureElementKindPreview",
+          "IsGet": true
+        },
+        {
+          "Name": "Shape",
+          "Type": "IEnumerable<Int64>",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.SequenceFeatureDescriptor",
+      "IsSealed": true,
+      "Interfaces": [
+        "ILearningModelFeatureDescriptor"
+      ],
+      "Properties": [
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "IsRequired",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "ElementDescriptor",
+          "Type": "ILearningModelFeatureDescriptor",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.TensorBoolean",
+      "IsSealed": true,
+      "Interfaces": [
+        "ITensor",
+        "ILearningModelFeatureValue"
+      ],
+      "Properties": [
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Shape",
+          "Type": "IReadOnlyList<Int64>",
+          "IsGet": true
+        },
+        {
+          "Name": "TensorKind",
+          "Type": "TensorKind",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetAsVectorView",
+          "ReturnType": "IReadOnlyList<Boolean>"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorBoolean"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorBoolean",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromArray",
+          "IsStatic": true,
+          "ReturnType": "TensorBoolean",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "Boolean[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromIterable",
+          "IsStatic": true,
+          "ReturnType": "TensorBoolean",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "IEnumerable<Boolean>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.TensorDouble",
+      "IsSealed": true,
+      "Interfaces": [
+        "ITensor",
+        "ILearningModelFeatureValue"
+      ],
+      "Properties": [
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Shape",
+          "Type": "IReadOnlyList<Int64>",
+          "IsGet": true
+        },
+        {
+          "Name": "TensorKind",
+          "Type": "TensorKind",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetAsVectorView",
+          "ReturnType": "IReadOnlyList<Double>"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorDouble"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorDouble",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromArray",
+          "IsStatic": true,
+          "ReturnType": "TensorDouble",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "Double[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromIterable",
+          "IsStatic": true,
+          "ReturnType": "TensorDouble",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "IEnumerable<Double>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.TensorFeatureDescriptor",
+      "IsSealed": true,
+      "Interfaces": [
+        "ILearningModelFeatureDescriptor"
+      ],
+      "Properties": [
+        {
+          "Name": "Description",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "IsRequired",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Name",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Shape",
+          "Type": "IReadOnlyList<Int64>",
+          "IsGet": true
+        },
+        {
+          "Name": "TensorKind",
+          "Type": "TensorKind",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.TensorFloat",
+      "IsSealed": true,
+      "Interfaces": [
+        "ITensor",
+        "ILearningModelFeatureValue"
+      ],
+      "Properties": [
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Shape",
+          "Type": "IReadOnlyList<Int64>",
+          "IsGet": true
+        },
+        {
+          "Name": "TensorKind",
+          "Type": "TensorKind",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetAsVectorView",
+          "ReturnType": "IReadOnlyList<Single>"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorFloat"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorFloat",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromArray",
+          "IsStatic": true,
+          "ReturnType": "TensorFloat",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "Single[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromIterable",
+          "IsStatic": true,
+          "ReturnType": "TensorFloat",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "IEnumerable<Single>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.TensorFloat16Bit",
+      "IsSealed": true,
+      "Interfaces": [
+        "ITensor",
+        "ILearningModelFeatureValue"
+      ],
+      "Properties": [
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Shape",
+          "Type": "IReadOnlyList<Int64>",
+          "IsGet": true
+        },
+        {
+          "Name": "TensorKind",
+          "Type": "TensorKind",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetAsVectorView",
+          "ReturnType": "IReadOnlyList<Single>"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorFloat16Bit"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorFloat16Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromArray",
+          "IsStatic": true,
+          "ReturnType": "TensorFloat16Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "Single[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromIterable",
+          "IsStatic": true,
+          "ReturnType": "TensorFloat16Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "IEnumerable<Single>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.TensorInt16Bit",
+      "IsSealed": true,
+      "Interfaces": [
+        "ITensor",
+        "ILearningModelFeatureValue"
+      ],
+      "Properties": [
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Shape",
+          "Type": "IReadOnlyList<Int64>",
+          "IsGet": true
+        },
+        {
+          "Name": "TensorKind",
+          "Type": "TensorKind",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetAsVectorView",
+          "ReturnType": "IReadOnlyList<Int16>"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorInt16Bit"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorInt16Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromArray",
+          "IsStatic": true,
+          "ReturnType": "TensorInt16Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "Int16[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromIterable",
+          "IsStatic": true,
+          "ReturnType": "TensorInt16Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "IEnumerable<Int16>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.TensorInt32Bit",
+      "IsSealed": true,
+      "Interfaces": [
+        "ITensor",
+        "ILearningModelFeatureValue"
+      ],
+      "Properties": [
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Shape",
+          "Type": "IReadOnlyList<Int64>",
+          "IsGet": true
+        },
+        {
+          "Name": "TensorKind",
+          "Type": "TensorKind",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetAsVectorView",
+          "ReturnType": "IReadOnlyList<Int32>"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorInt32Bit"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorInt32Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromArray",
+          "IsStatic": true,
+          "ReturnType": "TensorInt32Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "Int32[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromIterable",
+          "IsStatic": true,
+          "ReturnType": "TensorInt32Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "IEnumerable<Int32>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.TensorInt64Bit",
+      "IsSealed": true,
+      "Interfaces": [
+        "ITensor",
+        "ILearningModelFeatureValue"
+      ],
+      "Properties": [
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Shape",
+          "Type": "IReadOnlyList<Int64>",
+          "IsGet": true
+        },
+        {
+          "Name": "TensorKind",
+          "Type": "TensorKind",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetAsVectorView",
+          "ReturnType": "IReadOnlyList<Int64>"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorInt64Bit"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorInt64Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromArray",
+          "IsStatic": true,
+          "ReturnType": "TensorInt64Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "Int64[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromIterable",
+          "IsStatic": true,
+          "ReturnType": "TensorInt64Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "IEnumerable<Int64>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.TensorInt8Bit",
+      "IsSealed": true,
+      "Interfaces": [
+        "ITensor",
+        "ILearningModelFeatureValue"
+      ],
+      "Properties": [
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Shape",
+          "Type": "IReadOnlyList<Int64>",
+          "IsGet": true
+        },
+        {
+          "Name": "TensorKind",
+          "Type": "TensorKind",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetAsVectorView",
+          "ReturnType": "IReadOnlyList<Byte>"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorInt8Bit"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorInt8Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromArray",
+          "IsStatic": true,
+          "ReturnType": "TensorInt8Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "Byte[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromIterable",
+          "IsStatic": true,
+          "ReturnType": "TensorInt8Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "IEnumerable<Byte>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.TensorString",
+      "IsSealed": true,
+      "Interfaces": [
+        "ITensor",
+        "ILearningModelFeatureValue"
+      ],
+      "Properties": [
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Shape",
+          "Type": "IReadOnlyList<Int64>",
+          "IsGet": true
+        },
+        {
+          "Name": "TensorKind",
+          "Type": "TensorKind",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetAsVectorView",
+          "ReturnType": "IReadOnlyList<String>"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorString"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorString",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromArray",
+          "IsStatic": true,
+          "ReturnType": "TensorString",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "String[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromIterable",
+          "IsStatic": true,
+          "ReturnType": "TensorString",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "IEnumerable<String>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.TensorUInt16Bit",
+      "IsSealed": true,
+      "Interfaces": [
+        "ITensor",
+        "ILearningModelFeatureValue"
+      ],
+      "Properties": [
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Shape",
+          "Type": "IReadOnlyList<Int64>",
+          "IsGet": true
+        },
+        {
+          "Name": "TensorKind",
+          "Type": "TensorKind",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetAsVectorView",
+          "ReturnType": "IReadOnlyList<UInt16>"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorUInt16Bit"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorUInt16Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromArray",
+          "IsStatic": true,
+          "ReturnType": "TensorUInt16Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "UInt16[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromIterable",
+          "IsStatic": true,
+          "ReturnType": "TensorUInt16Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "IEnumerable<UInt16>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.TensorUInt32Bit",
+      "IsSealed": true,
+      "Interfaces": [
+        "ITensor",
+        "ILearningModelFeatureValue"
+      ],
+      "Properties": [
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Shape",
+          "Type": "IReadOnlyList<Int64>",
+          "IsGet": true
+        },
+        {
+          "Name": "TensorKind",
+          "Type": "TensorKind",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetAsVectorView",
+          "ReturnType": "IReadOnlyList<UInt32>"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorUInt32Bit"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorUInt32Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromArray",
+          "IsStatic": true,
+          "ReturnType": "TensorUInt32Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "UInt32[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromIterable",
+          "IsStatic": true,
+          "ReturnType": "TensorUInt32Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "IEnumerable<UInt32>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.TensorUInt64Bit",
+      "IsSealed": true,
+      "Interfaces": [
+        "ITensor",
+        "ILearningModelFeatureValue"
+      ],
+      "Properties": [
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Shape",
+          "Type": "IReadOnlyList<Int64>",
+          "IsGet": true
+        },
+        {
+          "Name": "TensorKind",
+          "Type": "TensorKind",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetAsVectorView",
+          "ReturnType": "IReadOnlyList<UInt64>"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorUInt64Bit"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorUInt64Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromArray",
+          "IsStatic": true,
+          "ReturnType": "TensorUInt64Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "UInt64[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromIterable",
+          "IsStatic": true,
+          "ReturnType": "TensorUInt64Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "IEnumerable<UInt64>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Windows.AI.MachineLearning.TensorUInt8Bit",
+      "IsSealed": true,
+      "Interfaces": [
+        "ITensor",
+        "ILearningModelFeatureValue"
+      ],
+      "Properties": [
+        {
+          "Name": "Kind",
+          "Type": "LearningModelFeatureKind",
+          "IsGet": true
+        },
+        {
+          "Name": "Shape",
+          "Type": "IReadOnlyList<Int64>",
+          "IsGet": true
+        },
+        {
+          "Name": "TensorKind",
+          "Type": "TensorKind",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "GetAsVectorView",
+          "ReturnType": "IReadOnlyList<Byte>"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorUInt8Bit"
+        },
+        {
+          "Name": "Create",
+          "IsStatic": true,
+          "ReturnType": "TensorUInt8Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromArray",
+          "IsStatic": true,
+          "ReturnType": "TensorUInt8Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "Byte[]"
+            }
+          ]
+        },
+        {
+          "Name": "CreateFromIterable",
+          "IsStatic": true,
+          "ReturnType": "TensorUInt8Bit",
+          "Parameters": [
+            {
+              "Name": "shape",
+              "Type": "IEnumerable<Int64>"
+            },
+            {
+              "Name": "data",
+              "Type": "IEnumerable<Byte>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
