@@ -8,19 +8,19 @@ namespace ApiPeek.Compare.App
         static void Main(string[] args)
         {
             string folder = "api.desktop";
-            string path1 = "win10.17692";
-            string path2 = "win10.17692";
-
-            //string folder = "api.mobile";
-            //string path1 = "wp10.15235";
-            //string path2 = "wp10.15235";
+            string path1 = "win10.18214";
+            string path2 = "win10.18219";
 
             MergeAndCompare(false, folder, path1, folder, path2);
             MergeAndCompare(true, folder, path1, folder, path2);
 
-            string path1803 = "win10.17134";
-            MergeAndCompare(false, folder, path1803, folder, path2, "win10.1803.to.win10.1809.diff");
-            MergeAndCompare(true, folder, path1803, folder, path2, "win10.1803.to.win10.1809.fulldiff");
+            //string path1803 = "win10.17134";
+            //MergeAndCompare(false, folder, path1803, folder, path2, "win10.1803.to.win10.1809.diff");
+            //MergeAndCompare(true, folder, path1803, folder, path2, "win10.1803.to.win10.1809.fulldiff");
+
+            string path1809 = "win10.17723";
+            MergeAndCompare(false, folder, path1809, folder, path2, "win10.1809.to.win10.1903.diff");
+            MergeAndCompare(true, folder, path1809, folder, path2, "win10.1809.to.win10.1903.fulldiff");
         }
 
         private static void MergeAndCompare(bool detailed, string folder1, string path1, string folder2, string path2, string fileName = null)
