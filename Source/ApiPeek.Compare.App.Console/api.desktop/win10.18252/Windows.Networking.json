@@ -224,6 +224,14 @@
         {
           "Name": "Ihv",
           "Value": "9"
+        },
+        {
+          "Name": "Wpa3",
+          "Value": "10"
+        },
+        {
+          "Name": "Wpa3Sae",
+          "Value": "11"
         }
       ]
     },

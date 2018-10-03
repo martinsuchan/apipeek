@@ -6821,6 +6821,10 @@
           ]
         },
         {
+          "Name": "ExecuteAsync",
+          "ReturnType": "IAsyncOperation<Boolean>"
+        },
+        {
           "Name": "PrintLine",
           "ReturnType": "Void",
           "Parameters": [
@@ -6833,10 +6837,6 @@
         {
           "Name": "PrintLine",
           "ReturnType": "Void"
-        },
-        {
-          "Name": "ExecuteAsync",
-          "ReturnType": "IAsyncOperation<Boolean>"
         }
       ]
     },
@@ -6877,86 +6877,6 @@
             {
               "Name": "value",
               "Type": "Rect"
-            }
-          ]
-        },
-        {
-          "Name": "SetBitmap",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "bitmapNumber",
-              "Type": "UInt32"
-            },
-            {
-              "Name": "bitmap",
-              "Type": "BitmapFrame"
-            },
-            {
-              "Name": "alignment",
-              "Type": "PosPrinterAlignment"
-            }
-          ]
-        },
-        {
-          "Name": "SetBitmap",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "bitmapNumber",
-              "Type": "UInt32"
-            },
-            {
-              "Name": "bitmap",
-              "Type": "BitmapFrame"
-            },
-            {
-              "Name": "alignment",
-              "Type": "PosPrinterAlignment"
-            },
-            {
-              "Name": "width",
-              "Type": "UInt32"
-            }
-          ]
-        },
-        {
-          "Name": "SetCustomAlignedBitmap",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "bitmapNumber",
-              "Type": "UInt32"
-            },
-            {
-              "Name": "bitmap",
-              "Type": "BitmapFrame"
-            },
-            {
-              "Name": "alignmentDistance",
-              "Type": "UInt32"
-            }
-          ]
-        },
-        {
-          "Name": "SetCustomAlignedBitmap",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "bitmapNumber",
-              "Type": "UInt32"
-            },
-            {
-              "Name": "bitmap",
-              "Type": "BitmapFrame"
-            },
-            {
-              "Name": "alignmentDistance",
-              "Type": "UInt32"
-            },
-            {
-              "Name": "width",
-              "Type": "UInt32"
             }
           ]
         },
@@ -7052,6 +6972,86 @@
             },
             {
               "Name": "alignmentDistance",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "SetBitmap",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "bitmapNumber",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "bitmap",
+              "Type": "BitmapFrame"
+            },
+            {
+              "Name": "alignment",
+              "Type": "PosPrinterAlignment"
+            }
+          ]
+        },
+        {
+          "Name": "SetBitmap",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "bitmapNumber",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "bitmap",
+              "Type": "BitmapFrame"
+            },
+            {
+              "Name": "alignment",
+              "Type": "PosPrinterAlignment"
+            },
+            {
+              "Name": "width",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "SetCustomAlignedBitmap",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "bitmapNumber",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "bitmap",
+              "Type": "BitmapFrame"
+            },
+            {
+              "Name": "alignmentDistance",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "SetCustomAlignedBitmap",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "bitmapNumber",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "bitmap",
+              "Type": "BitmapFrame"
+            },
+            {
+              "Name": "alignmentDistance",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "width",
               "Type": "UInt32"
             }
           ]
@@ -22815,7 +22815,7 @@
       "IsStatic": true,
       "Properties": [
         {
-          "Name": "ExtendedBase",
+          "Name": "Code11",
           "Type": "UInt32",
           "IsStatic": true,
           "IsGet": true
@@ -22881,7 +22881,7 @@
           "IsGet": true
         },
         {
-          "Name": "Code11",
+          "Name": "DutchKix",
           "Type": "UInt32",
           "IsStatic": true,
           "IsGet": true
@@ -22947,7 +22947,7 @@
           "IsGet": true
         },
         {
-          "Name": "DutchKix",
+          "Name": "UsPostNet",
           "Type": "UInt32",
           "IsStatic": true,
           "IsGet": true
@@ -23025,7 +23025,7 @@
           "IsGet": true
         },
         {
-          "Name": "Telepen",
+          "Name": "ExtendedBase",
           "Type": "UInt32",
           "IsStatic": true,
           "IsGet": true
@@ -23235,6 +23235,12 @@
           "IsGet": true
         },
         {
+          "Name": "Telepen",
+          "Type": "UInt32",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
           "Name": "TfDis",
           "Type": "UInt32",
           "IsStatic": true,
@@ -23362,12 +23368,6 @@
         },
         {
           "Name": "UsPlanet",
-          "Type": "UInt32",
-          "IsStatic": true,
-          "IsGet": true
-        },
-        {
-          "Name": "UsPostNet",
           "Type": "UInt32",
           "IsStatic": true,
           "IsGet": true
@@ -23783,10 +23783,6 @@
           ]
         },
         {
-          "Name": "Dispose",
-          "ReturnType": "Void"
-        },
-        {
           "Name": "StartSoftwareTriggerAsync",
           "ReturnType": "IAsyncAction"
         },
@@ -23824,6 +23820,10 @@
         },
         {
           "Name": "HideVideoPreview",
+          "ReturnType": "Void"
+        },
+        {
+          "Name": "Dispose",
           "ReturnType": "Void"
         }
       ],
@@ -23955,6 +23955,18 @@
       ],
       "Properties": [
         {
+          "Name": "LineSpacing",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
+          "Name": "LineHeight",
+          "Type": "UInt32",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
           "Name": "IsLetterQuality",
           "Type": "Boolean",
           "IsGet": true,
@@ -23968,18 +23980,6 @@
         },
         {
           "Name": "CharactersPerLine",
-          "Type": "UInt32",
-          "IsGet": true,
-          "IsSet": true
-        },
-        {
-          "Name": "LineSpacing",
-          "Type": "UInt32",
-          "IsGet": true,
-          "IsSet": true
-        },
-        {
-          "Name": "LineHeight",
           "Type": "UInt32",
           "IsGet": true,
           "IsSet": true
@@ -24116,10 +24116,6 @@
           "ReturnType": "Void"
         },
         {
-          "Name": "Dispose",
-          "ReturnType": "Void"
-        },
-        {
           "Name": "GetStatisticsAsync",
           "ReturnType": "IAsyncOperation<String>",
           "Parameters": [
@@ -24238,6 +24234,10 @@
               "Type": "Int32"
             }
           ]
+        },
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
         },
         {
           "Name": "FromIdAsync",
@@ -24628,12 +24628,22 @@
           "IsSet": true
         },
         {
-          "Name": "IsHeadCleaning",
+          "Name": "IsCartridgeEmpty",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "IsCartridgeRemoved",
           "Type": "Boolean",
           "IsGet": true
         },
         {
           "Name": "IsCoverOpen",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "IsHeadCleaning",
           "Type": "Boolean",
           "IsGet": true
         },
@@ -24648,17 +24658,7 @@
           "IsGet": true
         },
         {
-          "Name": "IsCartridgeRemoved",
-          "Type": "Boolean",
-          "IsGet": true
-        },
-        {
           "Name": "IsReadyToPrint",
-          "Type": "Boolean",
-          "IsGet": true
-        },
-        {
-          "Name": "IsCartridgeEmpty",
           "Type": "Boolean",
           "IsGet": true
         },
@@ -24758,17 +24758,7 @@
           "IsSet": true
         },
         {
-          "Name": "IsHeadCleaning",
-          "Type": "Boolean",
-          "IsGet": true
-        },
-        {
           "Name": "IsCartridgeEmpty",
-          "Type": "Boolean",
-          "IsGet": true
-        },
-        {
-          "Name": "IsPaperEmpty",
           "Type": "Boolean",
           "IsGet": true
         },
@@ -24778,7 +24768,17 @@
           "IsGet": true
         },
         {
-          "Name": "IsReadyToPrint",
+          "Name": "IsCoverOpen",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "IsHeadCleaning",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "IsPaperEmpty",
           "Type": "Boolean",
           "IsGet": true
         },
@@ -24788,7 +24788,7 @@
           "IsGet": true
         },
         {
-          "Name": "IsCoverOpen",
+          "Name": "IsReadyToPrint",
           "Type": "Boolean",
           "IsGet": true
         },
@@ -24871,6 +24871,10 @@
           ]
         },
         {
+          "Name": "ExecuteAsync",
+          "ReturnType": "IAsyncOperation<Boolean>"
+        },
+        {
           "Name": "PrintLine",
           "ReturnType": "Void",
           "Parameters": [
@@ -24883,10 +24887,6 @@
         {
           "Name": "PrintLine",
           "ReturnType": "Void"
-        },
-        {
-          "Name": "ExecuteAsync",
-          "ReturnType": "IAsyncOperation<Boolean>"
         }
       ]
     },
@@ -25019,12 +25019,12 @@
           "ReturnType": "IAsyncOperation<ClaimedLineDisplay>"
         },
         {
-          "Name": "Dispose",
-          "ReturnType": "Void"
-        },
-        {
           "Name": "CheckPowerStatusAsync",
           "ReturnType": "IAsyncOperation<LineDisplayPowerStatus>"
+        },
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
         },
         {
           "Name": "FromIdAsync",
@@ -25447,6 +25447,24 @@
           "ReturnType": "IAsyncOperation<Boolean>"
         },
         {
+          "Name": "TryScrollTextAsync",
+          "ReturnType": "IAsyncOperation<Boolean>",
+          "Parameters": [
+            {
+              "Name": "direction",
+              "Type": "LineDisplayScrollDirection"
+            },
+            {
+              "Name": "numberOfColumnsOrRows",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "TryClearTextAsync",
+          "ReturnType": "IAsyncOperation<Boolean>"
+        },
+        {
           "Name": "TryDisplayTextAsync",
           "ReturnType": "IAsyncOperation<Boolean>",
           "Parameters": [
@@ -25487,28 +25505,6 @@
               "Type": "String"
             }
           ]
-        },
-        {
-          "Name": "TryScrollTextAsync",
-          "ReturnType": "IAsyncOperation<Boolean>",
-          "Parameters": [
-            {
-              "Name": "direction",
-              "Type": "LineDisplayScrollDirection"
-            },
-            {
-              "Name": "numberOfColumnsOrRows",
-              "Type": "UInt32"
-            }
-          ]
-        },
-        {
-          "Name": "TryClearTextAsync",
-          "ReturnType": "IAsyncOperation<Boolean>"
-        },
-        {
-          "Name": "Dispose",
-          "ReturnType": "Void"
         },
         {
           "Name": "ReadCharacterAtCursorAsync",
@@ -25605,6 +25601,10 @@
               "Type": "Int32"
             }
           ]
+        },
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
         }
       ]
     },
@@ -26700,10 +26700,6 @@
           ]
         },
         {
-          "Name": "Dispose",
-          "ReturnType": "Void"
-        },
-        {
           "Name": "CreateFrameReaderAsync",
           "ReturnType": "IAsyncOperation<BarcodeScannerFrameReader>"
         },
@@ -26730,6 +26726,10 @@
               "Type": "BitmapSize"
             }
           ]
+        },
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
         }
       ],
       "Events": [
@@ -27149,86 +27149,6 @@
           ]
         },
         {
-          "Name": "SetBitmap",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "bitmapNumber",
-              "Type": "UInt32"
-            },
-            {
-              "Name": "bitmap",
-              "Type": "BitmapFrame"
-            },
-            {
-              "Name": "alignment",
-              "Type": "PosPrinterAlignment"
-            }
-          ]
-        },
-        {
-          "Name": "SetBitmap",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "bitmapNumber",
-              "Type": "UInt32"
-            },
-            {
-              "Name": "bitmap",
-              "Type": "BitmapFrame"
-            },
-            {
-              "Name": "alignment",
-              "Type": "PosPrinterAlignment"
-            },
-            {
-              "Name": "width",
-              "Type": "UInt32"
-            }
-          ]
-        },
-        {
-          "Name": "SetCustomAlignedBitmap",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "bitmapNumber",
-              "Type": "UInt32"
-            },
-            {
-              "Name": "bitmap",
-              "Type": "BitmapFrame"
-            },
-            {
-              "Name": "alignmentDistance",
-              "Type": "UInt32"
-            }
-          ]
-        },
-        {
-          "Name": "SetCustomAlignedBitmap",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "bitmapNumber",
-              "Type": "UInt32"
-            },
-            {
-              "Name": "bitmap",
-              "Type": "BitmapFrame"
-            },
-            {
-              "Name": "alignmentDistance",
-              "Type": "UInt32"
-            },
-            {
-              "Name": "width",
-              "Type": "UInt32"
-            }
-          ]
-        },
-        {
           "Name": "PrintSavedBitmap",
           "ReturnType": "Void",
           "Parameters": [
@@ -27325,6 +27245,86 @@
           ]
         },
         {
+          "Name": "SetBitmap",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "bitmapNumber",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "bitmap",
+              "Type": "BitmapFrame"
+            },
+            {
+              "Name": "alignment",
+              "Type": "PosPrinterAlignment"
+            }
+          ]
+        },
+        {
+          "Name": "SetBitmap",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "bitmapNumber",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "bitmap",
+              "Type": "BitmapFrame"
+            },
+            {
+              "Name": "alignment",
+              "Type": "PosPrinterAlignment"
+            },
+            {
+              "Name": "width",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "SetCustomAlignedBitmap",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "bitmapNumber",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "bitmap",
+              "Type": "BitmapFrame"
+            },
+            {
+              "Name": "alignmentDistance",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "SetCustomAlignedBitmap",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "bitmapNumber",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "bitmap",
+              "Type": "BitmapFrame"
+            },
+            {
+              "Name": "alignmentDistance",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "width",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
           "Name": "PrintBitmap",
           "ReturnType": "Void",
           "Parameters": [
@@ -27399,6 +27399,10 @@
           ]
         },
         {
+          "Name": "ExecuteAsync",
+          "ReturnType": "IAsyncOperation<Boolean>"
+        },
+        {
           "Name": "PrintLine",
           "ReturnType": "Void",
           "Parameters": [
@@ -27411,10 +27415,6 @@
         {
           "Name": "PrintLine",
           "ReturnType": "Void"
-        },
-        {
-          "Name": "ExecuteAsync",
-          "ReturnType": "IAsyncOperation<Boolean>"
         }
       ]
     },
@@ -27426,6 +27426,11 @@
         "ICommonPosPrintStationCapabilities"
       ],
       "Properties": [
+        {
+          "Name": "CartridgeSensors",
+          "Type": "PosPrinterCartridgeSensors",
+          "IsGet": true
+        },
         {
           "Name": "ColorCartridgeCapabilities",
           "Type": "PosPrinterColorCapabilities",
@@ -27487,27 +27492,7 @@
           "IsGet": true
         },
         {
-          "Name": "CartridgeSensors",
-          "Type": "PosPrinterCartridgeSensors",
-          "IsGet": true
-        },
-        {
           "Name": "Is180RotationSupported",
-          "Type": "Boolean",
-          "IsGet": true
-        },
-        {
-          "Name": "SupportedBarcodeRotations",
-          "Type": "IReadOnlyList<PosPrinterRotation>",
-          "IsGet": true
-        },
-        {
-          "Name": "SupportedBitmapRotations",
-          "Type": "IReadOnlyList<PosPrinterRotation>",
-          "IsGet": true
-        },
-        {
-          "Name": "IsLeft90RotationSupported",
           "Type": "Boolean",
           "IsGet": true
         },
@@ -27518,6 +27503,11 @@
         },
         {
           "Name": "IsBitmapSupported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "IsLeft90RotationSupported",
           "Type": "Boolean",
           "IsGet": true
         },
@@ -27537,6 +27527,21 @@
           "IsGet": true
         },
         {
+          "Name": "SupportedBarcodeRotations",
+          "Type": "IReadOnlyList<PosPrinterRotation>",
+          "IsGet": true
+        },
+        {
+          "Name": "SupportedBitmapRotations",
+          "Type": "IReadOnlyList<PosPrinterRotation>",
+          "IsGet": true
+        },
+        {
+          "Name": "CanCutPaper",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
           "Name": "IsStampSupported",
           "Type": "Boolean",
           "IsGet": true
@@ -27544,11 +27549,6 @@
         {
           "Name": "MarkFeedCapabilities",
           "Type": "PosPrinterMarkFeedCapabilities",
-          "IsGet": true
-        },
-        {
-          "Name": "CanCutPaper",
-          "Type": "Boolean",
           "IsGet": true
         }
       ]
@@ -27596,86 +27596,6 @@
           ]
         },
         {
-          "Name": "SetBitmap",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "bitmapNumber",
-              "Type": "UInt32"
-            },
-            {
-              "Name": "bitmap",
-              "Type": "BitmapFrame"
-            },
-            {
-              "Name": "alignment",
-              "Type": "PosPrinterAlignment"
-            }
-          ]
-        },
-        {
-          "Name": "SetBitmap",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "bitmapNumber",
-              "Type": "UInt32"
-            },
-            {
-              "Name": "bitmap",
-              "Type": "BitmapFrame"
-            },
-            {
-              "Name": "alignment",
-              "Type": "PosPrinterAlignment"
-            },
-            {
-              "Name": "width",
-              "Type": "UInt32"
-            }
-          ]
-        },
-        {
-          "Name": "SetCustomAlignedBitmap",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "bitmapNumber",
-              "Type": "UInt32"
-            },
-            {
-              "Name": "bitmap",
-              "Type": "BitmapFrame"
-            },
-            {
-              "Name": "alignmentDistance",
-              "Type": "UInt32"
-            }
-          ]
-        },
-        {
-          "Name": "SetCustomAlignedBitmap",
-          "ReturnType": "Void",
-          "Parameters": [
-            {
-              "Name": "bitmapNumber",
-              "Type": "UInt32"
-            },
-            {
-              "Name": "bitmap",
-              "Type": "BitmapFrame"
-            },
-            {
-              "Name": "alignmentDistance",
-              "Type": "UInt32"
-            },
-            {
-              "Name": "width",
-              "Type": "UInt32"
-            }
-          ]
-        },
-        {
           "Name": "PrintSavedBitmap",
           "ReturnType": "Void",
           "Parameters": [
@@ -27772,6 +27692,86 @@
           ]
         },
         {
+          "Name": "SetBitmap",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "bitmapNumber",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "bitmap",
+              "Type": "BitmapFrame"
+            },
+            {
+              "Name": "alignment",
+              "Type": "PosPrinterAlignment"
+            }
+          ]
+        },
+        {
+          "Name": "SetBitmap",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "bitmapNumber",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "bitmap",
+              "Type": "BitmapFrame"
+            },
+            {
+              "Name": "alignment",
+              "Type": "PosPrinterAlignment"
+            },
+            {
+              "Name": "width",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "SetCustomAlignedBitmap",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "bitmapNumber",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "bitmap",
+              "Type": "BitmapFrame"
+            },
+            {
+              "Name": "alignmentDistance",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
+          "Name": "SetCustomAlignedBitmap",
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "bitmapNumber",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "bitmap",
+              "Type": "BitmapFrame"
+            },
+            {
+              "Name": "alignmentDistance",
+              "Type": "UInt32"
+            },
+            {
+              "Name": "width",
+              "Type": "UInt32"
+            }
+          ]
+        },
+        {
           "Name": "PrintBitmap",
           "ReturnType": "Void",
           "Parameters": [
@@ -27846,6 +27846,10 @@
           ]
         },
         {
+          "Name": "ExecuteAsync",
+          "ReturnType": "IAsyncOperation<Boolean>"
+        },
+        {
           "Name": "PrintLine",
           "ReturnType": "Void",
           "Parameters": [
@@ -27858,10 +27862,6 @@
         {
           "Name": "PrintLine",
           "ReturnType": "Void"
-        },
-        {
-          "Name": "ExecuteAsync",
-          "ReturnType": "IAsyncOperation<Boolean>"
         }
       ]
     },
@@ -27874,6 +27874,16 @@
       ],
       "Properties": [
         {
+          "Name": "CartridgeSensors",
+          "Type": "PosPrinterCartridgeSensors",
+          "IsGet": true
+        },
+        {
+          "Name": "ColorCartridgeCapabilities",
+          "Type": "PosPrinterColorCapabilities",
+          "IsGet": true
+        },
+        {
           "Name": "IsBoldSupported",
           "Type": "Boolean",
           "IsGet": true
@@ -27884,12 +27894,12 @@
           "IsGet": true
         },
         {
-          "Name": "IsDoubleWidePrintSupported",
+          "Name": "IsDoubleHighPrintSupported",
           "Type": "Boolean",
           "IsGet": true
         },
         {
-          "Name": "IsDoubleHighPrintSupported",
+          "Name": "IsDoubleWidePrintSupported",
           "Type": "Boolean",
           "IsGet": true
         },
@@ -27924,42 +27934,17 @@
           "IsGet": true
         },
         {
-          "Name": "ColorCartridgeCapabilities",
-          "Type": "PosPrinterColorCapabilities",
-          "IsGet": true
-        },
-        {
           "Name": "SupportedCharactersPerLine",
           "Type": "IReadOnlyList<UInt32>",
           "IsGet": true
         },
         {
-          "Name": "CartridgeSensors",
-          "Type": "PosPrinterCartridgeSensors",
+          "Name": "Is180RotationSupported",
+          "Type": "Boolean",
           "IsGet": true
         },
         {
           "Name": "IsBarcodeSupported",
-          "Type": "Boolean",
-          "IsGet": true
-        },
-        {
-          "Name": "SupportedBitmapRotations",
-          "Type": "IReadOnlyList<PosPrinterRotation>",
-          "IsGet": true
-        },
-        {
-          "Name": "IsPrintAreaSupported",
-          "Type": "Boolean",
-          "IsGet": true
-        },
-        {
-          "Name": "SupportedBarcodeRotations",
-          "Type": "IReadOnlyList<PosPrinterRotation>",
-          "IsGet": true
-        },
-        {
-          "Name": "Is180RotationSupported",
           "Type": "Boolean",
           "IsGet": true
         },
@@ -27974,6 +27959,11 @@
           "IsGet": true
         },
         {
+          "Name": "IsPrintAreaSupported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
           "Name": "IsRight90RotationSupported",
           "Type": "Boolean",
           "IsGet": true
@@ -27984,12 +27974,22 @@
           "IsGet": true
         },
         {
-          "Name": "IsFullLengthSupported",
-          "Type": "Boolean",
+          "Name": "SupportedBarcodeRotations",
+          "Type": "IReadOnlyList<PosPrinterRotation>",
+          "IsGet": true
+        },
+        {
+          "Name": "SupportedBitmapRotations",
+          "Type": "IReadOnlyList<PosPrinterRotation>",
           "IsGet": true
         },
         {
           "Name": "IsBothSidesPrintingSupported",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "IsFullLengthSupported",
           "Type": "Boolean",
           "IsGet": true
         }

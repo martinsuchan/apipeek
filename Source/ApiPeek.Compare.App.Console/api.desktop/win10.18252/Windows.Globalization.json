@@ -1510,6 +1510,36 @@
       ]
     },
     {
+      "Name": "Windows.Globalization.CurrencyAmount",
+      "IsSealed": true,
+      "Constructors": [
+        {
+          "Parameters": [
+            {
+              "Name": "amount",
+              "Type": "String"
+            },
+            {
+              "Name": "currency",
+              "Type": "String"
+            }
+          ]
+        }
+      ],
+      "Properties": [
+        {
+          "Name": "Amount",
+          "Type": "String",
+          "IsGet": true
+        },
+        {
+          "Name": "Currency",
+          "Type": "String",
+          "IsGet": true
+        }
+      ]
+    },
+    {
       "Name": "Windows.Globalization.CurrencyIdentifiers",
       "IsStatic": true,
       "Properties": [

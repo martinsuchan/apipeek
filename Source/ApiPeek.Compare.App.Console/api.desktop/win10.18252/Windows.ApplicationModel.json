@@ -3731,6 +3731,24 @@
       ]
     },
     {
+      "Name": "Windows.ApplicationModel.Resources.Core.ResourceCandidateKind",
+      "BaseType": "Int32",
+      "Values": [
+        {
+          "Name": "String",
+          "Value": "0"
+        },
+        {
+          "Name": "File",
+          "Value": "1"
+        },
+        {
+          "Name": "EmbeddedData",
+          "Value": "2"
+        }
+      ]
+    },
+    {
       "Name": "Windows.ApplicationModel.Resources.Core.ResourceQualifierPersistence",
       "BaseType": "Int32",
       "Values": [
@@ -19958,11 +19976,6 @@
           "IsGet": true
         },
         {
-          "Name": "SourceDisplayName",
-          "Type": "String",
-          "IsGet": true
-        },
-        {
           "Name": "Size",
           "Type": "UInt32",
           "IsGet": true
@@ -26161,6 +26174,11 @@
           "Name": "ValueAsString",
           "Type": "String",
           "IsGet": true
+        },
+        {
+          "Name": "Kind",
+          "Type": "ResourceCandidateKind",
+          "IsGet": true
         }
       ],
       "Methods": [
@@ -26181,6 +26199,10 @@
         {
           "Name": "GetValueAsStreamAsync",
           "ReturnType": "IAsyncOperation<IRandomAccessStream>"
+        },
+        {
+          "Name": "GetValueAsStream",
+          "ReturnType": "IRandomAccessStream"
         }
       ]
     },

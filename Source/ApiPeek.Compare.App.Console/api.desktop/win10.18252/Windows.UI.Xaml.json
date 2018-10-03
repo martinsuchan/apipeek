@@ -21846,6 +21846,12 @@
           "IsSet": true
         },
         {
+          "Name": "Shadow",
+          "Type": "Shadow",
+          "IsGet": true,
+          "IsSet": true
+        },
+        {
           "Name": "HoldingEvent",
           "Type": "RoutedEvent",
           "IsStatic": true,
@@ -22267,6 +22273,12 @@
         },
         {
           "Name": "CanBeScrollAnchorProperty",
+          "Type": "DependencyProperty",
+          "IsStatic": true,
+          "IsGet": true
+        },
+        {
+          "Name": "ShadowProperty",
           "Type": "DependencyProperty",
           "IsStatic": true,
           "IsGet": true
@@ -53977,6 +53989,32 @@
       "IsSealed": true,
       "Methods": [
         {
+          "Name": "SetApplicationWindowContent",
+          "IsStatic": true,
+          "ReturnType": "Void",
+          "Parameters": [
+            {
+              "Name": "applicationWindow",
+              "Type": "ApplicationWindow"
+            },
+            {
+              "Name": "xamlContent",
+              "Type": "UIElement"
+            }
+          ]
+        },
+        {
+          "Name": "GetApplicationWindowContent",
+          "IsStatic": true,
+          "ReturnType": "UIElement",
+          "Parameters": [
+            {
+              "Name": "applicationWindow",
+              "Type": "ApplicationWindow"
+            }
+          ]
+        },
+        {
           "Name": "SetImplicitShowAnimation",
           "IsStatic": true,
           "ReturnType": "Void",
@@ -57630,7 +57668,15 @@
     },
     {
       "Name": "Windows.UI.Xaml.Media.Animation.GravityConnectedAnimationConfiguration",
-      "BaseType": "ConnectedAnimationConfiguration"
+      "BaseType": "ConnectedAnimationConfiguration",
+      "Properties": [
+        {
+          "Name": "IsShadowEnabled",
+          "Type": "Boolean",
+          "IsGet": true,
+          "IsSet": true
+        }
+      ]
     },
     {
       "Name": "Windows.UI.Xaml.Media.Animation.IndependentlyAnimatableAttribute",
@@ -60940,6 +60986,10 @@
       ]
     },
     {
+      "Name": "Windows.UI.Xaml.Media.Shadow",
+      "BaseType": "DependencyObject"
+    },
+    {
       "Name": "Windows.UI.Xaml.Media.SkewTransform",
       "IsSealed": true,
       "BaseType": "Transform",
@@ -61023,6 +61073,17 @@
           "Name": "ColorProperty",
           "Type": "DependencyProperty",
           "IsStatic": true,
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.UI.Xaml.Media.ThemeShadow",
+      "BaseType": "Shadow",
+      "Properties": [
+        {
+          "Name": "Receivers",
+          "Type": "UIElementWeakCollection",
           "IsGet": true
         }
       ]
@@ -62648,6 +62709,22 @@
         "IList<TriggerBase>",
         "ICollection<TriggerBase>",
         "IEnumerable<TriggerBase>",
+        "IEnumerable"
+      ],
+      "Properties": [
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsGet": true
+        }
+      ]
+    },
+    {
+      "Name": "Windows.UI.Xaml.UIElementWeakCollection",
+      "Interfaces": [
+        "IList<UIElement>",
+        "ICollection<UIElement>",
+        "IEnumerable<UIElement>",
         "IEnumerable"
       ],
       "Properties": [

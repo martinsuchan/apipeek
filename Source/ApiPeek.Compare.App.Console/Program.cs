@@ -9,7 +9,7 @@ namespace ApiPeek.Compare.App
         {
             string folder = "api.desktop";
             string path1 = "win10.17763";
-            string path2 = "win10.17763";
+            string path2 = "win10.18252";
 
             MergeAndCompare(false, folder, path1, folder, path2);
             MergeAndCompare(true, folder, path1, folder, path2);

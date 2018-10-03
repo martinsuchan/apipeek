@@ -4538,6 +4538,122 @@
           ]
         },
         {
+          "Name": "TryDeleteAsync",
+          "ReturnType": "IAsyncOperationWithProgress<HttpRequestResult,HttpProgress>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            }
+          ]
+        },
+        {
+          "Name": "TryGetAsync",
+          "ReturnType": "IAsyncOperationWithProgress<HttpRequestResult,HttpProgress>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            }
+          ]
+        },
+        {
+          "Name": "TryGetAsync",
+          "ReturnType": "IAsyncOperationWithProgress<HttpRequestResult,HttpProgress>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "completionOption",
+              "Type": "HttpCompletionOption"
+            }
+          ]
+        },
+        {
+          "Name": "TryGetBufferAsync",
+          "ReturnType": "IAsyncOperationWithProgress<HttpGetBufferResult,HttpProgress>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            }
+          ]
+        },
+        {
+          "Name": "TryGetInputStreamAsync",
+          "ReturnType": "IAsyncOperationWithProgress<HttpGetInputStreamResult,HttpProgress>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            }
+          ]
+        },
+        {
+          "Name": "TryGetStringAsync",
+          "ReturnType": "IAsyncOperationWithProgress<HttpGetStringResult,HttpProgress>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            }
+          ]
+        },
+        {
+          "Name": "TryPostAsync",
+          "ReturnType": "IAsyncOperationWithProgress<HttpRequestResult,HttpProgress>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "content",
+              "Type": "IHttpContent"
+            }
+          ]
+        },
+        {
+          "Name": "TryPutAsync",
+          "ReturnType": "IAsyncOperationWithProgress<HttpRequestResult,HttpProgress>",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "Uri"
+            },
+            {
+              "Name": "content",
+              "Type": "IHttpContent"
+            }
+          ]
+        },
+        {
+          "Name": "TrySendRequestAsync",
+          "ReturnType": "IAsyncOperationWithProgress<HttpRequestResult,HttpProgress>",
+          "Parameters": [
+            {
+              "Name": "request",
+              "Type": "HttpRequestMessage"
+            }
+          ]
+        },
+        {
+          "Name": "TrySendRequestAsync",
+          "ReturnType": "IAsyncOperationWithProgress<HttpRequestResult,HttpProgress>",
+          "Parameters": [
+            {
+              "Name": "request",
+              "Type": "HttpRequestMessage"
+            },
+            {
+              "Name": "completionOption",
+              "Type": "HttpCompletionOption"
+            }
+          ]
+        },
+        {
           "Name": "Dispose",
           "ReturnType": "Void"
         }
@@ -4739,6 +4855,129 @@
             }
           ]
         },
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Web.Http.HttpGetBufferResult",
+      "IsSealed": true,
+      "Interfaces": [
+        "IDisposable",
+        "IStringable"
+      ],
+      "Properties": [
+        {
+          "Name": "ExtendedError",
+          "Type": "Exception",
+          "IsGet": true
+        },
+        {
+          "Name": "RequestMessage",
+          "Type": "HttpRequestMessage",
+          "IsGet": true
+        },
+        {
+          "Name": "ResponseMessage",
+          "Type": "HttpResponseMessage",
+          "IsGet": true
+        },
+        {
+          "Name": "Succeeded",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Value",
+          "Type": "IBuffer",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Web.Http.HttpGetInputStreamResult",
+      "IsSealed": true,
+      "Interfaces": [
+        "IDisposable",
+        "IStringable"
+      ],
+      "Properties": [
+        {
+          "Name": "ExtendedError",
+          "Type": "Exception",
+          "IsGet": true
+        },
+        {
+          "Name": "RequestMessage",
+          "Type": "HttpRequestMessage",
+          "IsGet": true
+        },
+        {
+          "Name": "ResponseMessage",
+          "Type": "HttpResponseMessage",
+          "IsGet": true
+        },
+        {
+          "Name": "Succeeded",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Value",
+          "Type": "IInputStream",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Web.Http.HttpGetStringResult",
+      "IsSealed": true,
+      "Interfaces": [
+        "IDisposable",
+        "IStringable"
+      ],
+      "Properties": [
+        {
+          "Name": "ExtendedError",
+          "Type": "Exception",
+          "IsGet": true
+        },
+        {
+          "Name": "RequestMessage",
+          "Type": "HttpRequestMessage",
+          "IsGet": true
+        },
+        {
+          "Name": "ResponseMessage",
+          "Type": "HttpResponseMessage",
+          "IsGet": true
+        },
+        {
+          "Name": "Succeeded",
+          "Type": "Boolean",
+          "IsGet": true
+        },
+        {
+          "Name": "Value",
+          "Type": "String",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
         {
           "Name": "Dispose",
           "ReturnType": "Void"
@@ -5073,6 +5312,42 @@
         {
           "Name": "TransportInformation",
           "Type": "HttpTransportInformation",
+          "IsGet": true
+        }
+      ],
+      "Methods": [
+        {
+          "Name": "Dispose",
+          "ReturnType": "Void"
+        }
+      ]
+    },
+    {
+      "Name": "Windows.Web.Http.HttpRequestResult",
+      "IsSealed": true,
+      "Interfaces": [
+        "IDisposable",
+        "IStringable"
+      ],
+      "Properties": [
+        {
+          "Name": "ExtendedError",
+          "Type": "Exception",
+          "IsGet": true
+        },
+        {
+          "Name": "RequestMessage",
+          "Type": "HttpRequestMessage",
+          "IsGet": true
+        },
+        {
+          "Name": "ResponseMessage",
+          "Type": "HttpResponseMessage",
+          "IsGet": true
+        },
+        {
+          "Name": "Succeeded",
+          "Type": "Boolean",
           "IsGet": true
         }
       ],
