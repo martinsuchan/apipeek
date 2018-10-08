@@ -1,6 +1,8 @@
 # ApiPeek
 
-Library for creating and comparing API dumps, typically [APIs available in different versions of Windows 10](https://martinsuchan.github.io/ApiPeek/Diffs/win10.14257.to.win10.14267.fulldiff.html).  
+Library for creating and comparing API dumps, from different versions of Windows 10.  
+[Sample API diff between Windows 10 1803 -> 1809](https://martinsuchan.github.io/ApiPeek/Diffs/win10.1803.to.win10.1809.fulldiff.html).  
+[Simplified API diff between Windows 10 1803 -> 1809 with only new types](https://martinsuchan.github.io/ApiPeek/Diffs/win10.1803.to.win10.1809.diff.html).  
 **ApiPeek library** can be used in Windows Phone 8.1+ and Windows 8.1+ projects.  
 **ApiPeek.Compare tool** is a simple Console tool in .NET 4.5.2.
 
