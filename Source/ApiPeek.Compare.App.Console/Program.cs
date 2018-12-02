@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using System.Diagnostics;
+using System.IO;
+using System.IO.Compression;
 using System.Linq;
 
 namespace ApiPeek.Compare.App
@@ -8,15 +10,31 @@ namespace ApiPeek.Compare.App
         static void Main(string[] args)
         {
             string folder = "api.desktop";
-            string path1 = "win10.18262";
-            string path2 = "win10.18262";
+            string path1 = "win10.18282";
+            string path2 = "win10.18290";
 
+            ExtractFiles(folder, path1);
+            ExtractFiles(folder, path2);
             MergeAndCompare(false, folder, path1, folder, path2);
             MergeAndCompare(true, folder, path1, folder, path2);
 
             string path1809 = "win10.17763";
+            ExtractFiles(folder, path1809);
             MergeAndCompare(false, folder, path1809, folder, path2, "win10.1809.to.win10.1903.diff");
             MergeAndCompare(true, folder, path1809, folder, path2, "win10.1809.to.win10.1903.fulldiff");
+        }
+
+        private static void ExtractFiles(string folder1, string path1)
+        {
+            string dir1Path = $"{folder1}\\{path1}";
+            string zip1Path = $"{dir1Path}.zip";
+            Debug.Assert(File.Exists(zip1Path));
+
+            if (Directory.Exists(dir1Path))
+            {
+                Directory.Delete(dir1Path, true);
+            }
+            ZipFile.ExtractToDirectory(zip1Path, dir1Path);
         }
 
         private static void MergeAndCompare(bool detailed, string folder1, string path1, string folder2, string path2, string fileName = null)
