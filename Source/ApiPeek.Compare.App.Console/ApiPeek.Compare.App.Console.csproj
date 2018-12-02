@@ -3011,6 +3011,9 @@
     <None Include="api.desktop\win10.17101\Windows.Web.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="api.desktop\win10.17763.UWP\Windows.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="api.desktop\win10.18282\Windows.AI.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -3750,6 +3753,63 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="api.desktop\win10.17682\Windows.Web.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.AI.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.ApplicationModel.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.Data.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.Devices.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.Foundation.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.Gaming.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.Globalization.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.Graphics.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.Management.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.Media.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.Networking.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.Perception.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.Security.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.Services.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.Storage.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.System.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.UI.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.UI.Xaml.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="api.desktop\win10.18290\Windows.Web.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="api.mobile\wp10.10586.UWP\Windows.json">
