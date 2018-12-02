@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="ApiPeek" Publisher="CN=marti" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="823399cb-0441-46b5-9864-4137bb647db9" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="54490MartinSuchan.ApiPeek.Beta" Publisher="CN=2681AC8F-97BF-42CE-88E8-CDCCEF67CC63" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="3efcc256-35bb-42ef-a186-abc9fb4fe9b9" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>ApiPeek</DisplayName>
-    <PublisherDisplayName>marti</PublisherDisplayName>
+    <PublisherDisplayName>Martin Suchan</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>

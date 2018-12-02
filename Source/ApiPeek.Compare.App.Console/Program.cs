@@ -1,7 +1,9 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
+using System.Text;
 
 namespace ApiPeek.Compare.App
 {
@@ -35,6 +37,16 @@ namespace ApiPeek.Compare.App
                 Directory.Delete(dir1Path, true);
             }
             ZipFile.ExtractToDirectory(zip1Path, dir1Path);
+        }
+
+        private static void ZipAll(string folder1)
+        {
+            string[] dirs = Directory.GetDirectories(folder1);
+            foreach (string dir in dirs)
+            {
+                string dirname = dir.Split(new[] { "\\" }, StringSplitOptions.RemoveEmptyEntries)[1];
+                ZipFile.CreateFromDirectory(dir, $"{dirname}.zip", CompressionLevel.Optimal, false, Encoding.UTF8);
+            }
         }
 
         private static void MergeAndCompare(bool detailed, string folder1, string path1, string folder2, string path2, string fileName = null)
