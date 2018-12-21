@@ -12,8 +12,8 @@ namespace ApiPeek.Compare.App
         static void Main(string[] args)
         {
             string folder = "api.desktop";
-            string path1 = "win10.18282";
-            string path2 = "win10.18290";
+            string path1 = "win10.18305";
+            string path2 = "win10.18305";
 
             ExtractFiles(folder, path1);
             ExtractFiles(folder, path2);
