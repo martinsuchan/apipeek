@@ -5,8 +5,16 @@
     <TargetFramework>net5.0</TargetFramework>
     <AssemblyName>ApiPeek.Compare.App</AssemblyName>
     <RootNamespace>ApiPeek.Compare.App</RootNamespace>
-    <StartupObject>ApiPeek.Compare.App.Program</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Console" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiPeek.Core\ApiPeek.Core.csproj" />
+  </ItemGroup>
 
   <ItemGroup>
     <Content Include="html\added.png">
@@ -63,15 +71,6 @@
     <Content Include="html\toggle-small.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="System.Console" Version="4.3.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\ApiPeek.Core\ApiPeek.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -511,6 +510,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="api.desktop\win10.21370.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="api.desktop\win10.21390.zip">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="api.desktop\win8.1.zip">
