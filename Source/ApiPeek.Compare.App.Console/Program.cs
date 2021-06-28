@@ -12,8 +12,8 @@ namespace ApiPeek.Compare.App
         static void Main(string[] args)
         {
             string folder = "api.desktop";
-            string path1 = "win10.21370";
-            string path2 = "win10.21390";
+            string path1 = "win11.22000";
+            string path2 = "win11.22000";
 
             ExtractFiles(folder, path1);
             ExtractFiles(folder, path2);
@@ -22,8 +22,8 @@ namespace ApiPeek.Compare.App
 
             string path21H1 = "win10.19043";
             ExtractFiles(folder, path21H1);
-            MergeAndCompare(false, folder, path21H1, folder, path2, "win10.21H1.to.win10.21H2.diff");
-            MergeAndCompare(true,  folder, path21H1, folder, path2, "win10.21H1.to.win10.21H2.fulldiff");
+            MergeAndCompare(false, folder, path21H1, folder, path2, "win10.21H1.to.win11.diff");
+            MergeAndCompare(true,  folder, path21H1, folder, path2, "win10.21H1.to.win11.fulldiff");
         }
 
         private static void ExtractFiles(string folder1, string path1)
