@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.136
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiPeek.Compare.App.Console", "ApiPeek.Compare.App.Console\ApiPeek.Compare.App.Console.csproj", "{D1BBC0F7-FEC1-4565-95B3-BF4FB7088F40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiPeek.Compare.App", "ApiPeek.Compare.App.Console\ApiPeek.Compare.App.csproj", "{D1BBC0F7-FEC1-4565-95B3-BF4FB7088F40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiPeek.Core", "ApiPeek.Core\ApiPeek.Core.csproj", "{0B3C87C3-93E7-4E15-B19A-668D6D576816}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiPeek.Core", "ApiPeek.Core\ApiPeek.Core.csproj", "{0B3C87C3-93E7-4E15-B19A-668D6D576816}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiPeek.App.UWP", "ApiPeek.App.UWP\ApiPeek.App.UWP.csproj", "{7CEFDFA1-49AA-48C8-99E6-7F21A0FD1F4C}"
 EndProject

@@ -1,50 +1,50 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using ApiPeek.Core.Extensions;
 
-namespace ApiPeek.Core.Model
+namespace ApiPeek.Core.Model;
+
+[DataContract]
+public class ApiDelegate : ApiBaseItem, IDetail, IApiType
 {
-    [DataContract]
-    public class ApiDelegate : ApiBaseItem, IDetail, IApiType
+    [DataMember]
+    public string ReturnType { get; set; }
+    [DataMember]
+    public ApiMethodParameter[] Parameters { get; set; }
+
+    [IgnoreDataMember]
+    public override string SortName => ShortString;
+
+    [IgnoreDataMember]
+    public override string ShortString => $"{NameSegments.Last()} delegate";
+
+    public void Init()
     {
-        [DataMember]
-        public string ReturnType { get; set; }
-        [DataMember]
-        public ApiMethodParameter[] Parameters { get; set; }
+        Parameters ??= Array.Empty<ApiMethodParameter>();
+    }
 
-        [IgnoreDataMember]
-        public override string SortName => ShortString;
+    public static IEqualityComparer<ApiDelegate> DetailComparer =
+        ProjectionEqualityComparer<ApiDelegate>.Create(x => x.Detail);
 
-        [IgnoreDataMember]
-        public override string ShortString => $"{NameSegments.Last()} delegate";
+    [IgnoreDataMember]
+    public string Detail => InDetail();
 
-        public void Init()
+    public string detail;
+    public string InDetail(string indent = "")
+    {
+        if (detail == null)
         {
-            if (Parameters == null) Parameters = new ApiMethodParameter[0];
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("public delegate {0} {1}", ReturnType, Name);
+            sb.Append("(");
+            if (!Parameters.IsNullOrEmpty())
+                sb.Append(string.Join(", ", Parameters.Select(p => p.Detail())));
+            sb.Append(");");
+            detail = sb.ToString();
         }
-
-        public static IEqualityComparer<ApiDelegate> DetailComparer =
-            ProjectionEqualityComparer<ApiDelegate>.Create(x => x.Detail);
-
-        [IgnoreDataMember]
-        public string Detail => InDetail();
-
-        public string detail;
-        public string InDetail(string indent = "")
-        {
-            if (detail == null)
-            {
-                StringBuilder sb = new StringBuilder();
-                sb.AppendFormat("public delegate {0} {1}", ReturnType, Name);
-                sb.Append("(");
-                if (!Parameters.IsNullOrEmpty())
-                    sb.Append(string.Join(", ", Parameters.Select(p => p.Detail())));
-                sb.Append(");");
-                detail = sb.ToString();
-            }
-            return indent + detail;
-        }
+        return indent + detail;
     }
 }

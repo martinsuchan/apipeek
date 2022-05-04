@@ -17,7 +17,7 @@ namespace ApiPeek.Core.Model
         public virtual string SortName => Name;
 
         [IgnoreDataMember]
-        public string[] NameSegments => nameSegments ?? (nameSegments = Name.Split('.'));
+        public string[] NameSegments => nameSegments ??= Name.Split('.');
 
         private string[] nameSegments;
 
@@ -25,7 +25,7 @@ namespace ApiPeek.Core.Model
         public string ShortName => NameSegments.Last();
 
         [IgnoreDataMember]
-        public virtual ApiBaseItem[][] ApiItemsItems => new ApiBaseItem[0][];
+        public virtual ApiBaseItem[][] ApiItemsItems => Array.Empty<ApiBaseItem[]>();
 
         [IgnoreDataMember]
         public virtual string ShortString => Name;
@@ -42,8 +42,8 @@ namespace ApiPeek.Core.Model
         public ApiNamespace(string name)
         {
             Name = name;
-            ApiItems = new ApiBaseItem[0];
-            Namespaces = new ApiNamespace[0];
+            ApiItems = Array.Empty<ApiBaseItem>();
+            Namespaces = Array.Empty<ApiNamespace>();
         }
 
         public override ApiBaseItem[][] ApiItemsItems => new[] { Namespaces, ApiItems };
@@ -59,21 +59,19 @@ namespace ApiPeek.Core.Model
 
         public bool Any()
         {
-            return DiffType == DiffType.Added
-                || DiffType == DiffType.Removed
-                || Children.Any();
+            return DiffType is DiffType.Added or DiffType.Removed || Children.Any();
         }
 
         public string TypePrefix
         {
             get
             {
-                switch (DiffType)
+                return DiffType switch
                 {
-                    case DiffType.Added: return "+";
-                    case DiffType.Removed: return "-";
-                }
-                return string.Empty;
+                    DiffType.Added => "+",
+                    DiffType.Removed => "-",
+                    _ => string.Empty
+                };
             }
         }
 
