@@ -80,7 +80,7 @@ namespace ApiPeek.Service
             catch (Exception e)
             {
                 Debug.WriteLine(e);
-                return new TypeInfo[0];
+                return Array.Empty<TypeInfo>();
             }
         }
 
@@ -463,7 +463,7 @@ namespace ApiPeek.Service
             return mi.IsPublic && !mi.IsSpecialName && !ignoredMethods.Contains(mi.Name);
         }
 
-        private static readonly string[] ignoredProperties = new string[0];
+        private static readonly string[] ignoredProperties = Array.Empty<string>();
         private static bool InterestingName(PropertyInfo pi)
         {
             return !pi.IsSpecialName && !ignoredProperties.Contains(pi.Name);

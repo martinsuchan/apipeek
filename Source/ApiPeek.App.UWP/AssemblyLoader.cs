@@ -13,7 +13,7 @@ namespace ApiPeek.Service
         public async Task<Assembly[]> GetAssembliesAsync()
         {
             AssemblyInfoModel assemblyModel = await GetOnlineAssemblies();
-            if (assemblyModel == null) return new Assembly[0];
+            if (assemblyModel == null) return Array.Empty<Assembly>();
 
             Assembly[] assemblies = assemblyModel.Assemblies.Select(GetAssembly).ToArray();
             return assemblies;
