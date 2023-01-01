@@ -6,7 +6,7 @@ using ApiPeek.Compare.App;
 
 string folder = "api.desktop";
 string path1 = "win11.22621";
-string path2 = "win11.22621";
+string path2 = "win11.25267";
 
 ExtractFiles(folder, path1);
 ExtractFiles(folder, path2);
@@ -15,8 +15,8 @@ MergeAndCompare(true, folder, path1, folder, path2);
 
 string path11 = "win11.22621";
 ExtractFiles(folder, path11);
-MergeAndCompare(false, folder, path11, folder, path2, "win11.2022.to.win11.2023.diff");
-MergeAndCompare(true,  folder, path11, folder, path2, "win11.2022.to.win11.2023.fulldiff");
+MergeAndCompare(false, folder, path11, folder, path2, "win11.22H2.to.win11.23H2.diff");
+MergeAndCompare(true,  folder, path11, folder, path2, "win11.22H2.to.win11.23H2.fulldiff");
 
 
 static void ExtractFiles(string folder1, string path1)
