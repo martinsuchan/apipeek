@@ -5,15 +5,15 @@ using ApiPeek.Compare.App;
 
 
 string folder = "api.desktop";
-string path1 = "win11.26252";
-string path2 = "win11.26252";
+string path1 = "win11.27686";
+string path2 = "win11.27686";
 
 ExtractFiles(folder, path1);
 ExtractFiles(folder, path2);
 MergeAndCompare(false, folder, path1, folder, path2);
 MergeAndCompare(true, folder, path1, folder, path2);
 
-string path11 = "win11.26090"; // TODO use 26100
+string path11 = "win11.26100";
 ExtractFiles(folder, path11);
 MergeAndCompare(false, folder, path11, folder, path2, "win11.24H2.to.win11.25H2.diff");
 MergeAndCompare(true,  folder, path11, folder, path2, "win11.24H2.to.win11.25H2.fulldiff");
