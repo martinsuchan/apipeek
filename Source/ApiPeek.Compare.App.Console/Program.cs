@@ -5,8 +5,8 @@ using ApiPeek.Compare.App;
 
 
 string folder = "api.desktop";
-string path1 = "win11.27686";
-string path2 = "win11.27686";
+string path1 = "win11.27758";
+string path2 = "win11.27758";
 
 ExtractFiles(folder, path1);
 ExtractFiles(folder, path2);
