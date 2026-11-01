@@ -1,0 +1,24 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Build.props" />
+  </Folder>
+  <Project Path="ApiPeek.App.UWP/ApiPeek.App.UWP.csproj">
+    <Platform Solution="*|Any CPU" Project="x86" />
+    <Platform Solution="*|ARM" Project="ARM" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+    <Build Solution="Release|Any CPU" Project="false" />
+    <Deploy Solution="*|ARM" />
+    <Deploy Solution="*|x64" />
+    <Deploy Solution="*|x86" />
+    <Deploy Solution="Debug|Any CPU" />
+  </Project>
+  <Project Path="ApiPeek.Compare.App.Console/ApiPeek.Compare.App.csproj" />
+  <Project Path="ApiPeek.Core/ApiPeek.Core.csproj" />
+</Solution>
